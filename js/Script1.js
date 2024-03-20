@@ -4,18 +4,34 @@ const panelControlsEdit = document.getElementById('panel-controls');
 const addPanelButton = document.getElementById('add-panel');
 const addPanelStashTabSale = document.getElementById('add-panel-stashTab');
 const addPanelRegexMapMods = document.getElementById('add-panel-regex-map-mods');
+const mainMenu = document.getElementById('main-menu');
+const mainMenuLogo = document.getElementById('main-menu-logo');
+
 
 let panelID = 0;
+
+mainMenuLogo.addEventListener('click', () => {
+    console.log(mainMenuLogo.className);
+    if (mainMenu.className === 'shown') {
+        mainMenu.className = 'hidden';
+        mainMenuLogo.className = 'main-menu-logo-small';
+        return;
+    }
+    mainMenu.className = 'shown'
+    mainMenuLogo.className = 'main-menu-logo';
+});
 
 function createPanelTextArea() {
     const panel = document.createElement('div');
     panel.classList.add('panel');
     panel.style.top = 44 + 'px';
-    panel.style.left = 0 + 'px';
+    panel.style.left = 200 + 'px';
     panel.innerHTML = `
         <textarea class="panel-name" maxlength="30">Panel name (max 30 chars)</textarea>
         <div class="panel-textarea" id="id${++panelID}">
-            <textarea class="panel-content">Your notes, links here</textarea>
+            <textarea class="panel-content">
+            <p><em>%go in with me, don't move, do NOT leave if you die</em></p><p>Feared:</p><p><br></p><p><br></p><p>---------</p><p><em>%please wait in ho, join when I write adasdad, don't move inside, don't leave if you die</em></p><p>UE:</p><p><br></p><p><br></p><p>Sirus:</p><p><br></p><p><br></p><p>Maven:</p><p>@playername</p><p>@playername</p><p>@playername</p><p><br></p><p><br></p><p><br></p>
+            </textarea>
         </div>
         <div class="panel-copy-all" title="Copy all text">copy</div>
         <div class="panel-controls">
@@ -30,6 +46,7 @@ function createPanelStashTab() {
     const panel = document.createElement('div');
     panel.classList.add('panel');
     panel.style.top = 44 + 'px';
+    panel.style.left = 200 + 'px';
     panel.innerHTML = `
         <textarea class="panel-name" maxlength="30" style="display: none">Stash Tab Sale:</textarea>
         <div class="panel-stashtabsale" id="id${++panelID}">
@@ -47,6 +64,7 @@ function createPanelRegexMapMods() {
     const panel = document.createElement('div');
     panel.classList.add('panel');
     panel.style.top = 44 + 'px';
+    panel.style.left = 200 + 'px';
     panel.innerHTML = `
         <textarea class="panel-name" maxlength="30">Map Modifiers Regex:</textarea>
         <div class="panel-regex-map-mods" id="id${++panelID}">
@@ -117,7 +135,7 @@ function panelRegexMapMods(panel, oldRegex, check) {
     const badElement = panel.querySelector('#map_mod_bad_list');
     const goodElement = panel.querySelector('#map_mod_good_list');
     const checkboxElement = panel.querySelector("#map_mod_window_copy");
-
+    
     if (oldRegex) {
         inputElement.value = oldRegex;
         changeRegexEvent(oldRegex, lengthElement, quantityElement, packsizeElement, badElement, goodElement);
@@ -133,7 +151,7 @@ function panelRegexMapMods(panel, oldRegex, check) {
             copyToClipboard(text);
         }
         changeRegexEvent(text, lengthElement, quantityElement, packsizeElement, badElement, goodElement);
-        //console.log(text);
+        console.log(text);
     });
 
     inputElement.addEventListener('click', function  (event) {
@@ -149,7 +167,7 @@ addPanelButton.addEventListener('click', () => {
     const panel = createPanelTextArea();
     panels.appendChild(panel);
     panelBehaviour(panel, panelID);
-    addQuill("id" + panelID);
+    addQuill("id" + panelID, `<h2><strong><u>Panel Example</u></strong></h2><p>This panel is completely editable, and data is saved to local storage. Change it and reload the page.</p><p>I've added some useful functions for poe to the editor.You can copy all text with a single click on the bottom - left button.</p><p>This is a very convenient option for Discord posts, as you can easily paste messages without forgetting to add "WTS Softcore".</p><p>If you choose the copy icon in the editor toolbar, you can set a custom text snippet to be automatically copied when clicked, </p><p>like the example here: <em>"click me!"</em></p><p><strong>Please note:</strong> Don't build anything complex here. This page is very young and will undergo frequent changes.</p><p>----</p><p>My carry notepad, for example:</p><p>----</p><p><em>%go in with me, don't move, do NOT leave if you die</em></p><p>Feared:</p><p><br></p><p><br></p><p>---------</p><p><em>%please wait in ho, join when I write adasdad, don't move inside, don't leave if you die</em></p><p>UE:</p><p><br></p><p><br></p><p>---</p><p>or just small note: </p><p>compasses: shaper, unid, grove, blue/purple </p><p>scarabs: 4x the cheapest</p>`, true);
 });
 
 addPanelStashTabSale.addEventListener('click', () => {
@@ -191,6 +209,7 @@ function panelBehaviour(panel, id) {
     let offsetX = 0;//panel.offsetLeft;
     let offsetY = 0;// panel.offsetTop;
     let isDragging = false;
+    let deletePanelCounter = 0;
 
     try {
         // Przesuwanie podczas naciœniêcia przycisku "Przesuñ"
@@ -200,10 +219,21 @@ function panelBehaviour(panel, id) {
         });
 
         // Dodanie zdarzenia do przycisku "Usuñ"
-        panel.querySelector('.panel-delete').addEventListener('click', () => {
-            document.removeEventListener('mousemove', Event);
-            document.removeEventListener('mouseup', Event);
-            panel.remove();
+        panel.querySelector('.panel-delete').addEventListener('click', (ele) => {
+            deletePanelCounter++
+            if (deletePanelCounter > 1) {
+                document.removeEventListener('mousemove', Event);
+                document.removeEventListener('mouseup', Event);
+                panel.remove();
+            } else {
+                ele.target.innerHTML = 'are you sure?';
+                ele.target.style.color = '#f00';
+                setTimeout(() => {
+                    ele.target.innerHTML = 'delete';
+                    ele.target.style.color = '#000';
+                    deletePanelCounter = 0;
+                }, 1000);
+            }
         });
 
         // Copy All
@@ -265,8 +295,8 @@ function savePanelPositions() {
             id: '',
             name: panel.querySelector('.panel-name').value,
             content: '',
-            top: panel.getBoundingClientRect().top,
-            left: panel.getBoundingClientRect().left,
+            top: panel.getBoundingClientRect().top < 10 ? 10 : panel.getBoundingClientRect().top,
+            left: panel.getBoundingClientRect().left < 10 ? 10 : panel.getBoundingClientRect().left,
             width: '',
             height: '',
             childClass: panel.children[1].className,
@@ -315,6 +345,10 @@ window.addEventListener('load', () => {
     let maxID = 0;
     if (panelsData) {
         panelsData.forEach(panelData => {
+            let lastID = parseInt(panelData.id.substring(2));
+            if (lastID > maxID) {
+                maxID = lastID;
+            }
             const panel = document.createElement('div');
             panel.classList.add('panel');
             //panel.style.position = 'absolute';
@@ -325,7 +359,7 @@ window.addEventListener('load', () => {
             if (panelData.childClass === 'panel-textarea ql-container ql-bubble') {
                 panel.innerHTML = `
                 <textarea class="panel-name" maxlength="30">${panelData.name}</textarea>
-                <div class="panel-textarea" id="${panelData.id}">
+                <div class="panel-textarea" id="id${lastID}">
                     <textarea class="panel-content" style="width: ${panelData.width - 8}px; height: ${panelData.height - 4}px">${panelData.content}</textarea>
                 </div >
                 <div class="panel-copy-all" title="Copy all text">copy</div>
@@ -337,7 +371,7 @@ window.addEventListener('load', () => {
             } else if (panelData.childClass === 'panel-stashtabsale') {
                 panel.innerHTML = `
                 <textarea class="panel-name" maxlength="30" style="display: none">Stash Tab Sale:</textarea>
-                <div class="${panelData.childClass}" id="${panelData.id}">
+                <div class="${panelData.childClass}" id="id${lastID}">
                     <div class="panel-content" style="width: ${panelData.width}px; height: ${panelData.height - 2}px">${panelData.childClass}</div>
                 </div>
                 <div class="panel-controls" style="display: none">
@@ -347,8 +381,8 @@ window.addEventListener('load', () => {
                 `;
             } else if (panelData.childClass === 'panel-regex-map-mods') {
                 panel.innerHTML = `
-                <textarea class="panel-name" maxlength="30">Map Modifiers Regex:</textarea>
-                <div class="${panelData.childClass}"" id="id${++panelID}">
+                <textarea class="panel-name" maxlength="30">${panelData.name}</textarea>
+                <div class="${panelData.childClass}"" id="id${lastID}">
                     <div class="panel-content" style="width: ${panelData.width}px; height: ${panelData.height - 2}px">
                         <input id="map_mod_window" placeholder="Put regex here..." />
                         <input type="checkbox" id="map_mod_window_copy" title="Always copy on click" />
@@ -377,10 +411,6 @@ window.addEventListener('load', () => {
             }
             //console.log(panelData.childClass + "child class");
 
-            let lastID = parseInt(panelData.id.substring(2));
-            if (lastID > maxID) {
-                maxID = lastID;
-            }
 
             panels.appendChild(panel);
             panelBehaviour(panel, lastID);
@@ -388,19 +418,20 @@ window.addEventListener('load', () => {
             if (panelData.childClass === 'panel-stashtabsale') {
                 stashSaleTimer();
             } else if (panelData.childClass === 'panel-textarea ql-container ql-bubble') {
-                addQuill(panelData.id, panelData.content);
+                addQuill('id' + lastID, panelData.content);
                 //console.log(panelData.id);
                 //console.log(panelData.content);
                 let editor = panel.querySelector('.ql-editor');
-                editor.style.height = panelData.height + 'px';
-                editor.style.width = panelData.width + 'px';
+                editor.style.height = panelData.height < 10 ? '40px' : panelData.height + 'px';
+                editor.style.width = panelData.width < 10 ? '40px' : panelData.width + 'px';
             } else if (panelData.childClass === 'panel-regex-map-mods') {
                 panelRegexMapMods(panel, panelData.content, panelData.checked);
             }             
         });
 
-        panelID = maxID;
     }
+
+    panelID = maxID;
 });
 
 async function copyToClipboard(text) {

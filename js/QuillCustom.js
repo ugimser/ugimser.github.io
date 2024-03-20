@@ -76,17 +76,21 @@ function getQuillScroll(quill_id) {
 	return false;
 }
 
-function addQuill(id, savedContent = 'e') {
+function addQuill(id, savedContent = 'e', openHtml = false) {
 	//return;
 	var quill = new Quill('#' + id, quillConfig);
 
 	var customIcons = quill.getModule('toolbar').container.querySelectorAll('.ql-copy');
 	Array.prototype.forEach.call(customIcons, function (icon) {
-		icon.innerHTML = '<i class="fas fa-copy"></i>'; // Ustawiamy ikonê Font Awesome
+		icon.innerHTML = '<i class="fas fa-copy"></i>';
 	});
 
 	if (savedContent != 'e') {
-		quill.setContents(savedContent);
+		if (openHtml) {
+			quill.root.innerHTML = savedContent;
+		} else {
+			quill.setContents(savedContent);
+		}
 		attachCopyEventListeners(quill);
 		return;
 	}

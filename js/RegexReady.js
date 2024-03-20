@@ -57,7 +57,7 @@ function changeRegex(add = true, shortString) {
 function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badModsEle, goodModsEle) {
     // length
     lengthEle.innerHTML = inputValue.length + ' / 50';
-
+    //console.log(inputValue.length);
     // quantity
     if (inputValue.includes('"m q.')) {
         const start = inputValue.indexOf('"m q.');
@@ -185,7 +185,14 @@ function findDontWantedMods(inputValue, container) {
     let counter = 0;
     let text = '<div>I don\'t want these:</div>';
     for (const [longName] of mapData.entries()) {
-        if (longName.toLowerCase().match(sanitized)) {
+        let isIn = "";
+        try {
+            isIn = longName.toLowerCase().match(sanitized);
+        } catch (err) {
+            console.log(err);
+            return;
+        }
+        if (isIn) {
             //console.log(longName);
             counter++
             text += '<div>>' + longName.replaceAll('|', '<br>') + '</div>';
@@ -232,7 +239,14 @@ function findWantedMods(inputValue, container) {
     let counter = 0;
     let text = '<div>I want these:</div>';
     for (const [longName] of mapData.entries()) {
-        if (longName.toLowerCase().match(sanitized)) {
+        let isIn = "";
+        try {
+           isIn = longName.toLowerCase().match(sanitized);
+        } catch (err) {
+            console.log(err);
+            return;
+        }
+        if (isIn) {
             //console.log(longName);
             counter++
             text += '<div>>' + longName.replaceAll('|', '<br>') + '</div>';
