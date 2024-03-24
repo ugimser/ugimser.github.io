@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -13,9 +13,23 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 	<script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
-	<script defer data-domain="ugimser.github.io" src="https://plausible.io/js/script.js"></script>
-	
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td, th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
 </head>
 <body>
 	<div class="notification"></div>
@@ -24,20 +38,84 @@
 		<div class="main-menu-button" id="add-panel">Empty Text Box</div>
 		<div class="main-menu-button" id="add-panel-stashTab">Stash Tab Sale Timer</div>
 		<div class="main-menu-button" id="add-panel-regex-map-mods">Map Regex</div>
-		<div class="main-menu-button" id="panel-controls">Edit</div>
-		<div class="main-menu-button" id="">Options</div>
+		<div class="main-menu-button" id="add-panel-regex-gewnnen">Gwennen Regex</div>
+		<!--<div class="main-menu-button" id="add-panel-regex-beast">Beasts Regex</div>-->
+		<div class="main-menu-button" id="add-panel-syndicate">Syndicate</div>
 		<div class="main-menu-button" id="">Options2</div>
+		<div class="main-menu-button" id="panel-controls">Edit</div>
 	</div>
 	<div class="apps">
 
 		<div id="panels">
 
 		</div>
+		<button onclick="showHightValue(0)" style="display: none">asd</button>
+		<div id="test"></div>
 
 	</div>
 
 
 	<!-- Piaskownica -->
+	<div>
+
+		<table id="myTable">
+			<tr>
+				<th>Kolumna 1</th>
+				<th>Kolumna 2</th>
+				<th>Kolumna 3</th>
+			</tr>
+			<tr>
+				<td class="cell" style="background-image: url(img/syndicate/Aisling_icon.png)"></td>
+				<td class="cell" style="background-image: url(img/syndicate/Aisling_icon.png)"></td>
+				<td class="cell" style="background-image: url(img/syndicate/Aisling_icon.png)"></td>
+			</tr>
+			<tr>
+				<td class="cell" style="background-image: url(img/syndicate/Aisling_icon.png)"></td>
+				<td class="cell" style="background-image: url(img/syndicate/Aisling_icon.png)"></td>
+				<td class="cell" style="background-image: url(img/syndicate/Aisling_icon.png)"></td>
+			</tr>
+		</table>
+		<button id="saveAsImage">Zapisz jako obraz PNG</button>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				//var table = document.querySelector("#myTable");
+				var cells = document.querySelectorAll(".cell");
+
+				document.getElementById("saveAsImage").addEventListener("click", function () {
+					var table = document.querySelector("#myTable");
+					domtoimage.toPng(table)
+						.then(function (dataUrl) {
+							var link = document.createElement('a');
+							link.download = 'tabela.png';
+							link.href = dataUrl;
+							link.click();
+						})
+						.catch(function (error) {
+							console.error('Błąd podczas generowania obrazu:', error);
+						});
+				});
+
+				cells.forEach(function (cell) {
+					cell.addEventListener("click", function () {
+						this.style.backgroundColor = getRandomColor();
+					});
+				});
+
+				function getRandomColor() {
+					var letters = '0123456789ABCDEF';
+					var color = '#';
+					for (var i = 0; i < 6; i++) {
+						color += letters[Math.floor(Math.random() * 16)];
+					}
+					return color;
+				}
+			});
+		</script>
+	</div>
 	<!-- Koniec piaskownicy -->
 	<script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.js"></script>
 	<script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
@@ -46,7 +124,14 @@
 	<script src="js/regex/MapsMods.js"></script>
 	<script src="js/regex/MapsNames.js"></script>
 	<script src="js/RegexReady.js"></script>
+	<script src="js/CreatePanelsBases.js"></script>
+	<script src="js/LocalStorage.js"></script>
 	<script src="js/Script1.js"></script>
+	<script src="js/Syndicate.js"></script>
+
+	<script src="js/regex/UniqueItems.js"></script>
+	<script src="js/PoENinjaData.js"></script>
+	<script src="js/regex/ExpeditionItems.js"></script>
 
 </body>
 </html>
