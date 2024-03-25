@@ -60,32 +60,95 @@ function syndicateBigBehaviour(panelBig) {
 	});
 
 	document.getElementById("syndicate-save-as-image").addEventListener("click", function () {
-	var table = document.querySelector("#syndicate-big-table");
+		var table = document.querySelector("#syndicate-big-table");
 
-	var width = table.getBoundingClientRect().width;
-	var height = table.getBoundingClientRect().height;
+		var computedStyle = window.getComputedStyle(table);
 
-	// 1. Account for margins:
-	var computedStyle = window.getComputedStyle(table);
-	var marginLeft = parseFloat(computedStyle.marginLeft);
-	var marginRight = parseFloat(computedStyle.marginRight);
-	var marginTop = parseFloat(computedStyle.marginTop);
-	var marginBottom = parseFloat(computedStyle.marginBottom);
+		// Extract margin and padding values (consider all sides)
+		var marginLeft = parseFloat(computedStyle.marginLeft);
+		var marginRight = parseFloat(computedStyle.marginRight);
+		var marginTop = parseFloat(computedStyle.marginTop);
+		var marginBottom = parseFloat(computedStyle.marginBottom);
+		var paddingLeft = parseFloat(computedStyle.paddingLeft);
+		var paddingRight = parseFloat(computedStyle.paddingRight);
+		var paddingTop = parseFloat(computedStyle.paddingTop);
+		var paddingBottom = parseFloat(computedStyle.paddingBottom);
 
-	// 2. Adjust width and height:
-	width += marginLeft + marginRight;  // Add margins to width
-	height += marginTop + marginBottom; // Add margins to height
+		// Calculate total horizontal and vertical margins and padding
+		var totalHorizontalMargin = marginLeft + marginRight;
+		var totalVerticalMargin = marginTop + marginBottom;
+		var totalHorizontalPadding = paddingLeft + paddingRight;
+		var totalVerticalPadding = paddingTop + paddingBottom;
 
-	domtoimage.toPng(table, { width: width, height: height })
-		.then(function (dataUrl) {
-			var link = document.createElement('a');
-			link.download = 'mySyndicate.png';
-			link.href = dataUrl;
-			link.click();
-		})
-		.catch(function (error) {
-			console.error('document.getElementById("syndicate-save-as-image"):', error);
-		});
+		// Get the table's content area dimensions using getBoundingClientRect()
+		var contentWidth = table.getBoundingClientRect().width;
+		var contentHeight = table.getBoundingClientRect().height;
+
+		// Calculate total dimensions to capture, including margins and padding
+		var totalWidth = contentWidth + totalHorizontalMargin + totalHorizontalPadding;
+		var totalHeight = contentHeight + totalVerticalMargin + totalVerticalPadding;
+
+		// Create a canvas element for image generation
+		var canvas = document.createElement('canvas');
+		canvas.width = totalWidth;
+		canvas.height = totalHeight;
+
+		// Use a rendering context to draw the table content onto the canvas
+		var context = canvas.getContext('2d');
+
+		// Handle potential scrollbar (might not be necessary if hidden, adjust if needed)
+		if (table.scrollWidth > table.clientWidth || table.scrollHeight > table.clientHeight) {
+			totalWidth += getScrollbarWidth(); // Add scrollbar width (adjust this function)
+		}
+
+		// Position the table content within the canvas, considering margins and padding
+		context.translate(marginLeft + paddingLeft, marginTop + paddingTop);
+
+		// Draw the table (consider using HTML5 Canvas API methods like drawImage() or drawElement())
+		// Replace this placeholder with the actual drawing logic for the table content
+		context.strokeRect(0, 0, contentWidth, contentHeight); // Example placeholder
+
+		// Convert canvas to image data URL
+		var dataUrl = canvas.toDataURL('image/png');
+
+		// Create a link element to trigger image download
+		var link = document.createElement('a');
+		link.download = 'mySyndicate.png';
+		link.href = dataUrl;
+		link.click();
+
+
+
+
+
+		/*
+
+
+		var width = table.getBoundingClientRect().width;
+		var height = table.getBoundingClientRect().height;
+
+		// 1. Account for margins:
+		var computedStyle = window.getComputedStyle(table);
+		var marginLeft = parseFloat(computedStyle.marginLeft);
+		var marginRight = parseFloat(computedStyle.marginRight);
+		var marginTop = parseFloat(computedStyle.marginTop);
+		var marginBottom = parseFloat(computedStyle.marginBottom);
+
+		// 2. Adjust width and height:
+		width += marginLeft + marginRight;  // Add margins to width
+		height += marginTop + marginBottom; // Add margins to height
+
+		domtoimage.toPng(table, { width: width, height: height })
+			.then(function (dataUrl) {
+				var link = document.createElement('a');
+				link.download = 'mySyndicate.png';
+				link.href = dataUrl;
+				link.click();
+			})
+			.catch(function (error) {
+				console.error('document.getElementById("syndicate-save-as-image"):', error);
+			});
+			*/
 	});
 
 
@@ -110,6 +173,7 @@ function syndicateBigBehaviour(panelBig) {
 			let choice = this.getAttribute("data-choice");
 			syndicateStyles(this, ++choice);
 		});
+		
 	});
 
 
@@ -142,6 +206,11 @@ function syndicateBigBehaviour(panelBig) {
 		});
 	}
 };
+
+function getScrollbarWidth() {
+	// Implement logic to calculate scrollbar width (e.g., using a temporary element)
+	return 10; // Replace with actual calculation (this is an estimated placeholder)
+}
 
 function syndicateStyles(element, choice) {
 	choice = parseInt(choice);
