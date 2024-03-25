@@ -163,7 +163,7 @@ function syndicateSave() {
 
 function syndicateAddLieutenant(container, _row, _choice) {
 	if (syndicateLoadData() !== null) {
-		const size = localStorage.getItem('mySyndicateSmallSize');
+		const size = localStorage.getItem('mySyndicateSmallSize') !== null ? localStorage.getItem('mySyndicateSmallSize') : '1em';
 		syndicateLoadData().forEach(value => {
 			const { row, column, choice } = value;
 			if (_row === row && _choice === choice) {
