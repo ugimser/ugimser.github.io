@@ -1,6 +1,6 @@
-let colorGood = '#172';
-let colorMediocre = '#971';
-let colorBackground = '#ddd';
+let colorGood = '#117722';
+let colorMediocre = '#997711';
+let colorBackground = '#444444';
 function syndicateBigBehaviour(panelBig) {
 	let cells = document.querySelectorAll('.cell');
 	const bigTable = panelBig.querySelector('#syndicate-big-table');
@@ -41,12 +41,12 @@ function syndicateBigBehaviour(panelBig) {
 		panelBig.remove();
 		syndicateCreateBigTable(true);
 
-		// Ustaw domyœlne wartoœci kolorów
-		colorGood = '#172';
-		colorMediocre = '#971';
-		colorBackground = '#ddd';
+		// Ustaw domyÅ›lne wartoÅ›ci kolorÃ³w
+		colorGood = '#117722';
+		colorMediocre = '#997711';
+		colorBackground = '#dddddd';
 
-		// Ustaw wartoœci kolorów dla inputów
+		// Ustaw wartoÅ›ci kolorÃ³w dla inputÃ³w
 		colorGoodInput.value = colorGood;
 		colorMediocreInput.value = colorMediocre;
 		colorBackgroundInput.value = colorBackground;
@@ -69,7 +69,7 @@ function syndicateBigBehaviour(panelBig) {
 				link.click();
 			})
 			.catch(function (error) {
-				console.error('B³¹d podczas generowania obrazu:', error);
+				console.error('BÅ‚Ä…d podczas generowania obrazu:', error);
 			});
 	});
 
@@ -136,7 +136,7 @@ function syndicateStyles(element, choice) {
 	element.setAttribute("data-choice", choice);
 	if (choice === 0) {
 		element.style.backgroundColor = colorGood;
-		element.style.color = '#fff';
+		element.style.color = '#fdfdfd';
 		element.querySelector('img').style.opacity = 1;
 	} else if (choice === 1) {
 		element.style.backgroundColor = colorMediocre;
@@ -162,6 +162,9 @@ function syndicateSave() {
 }
 
 function syndicateAddLieutenant(container, _row, _choice) {
+	if (!syndicateLoadData()) {
+		return;
+	}
 	const size = localStorage.getItem('mySyndicateSmallSize');
 	syndicateLoadData().forEach(value => {
 		const { row, column, choice } = value;
@@ -174,6 +177,10 @@ function syndicateAddLieutenant(container, _row, _choice) {
 }
 
 function syndicateCreateSmall() {
+	const btnArrow = document.querySelector('#removeMe');
+	if (btnArrow) {
+		btnArrow.remove();
+	}
 	const transportationGood = document.querySelector('#syndicate-transportation-good');
 	const transportationBad = document.querySelector('#syndicate-transportation-mediocre');
 	const fortificationGood = document.querySelector('#syndicate-fortification-good');
@@ -200,6 +207,32 @@ function syndicateCreateSmall() {
 	syndicateAddLieutenant(researchBad, '3', '1');
 	syndicateAddLieutenant(interventionGood, '4', '0');
 	syndicateAddLieutenant(interventionBad, '4', '1');
+
+	let liutenants = transportationGood.childElementCount;
+	liutenants += transportationBad.childElementCount;
+	liutenants += fortificationGood.childElementCount;
+	liutenants += fortificationnBad.childElementCount;
+	liutenants += researchGood.childElementCount;
+	liutenants += researchBad.childElementCount;
+	liutenants += interventionGood.childElementCount;
+	liutenants += interventionBad.childElementCount;
+
+	if (liutenants === 0) {
+		const btn = document.createElement('button');
+		btn.id = 'removeMe';
+		btn.textContent = 'â–¼';
+		btn.style.fontSize = '4em';
+		btn.style.position = 'absolute';
+		btn.style.left = '40%';
+		btn.style.top = '75%';
+		btn.style.transform = 'translate(-50%, -50%)';
+		btn.style.backgroundColor = '#555';
+		btn.style.color = '#fff';
+		btn.style.textShadow = '0px 12px #811';
+		btn.style.border = 'none';
+		const panelSmall = document.getElementsByClassName('panel-syndicate-small');
+		panelSmall[0].appendChild(btn);
+	}
 }
 
 function syndicateLoadData() {
@@ -253,9 +286,9 @@ function syndicateCreateBigTable(reset = false) {
 	if (singleton.length > 0) {
 		return;
 	}
-	colorGood = localStorage.getItem('mySyndicateValuesColorGood') ? localStorage.getItem('mySyndicateValuesColorGood') : '#172';
-	colorMediocre = localStorage.getItem('mySyndicateValuesColorMediocre') ? localStorage.getItem('mySyndicateValuesColorMediocre') : '#921';
-	colorBackground = localStorage.getItem('mySyndicateValuesColorBackground') ? localStorage.getItem('mySyndicateValuesColorBackground') : '#dddddd';
+	colorGood = localStorage.getItem('mySyndicateValuesColorGood') !== null ? localStorage.getItem('mySyndicateValuesColorGood') : '#117722';
+	colorMediocre = localStorage.getItem('mySyndicateValuesColorMediocre') !== null ? localStorage.getItem('mySyndicateValuesColorMediocre') : '#992211';
+	colorBackground = localStorage.getItem('mySyndicateValuesColorBackground') !== null ? localStorage.getItem('mySyndicateValuesColorBackground') : '#444444';
 	const panel = document.createElement('div');
 	panel.innerHTML = `
 	<div id="syndicate-big" style="display: flex">
@@ -634,7 +667,7 @@ function syndicateCreateBigTable(reset = false) {
 	panel.className = 'syndicate-big-table';
 	document.body.appendChild(panel);
 
-	if (reset === false) {
+	if (reset === false && syndicateLoadData()) {
 		syndicateLoadData().forEach(value => {
 			const { row, column, choice } = value;
 			const cell = document.querySelector(`.cell[data-row="${row}"][data-column="${column}"]`);
