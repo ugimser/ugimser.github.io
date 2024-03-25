@@ -61,15 +61,19 @@ function syndicateBigBehaviour(panelBig) {
 
 	document.getElementById("syndicate-save-as-image").addEventListener("click", function () {
 		var table = document.querySelector("#syndicate-big-table");
-		domtoimage.toPng(table)
+
+		var width = table.offsetWidth;
+		var height = table.offsetHeight;
+
+		domtoimage.toPng(table, { width: width, height: height })
 			.then(function (dataUrl) {
 				var link = document.createElement('a');
-				link.download = 'tabela.png';
+				link.download = 'mySyndicate.png';
 				link.href = dataUrl;
 				link.click();
 			})
 			.catch(function (error) {
-				console.error('Błąd podczas generowania obrazu:', error);
+				console.error('document.getElementById("syndicate-save-as-image"):', error);
 			});
 	});
 
@@ -288,7 +292,7 @@ function syndicateCreateBigTable(reset = false) {
 		return;
 	}
 	colorGood = localStorage.getItem('mySyndicateValuesColorGood') !== null ? localStorage.getItem('mySyndicateValuesColorGood') : '#117722';
-	colorMediocre = localStorage.getItem('mySyndicateValuesColorMediocre') !== null ? localStorage.getItem('mySyndicateValuesColorMediocre') : '#992211';
+	colorMediocre = localStorage.getItem('mySyndicateValuesColorMediocre') !== null ? localStorage.getItem('mySyndicateValuesColorMediocre') : '#bbbb11';
 	colorBackground = localStorage.getItem('mySyndicateValuesColorBackground') !== null ? localStorage.getItem('mySyndicateValuesColorBackground') : '#444444';
 	const panel = document.createElement('div');
 	panel.innerHTML = `
