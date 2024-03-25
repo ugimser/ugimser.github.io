@@ -1,5 +1,5 @@
 let colorGood = '#117722';
-let colorMediocre = '#997711';
+let colorMediocre = '#bbbb11';
 let colorBackground = '#444444';
 function syndicateBigBehaviour(panelBig) {
 	let cells = document.querySelectorAll('.cell');
