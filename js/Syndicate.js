@@ -65,6 +65,17 @@ function syndicateBigBehaviour(panelBig) {
 	var width = table.getBoundingClientRect().width;
 	var height = table.getBoundingClientRect().height;
 
+	// 1. Account for margins:
+	var computedStyle = window.getComputedStyle(table);
+	var marginLeft = parseFloat(computedStyle.marginLeft);
+	var marginRight = parseFloat(computedStyle.marginRight);
+	var marginTop = parseFloat(computedStyle.marginTop);
+	var marginBottom = parseFloat(computedStyle.marginBottom);
+
+	// 2. Adjust width and height:
+	width += marginLeft + marginRight;  // Add margins to width
+	height += marginTop + marginBottom; // Add margins to height
+
 	domtoimage.toPng(table, { width: width, height: height })
 		.then(function (dataUrl) {
 			var link = document.createElement('a');
