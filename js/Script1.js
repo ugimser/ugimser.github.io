@@ -4,6 +4,8 @@ const panelControlsEdit = document.getElementById('panel-controls');
 const addPanelButton = document.getElementById('add-panel');
 const addPanelStashTabSale = document.getElementById('add-panel-stashTab');
 const addPanelRegexMapMods = document.getElementById('add-panel-regex-map-mods');
+const addPanelRegexGwennen = document.getElementById('add-panel-regex-gewnnen');
+const addPanelSyndicate = document.getElementById('add-panel-syndicate');
 const mainMenu = document.getElementById('main-menu');
 const mainMenuLogo = document.getElementById('main-menu-logo');
 
@@ -11,7 +13,7 @@ const mainMenuLogo = document.getElementById('main-menu-logo');
 let panelID = 0;
 
 mainMenuLogo.addEventListener('click', () => {
-    console.log(mainMenuLogo.className);
+    //console.log(mainMenuLogo.className);
     if (mainMenu.className === 'shown') {
         mainMenu.className = 'hidden';
         mainMenuLogo.className = 'main-menu-logo-small';
@@ -20,81 +22,6 @@ mainMenuLogo.addEventListener('click', () => {
     mainMenu.className = 'shown'
     mainMenuLogo.className = 'main-menu-logo';
 });
-
-function createPanelTextArea() {
-    const panel = document.createElement('div');
-    panel.classList.add('panel');
-    panel.style.top = 44 + 'px';
-    panel.style.left = 200 + 'px';
-    panel.innerHTML = `
-        <textarea class="panel-name" maxlength="30">Panel name (max 30 chars)</textarea>
-        <div class="panel-textarea" id="id${++panelID}">
-            <textarea class="panel-content">
-            <p><em>%go in with me, don't move, do NOT leave if you die</em></p><p>Feared:</p><p><br></p><p><br></p><p>---------</p><p><em>%please wait in ho, join when I write adasdad, don't move inside, don't leave if you die</em></p><p>UE:</p><p><br></p><p><br></p><p>Sirus:</p><p><br></p><p><br></p><p>Maven:</p><p>@playername</p><p>@playername</p><p>@playername</p><p><br></p><p><br></p><p><br></p>
-            </textarea>
-        </div>
-        <div class="panel-copy-all" title="Copy all text">copy</div>
-        <div class="panel-controls">
-            <button class="panel-delete">delete</button>
-            <button class="panel-move">move</button>
-        </div>
-    `;
-    return panel;
-}
-
-function createPanelStashTab() {
-    const panel = document.createElement('div');
-    panel.classList.add('panel');
-    panel.style.top = 44 + 'px';
-    panel.style.left = 200 + 'px';
-    panel.innerHTML = `
-        <textarea class="panel-name" maxlength="30" style="display: none">Stash Tab Sale:</textarea>
-        <div class="panel-stashtabsale" id="id${++panelID}">
-            <div class="panel-content"></div>
-        </div>
-        <div class="panel-controls">
-            <button class="panel-delete">delete</button>
-            <button class="panel-move">move</button>
-        </div>
-    `;
-    return panel;
-}
-
-function createPanelRegexMapMods() {
-    const panel = document.createElement('div');
-    panel.classList.add('panel');
-    panel.style.top = 44 + 'px';
-    panel.style.left = 200 + 'px';
-    panel.innerHTML = `
-        <textarea class="panel-name" maxlength="30">Map Modifiers Regex:</textarea>
-        <div class="panel-regex-map-mods" id="id${++panelID}">
-            <div class="panel-content">
-                <input id="map_mod_window" placeholder="Put regex here..." />
-                <p id="map_mod_window_counter">44 / 50</p>
-                <input type="checkbox" id="map_mod_window_copy" title="Always copy on click" />
-                <div id="map_mod_quantity" style="display: none">Quantity, at least: 123%</div>
-                <div id="map_mod_packsize" style="display: none">Pack Size, at least: 23%</div>
-                <div id="map_mod_bad_list" style="display: none">
-                    <div>I don\'t want these mods:</div>
-                    <div>
-                        <div>Modifier 123</div>
-                    </div>
-                </div>
-                <div id="map_mod_good_list" style="display: none">
-                    <div>I want these mods:</div>
-                    <div>
-                        <div>Modifier 123</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="panel-controls">
-            <button class="panel-delete">delete</button>
-            <button class="panel-move">move</button>
-        </div>
-    `;
-    return panel;
-}
 
 function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = new Date("2024-03-11T12:00:00")) {
     var currentDate = new Date();
@@ -162,9 +89,161 @@ function panelRegexMapMods(panel, oldRegex, check) {
     });
 }
 
+function panelRegexGwennen(panel, oldRegex, check) {
+    const inputElement = panel.querySelector('#regex_window');
+    const lengthElement = panel.querySelector('#regex_window_length');
+    const leagueElement = panel.querySelector('#regex_league-list');
+    const checkboxElement = panel.querySelector("#regex_window_copy");
+
+    const divItemsLeague = panel.querySelector("#regex_items_league");
+    const divItemsLeaguehc = panel.querySelector("#regex_items_leaguehc");
+    const divItemsLeaguestd = panel.querySelector("#regex_items_leaguestd");
+
+    let regexLeague = [];
+    let regexLeaguehc = [];
+    let regexLeaguestd = [];
+
+    const items = showHightValue();
+    // league
+    items.sort((a, b) => (b.chaosValueLeague - a.chaosValueLeague));
+    for (const i of items) {
+        let allStrings = 0;
+        for (const i of regexLeague) {
+            allStrings += i.length;
+        }
+        if (2 + regexLeague.length + allStrings + i.regex.length < 50) {
+            regexLeague.push(i.regex);
+        } else {
+            break;
+        }
+
+        const div = document.createElement('div');
+        div.title = i.name + ' (' + i.baseType + ')';
+        div.style.padding = '5px';
+        div.style.display = 'grid';
+        div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + i.image + '"><span class="chaos-value">' + chaosValueParser(i.chaosValueLeague) + '</span>';
+        divItemsLeague.appendChild(div);
+    }
+    // leaguehc
+    items.sort((a, b) => (b.chaosValueHCLeague - a.chaosValueHCLeague));
+    for (const i of items) {
+        let allStrings = 0;
+        for (const i of regexLeaguehc) {
+            allStrings += i.length;
+        }
+        if (2 + regexLeaguehc.length + allStrings + i.regex.length < 50) {
+            regexLeaguehc.push(i.regex);
+        } else {
+            break;
+        }
+
+        const div = document.createElement('div');
+        div.title = i.name + ' (' + i.baseType + ')';
+        div.style.padding = '5px';
+        div.style.display = 'grid';
+        div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + i.image + '"><span class="chaos-value">' + chaosValueParser(i.chaosValueHCLeague) + '</span>';
+        divItemsLeaguehc.appendChild(div);
+    }
+    // std
+    items.sort((a, b) => (b.chaosValueStandard - a.chaosValueStandard));
+    for (const i of items) {
+        let allStrings = 0;
+        for (const i of regexLeaguestd) {
+            allStrings += i.length;
+        }
+        if (2 + regexLeaguestd.length + allStrings + i.regex.length < 50) {
+            regexLeaguestd.push(i.regex);
+        } else {
+            break;
+        }
+
+        const div = document.createElement('div');
+        div.title = i.name + ' (' + i.baseType + ')';
+        div.style.padding = '5px';
+        div.style.display = 'grid';
+        div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + i.image + '"><span class="chaos-value">' + chaosValueParser(i.chaosValueStandard) + '</span>';
+        divItemsLeaguestd.appendChild(div);
+    }
+
+
+    const str = '"' + regexLeague.join('|').toLowerCase() + '"';
+    inputElement.value = str;
+    lengthElement.innerText = str.length + ' / 50';
+    
+
+    leagueElement.addEventListener('change', function () {
+        if (leagueElement.options[leagueElement.selectedIndex].value === 'leaguehc') {
+            divItemsLeague.style.display = 'none';
+            divItemsLeaguehc.style.display = 'ruby';
+            divItemsLeaguestd.style.display = 'none';
+            const str = '"' + regexLeaguehc.join('|').toLowerCase() + '"';
+            inputElement.value = str;
+            lengthElement.innerText = str.length + ' / 50';
+        } else if (leagueElement.options[leagueElement.selectedIndex].value === 'standard') {
+            divItemsLeague.style.display = 'none';
+            divItemsLeaguehc.style.display = 'none';
+            divItemsLeaguestd.style.display = 'ruby';
+            const str = '"' + regexLeaguestd.join('|').toLowerCase() + '"';
+            inputElement.value = str;
+            lengthElement.innerText = str.length + ' / 50';
+        } else {//(leagueElement.options[leagueElement.selectedIndex].value === 'league') {
+            divItemsLeague.style.display = 'ruby';
+            divItemsLeaguehc.style.display = 'none';
+            divItemsLeaguestd.style.display = 'none';
+            const str = '"' + regexLeague.join('|').toLowerCase() + '"';
+            inputElement.value = str;
+            lengthElement.innerText = str.length + ' / 50';
+        }
+    });
+
+    inputElement.addEventListener('click', function (event) {
+        const text = event.target.value;
+        if (text.length > 1 && checkboxElement.checked) {
+            copyToClipboard(text);
+        }
+    });
+}
+
+function panelSyndicate(panel) {
+    const button50 = panel.querySelector('#syndicate-50');
+    const button100 = panel.querySelector('#syndicate-100');
+    const buttonFull = panel.querySelector('#syndicate-full');
+
+    syndicateCreateSmall();
+
+    button50.addEventListener('click', function () {
+        localStorage.setItem('mySyndicateSmallSize', '50px');
+        const imgTab = panel.querySelectorAll('img');
+        const pTab = panel.querySelectorAll('p');
+        imgTab.forEach(function (img) {
+            img.style.width = '50px';
+            img.style.height = '50px';
+        });
+        pTab.forEach(function (p) {
+            p.style.fontSize = '0.7em';
+        });
+    });
+
+    button100.addEventListener('click', function () {
+        localStorage.setItem('mySyndicateSmallSize', '100px');
+        const imgTab = panel.querySelectorAll('img');
+        const pTab = panel.querySelectorAll('p');
+        imgTab.forEach(function (img) {
+            img.style.width = '100px';
+            img.style.height = '100px';
+        });
+        pTab.forEach(function (p) {
+            p.style.fontSize = '1em';
+        });
+    });
+
+    buttonFull.addEventListener('click', function () {
+        syndicateCreateBigTable();
+    });
+}
 
 addPanelButton.addEventListener('click', () => {
-    const panel = createPanelTextArea();
+    const panel = createPanelTextArea(++panelID);
     panels.appendChild(panel);
     panelBehaviour(panel, panelID);
     addQuill("id" + panelID, `<h2><strong><u>Panel Example</u></strong></h2><p>This panel is completely editable, and data is saved to local storage. Change it and reload the page.</p><p>I've added some useful functions for poe to the editor.You can copy all text with a single click on the bottom - left button.</p><p>This is a very convenient option for Discord posts, as you can easily paste messages without forgetting to add "WTS Softcore".</p><p>If you choose the copy icon in the editor toolbar, you can set a custom text snippet to be automatically copied when clicked, </p><p>like the example here: <em>"click me!"</em></p><p><strong>Please note:</strong> Don't build anything complex here. This page is very young and will undergo frequent changes.</p><p>----</p><p>My carry notepad, for example:</p><p>----</p><p><em>%go in with me, don't move, do NOT leave if you die</em></p><p>Feared:</p><p><br></p><p><br></p><p>---------</p><p><em>%please wait in ho, join when I write adasdad, don't move inside, don't leave if you die</em></p><p>UE:</p><p><br></p><p><br></p><p>---</p><p>or just small note: </p><p>compasses: shaper, unid, grove, blue/purple </p><p>scarabs: 4x the cheapest</p>`, true);
@@ -175,30 +254,51 @@ addPanelStashTabSale.addEventListener('click', () => {
     if (stashtabsaleElements.length > 0) { 
         return;
     }
-    const panel = createPanelStashTab();
+    const panel = createPanelStashTab(++panelID);
     panels.appendChild(panel);
     stashSaleTimer();
     panelBehaviour(panel, panelID);
 });
 
 addPanelRegexMapMods.addEventListener('click', () => {
-    const panel = createPanelRegexMapMods();
+    const panel = createPanelRegexMapMods(++panelID);
     panels.appendChild(panel);
     panelBehaviour(panel, panelID);
     panelRegexMapMods(panel);
+});
+
+addPanelRegexGwennen.addEventListener('click', () => {
+    const panel = createPanelRegexGwennen(++panelID);
+    panels.appendChild(panel);
+    panelBehaviour(panel, panelID);
+    panelRegexGwennen(panel);
+});
+
+addPanelSyndicate.addEventListener('click', () => {
+    const syndicateElements = document.querySelectorAll('.panel-syndicate-small');
+    if (syndicateElements.length > 0) {
+        return;
+    }
+    const panel = createPanelSyndicate(++panelID);
+    panels.appendChild(panel);
+    panelBehaviour(panel, panelID);
+    panelSyndicate(panel);
 });
 
 panelControlsEdit.addEventListener('click', () => {
     const panels = document.querySelectorAll('.panel');
     var newDisplay = 'none';
     if (panels.length > 0) {
-        if (panels[panels.length - 1].querySelector('.panel-controls').style.display === 'none') {
+        const lastAdded = panels[panels.length - 1].querySelector('.panel-controls');
+        if (lastAdded && lastAdded.style.display === 'none') {
             newDisplay = 'block'; // Pokazujemy panel-controls
         }
     }
     panels.forEach(panel => {
         const panelControls = panel.querySelector('.panel-controls');
-        panelControls.style.display = newDisplay;    
+        if (panelControls) {
+            panelControls.style.display = newDisplay;
+        }
     });
     // here
     // delete or comment below later
@@ -287,152 +387,6 @@ function panelBehaviour(panel, id) {
 }
 
 
-function savePanelPositions() {
-    const panelsData = [];
-    const panels = document.querySelectorAll('.panel');
-    panels.forEach(panel => {
-        const panelData = {
-            id: '',
-            name: panel.querySelector('.panel-name').value,
-            content: '',
-            top: panel.getBoundingClientRect().top < 10 ? 10 : panel.getBoundingClientRect().top,
-            left: panel.getBoundingClientRect().left < 10 ? 10 : panel.getBoundingClientRect().left,
-            width: '',
-            height: '',
-            childClass: panel.children[1].className,
-            checked: false
-        };
-
-        let childID;
-        if (panel.querySelector('.panel-textarea')) {
-            childID = panel.querySelector('.panel-textarea').id;
-            panelData.content = getQuillContent(childID);
-            
-            let width = panel.querySelector('.ql-editor').clientWidth;
-            if (panel.scrollHeight < panel.querySelector('.ql-editor').scrollHeight) {
-                // add some pixels to recompensate scrollbar
-                width += 17;
-                //console.log('po: ' + width);
-            }
-            panelData.width = width;
-
-            let height = panel.querySelector('.ql-editor').clientHeight;
-            if (panel.scrollWidth < panel.querySelector('.ql-editor').scrollWidth) {
-                // add some pixels to recompensate scrollbar
-                height += 17;
-                //console.log('po: ' + height);
-            }
-            panelData.height = height;
-
-        } else if (panel.querySelector('.panel-stashtabsale')) {
-            childID = panel.querySelector('.panel-stashtabsale').id;
-        } else if (panel.querySelector('.panel-regex-map-mods')) {
-            childID = panel.querySelector('.panel-regex-map-mods').id;
-            panelData.content = panel.querySelector('#map_mod_window').value;
-            panelData.checked = panel.querySelector('#map_mod_window_copy').checked;
-        }
-        
-        panelData.id = childID;
-        panelsData.push(panelData);
-    });
-    localStorage.setItem('panelsData', JSON.stringify(panelsData));
-}
-
-window.addEventListener('beforeunload', savePanelPositions);
-
-window.addEventListener('load', () => {
-    const panelsData = JSON.parse(localStorage.getItem('panelsData'));
-    let maxID = 0;
-    if (panelsData) {
-        panelsData.forEach(panelData => {
-            let lastID = parseInt(panelData.id.substring(2));
-            if (lastID > maxID) {
-                maxID = lastID;
-            }
-            const panel = document.createElement('div');
-            panel.classList.add('panel');
-            //panel.style.position = 'absolute';
-            panel.style.top = panelData.top - 10 + 'px';
-            panel.style.left = panelData.left - 10 + 'px';
-           // panel.style.width = panelData.width + 'px';
-            //panel.style.height = panelData.height + 'px';
-            if (panelData.childClass === 'panel-textarea ql-container ql-bubble') {
-                panel.innerHTML = `
-                <textarea class="panel-name" maxlength="30">${panelData.name}</textarea>
-                <div class="panel-textarea" id="id${lastID}">
-                    <textarea class="panel-content" style="width: ${panelData.width - 8}px; height: ${panelData.height - 4}px">${panelData.content}</textarea>
-                </div >
-                <div class="panel-copy-all" title="Copy all text">copy</div>
-                <div class="panel-controls" style="display: none">
-                    <button class="panel-delete">delete</button>
-                    <button class="panel-move">move</button>
-                </div>
-                `;
-            } else if (panelData.childClass === 'panel-stashtabsale') {
-                panel.innerHTML = `
-                <textarea class="panel-name" maxlength="30" style="display: none">Stash Tab Sale:</textarea>
-                <div class="${panelData.childClass}" id="id${lastID}">
-                    <div class="panel-content" style="width: ${panelData.width}px; height: ${panelData.height - 2}px">${panelData.childClass}</div>
-                </div>
-                <div class="panel-controls" style="display: none">
-                    <button class="panel-delete">delete</button>
-                    <button class="panel-move">move</button>
-                </div>
-                `;
-            } else if (panelData.childClass === 'panel-regex-map-mods') {
-                panel.innerHTML = `
-                <textarea class="panel-name" maxlength="30">${panelData.name}</textarea>
-                <div class="${panelData.childClass}"" id="id${lastID}">
-                    <div class="panel-content" style="width: ${panelData.width}px; height: ${panelData.height - 2}px">
-                        <input id="map_mod_window" placeholder="Put regex here..." />
-                        <input type="checkbox" id="map_mod_window_copy" title="Always copy on click" />
-                        <p id="map_mod_window_counter">44 / 50</p>
-                        <div id="map_mod_quantity" style="display: none">Quantity, at least: 123%</div>
-                        <div id="map_mod_packsize" style="display: none">Pack Size, at least: 23%</div>
-                        <div id="map_mod_bad_list" style="display: none">
-                            <div>I don\'t want these mods:</div>
-                            <div>
-                                <div>Modifier 123</div>
-                            </div>
-                        </div>
-                        <div id="map_mod_good_list" style="display: none">
-                            <div>I want these mods:</div>
-                            <div>
-                                <div>Modifier 123</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-controls" style="display: none">
-                    <button class="panel-delete">delete</button>
-                    <button class="panel-move">move</button>
-                </div>
-            `;
-            }
-            //console.log(panelData.childClass + "child class");
-
-
-            panels.appendChild(panel);
-            panelBehaviour(panel, lastID);
-
-            if (panelData.childClass === 'panel-stashtabsale') {
-                stashSaleTimer();
-            } else if (panelData.childClass === 'panel-textarea ql-container ql-bubble') {
-                addQuill('id' + lastID, panelData.content);
-                //console.log(panelData.id);
-                //console.log(panelData.content);
-                let editor = panel.querySelector('.ql-editor');
-                editor.style.height = panelData.height < 10 ? '40px' : panelData.height + 'px';
-                editor.style.width = panelData.width < 10 ? '40px' : panelData.width + 'px';
-            } else if (panelData.childClass === 'panel-regex-map-mods') {
-                panelRegexMapMods(panel, panelData.content, panelData.checked);
-            }             
-        });
-
-    }
-
-    panelID = maxID;
-});
 
 async function copyToClipboard(text) {
     if (navigator.clipboard) {

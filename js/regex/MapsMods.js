@@ -20,7 +20,7 @@ const mapData = new Map([
 		"parent": "prefix",
 		"danger": 0,
 		"popularity": 0
-	}],
+	}],/*
 	["Area is inhabited by 2 additional Rogue Exiles", {
 		"nameLong": "Area is inhabited by 2 additional Rogue Exiles",
 		"nameShort": "gu",
@@ -31,7 +31,7 @@ const mapData = new Map([
 		"parent": "prefix",
 		"danger": 0,
 		"popularity": 0
-	}],
+	}],*/
 	["Area is inhabited by Skeletons", {
 		"nameLong": "Area is inhabited by Skeletons",
 		"nameShort": "eto",
@@ -218,7 +218,7 @@ const mapData = new Map([
 		"parent": "prefix",
 		"danger": 0,
 		"popularity": 0
-	}],
+	}],/*
 	["Slaying Enemies close together can attract monsters from Beyond this realm", {
 		"nameLong": "Slaying Enemies close together can attract monsters from Beyond this realm",
 		"nameShort": "yi",
@@ -229,7 +229,7 @@ const mapData = new Map([
 		"parent": "prefix",
 		"danger": 0,
 		"popularity": 0
-	}],
+	}],*/
 	["Area contains two Unique Bosses", {
 		"nameLong": "Area contains two Unique Bosses",
 		"nameShort": "tw",

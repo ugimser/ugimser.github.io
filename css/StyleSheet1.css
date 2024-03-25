@@ -10,21 +10,22 @@
     padding: 0px 65px 0px 54px;
     display: inline-block;
     background: #444;
-    z-index: 100;
+    z-index: 1;
 }
 
 .main-menu-logo-small {
+    width: 100px;
     padding: 0px;
     margin: 0px;
     background-color: transparent;
-    z-index: 100;
+    z-index: 1;
 }
 
 #main-menu {
     background: #444;
     width: 200px;
     position: absolute;
-    z-index: 100;
+    z-index: 1;
 }
 
 .shown {
@@ -62,7 +63,7 @@
     margin: 10px;
     padding: 10px;
     border: 2px solid #111;
-    min-width: 300px;
+    min-width: 230px;
     min-height: 20px;
     position: absolute;
     background-color: #555;
@@ -165,7 +166,7 @@
     }
 
 
-
+#regex_window,
 #map_mod_window {
     background-color: #333;
     margin-left: -10px;
@@ -179,6 +180,7 @@
     width: -moz-available;
 }
 
+#regex_window_length,
 #map_mod_window_counter {
     text-align: right;
     margin-top: -20px;
@@ -204,6 +206,7 @@
     border-style: solid;
 }
 
+#regex_window_copy,
 #map_mod_window_copy {
     position: absolute;
     top: 55px;
@@ -212,3 +215,122 @@
     height: 20px;
 }
 
+.chaos-value {
+    text-align: right;
+    background-color: #333;
+    padding: 2px;
+    min-width: 50px;
+    background-image: url("https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d119a0d734/CurrencyRerollRare.png");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 100%;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
+}
+
+td, th {
+    border: 2px solid #ddd1;
+    text-align: center;
+    height: 140px;
+    font-size: 14px;
+}
+
+.syndicate-img {
+    width: 100px;
+    height: 100px;
+}
+
+.highlighted-row,
+.highlighted-column {
+    border: 4px dashed #099;
+}
+
+.syndicate-name-text {
+    margin-top: -20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), -2px -2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.syndicate-cell-text {
+    margin-top: -30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), -2px -2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.line-vertical {
+    width: 2px;
+    margin: 5px;
+    background-color: #222;
+}
+
+#syndicate-transportation,
+#syndicate-fortification,
+#syndicate-research,
+#syndicate-intervention {
+    text-align: center;
+}
+
+.syndicate-big-table {
+    background: #111;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    margin-top: -10%;
+    padding-top: 10%;
+    z-index: 100;
+}
+
+.syndicate-image-cointeiner {
+    display: flex;     
+    justify-content: center;
+    min-height: 50px;
+}
+
+#colorGood,
+#colorMediocre,
+#colorBackground {
+    width: 150px;
+    cursor: pointer;
+}
+
+input[type="color"] {
+    border-radius: 5px;
+    padding: 0;
+    border: 0px solid #DDD;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+#syndicate-back,
+#syndicate-reset,
+#syndicate-save-as-image {
+    background-color: #555;
+    border: 1px solid #111;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    min-width: 150px;
+    cursor: pointer;
+    text-align: justify;
+    padding: 0 0 0 10px;
+}

@@ -163,4 +163,4 @@ function generatePermutations(string) {
     }
     return permutations;
 }
-;
+
