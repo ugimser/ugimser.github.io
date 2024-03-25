@@ -162,18 +162,19 @@ function syndicateSave() {
 }
 
 function syndicateAddLieutenant(container, _row, _choice) {
-	if (syndicateLoadData() === null) {
-		return;
+	if (syndicateLoadData() !== null) {
+		const size = localStorage.getItem('mySyndicateSmallSize');
+		syndicateLoadData().forEach(value => {
+			const { row, column, choice } = value;
+			if (_row === row && _choice === choice) {
+				const div = document.createElement('div');
+				div.innerHTML = syndicateLieutenantImage(column, size);
+				container.appendChild(div);
+			}
+		});
+	} else {
+		console.log('no data in localStorage');
 	}
-	const size = localStorage.getItem('mySyndicateSmallSize');
-	syndicateLoadData().forEach(value => {
-		const { row, column, choice } = value;
-		if (_row === row && _choice === choice) {
-			const div = document.createElement('div');
-			div.innerHTML = syndicateLieutenantImage(column, size);
-			container.appendChild(div);
-		}
-	});
 }
 
 function syndicateCreateSmall() {
