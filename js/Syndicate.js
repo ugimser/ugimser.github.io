@@ -63,7 +63,7 @@ function syndicateBigBehaviour(panelBig) {
 	var table = document.querySelector("#syndicate-big-table");
 
 	var width = table.getBoundingClientRect().width;
-	var height = height: table.getBoundingClientRect().height;
+	var height = table.getBoundingClientRect().height;
 
 	domtoimage.toPng(table, { width: width, height: height })
 		.then(function (dataUrl) {
