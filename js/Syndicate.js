@@ -104,9 +104,8 @@ function syndicateBigBehaviour(panelBig) {
 		// Position the table content within the canvas, considering margins and padding
 		context.translate(marginLeft + paddingLeft, marginTop + paddingTop);
 
-		// Draw the table (consider using HTML5 Canvas API methods like drawImage() or drawElement())
-		// Replace this placeholder with the actual drawing logic for the table content
-		context.strokeRect(0, 0, contentWidth, contentHeight); // Example placeholder
+		// Draw the table content (using HTML5 Canvas API methods like drawImage() or drawElement())
+		drawTableContent(context, table);
 
 		// Convert canvas to image data URL
 		var dataUrl = canvas.toDataURL('image/png');
@@ -210,6 +209,36 @@ function syndicateBigBehaviour(panelBig) {
 function getScrollbarWidth() {
 	// Implement logic to calculate scrollbar width (e.g., using a temporary element)
 	return 10; // Replace with actual calculation (this is an estimated placeholder)
+}
+
+function drawTableContent(context, table) {
+	// Iterate over table rows and cells
+	for (var i = 0; i < table.rows.length; i++) {
+		for (var j = 0; j < table.rows[i].cells.length; j++) {
+			var cell = table.rows[i].cells[j];
+
+			// Get cell content and position
+			var cellContent = cell.textContent;
+			var cellX = cell.getBoundingClientRect().left - table.getBoundingClientRect().left;
+			var cellY = cell.getBoundingClientRect().top - table.getBoundingClientRect().top;
+
+			// Draw cell content on the canvas
+			context.fillText(cellContent, cellX, cellY);
+
+			// Handle images within cells
+			var images = cell.getElementsByTagName('img');
+			for (var k = 0; k < images.length; k++) {
+				var image = images[k];
+				var imageX = image.getBoundingClientRect().left - cell.getBoundingClientRect().left;
+				var imageY = image.getBoundingClientRect().top - cell.getBoundingClientRect().top;
+				var imageWidth = image.width;
+				var imageHeight = image.height;
+
+				// Draw image on the canvas at the correct position and size
+				context.drawImage(image, imageX, imageY, imageWidth, imageHeight);
+			}
+		}
+	}
 }
 
 function syndicateStyles(element, choice) {
