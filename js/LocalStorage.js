@@ -154,7 +154,7 @@ window.addEventListener('load', () => {
                         </select>
 			        </div>
 		        </div>
-		        <div class="panel-controls">
+		        <div class="panel-controls" style="display: none">
 			        <button class="panel-delete">delete</button>
 			        <button class="panel-move">move</button>
 		        </div>
@@ -204,7 +204,7 @@ window.addEventListener('load', () => {
 				        <div id="syndicate-full" style="margin-right: 20px; margin-bottom: -10px">Full Screen</div>
 			        </div>
 		        </div>
-		        <div class="panel-controls">
+		        <div class="panel-controls" style="display: none">
 			        <button class="panel-delete">delete</button>
 			        <button class="panel-move">move</button>
 		        </div>
