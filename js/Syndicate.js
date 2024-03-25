@@ -60,21 +60,21 @@ function syndicateBigBehaviour(panelBig) {
 	});
 
 	document.getElementById("syndicate-save-as-image").addEventListener("click", function () {
-		var table = document.querySelector("#syndicate-big-table");
+	var table = document.querySelector("#syndicate-big-table");
 
-		var width = table.offsetWidth;
-		var height = table.offsetHeight;
+	var width = table.getBoundingClientRect().width;
+	var height = height: table.getBoundingClientRect().height;
 
-		domtoimage.toPng(table, { width: width, height: height })
-			.then(function (dataUrl) {
-				var link = document.createElement('a');
-				link.download = 'mySyndicate.png';
-				link.href = dataUrl;
-				link.click();
-			})
-			.catch(function (error) {
-				console.error('document.getElementById("syndicate-save-as-image"):', error);
-			});
+	domtoimage.toPng(table, { width: width, height: height })
+		.then(function (dataUrl) {
+			var link = document.createElement('a');
+			link.download = 'mySyndicate.png';
+			link.href = dataUrl;
+			link.click();
+		})
+		.catch(function (error) {
+			console.error('document.getElementById("syndicate-save-as-image"):', error);
+		});
 	});
 
 
