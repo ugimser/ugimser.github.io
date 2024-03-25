@@ -423,7 +423,7 @@ function syndicateCreateBigTable(reset = false) {
 		</div>
 
 		<button id="syndicate-reset">Reset All</button>
-		<button id="syndicate-save-as-image">Save as image</button>
+		<button id="syndicate-save-as-image" style="display: none">Save as image</button>
 
 		<table id="syndicate-big-table" class="panel" style="background-color: ${colorBackground}; margin-top: 40px;">
 			<tr>
