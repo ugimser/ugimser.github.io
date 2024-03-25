@@ -162,7 +162,7 @@ function syndicateSave() {
 }
 
 function syndicateAddLieutenant(container, _row, _choice) {
-	if (!syndicateLoadData()) {
+	if (syndicateLoadData() === null) {
 		return;
 	}
 	const size = localStorage.getItem('mySyndicateSmallSize');
