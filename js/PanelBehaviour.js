@@ -12,6 +12,7 @@ function panelBehaviour(panel, id) {
         });
 
         panel.querySelector('.panel-move').addEventListener('mousedown', (event) => {
+            event.preventDefault();
             isDragging = true;
             offsetX = event.clientX - panel.getBoundingClientRect().left;
             offsetY = event.clientY - panel.getBoundingClientRect().top;
@@ -71,7 +72,7 @@ function panelBehaviour(panel, id) {
     });
 
 
-    // Zakoñczenie przesuwania po zwolnieniu przycisku
+    // ZakoÃ±czenie przesuwania po zwolnieniu przycisku
     document.addEventListener('mouseup', (moveEvent) => {
         if (isDragging) {
             // grind
@@ -90,13 +91,13 @@ function panelBehaviour(panel, id) {
 function updateDropZones(panel, x, y) {
     removeDropZones();
 
-    // Tworzenie nowych obszarów docelowych
+    // Tworzenie nowych obszarÃ³w docelowych
     let panelRect = panel.getBoundingClientRect();
     dropZones = [
-        createDropZone(0, y, document.body.clientWidth, 3), // Górna krawêdŸ
-        createDropZone(x, 0, 3, window.innerHeight), // Lewa krawêdŸ
-        createDropZone(x + panelRect.width, 0, 3, window.innerHeight), // Prawa krawêdŸ
-        createDropZone(0, y + panelRect.height, document.body.clientWidth, 3) // Dolna krawêdŸ
+        createDropZone(0, y, document.body.clientWidth, 3), // GÃ³rna krawÃªdÅ¸
+        createDropZone(x, 0, 3, window.innerHeight), // Lewa krawÃªdÅ¸
+        createDropZone(x + panelRect.width, 0, 3, window.innerHeight), // Prawa krawÃªdÅ¸
+        createDropZone(0, y + panelRect.height, document.body.clientWidth, 3) // Dolna krawÃªdÅ¸
     ];
 }
 
