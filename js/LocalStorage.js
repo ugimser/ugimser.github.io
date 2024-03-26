@@ -88,11 +88,12 @@ window.addEventListener('load', () => {
                 <div class="panel-textarea" id="id${lastID}">
                     <textarea class="panel-content" style="width: ${panelData.width - 8}px; height: ${panelData.height - 4}px">${panelData.content}</textarea>
                 </div >
-                <div class="panel-copy-all" title="Copy all text">copy</div>
-                <div class="panel-controls" style="display: none">
-                    <button class="panel-delete">delete</button>
-                    <button class="panel-move">move</button>
-                </div>
+                <button class="panel-copy-all" title="Copy all text">copy</button>
+                <div class="panel-controls" style="display: flex">
+			        <button class="panel-edit"></button>
+			        <div class="panel-move"></div>
+			        <button class="panel-delete">x</button>
+		        </div>
                 `;
             } else if (panelData.childClass === 'panel-stashtabsale') {
                 panel.innerHTML = `
@@ -100,10 +101,11 @@ window.addEventListener('load', () => {
                 <div class="${panelData.childClass}" id="id${lastID}">
                     <div class="panel-content" style="width: ${panelData.width}px; height: ${panelData.height - 2}px">${panelData.childClass}</div>
                 </div>
-                <div class="panel-controls" style="display: none">
-                    <button class="panel-delete">delete</button>
-                    <button class="panel-move">move</button>
-                </div>
+                <div class="panel-controls" style="display: flex">
+			        <button class="panel-edit" style="display: none"></button>
+			        <div class="panel-move" style="width: calc(100% - 10px); height: 100%"></div>
+			        <div class="panel-delete" style="font-size: 0.7em; margin-top: -3px; margin-right: -20px">x</div>
+		        </div>
                 `;
             } else if (panelData.childClass === 'panel-regex-map-mods') {
                 panel.innerHTML = `
@@ -129,10 +131,11 @@ window.addEventListener('load', () => {
                         </div>
                     </div>
                 </div>
-                <div class="panel-controls" style="display: none">
-                    <button class="panel-delete">delete</button>
-                    <button class="panel-move">move</button>
-                </div>
+                <div class="panel-controls" style="display: flex">
+			        <button class="panel-edit"></button>
+			        <div class="panel-move"></div>
+			        <button class="panel-delete">x</button>
+		        </div>
             `;
             } else if (panelData.childClass === 'panel-regex-gwennen-mods') {
                 panel.innerHTML = `
@@ -154,9 +157,10 @@ window.addEventListener('load', () => {
                         </select>
 			        </div>
 		        </div>
-		        <div class="panel-controls" style="display: none">
-			        <button class="panel-delete">delete</button>
-			        <button class="panel-move">move</button>
+		        <div class="panel-controls" style="display: flex">
+			        <button class="panel-edit"></button>
+			        <div class="panel-move"></div>
+			        <button class="panel-delete">x</button>
 		        </div>
             `;
             } else if (panelData.childClass === 'panel-syndicate-small') {
@@ -198,15 +202,15 @@ window.addEventListener('load', () => {
 				        </div>
 
 			        </div>
-			        <div style="justify-content: flex-start; display: flex">
-				        <div id="syndicate-50" style="margin-right: 20px; margin-bottom: -10px">50%</div>
-				        <div id="syndicate-100" style="margin-right: 20px; margin-bottom: -10px">100%</div>
-				        <div id="syndicate-full" style="margin-right: 20px; margin-bottom: -10px">Full Screen</div>
+			        <div style="margin-top: 10px">
+				        <button id="syndicate-size" style="margin-right: 20px; margin-bottom: -10px">Size: ${size.substring(0, size.length - 2)}%</button>
+				        <button id="syndicate-full" style="margin-right: 20px; margin-bottom: -10px">Full Screen - Edit</button>
 			        </div>
 		        </div>
-		        <div class="panel-controls" style="display: none">
-			        <button class="panel-delete">delete</button>
-			        <button class="panel-move">move</button>
+		        <div class="panel-controls" style="display: flex">
+			        <button class="panel-edit"></button>
+			        <div class="panel-move"></div>
+			        <button class="panel-delete">x</button>
 		        </div>
                 `;
             }

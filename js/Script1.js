@@ -1,6 +1,6 @@
 const app = document.getElementById('app');
 const panels = document.getElementById('panels');
-const panelControlsEdit = document.getElementById('panel-controls');
+//const panelControlsEdit = document.getElementById('panel-controls');
 const addPanelButton = document.getElementById('add-panel');
 const addPanelStashTabSale = document.getElementById('add-panel-stashTab');
 const addPanelRegexMapMods = document.getElementById('add-panel-regex-map-mods');
@@ -9,18 +9,18 @@ const addPanelSyndicate = document.getElementById('add-panel-syndicate');
 const mainMenu = document.getElementById('main-menu');
 const mainMenuLogo = document.getElementById('main-menu-logo');
 
-
+let panelCounter = 0;
 let panelID = 0;
 
 mainMenuLogo.addEventListener('click', () => {
     //console.log(mainMenuLogo.className);
     if (mainMenu.className === 'shown') {
         mainMenu.className = 'hidden';
-        mainMenuLogo.className = 'main-menu-logo-small';
+        //mainMenuLogo.className = 'main-menu-logo-small';
         return;
     }
     mainMenu.className = 'shown'
-    mainMenuLogo.className = 'main-menu-logo';
+    //mainMenuLogo.className = 'main-menu-logo';
 });
 
 function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = new Date("2024-03-11T12:00:00")) {
@@ -204,94 +204,69 @@ function panelRegexGwennen(panel, oldRegex, check) {
     });
 }
 
-function panelSyndicate(panel) {
-    const button50 = panel.querySelector('#syndicate-50');
-    const button100 = panel.querySelector('#syndicate-100');
-    const buttonFull = panel.querySelector('#syndicate-full');
 
-    syndicateCreateSmall();
-
-    button50.addEventListener('click', function () {
-        localStorage.setItem('mySyndicateSmallSize', '50px');
-        const imgTab = panel.querySelectorAll('img');
-        const pTab = panel.querySelectorAll('p');
-        imgTab.forEach(function (img) {
-            img.style.width = '50px';
-            img.style.height = '50px';
-        });
-        pTab.forEach(function (p) {
-            p.style.fontSize = '0.7em';
-        });
-    });
-
-    button100.addEventListener('click', function () {
-        localStorage.setItem('mySyndicateSmallSize', '100px');
-        const imgTab = panel.querySelectorAll('img');
-        const pTab = panel.querySelectorAll('p');
-        imgTab.forEach(function (img) {
-            img.style.width = '100px';
-            img.style.height = '100px';
-        });
-        pTab.forEach(function (p) {
-            p.style.fontSize = '1em';
-        });
-    });
-
-    buttonFull.addEventListener('click', function () {
-        syndicateCreateBigTable();
-    });
-}
 
 addPanelButton.addEventListener('click', () => {
-    const panel = createPanelTextArea(++panelID);
+    const panel = createPanelTextArea(++panelID, panelCounter++);
     panels.appendChild(panel);
     panelBehaviour(panel, panelID);
     addQuill("id" + panelID, `<h2><strong><u>Panel Example</u></strong></h2><p>This panel is completely editable, and data is saved to local storage. Change it and reload the page.</p><p>I've added some useful functions for poe to the editor.You can copy all text with a single click on the bottom - left button.</p><p>This is a very convenient option for Discord posts, as you can easily paste messages without forgetting to add "WTS Softcore".</p><p>If you choose the copy icon in the editor toolbar, you can set a custom text snippet to be automatically copied when clicked, </p><p>like the example here: <em>"click me!"</em></p><p><strong>Please note:</strong> Don't build anything complex here. This page is very young and will undergo frequent changes.</p><p>----</p><p>My carry notepad, for example:</p><p>----</p><p><em>%go in with me, don't move, do NOT leave if you die</em></p><p>Feared:</p><p><br></p><p><br></p><p>---------</p><p><em>%please wait in ho, join when I write adasdad, don't move inside, don't leave if you die</em></p><p>UE:</p><p><br></p><p><br></p><p>---</p><p>or just small note: </p><p>compasses: shaper, unid, grove, blue/purple </p><p>scarabs: 4x the cheapest</p>`, true);
+    highlightBorder(panel);
 });
 
 addPanelStashTabSale.addEventListener('click', () => {
     const stashtabsaleElements = document.querySelectorAll('.panel-stashtabsale');
-    if (stashtabsaleElements.length > 0) { 
+    if (stashtabsaleElements.length > 0) {
+        notification('You already have one');
+        highlightBorder(stashtabsaleElements[0].parentElement);
+        panels.appendChild(stashtabsaleElements[0].parentElement);
         return;
     }
-    const panel = createPanelStashTab(++panelID);
+    const panel = createPanelStashTab(++panelID, panelCounter++);
     panels.appendChild(panel);
     stashSaleTimer();
     panelBehaviour(panel, panelID);
+    highlightBorder(panel);
 });
 
 addPanelRegexMapMods.addEventListener('click', () => {
-    const panel = createPanelRegexMapMods(++panelID);
+    const panel = createPanelRegexMapMods(++panelID, panelCounter++);
     panels.appendChild(panel);
     panelBehaviour(panel, panelID);
     panelRegexMapMods(panel);
+    highlightBorder(panel);
 });
 
 addPanelRegexGwennen.addEventListener('click', () => {
-    const panel = createPanelRegexGwennen(++panelID);
+    const panel = createPanelRegexGwennen(++panelID, panelCounter++);
     panels.appendChild(panel);
     panelBehaviour(panel, panelID);
     panelRegexGwennen(panel);
+    highlightBorder(panel);
 });
 
 addPanelSyndicate.addEventListener('click', () => {
     const syndicateElements = document.querySelectorAll('.panel-syndicate-small');
     if (syndicateElements.length > 0) {
+        notification('You already have one');
+        highlightBorder(syndicateElements[0].parentElement);
+        panels.appendChild(syndicateElements[0].parentElement);
         return;
     }
-    const panel = createPanelSyndicate(++panelID);
+    const panel = createPanelSyndicate(++panelID, panelCounter++);
     panels.appendChild(panel);
     panelBehaviour(panel, panelID);
     panelSyndicate(panel);
+    highlightBorder(panel);
 });
-
+/*
 panelControlsEdit.addEventListener('click', () => {
     const panels = document.querySelectorAll('.panel');
     var newDisplay = 'none';
     if (panels.length > 0) {
         const lastAdded = panels[panels.length - 1].querySelector('.panel-controls');
         if (lastAdded && lastAdded.style.display === 'none') {
-            newDisplay = 'block'; // Pokazujemy panel-controls
+            newDisplay = 'flex'; // Pokazujemy panel-controls
         }
     }
     panels.forEach(panel => {
@@ -304,89 +279,7 @@ panelControlsEdit.addEventListener('click', () => {
     // delete or comment below later
     savePanelPositions();
 });
-
-function panelBehaviour(panel, id) {
-    let offsetX = 0;//panel.offsetLeft;
-    let offsetY = 0;// panel.offsetTop;
-    let isDragging = false;
-    let deletePanelCounter = 0;
-
-    try {
-        // Przesuwanie podczas naciœniêcia przycisku "Przesuñ"
-        panel.querySelector('.panel-move').addEventListener('mousedown', () => {
-            isDragging = true;
-            panels.appendChild(panel);
-        });
-
-        // Dodanie zdarzenia do przycisku "Usuñ"
-        panel.querySelector('.panel-delete').addEventListener('click', (ele) => {
-            deletePanelCounter++
-            if (deletePanelCounter > 1) {
-                document.removeEventListener('mousemove', Event);
-                document.removeEventListener('mouseup', Event);
-                panel.remove();
-            } else {
-                ele.target.innerHTML = 'are you sure?';
-                ele.target.style.color = '#f00';
-                setTimeout(() => {
-                    ele.target.innerHTML = 'delete';
-                    ele.target.style.color = '#000';
-                    deletePanelCounter = 0;
-                }, 1000);
-            }
-        });
-
-        // Copy All
-        try {
-            panel.querySelector('.panel-copy-all').addEventListener('click', () => {
-                copyToClipboard(getQuillText('id' + id));
-            });
-        } catch (err) {
-            //console.log('panelBehaviour ' + err);
-            //i can live with it
-        }
-    } catch (err) {
-        console.log('panelBehaviour ' + err);
-        panel.remove();
-        return;
-    }
-
-    document.addEventListener('mousemove', (moveEvent) => {
-        if (isDragging) {
-            // Uaktualnienie pozycji panelu
-            let x = moveEvent.clientX - panel.clientWidth + 10 - offsetX;
-            if (x < 0) {
-                x = 0;
-            }
-            let y = moveEvent.clientY - offsetY + window.scrollY - 25;
-            if (y < 0) {
-                y = 0;
-            }
-            panel.style.left = `${x}px`;
-            panel.style.top = `${y}px`;
-        }
-    });
-
-
-    // Zakoñczenie przesuwania po zwolnieniu przycisku
-    document.addEventListener('mouseup', (moveEvent) => {
-        if (isDragging) {
-            // grind
-            let x = moveEvent.clientX - panel.clientWidth + 10 - offsetX;
-            x = x > 0 ? Math.floor(x / 5) * 5 : 0;
-            let y = moveEvent.clientY - 11 + window.scrollY - 25;
-            y = y > 0 ? Math.floor(y / 5) * 5 : 0;
-            panel.style.left = `${x}px`;
-            panel.style.top = `${y}px`;
-        }
-        isDragging = false;
-    });
-
-
-    
-}
-
-
+*/
 
 async function copyToClipboard(text) {
     if (navigator.clipboard) {
@@ -418,5 +311,13 @@ function notification(message) {
     notification.innerHTML = '<p style:"margin: auto">' + message + '</p>';
     setTimeout(() => {
         notification.classList.add("hidden");
+    }, 1000);
+}
+
+function highlightBorder(element) {
+    //const oldBorder = element.style.border;
+    element.style.border = '5px dashed red';
+    setTimeout(() => {
+        element.style.border = '2px solid #222';
     }, 1000);
 }

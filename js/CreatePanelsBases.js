@@ -1,8 +1,21 @@
-function createPanelTextArea(panelID) {
+function createNewTop(_panelCounter) {
+    if (_panelCounter > 10) {
+        panelCounter = 0;
+    }
+    return 44 + (20 * _panelCounter) + 'px';
+}
+function createNewLeft(panelCounter) {
+    if (panelCounter > 10) {
+        panelCounter = 0;
+    }
+    return 200 + (20 * panelCounter) + 'px';
+}
+
+function createPanelTextArea(panelID, panelCounter) {
     const panel = document.createElement('div');
     panel.classList.add('panel');
-    panel.style.top = 44 + 'px';
-    panel.style.left = 200 + 'px';
+    panel.style.top = createNewTop(panelCounter);
+    panel.style.left = createNewLeft(panelCounter);
     panel.innerHTML = `
         <textarea class="panel-name" maxlength="30">Panel name (max 30 chars)</textarea>
         <div class="panel-textarea" id="id${panelID}">
@@ -10,38 +23,40 @@ function createPanelTextArea(panelID) {
             <p><em>%go in with me, don't move, do NOT leave if you die</em></p><p>Feared:</p><p><br></p><p><br></p><p>---------</p><p><em>%please wait in ho, join when I write adasdad, don't move inside, don't leave if you die</em></p><p>UE:</p><p><br></p><p><br></p><p>Sirus:</p><p><br></p><p><br></p><p>Maven:</p><p>@playername</p><p>@playername</p><p>@playername</p><p><br></p><p><br></p><p><br></p>
             </textarea>
         </div>
-        <div class="panel-copy-all" title="Copy all text">copy</div>
-        <div class="panel-controls">
-            <button class="panel-delete">delete</button>
-            <button class="panel-move">move</button>
-        </div>
+        <button class="panel-copy-all" title="Copy all text">copy</button>
+        <div class="panel-controls" style="display: flex">
+			<button class="panel-edit"></button>
+			<div class="panel-move"></div>
+			<button class="panel-delete">x</button>
+		</div>
     `;
     return panel;
 }
 
-function createPanelStashTab(panelID) {
+function createPanelStashTab(panelID, panelCounter) {
     const panel = document.createElement('div');
     panel.classList.add('panel');
-    panel.style.top = 44 + 'px';
-    panel.style.left = 200 + 'px';
+    panel.style.top = createNewTop(panelCounter);
+    panel.style.left = createNewLeft(panelCounter);
     panel.innerHTML = `
         <textarea class="panel-name" maxlength="30" style="display: none">Stash Tab Sale:</textarea>
         <div class="panel-stashtabsale" id="id${panelID}">
             <div class="panel-content"></div>
         </div>
-        <div class="panel-controls">
-            <button class="panel-delete">delete</button>
-            <button class="panel-move">move</button>
-        </div>
+        <div class="panel-controls" style="display: flex; height: 100%">
+			<button class="panel-edit" style="display: none"></button>
+			<div class="panel-move" style="width: calc(100% - 10px); height: 100%"></div>
+			<div class="panel-delete" style="font-size: 0.7em; margin-top: -3px; margin-right: -20px">x</div>
+		</div>
     `;
     return panel;
 }
 
-function createPanelRegexMapMods(panelID) {
+function createPanelRegexMapMods(panelID, panelCounter) {
     const panel = document.createElement('div');
     panel.classList.add('panel');
-    panel.style.top = 44 + 'px';
-    panel.style.left = 200 + 'px';
+    panel.style.top = createNewTop(panelCounter);
+    panel.style.left = createNewLeft(panelCounter);
     panel.innerHTML = `
         <textarea class="panel-name" maxlength="30">Map Modifiers Regex:</textarea>
         <div class="panel-regex-map-mods" id="id${panelID}">
@@ -65,19 +80,20 @@ function createPanelRegexMapMods(panelID) {
                 </div>
             </div>
         </div>
-        <div class="panel-controls">
-            <button class="panel-delete">delete</button>
-            <button class="panel-move">move</button>
-        </div>
+        <div class="panel-controls" style="display: flex">
+			<button class="panel-edit"></button>
+			<div class="panel-move"></div>
+			<button class="panel-delete">x</button>
+		</div>
     `;
     return panel;
 }
 
-function createPanelRegexGwennen(panelID) {
+function createPanelRegexGwennen(panelID, panelCounter) {
     const panel = document.createElement('div');
     panel.classList.add('panel');
-    panel.style.top = 44 + 'px';
-    panel.style.left = 200 + 'px';
+    panel.style.top = createNewTop(panelCounter);
+    panel.style.left = createNewLeft(panelCounter);
     panel.innerHTML = `
         <textarea class="panel-name" maxlength="30">Gwennen Regex:</textarea>
 		<div class="panel-regex-gwennen-mods" id="id${panelID}">
@@ -97,19 +113,20 @@ function createPanelRegexGwennen(panelID) {
                 </select>
 			</div>
 		</div>
-		<div class="panel-controls">
-			<button class="panel-delete">delete</button>
-			<button class="panel-move">move</button>
+		<div class="panel-controls" style="display: flex">
+			<button class="panel-edit"></button>
+			<div class="panel-move"></div>
+			<button class="panel-delete">x</button>
 		</div>
     `;
     return panel;
 }
 
-function createPanelSyndicate(panelID) {
+function createPanelSyndicate(panelID, panelCounter) {
     const panel = document.createElement('div');
     panel.classList.add('panel');
-    panel.style.top = 44 + 'px';
-    panel.style.left = 200 + 'px';
+    panel.style.top = createNewTop(panelCounter);
+    panel.style.left = createNewLeft(panelCounter);
     const size = localStorage.getItem('mySyndicateSmallSize');
     panel.innerHTML = `
         <textarea class="panel-name" maxlength="30">Syndicate</textarea>
@@ -148,15 +165,15 @@ function createPanelSyndicate(panelID) {
 				</div>
 
 			</div>
-			<div style="justify-content: flex-start; display: flex">
-				<div id="syndicate-50" style="margin-right: 20px; margin-bottom: -10px">50%</div>
-				<div id="syndicate-100" style="margin-right: 20px; margin-bottom: -10px">100%</div>
-				<div id="syndicate-full" style="margin-right: 20px; margin-bottom: -10px">Full Screen</div>
+			<div style="margin-top: 10px">
+				<button id="syndicate-size" style="margin-right: 20px; margin-bottom: -10px">Size: ${size.substring(0, size.length - 2)}%</button>
+				<button id="syndicate-full" style="margin-right: 20px; margin-bottom: -10px">Edit - Full Screen</button>
 			</div>
 		</div>
-		<div class="panel-controls">
-			<button class="panel-delete">delete</button>
-			<button class="panel-move">move</button>
+		<div class="panel-controls" style="display: flex">
+			<button class="panel-edit"></button>
+			<div class="panel-move"></div>
+			<button class="panel-delete">x</button>
 		</div>
     `;
     return panel;

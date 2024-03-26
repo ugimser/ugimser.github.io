@@ -1,6 +1,50 @@
-let colorGood = '#117722';
+﻿let colorGood = '#117722';
 let colorMediocre = '#bbbb11';
 let colorBackground = '#444444';
+
+// Small panel
+function panelSyndicate(panel) {
+	const buttonSize = panel.querySelector('#syndicate-size');
+	const buttonFull = panel.querySelector('#syndicate-full');
+
+	syndicateCreateSmall();
+
+	buttonSize.addEventListener('click', function () {
+		const imgTab = panel.querySelectorAll('img');
+		const pTab = panel.querySelectorAll('p');
+		let imgSize = '';
+		let fontSize = '';
+		if (buttonSize.innerText === 'Size: 50%') {
+			buttonSize.innerText = 'Size: 75%';
+			localStorage.setItem('mySyndicateSmallSize', '75px');
+			imgSize = '75px';
+			fontSize = '0.9em';
+		} else if (buttonSize.innerText === 'Size: 75%') {
+			buttonSize.innerText = 'Size: 100%';
+			localStorage.setItem('mySyndicateSmallSize', '100px');
+			imgSize = '100px';
+			fontSize = '1em';
+		} else {
+			buttonSize.innerText = 'Size: 50%';
+			localStorage.setItem('mySyndicateSmallSize', '50px');
+			imgSize = '50px';
+			fontSize = '0.7em';
+		}
+		imgTab.forEach(function (img) {
+			img.style.width = imgSize;
+			img.style.height = imgSize;
+		});
+		pTab.forEach(function (p) {
+			p.style.fontSize = fontSize;
+		});
+	});
+
+	buttonFull.addEventListener('click', function () {
+		syndicateCreateBigTable();
+	});
+}
+
+// Big Panel
 function syndicateBigBehaviour(panelBig) {
 	let cells = document.querySelectorAll('.cell');
 	const bigTable = panelBig.querySelector('#syndicate-big-table');
@@ -212,6 +256,10 @@ function getScrollbarWidth() {
 }
 
 function drawTableContent(context, table) {
+	// Set background color
+	context.fillStyle = "#ffffff"; // Set your desired background color
+	context.fillRect(0, 0, totalWidth, totalHeight);
+
 	// Iterate over table rows and cells
 	for (var i = 0; i < table.rows.length; i++) {
 		for (var j = 0; j < table.rows[i].cells.length; j++) {
@@ -234,8 +282,12 @@ function drawTableContent(context, table) {
 				var imageWidth = image.width;
 				var imageHeight = image.height;
 
-				// Draw image on the canvas at the correct position and size
-				context.drawImage(image, imageX, imageY, imageWidth, imageHeight);
+				// Calculate image position within cell
+				var adjustedImageX = cellX + imageX;
+				var adjustedImageY = cellY + imageY;
+
+				// Draw image on the canvas at the adjusted position
+				context.drawImage(image, adjustedImageX, adjustedImageY, imageWidth, imageHeight);
 			}
 		}
 	}
@@ -417,7 +469,7 @@ function syndicateCreateBigTable(reset = false) {
 			<label for="colorMediocre" style="position: absolute; margin-left: 10px">Mediocre</label>
 			<input type="color" id="colorMediocre" name="color" value="${colorMediocre}">
 		</div>
-		<div style="display: flex; align-items: center; margin-left: 20px">
+		<div style="display: flex; align-items: center; margin-left: 10px">
 			<label for="colorBackground" style="position: absolute; margin-left: 10px">Background</label>
 			<input type="color" id="colorBackground" name="color" value="${colorBackground}">
 		</div>

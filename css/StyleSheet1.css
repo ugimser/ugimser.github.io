@@ -7,10 +7,16 @@
 }
 
 .main-menu-logo {
-    padding: 0px 65px 0px 54px;
+    padding: 0px 45px 0px 54px;
     display: inline-block;
-    background: #444;
+    position: relative;
+    background: #222;
+    background-image: url(../img/menu_icon.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
     z-index: 1;
+    cursor: pointer;
 }
 
 .main-menu-logo-small {
@@ -19,10 +25,16 @@
     margin: 0px;
     background-color: transparent;
     z-index: 1;
+    cursor: pointer;
+    background: #222;
+    background-image: url(../img/menu_icon.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 
 #main-menu {
-    background: #444;
+    background: #222;
     width: 200px;
     position: absolute;
     z-index: 1;
@@ -39,9 +51,10 @@
 }
 
 .main-menu-button {
-    background-color: #333;
-    margin-bottom: 10px;
-    padding: 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    padding: 10px;
+    min-width: 180px;
 }
 
 .apps {
@@ -78,15 +91,13 @@
 }
 
 .panel-name {
-    min-width: 100%;
     height: 20px;
-    padding-right: 3px;
-    overflow: hidden;
+    margin: -10px -10px 0px -10px;
     text-align: left;
     font-size: large;
     background-color: #333;
     resize: none;
-    border-width: 0px 0px 0px 5px;
+    border-width: 0px 0px 0px 25px;
     border-color: #333;
     outline: none;
     color: #eeeeff;
@@ -109,37 +120,55 @@
     position: absolute;
     top: 0;
     right: 0;
-    display: block;
-    border: 15px;
-    border-color: red;
+    display: flex;
+    width: 100%;
 }
 
+.panel-edit,
 .panel-move,
 .panel-delete {
-    margin: 5px;
-    padding: 5px;
-    border: 3px solid #eeeeff;
-    border-radius: 5px;
+    margin: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 0px;
+    background-color: transparent;
+    color: white;
+}
+
+.panel-move {
+    width: calc(100% - 50px);
+    cursor: move;
+}
+
+.panel-delete {
+    width: 25px;
     cursor: pointer;
+}
+
+.panel-edit {
+    width: 25px;
+    cursor: pointer;
+    background-image: url("../img/menu_icon.png");
+    background-size: cover;
+}
+
+.drop-zone {
+    position: absolute;
+    background-color: #49b;
+    pointer-events: none;
 }
 
 .panel-copy-all {
     position: absolute;
     bottom: 0;
     left: 0;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #333;
-    background: #555;
-    padding: 3px;
-    cursor: pointer;
-    margin-left: -1px;
-    margin-bottom: -1px;
+    margin-left: -2px;
+    margin-bottom: -2px;
 }
 
 .panel-move:hover,
 .panel-delete:hover {
-    background-color: #ddd;
+    color: #f00;
 }
 
 .notification {
@@ -267,7 +296,7 @@ td, th {
 .line-vertical {
     width: 2px;
     margin: 5px;
-    background-color: #222;
+    background-color: #333;
 }
 
 #syndicate-transportation,
@@ -304,22 +333,33 @@ td, th {
 
 input[type="color"] {
     border-radius: 5px;
-    padding: 0;
+    padding: 0px;
     border: 0px solid #DDD;
 }
 
-input[type="color"]::-moz-color-swatch {
-    border: none;
-}
+    input[type="color"]:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        font-size: 1.1em;
+    }
 
-input[type="color"]::-webkit-color-swatch-wrapper {
-    padding: 0;
-    border-radius: 0;
-}
+    input[type="color"]::-moz-color-swatch {
+        padding: 0px;
+        border: 0px;
+        border-radius: 0px;
+    }
 
-input[type="color"]::-webkit-color-swatch {
-    border: none;
-}
+    input[type="color"]::-webkit-color-swatch-wrapper {
+        padding: 0px;
+        border: 0px;
+        border-radius: 0px;
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+        padding: 0px;
+        border: 0px;
+        border-radius: 0px;
+    }
 
 #syndicate-back,
 #syndicate-reset,
@@ -334,3 +374,18 @@ input[type="color"]::-webkit-color-swatch {
     text-align: justify;
     padding: 0 0 0 10px;
 }
+
+button {
+    border: 2px solid #333;
+    background-color: #555;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        border-style: dotted;
+        transform: scale(1.1);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
