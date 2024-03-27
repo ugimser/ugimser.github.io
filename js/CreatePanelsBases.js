@@ -127,7 +127,7 @@ function createPanelSyndicate(panelID, panelCounter) {
     panel.classList.add('panel');
     panel.style.top = createNewTop(panelCounter);
     panel.style.left = createNewLeft(panelCounter);
-    const size = localStorage.getItem('mySyndicateSmallSize');
+    const size = localStorage.getItem('mySyndicateSmallSize') ? localStorage.getItem('mySyndicateSmallSize') : '100px';
     panel.innerHTML = `
         <textarea class="panel-name" maxlength="30">Syndicate</textarea>
 		<div class="panel-syndicate-small" id="id${panelID}">
@@ -184,7 +184,7 @@ function createPanelIncursion(panelID, panelCounter) {
 	panel.classList.add('panel');
 	panel.style.top = createNewTop(panelCounter);
 	panel.style.left = createNewLeft(panelCounter);
-	const size = localStorage.getItem('myIncursionSmallSize');
+	const size = localStorage.getItem('myIncursionSmallSize') ? localStorage.getItem('myIncursionSmallSize') : '100%';
 	panel.innerHTML = `
         <textarea class="panel-name" maxlength="30">Incursion</textarea>
 		<div class="panel-incursion-small" id="id${panelID}">
