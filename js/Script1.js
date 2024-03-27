@@ -6,6 +6,7 @@ const addPanelStashTabSale = document.getElementById('add-panel-stashTab');
 const addPanelRegexMapMods = document.getElementById('add-panel-regex-map-mods');
 const addPanelRegexGwennen = document.getElementById('add-panel-regex-gewnnen');
 const addPanelSyndicate = document.getElementById('add-panel-syndicate');
+const addPanelIncursion = document.getElementById('add-panel-incursion');
 const mainMenu = document.getElementById('main-menu');
 const mainMenuLogo = document.getElementById('main-menu-logo');
 
@@ -259,27 +260,22 @@ addPanelSyndicate.addEventListener('click', () => {
     panelSyndicate(panel);
     highlightBorder(panel);
 });
-/*
-panelControlsEdit.addEventListener('click', () => {
-    const panels = document.querySelectorAll('.panel');
-    var newDisplay = 'none';
-    if (panels.length > 0) {
-        const lastAdded = panels[panels.length - 1].querySelector('.panel-controls');
-        if (lastAdded && lastAdded.style.display === 'none') {
-            newDisplay = 'flex'; // Pokazujemy panel-controls
-        }
+
+addPanelIncursion.addEventListener('click', () => {
+    const incursionElements = document.querySelectorAll('.panel-incursion-small');
+    if (incursionElements.length > 0) {
+        notification('You already have one');
+        highlightBorder(incursionElements[0].parentElement);
+        panels.appendChild(incursionElements[0].parentElement);
+        return;
     }
-    panels.forEach(panel => {
-        const panelControls = panel.querySelector('.panel-controls');
-        if (panelControls) {
-            panelControls.style.display = newDisplay;
-        }
-    });
-    // here
-    // delete or comment below later
-    savePanelPositions();
+    const panel = createPanelIncursion(++panelID, panelCounter++);
+    panels.appendChild(panel);
+    panelBehaviour(panel, panelID);
+    panelIncursion(panel);
+    highlightBorder(panel);
 });
-*/
+
 
 async function copyToClipboard(text) {
     if (navigator.clipboard) {
@@ -294,7 +290,6 @@ async function copyToClipboard(text) {
     }
 }
 
-// Funkcja do kopiowania tekstu do schowka
 function copyToClipboardFallBack(text) {
     var input = document.createElement('input'); // Utworzenie elementu input
     input.style.position = 'fixed'; // Ustawienie pozycji na sta³e

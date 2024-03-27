@@ -1,6 +1,6 @@
-﻿let colorGood = '#117722';
-let colorMediocre = '#bbbb11';
-let colorBackground = '#444444';
+﻿let colorGood = '#219c35';
+let colorMediocre = '#ba9c35';
+let colorBackground = '#121212';
 
 // Small panel
 function panelSyndicate(panel) {
@@ -389,15 +389,18 @@ function syndicateCreateSmall() {
 		btn.textContent = '▼';
 		btn.style.fontSize = '4em';
 		btn.style.position = 'absolute';
-		btn.style.left = '40%';
-		btn.style.top = '75%';
+		btn.style.left = '45%';
+		btn.style.top = '70%';
 		btn.style.transform = 'translate(-50%, -50%)';
-		btn.style.backgroundColor = '#555';
+		btn.style.backgroundColor = '#00112200';
 		btn.style.color = '#fff';
 		btn.style.textShadow = '0px 12px #811';
-		btn.style.border = 'none';
+		btn.style.border = '0px';
 		const panelSmall = document.getElementsByClassName('panel-syndicate-small');
 		panelSmall[0].appendChild(btn);
+		btn.addEventListener('click', function () {
+			syndicateCreateBigTable();
+		});
 	}
 }
 
@@ -452,9 +455,9 @@ function syndicateCreateBigTable(reset = false) {
 	if (singleton.length > 0) {
 		return;
 	}
-	colorGood = localStorage.getItem('mySyndicateValuesColorGood') !== null ? localStorage.getItem('mySyndicateValuesColorGood') : '#117722';
-	colorMediocre = localStorage.getItem('mySyndicateValuesColorMediocre') !== null ? localStorage.getItem('mySyndicateValuesColorMediocre') : '#bbbb11';
-	colorBackground = localStorage.getItem('mySyndicateValuesColorBackground') !== null ? localStorage.getItem('mySyndicateValuesColorBackground') : '#444444';
+	colorGood = localStorage.getItem('mySyndicateValuesColorGood') !== null ? localStorage.getItem('mySyndicateValuesColorGood') : '#219c35';
+	colorMediocre = localStorage.getItem('mySyndicateValuesColorMediocre') !== null ? localStorage.getItem('mySyndicateValuesColorMediocre') : '#ba9c35';
+	colorBackground = localStorage.getItem('mySyndicateValuesColorBackground') !== null ? localStorage.getItem('mySyndicateValuesColorBackground') : '#121212';
 	const panel = document.createElement('div');
 	panel.innerHTML = `
 	<div id="syndicate-big" style="display: flex">
@@ -563,7 +566,7 @@ function syndicateCreateBigTable(reset = false) {
 					<p class="syndicate-cell-text">Rare Items</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="1" data-column="8">
-					<img class="syndicate-img" src="img/syndicate/pos-1.png" />
+					<img class="syndicate-img" src="img/syndicate/pos17.png" />
 					<p class="syndicate-cell-text">Essence Scarabs</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="1" data-column="9">
@@ -637,7 +640,7 @@ function syndicateCreateBigTable(reset = false) {
 					<p class="syndicate-cell-text">Random Strongbox</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="2" data-column="8">
-					<img class="syndicate-img" src="img/syndicate/pos-1.png" />
+					<img class="syndicate-img" src="img/syndicate/pos27.png" />
 					<p class="syndicate-cell-text">Trapped Stash of Scarabs</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="2" data-column="9">
@@ -686,7 +689,7 @@ function syndicateCreateBigTable(reset = false) {
 					<img class="syndicate-img" src="img/syndicate/Research.png" />
 				</td>
 				<td class="cell" data-choice="2" data-row="3" data-column="2">
-					<img class="syndicate-img" src="img/syndicate/pos-1.png" />
+					<img class="syndicate-img" src="img/syndicate/pos31.png" />
 					<p class="syndicate-cell-text">Beyond Scarabs</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="3" data-column="3">
@@ -710,7 +713,7 @@ function syndicateCreateBigTable(reset = false) {
 					<p class="syndicate-cell-text">Rare Items with Quality</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="3" data-column="8">
-					<img class="syndicate-img" src="img/syndicate/pos-1.png" />
+					<img class="syndicate-img" src="img/syndicate/pos37.png" />
 					<p class="syndicate-cell-text">Anarchy Scarabs</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="3" data-column="9">
@@ -722,7 +725,7 @@ function syndicateCreateBigTable(reset = false) {
 					<p class="syndicate-cell-text">Expedition Currency</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="3" data-column="11">
-					<img class="syndicate-img" src="img/syndicate/pos-1.png" />
+					<img class="syndicate-img" src="img/syndicate/pos310.png" />
 					<p class="syndicate-cell-text">Ritual Scarabs</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="3" data-column="12">
@@ -750,7 +753,7 @@ function syndicateCreateBigTable(reset = false) {
 					<p class="syndicate-cell-text">Weapon Crafting Bench</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="3" data-column="18">
-					<img class="syndicate-img" src="img/syndicate/pos-1.png" />
+					<img class="syndicate-img" src="img/syndicate/pos317.png" />
 					<p class="syndicate-cell-text">Harvest Scarabs</p>
 				</td>
 			</tr>
@@ -775,7 +778,7 @@ function syndicateCreateBigTable(reset = false) {
 					<p class="syndicate-cell-text">Divination Scarabs</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="4" data-column="6">
-					<img class="syndicate-img" src="img/syndicate/pos-1.png" />
+					<img class="syndicate-img" src="img/syndicate/pos45.png" />
 					<p class="syndicate-cell-text">Incursion Scarabs</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="4" data-column="7">
@@ -799,7 +802,7 @@ function syndicateCreateBigTable(reset = false) {
 					<p class="syndicate-cell-text">Bestiary Scarabs</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="4" data-column="12">
-					<img class="syndicate-img" src="img/syndicate/pos-1.png" />
+					<img class="syndicate-img" src="img/syndicate/pos411.png" />
 					<p class="syndicate-cell-text">Influencing Scarabs</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="4" data-column="13">
@@ -823,7 +826,7 @@ function syndicateCreateBigTable(reset = false) {
 					<p class="syndicate-cell-text">Legion Scarabs</p>
 				</td>
 				<td class="cell" data-choice="2" data-row="4" data-column="18">
-					<img class="syndicate-img" src="img/syndicate/pos-1.png" />
+					<img class="syndicate-img" src="img/syndicate/pos417.png" />
 					<p class="syndicate-cell-text">Delirium Scarabs</p>
 				</td>
 			</tr>

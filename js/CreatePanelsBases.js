@@ -179,4 +179,39 @@ function createPanelSyndicate(panelID, panelCounter) {
     return panel;
 }
 
-
+function createPanelIncursion(panelID, panelCounter) {
+	const panel = document.createElement('div');
+	panel.classList.add('panel');
+	panel.style.top = createNewTop(panelCounter);
+	panel.style.left = createNewLeft(panelCounter);
+	const size = localStorage.getItem('myIncursionSmallSize');
+	panel.innerHTML = `
+        <textarea class="panel-name" maxlength="30">Incursion</textarea>
+		<div class="panel-incursion-small" id="id${panelID}">
+			<div class="incursion-tier">
+				<p class="incursion-tier-name">Super</p>
+				<div id="incursion-tier-s">
+					<img src="img/incursion/corrupting.png" />
+					<img src="img/incursion/gems.png" />
+					<img src="img/incursion/powerup.png" />
+				</div>
+			</div>
+			<div class="incursion-tier">
+				<p class="incursion-tier-name">Good</p>
+				<div id="incursion-tier-a">
+					<img src="img/incursion/currency.png" />
+				</div>
+			</div>
+		</div>
+		<div style="margin-top: 10px">
+			<button id="incursion-size" style="margin-right: 20px; margin-bottom: -10px">Size: ${size}</button>
+			<button id="incursion-full" style="margin-right: 20px; margin-bottom: -10px">Full Screen - Edit</button>
+		</div>
+		<div class="panel-controls" style="display: flex">
+			<button class="panel-edit"></button>
+			<div class="panel-move"></div>
+			<button class="panel-delete">x</button>
+		</div>
+    `;
+	return panel;
+}

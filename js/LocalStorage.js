@@ -55,6 +55,8 @@ function savePanelPositions() {
             childID = panel.querySelector('.panel-regex-gwennen-mods').id;
         } else if (panel.querySelector('.panel-syndicate-small')) {
             childID = panel.querySelector('.panel-syndicate-small').id;
+        } else if (panel.querySelector('.panel-incursion-small')) {
+            childID = panel.querySelector('.panel-incursion-small').id;
         }
 
         panelData.id = childID;
@@ -213,6 +215,32 @@ window.addEventListener('load', () => {
 			        <button class="panel-delete">x</button>
 		        </div>
                 `;
+            } else if (panelData.childClass === 'panel-incursion-small') {
+                const size = localStorage.getItem('myIncursionSmallSize');
+                panel.innerHTML = `
+                        <textarea class="panel-name" maxlength="30">${panelData.name}</textarea>
+		                <div class="${panelData.childClass}" id="id${panelID}">
+			                <div class="incursion-tier">
+				                <p class="incursion-tier-name">Super</p>
+				                <div id="incursion-tier-s">
+				                </div>
+			                </div>
+			                <div class="incursion-tier">
+				                <p class="incursion-tier-name">Good</p>
+				                <div id="incursion-tier-a">
+				                </div>
+			                </div>
+		                </div>
+		                <div style="margin-top: 10px">
+			                <button id="incursion-size" style="margin-right: 20px; margin-bottom: -10px">Size: ${size}</button>
+			                <button id="incursion-full" style="margin-right: 20px; margin-bottom: -10px">Full Screen - Edit</button>
+		                </div>
+		                <div class="panel-controls" style="display: flex">
+			                <button class="panel-edit"></button>
+			                <div class="panel-move"></div>
+			                <button class="panel-delete">x</button>
+		                </div>
+                `;
             }
             //console.log(panelData.childClass + "child class");
 
@@ -235,6 +263,8 @@ window.addEventListener('load', () => {
                 panelRegexGwennen(panel, panelData.content, panelData.checked);
             } else if (panelData.childClass === 'panel-syndicate-small') {
                 panelSyndicate(panel);
+            } else if (panelData.childClass === 'panel-incursion-small') {
+                panelIncursion(panel);
             }
         });
 
