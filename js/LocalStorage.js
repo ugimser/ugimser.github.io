@@ -2,7 +2,7 @@ window.addEventListener('beforeunload', savePanelPositions);
 
 function savePanelPositions() {
     localStorage.setItem('mainMenu.className', mainMenu.className);
-    localStorage.setItem('mainMenuLogo.className', mainMenuLogo.className);
+    //localStorage.setItem('mainMenuLogo.className', mainMenuLogo.className);
 
     // remove big syndicate
     const syndicateBig = document.querySelector('.syndicate-big-table');
@@ -71,7 +71,7 @@ function savePanelPositions() {
 
 window.addEventListener('load', () => {
     mainMenu.className = localStorage.getItem('mainMenu.className') ? localStorage.getItem('mainMenu.className') : 'shown';
-    mainMenuLogo.className = localStorage.getItem('mainMenuLogo.className') ? localStorage.getItem('mainMenuLogo.className') : 'shown';
+    //mainMenuLogo.className = localStorage.getItem('mainMenuLogo.className') ? localStorage.getItem('mainMenuLogo.className') : 'shown';
 
     const panelsData = JSON.parse(localStorage.getItem('panelsData'));
     let maxID = 0;
