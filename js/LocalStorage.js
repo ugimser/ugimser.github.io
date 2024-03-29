@@ -170,7 +170,7 @@ window.addEventListener('load', () => {
 		        </div>
             `;
             } else if (panelData.childClass === 'panel-syndicate-small') {
-                const size = localStorage.getItem('mySyndicateSmallSize');
+                const size = localStorage.getItem('mySyndicateSmallSize') ? localStorage.getItem('mySyndicateSmallSize') : '100px';
                 panel.innerHTML = `
                 <textarea class="panel-name" maxlength="30">${panelData.name}</textarea>
 		        <div class="${panelData.childClass}" id="id${panelID}">
@@ -220,7 +220,7 @@ window.addEventListener('load', () => {
 		        </div>
                 `;
             } else if (panelData.childClass === 'panel-incursion-small') {
-                const size = localStorage.getItem('myIncursionSmallSize');
+                const size = localStorage.getItem('myIncursionSmallSize') ? localStorage.getItem('myIncursionSmallSize') : '100%';
                 panel.innerHTML = `
                         <textarea class="panel-name" maxlength="30">${panelData.name}</textarea>
 		                <div class="${panelData.childClass}" id="id${panelID}">
