@@ -70,8 +70,8 @@ function savePanelPositions() {
 }
 
 window.addEventListener('load', () => {
-    mainMenu.className = localStorage.getItem('mainMenu.className');
-    mainMenuLogo.className = localStorage.getItem('mainMenuLogo.className');
+    mainMenu.className = localStorage.getItem('mainMenu.className') ? localStorage.getItem('mainMenu.className') : 'shown';
+    mainMenuLogo.className = localStorage.getItem('mainMenuLogo.className') ? localStorage.getItem('mainMenuLogo.className') : 'shown';
 
     const panelsData = JSON.parse(localStorage.getItem('panelsData'));
     let maxID = 0;
