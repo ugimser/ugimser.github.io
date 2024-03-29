@@ -5,6 +5,8 @@ const addPanelButton = document.getElementById('add-panel');
 const addPanelStashTabSale = document.getElementById('add-panel-stashTab');
 const addPanelRegexMapMods = document.getElementById('add-panel-regex-map-mods');
 const addPanelRegexGwennen = document.getElementById('add-panel-regex-gewnnen');
+const addPanelRegexBlight = document.getElementById('add-panel-regex-blight');
+const addPanelBlightAnoitments = document.getElementById('add-panel-ring-anointments-blight');
 const addPanelSyndicate = document.getElementById('add-panel-syndicate');
 const addPanelIncursion = document.getElementById('add-panel-incursion');
 const mainMenu = document.getElementById('main-menu');
@@ -276,6 +278,35 @@ addPanelIncursion.addEventListener('click', () => {
     highlightBorder(panel);
 });
 
+addPanelRegexBlight.addEventListener('click', () => {
+    const elements = document.querySelectorAll('.panel-blight-extractor');
+    if (elements.length > 0) {
+        notification('You already have one');
+        highlightBorder(elements[0].parentElement);
+        panels.appendChild(elements[0].parentElement);
+        return;
+    }
+    const panel = createPanelBlightRegex(++panelID, panelCounter++);
+    panels.appendChild(panel);
+    panelBehaviour(panel, panelID);
+    panelBlightRegex(panel);
+    highlightBorder(panel);
+});
+
+addPanelBlightAnoitments.addEventListener('click', () => {
+    const elements = document.querySelectorAll('.panel-blight-anoitment');
+    if (elements.length > 0) {
+        notification('You already have one');
+        highlightBorder(elements[0].parentElement);
+        panels.appendChild(elements[0].parentElement);
+        return;
+    }
+    const panel = createPanelBlightAnoitmens(++panelID, panelCounter++);
+    panels.appendChild(panel);
+    panelBehaviour(panel, panelID);
+    panelBlightAnoitment(panel);
+    highlightBorder(panel);
+});
 
 async function copyToClipboard(text) {
     if (navigator.clipboard) {

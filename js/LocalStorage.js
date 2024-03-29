@@ -57,6 +57,10 @@ function savePanelPositions() {
             childID = panel.querySelector('.panel-syndicate-small').id;
         } else if (panel.querySelector('.panel-incursion-small')) {
             childID = panel.querySelector('.panel-incursion-small').id;
+        } else if (panel.querySelector('.panel-blight-extractor')) {
+            childID = panel.querySelector('.panel-blight-extractor').id;
+        } else if (panel.querySelector('.panel-blight-anoitment')) {
+            childID = panel.querySelector('.panel-blight-anoitment').id;
         }
 
         panelData.id = childID;
@@ -241,6 +245,100 @@ window.addEventListener('load', () => {
 			                <button class="panel-delete">x</button>
 		                </div>
                 `;
+            } else if (panelData.childClass === 'panel-blight-extractor') {
+                panel.innerHTML = `
+		            <textarea class="panel-name" maxlength="30">${panelData.name}</textarea>
+		            <div class="${panelData.childClass}" id="id${panelID}">
+			            <div class="panel-content" id="panel-blight-extractor-cointainer">
+
+			            </div>
+			            <button id="blight-extractor-add-more">Show more</button>
+		            </div>
+		            <div class="panel-controls" style="display: flex">
+			            <button class="panel-edit"></button>
+			            <div class="panel-move"></div>
+			            <button class="panel-delete">x</button>
+		            </div>
+                `;
+            } else if (panelData.childClass === 'panel-blight-anoitment') {
+                panel.innerHTML = `
+		            <textarea class="panel-name" maxlength="30">${panelData.name}</textarea>
+		            <div class="${panelData.childClass}" id="id${panelID}">
+			            <div class="panel-content" id="panel-blight-anoitment-cointainer">
+				            <div class="regex-input-window" id="panel-blight-anoitment-window">
+					            <button id="blight-anoitment-oil1" title="">
+					
+					            </button>
+					            <button id="blight-anoitment-oil2" title="">
+					
+					            </button>
+					            <button id="blight-anoitment-oil3" title="">
+					
+					            </button>
+					            <div id="blight-anoitment-mod-name" style="padding-top: 20px">
+						            Select oils bellow
+					            </div>
+				            </div>
+				            <div style="text-align: center">
+					            <div style="padding-top: 10px">
+						            <button id="blight-anoitment-clear" title="Clear Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9DbGVhck9pbCIsInNjYWxlIjoxfV0/0a7f30cc3b/ClearOil.png" />
+						            </button>
+						            <button id="blight-anoitment-sepia" title="Sepia Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9TZXBpYU9pbCIsInNjYWxlIjoxfV0/9114927bcc/SepiaOil.png" />
+						            </button>
+						            <button id="blight-anoitment-amber" title="Amber Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9BbWJlck9pbCIsInNjYWxlIjoxfV0/bd5ce1adfa/AmberOil.png" />
+						            </button>
+						            <button id="blight-anoitment-veridant" title="Verdant Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9WZXJkYW50T2lsIiwic2NhbGUiOjF9XQ/efeac217c1/VerdantOil.png" />
+						            </button>
+						            <button id="blight-anoitment-teal" title="Teal Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9UZWFsT2lsIiwic2NhbGUiOjF9XQ/d90d65a90b/TealOil.png" />
+						            </button>
+						            <button id="blight-anoitment-azure" title="Azure Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9BenVyZU9pbCIsInNjYWxlIjoxfV0/a68235e8e8/AzureOil.png" />
+						            </button>
+						            <button id="blight-anoitment-indigo" title="Indigo Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9JbmRpZ29PaWwiLCJzY2FsZSI6MX1d/d11c298ca8/IndigoOil.png" />
+						            </button>
+					            </div>
+					            <div style="padding: 5px">
+						            <button id="blight-anoitment-violet" title="Violet Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9WaW9sZXRPaWwiLCJzY2FsZSI6MX1d/76c3dc06f8/VioletOil.png" />
+						            </button>
+						            <button id="blight-anoitment-crimson" title="Crimson Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9Dcmltc29uT2lsIiwic2NhbGUiOjF9XQ/5e5f62ac0e/CrimsonOil.png" />
+						            </button>
+						            <button id="blight-anoitment-black" title="Black Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9CbGFja09pbCIsInNjYWxlIjoxfV0/ce6830b309/BlackOil.png" />
+						            </button>
+						            <button id="blight-anoitment-opalescent" title="Opalescent Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9PcGFsZXNjZW50T2lsIiwic2NhbGUiOjF9XQ/abd419a154/OpalescentOil.png" />
+						            </button>
+						            <button id="blight-anoitment-silver" title="Silver Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9TaWx2ZXJPaWwiLCJzY2FsZSI6MX1d/d6ad829c2f/SilverOil.png" />
+						            </button>
+						            <button id="blight-anoitment-golden" title="Golden Oil">
+							            <img src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9Hb2xkZW5PaWwiLCJzY2FsZSI6MX1d/263a5d73da/GoldenOil.png" />
+						            </button>
+					            </div>
+				            </div>
+
+				            <div>
+					            <input class="regex-input-window" id="panel-blight-anoitment-search" placeholder="Search by name" />
+					            <div id ="panel-blight-anoitment-mods" style="max-height: 200px; overflow-y: auto; margin-top: 10px">
+
+					            </div>
+				            </div>
+			            </div>
+		            </div>
+		            <div class="panel-controls" style="display: flex">
+			            <button class="panel-edit"></button>
+			            <div class="panel-move"></div>
+			            <button class="panel-delete">x</button>
+		            </div>
+                `;
             }
             //console.log(panelData.childClass + "child class");
 
@@ -265,6 +363,10 @@ window.addEventListener('load', () => {
                 panelSyndicate(panel);
             } else if (panelData.childClass === 'panel-incursion-small') {
                 panelIncursion(panel);
+            } else if (panelData.childClass === 'panel-blight-extractor') {
+                panelBlightRegex(panel);
+            } else if (panelData.childClass === 'panel-blight-anoitment') {
+                panelBlightAnoitment(panel);
             }
         });
 

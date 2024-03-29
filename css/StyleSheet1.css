@@ -197,6 +197,7 @@
     }
 
 
+.regex-input-window,
 #regex_window,
 #map_mod_window {
     background-color: #333;
@@ -211,6 +212,7 @@
     width: -moz-available;
 }
 
+#blight-extractor-counter,
 #regex_window_length,
 #map_mod_window_counter {
     text-align: right;
@@ -237,6 +239,7 @@
     border-style: solid;
 }
 
+#blight-extractor-copy,
 #regex_window_copy,
 #map_mod_window_copy {
     position: absolute;
@@ -439,3 +442,28 @@ button {
     cursor: pointer;
 }
 
+#blight-extractor-add-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.blight-anoitment-line {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+}
+
+#panel-blight-anoitment-window {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#panel-blight-anoitment-search {
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 8px 5px;
+}
