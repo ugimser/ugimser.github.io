@@ -394,6 +394,7 @@ function copyToClipboardFallBack(text) {
     input.select(); // Zaznaczenie zawartoci elementu
     document.execCommand('copy'); // Skopiowanie zaznaczonego tekstu do schowka
     document.body.removeChild(input); // Usuniêcie tymczasowego elementu input
+    notification('Copied: ' + text);
 }
 function notification(message) {
     const notification = document.querySelector(".notification");
