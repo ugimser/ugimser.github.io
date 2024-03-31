@@ -10,7 +10,7 @@ function savePanelPositions() {
         syndicateBig.remove();
     }
     
-    mainMenuLogo.className = 'main-menu-logo';
+    //mainMenuLogo.className = 'main-menu-logo';
     const panelsData = [];
     const panels = document.querySelectorAll('.panel');
     panels.forEach(panel => {
@@ -70,8 +70,8 @@ function savePanelPositions() {
 }
 
 window.addEventListener('load', () => {
-    //mainMenu.className = localStorage.getItem('mainMenu.className') ? localStorage.getItem('mainMenu.className') : 'shown';
-    mainMenuLogo.className = localStorage.getItem('mainMenuLogo.className') ? localStorage.getItem('mainMenuLogo.className') : 'shown';
+    mainMenu.className = localStorage.getItem('mainMenu.className') ? localStorage.getItem('mainMenu.className') : 'shown';
+    //mainMenuLogo.className = localStorage.getItem('mainMenuLogo.className') ? localStorage.getItem('mainMenuLogo.className') : 'main-menu-logo';
 
     const panelsData = JSON.parse(localStorage.getItem('panelsData'));
     let maxID = 0;
