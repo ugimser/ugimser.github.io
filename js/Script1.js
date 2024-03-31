@@ -45,12 +45,12 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
         newStartDate.setDate(newStartDate.getDate() + 28);
         newEndDate.setDate(newEndDate.getDate() + 28);
 
-        // Poprawka dla przesuniêcia do nowego miesi¹ca
+        // Poprawka dla przesuniÃªcia do nowego miesiÂ¹ca
         if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
-            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
         }
         if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
-            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
         }
         stashSaleTimer(newStartDate, newEndDate);
     }
@@ -137,6 +137,7 @@ function panelRegexMapMods(panel, oldRegex, check) {
         mapQuantityInput.value = '';
         mapPackSizeInput.value = '';
         searchInput.value = '';
+        document.querySelector('#map_mod_window_counter').innerText = '0 / 50';
         allModsAllList.forEach(obj => {
             obj.classList.remove('map-mod-selected');
             obj.classList.remove('hidden');
@@ -377,7 +378,7 @@ async function copyToClipboard(text) {
             await navigator.clipboard.writeText(text);
             notification('Copied: ' + text);
         } catch (err) {
-            console.log('B³¹d podczas kopiowania do schowka:', err);
+            console.log('BÂ³Â¹d podczas kopiowania do schowka:', err);
         }
     } else {
         copyToClipboardFallBack(text);
@@ -386,13 +387,13 @@ async function copyToClipboard(text) {
 
 function copyToClipboardFallBack(text) {
     var input = document.createElement('input'); // Utworzenie elementu input
-    input.style.position = 'fixed'; // Ustawienie pozycji na sta³e
+    input.style.position = 'fixed'; // Ustawienie pozycji na staÂ³e
     input.style.opacity = 0; // Ukrycie elementu
-    input.value = text; // Ustawienie wartoœci na tekst do skopiowania
-    document.body.appendChild(input); // Dodanie elementu do cia³a dokumentu
-    input.select(); // Zaznaczenie zawartoœci elementu
+    input.value = text; // Ustawienie wartoÂœci na tekst do skopiowania
+    document.body.appendChild(input); // Dodanie elementu do ciaÂ³a dokumentu
+    input.select(); // Zaznaczenie zawartoÂœci elementu
     document.execCommand('copy'); // Skopiowanie zaznaczonego tekstu do schowka
-    document.body.removeChild(input); // Usuniêcie tymczasowego elementu input
+    document.body.removeChild(input); // UsuniÃªcie tymczasowego elementu input
 }
 function notification(message) {
     const notification = document.querySelector(".notification");
