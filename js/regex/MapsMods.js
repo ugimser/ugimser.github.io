@@ -21,17 +21,17 @@ const mapModsShadowShaping = [
 	}, 
 	{
 		nameLong: "Area contains an additional Ultimatum Encounter",
-		nameShort: "tim",
+		nameShort: "ltim",
 		popularity: 0,
 	}, 
 	{
 		nameLong: "Areas contain Ritual Altars",
-		nameShort: "ual",
+		nameShort: "ritu",
 		popularity: 0,
 	}, 
 	{
 		nameLong: "Area contains 2 additional Abysses",
-		nameShort: "sses",
+		nameShort: "yss",
 		popularity: 0,
 	}, 
 	{
@@ -56,7 +56,7 @@ const mapModsShadowShaping = [
 	}, 
 	{
 		nameLong: "Area is inhabited by 5 additional Tormented Spirits",
-		nameShort: "pir",
+		nameShort: "irit",
 		popularity: 0,
 	}, 
 	{
@@ -84,7 +84,7 @@ const mapModsCorrupted = [
 	},
 	{
 		nameLong: "+(5-10)% Pack Size",
-		nameShort: "ize",
+		nameShort: "%.pa",
 		popularity: 0,
 	},
 	{
@@ -119,12 +119,12 @@ const mapModsCorrupted = [
 	},
 	{
 		nameLong: "Atlas Passives have (10-15)% increased Effect on Area",
-		nameShort: "effe",
+		nameShort: "n.ar",
 		popularity: 0,
 	},
 	{
 		nameLong: "Quality applies to Pack Size instead of Item Quantity",
-		nameShort: "app",
+		nameShort: "lie",
 		popularity: 0,
 	},
 	{
