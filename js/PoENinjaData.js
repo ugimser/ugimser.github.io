@@ -1,7 +1,7 @@
 // https://github.com/ayberkgezer/poe.ninja-API-Document/blob/main/README.md
 const textDiv = document.getElementById('test');
-const leagueCurrent = 'Affliction';
-const leagueCurrentHC = 'Hardcore+Affliction';
+const leagueCurrent = 'Necropolis';
+const leagueCurrentHC = 'Hardcore+Necropolis';
 const leagueStandard = 'Standard';
 
 const url1 = 'https://poe.ninja/api/data/itemoverview?league=' + leagueCurrent + '&type=UniqueWeapon';
@@ -16,9 +16,18 @@ const leagues = [leagueCurrent, leagueCurrentHC, leagueStandard];
 for (const url of urls) {
     getData(url);
 }
-/** 
+*/
 
-const newTabAll = Array.from(uniqueItemsArray);
+/**
+ * Now prices
+ */
+const newTabAll = Array.from(uniqueItemArray);
+//const changedTab = [];
+//
+//
+//newPrices();
+//
+//
 function newPrices() {
     for (const l of leagues) {
         getPricesOfLeague('https://poe.ninja/api/data/itemoverview?league=' + l + '&type=UniqueWeapon', l);
@@ -27,16 +36,19 @@ function newPrices() {
         getPricesOfLeague('https://poe.ninja/api/data/itemoverview?league=' + l + '&type=UniqueJewel', l);
     }
     console.log(newTabAll);
+    //console.log(changedTab);
+    //console.log(changedTab.length);
     
     const textarea = document.createElement('textarea');
     let string = '';
     for (const item of newTabAll) {
         string += `{ id: ${item.id}, baseType: "${item.baseType}", shortName: "${item.shortName}", name: "${item.name}", image: "${item.image}", chaosValueLeague: ${item.chaosValueLeague}, chaosValueHCLeague: ${item.chaosValueHCLeague}, chaosValueStandard: ${item.chaosValueStandard} },\n`;
     }
-    textarea.innerHTML = 'const uniqueItemsArray = [\n' + string + '];';
+    textarea.innerHTML = 'const uniqueItemArray = [\n' + string + '];';
     textDiv.appendChild(textarea);
+    
 }
-*/
+
 /*
 let newTabAll = Array.from(uniqueItemArray)
 const removeThis = [];
@@ -76,6 +88,7 @@ function getPricesOfLeague(url, l) {
             if (data && data.lines) {
                 data.lines.forEach(item => {
                     const element = newTabAll.find(i => i.id === item.id);
+                    const newElement = { id: item.id };
 
                     if (element) {
                         if (l === leagues[0]) {
@@ -84,6 +97,15 @@ function getPricesOfLeague(url, l) {
                             element.chaosValueHCLeague = item.chaosValue;
                         } else if (l === leagues[2]) {
                             element.chaosValueStandard = item.chaosValue;
+                        }
+                        //changedTab.push(element);
+                    } else if (newElement) {
+                        if (l === leagues[0]) {
+                            newElement.chaosValueLeague = 0;
+                        } else if (l === leagues[1]) {
+                            newElement.chaosValueHCLeague = 0;
+                        } else if (l === leagues[2]) {
+                            newElement.chaosValueStandard = 0;
                         }
                     }
                 });

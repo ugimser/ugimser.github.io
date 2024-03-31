@@ -1,11 +1,11 @@
-const modsLists = document.getElementsByClassName('allModsList');
+//const modsLists = document.getElementsByClassName('allModsList');
 const resultsText = document.getElementById('resultsText');
 const resultsLength = document.getElementById('resultsLength');
 const inputElement = document.getElementById('mods-search');
 
-let regexActual = "!(";
+//let regexActual = "!(";
 
-makeModList();
+//makeModList();
 function makeModList() {
     for (const divContener of modsLists) {
         const tableHead = document.createElement('h3');
@@ -54,53 +54,57 @@ function changeRegex(add = true, shortString) {
 }
 
 
-function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badModsEle, goodModsEle) {
+function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badModsTab, goodModsTab, implicitModsTab) {
     // length
     lengthEle.innerHTML = inputValue.length + ' / 50';
-    //console.log(inputValue.length);
+    
     // quantity
     if (inputValue.includes('"m q.')) {
         const start = inputValue.indexOf('"m q.');
         const end = inputValue.indexOf('%"');
         const qreg = inputValue.slice(start + 6, end);
         inputValue = inputValue.substring(0, start) + inputValue.substring(end + 2);
-        //console.log(qreg);
-        //console.log(extractNumbers(qreg));
-        quantityEle.style.display = 'block';
         try {
-            quantityEle.innerHTML = 'Quantity, at least: ' + extractNumbers(qreg) + '%';
+            regexQuantity = extractNumbers(qreg);
+            quantityEle.value = regexQuantity;
         }
         catch (err) {
             console.log('extractNumbers(qreg)' + err);
         }
-    } else {
-        quantityEle.style.display = 'none';
     }
 
     // pack size
-    if (inputValue.includes('"iz.*')) {
-        const start = inputValue.indexOf('"iz.*');
+    if (inputValue.includes('"ze.*')) {
+        const start = inputValue.indexOf('"ze.*');
         const end = inputValue.indexOf('%"');
         const qreg = inputValue.slice(start + 5, end);
         inputValue = inputValue.substring(0, start) + inputValue.substring(end + 2);
-        //console.log(qreg);
-        //console.log(extractNumbers(qreg));
-        packsizeEle.style.display = 'block';
         try {
-            packsizeEle.innerHTML = 'Quantity, at least: ' + extractNumbers(qreg) + '%';
+            regexPackSize = extractNumbers(qreg);
+            packsizeEle.value = regexPackSize;
         }
         catch (err) {
             console.log('extractNumbers(qreg)' + err);
         }
-    } else {
-        packsizeEle.style.display = 'none';
     }
 
-    badModsEle.style.display = 'none';
-    goodModsEle.style.display = 'none';
-    //findDontWantedMods(inputValue);
-    //findWantedMods(inputValue);
-    //return;
+    // implicits
+    if (inputValue.includes('.*lic"')) {
+        const start = inputValue.indexOf('"(');
+        const end = inputValue.indexOf('.*lic"');
+        const qreg = inputValue.slice(start + 2, end - 1);
+        inputValue = inputValue.substring(0, start) + inputValue.substring(end + 6);
+        //console.log(inputValue);
+        //console.log(qreg);
+        try {
+            findWantedMods(qreg, implicitModsTab, true);
+        }
+        catch (err) {
+            console.log('extractNumbers(qreg)' + err);
+        }
+    }
+
+    // mods
     if (inputValue.length > 2 && (inputValue[0] === '!' || inputValue[1] === '!')) {
         const splited = [
             inputValue.slice(1, inputValue.indexOf('" ') + 1).trim(),
@@ -110,16 +114,16 @@ function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badMo
         //console.log(splited[1]);
         //return;
         if (splited.length > 1) {
-            findDontWantedMods(splited[0].length < 1 ? splited[1] : splited[0], badModsEle);
+            findDontWantedMods(splited[0].length < 1 ? splited[1] : splited[0], badModsTab);
             if (splited[1].length > 1 && splited[0].length > 1 && (splited[1].length !== splited[0].length + 2)) {
-                findWantedMods(splited[1], goodModsEle);
+                findWantedMods(splited[1], goodModsTab);
                 //console.log('here');
             }
         } else {
-            findDontWantedMods(inputValue, badModsEle);
+            findDontWantedMods(inputValue, badModsTab);
         }
     } else if (inputValue.length > 1) {
-        findWantedMods(inputValue, goodModsEle);
+        findWantedMods(inputValue, goodModsTab);
     }
 }
 /*
@@ -170,43 +174,29 @@ inputElement.addEventListener('input', function (event) {
 });
 
 */
-function findDontWantedMods(inputValue, container) {
+function findDontWantedMods(inputValue, tab) {
     const sanitized = inputValue
         //.match(/"(.*?)"/g)
         .split("\" ")
         //.split(" ")
         .join("|")
-        .replace(/\\"(?:m q|iz).*%/, "")
+        .replace(/\\"(?:m q|ze).*%/, "")
         .replaceAll("\"", "")
         .replaceAll("!", "")
         .trim();
-
-    //console.log('Nowa wartoœæ danych: ' + sanitized);
-    let counter = 0;
-    let text = '<div>I don\'t want these:</div>';
-    for (const [longName] of mapData.entries()) {
-        let isIn = "";
+        
+    tab.forEach(obj => {
         try {
-            isIn = longName.toLowerCase().match(sanitized);
+            if (obj.textContent.toLowerCase().match(sanitized)) {
+                obj.classList.add('map-mod-selected');
+                regexBad.push(obj.title);
+            }
         } catch (err) {
-            console.log(err);
-            return;
+            console.log('findDontWantedMods ' + err);
         }
-        if (isIn) {
-            //console.log(longName);
-            counter++
-            text += '<div>>' + longName.replaceAll('|', '<br>') + '</div>';
-        }
-    }
-    //console.log("I don't want: " + counter);
-    if (counter > 0) {
-        container.innerHTML = text;
-        container.style.display = 'block';
-    } else {
-        container.style.display = 'none';
-    }
+    });
 }
-function findWantedMods(inputValue, container) {
+function findWantedMods(inputValue, tab, implicits = false) {
     let sanitized;
 
     const betweenQuote = inputValue.match(/"(.*?)"/g);
@@ -220,7 +210,7 @@ function findWantedMods(inputValue, container) {
             .split(" ")
             .concat(betweenQuote)
             .join("|")
-            .replace(/\\"(?:m q|iz).*%/, "")
+            .replace(/\\"(?:m q|ze).*%/, "")
             .replaceAll("\"", "")
             .replaceAll("!", "")
             .trim();
@@ -229,36 +219,23 @@ function findWantedMods(inputValue, container) {
         sanitized = inputValue
             .split(" ")
             .join("|")
-            .replace(/\\"(?:m q|iz).*%/, "")
+            .replace(/\\"(?:m q|ze).*%/, "")
             .replaceAll("\"", "")
             .replaceAll("!", "")
             .trim();
     }
     //console.log(sanitized);
 
-    let counter = 0;
-    let text = '<div>I want these:</div>';
-    for (const [longName] of mapData.entries()) {
-        let isIn = "";
-        try {
-           isIn = longName.toLowerCase().match(sanitized);
-        } catch (err) {
-            console.log(err);
-            return;
+    tab.forEach(obj => {
+        if (obj.textContent.toLowerCase().match(sanitized)) {
+            obj.classList.add('map-mod-selected');
+            if (implicits) {
+                regexKirac.push(obj.title);
+            } else {
+                regexGood.push(obj.title);
+            }
         }
-        if (isIn) {
-            //console.log(longName);
-            counter++
-            text += '<div>>' + longName.replaceAll('|', '<br>') + '</div>';
-        }
-    }
-    //console.log("I want: " + counter)
-    if (counter > 0) {
-        container.innerHTML = text;
-        container.style.display = 'block';
-    } else {
-        container.style.display = 'none';
-    }
+    });
 }
 
 function extractNumbers(regex) {
@@ -299,3 +276,180 @@ function extractNumbers(regex) {
     return firstNumber;
 }
 
+
+
+
+
+
+
+
+function createMapModifierList(table, limitByString, className, cointainer, regexWindow, removeFunction, addFunction) {
+    modTab = [];
+    table.forEach(mapMod => {
+        const modLine = document.createElement('button');
+        modLine.className = className;
+        modLine.classList.add('shown');
+        modLine.title = mapMod.nameShort;
+        modLine.innerHTML = mapMod.nameLong.replaceAll('|', '<br>');;
+        cointainer.appendChild(modLine);
+        modTab.push(modLine);
+
+        modLine.addEventListener('click', () => {
+            if (modLine.classList.contains('map-mod-selected')) {
+                modLine.classList.remove('map-mod-selected');
+                removeFunction(mapMod.nameShort, regexWindow);
+            } else {
+                modLine.classList.add('map-mod-selected');
+                addFunction(mapMod.nameShort, regexWindow);
+            }
+        });
+    });
+    return modTab;
+}
+
+let regexBad = [];
+let regexGood = [];
+let regexKirac = [];
+let regexQuantity = '';
+let regexPackSize = '';
+
+function clearMapRegex() {
+    regexBad = [];
+    regexGood = [];
+    regexKirac = [];
+    regexQuantity = '';
+    regexPackSize = '';
+}
+
+function addMapRegexBad(shortName, mapModWindow) {
+    regexBad.push(shortName);
+    showMapRegex(mapModWindow);
+}
+
+function removeMapRegexBad(shortName, mapModWindow) {
+    var index = regexBad.indexOf(shortName);
+    if (index !== -1) {
+        regexBad.splice(index, 1);
+    }
+    showMapRegex(mapModWindow);
+}
+
+function addMapRegexGood(shortName, mapModWindow) {
+    if (shortName.includes(' ')) {
+        shortName = '"' +shortName + '"';
+    }
+    regexGood.push(shortName);
+    showMapRegex(mapModWindow);
+}
+
+function removeMapRegexGood(shortName, mapModWindow) {
+    if (shortName.includes(' ')) {
+        shortName = '"' + shortName + '"';
+    }
+    var index = regexGood.indexOf(shortName);
+    if (index !== -1) {
+        regexGood.splice(index, 1);
+    }
+    showMapRegex(mapModWindow);
+}
+
+function addMapRegexKirac(shortName, mapModWindow) {
+    regexKirac.push(shortName);
+    showMapRegex(mapModWindow);
+}
+
+function removeMapRegexKirac(shortName, mapModWindow) {
+    var index = regexKirac.indexOf(shortName);
+    if (index !== -1) {
+        regexKirac.splice(index, 1);
+    }
+    showMapRegex(mapModWindow);
+}
+
+function changeMapRegexQuantity(newValue, mapModWindow) {
+    newValue = newValue.replace(/^0+/, '');
+    if (newValue.length < 2) {
+        regexQuantity = '';
+        showMapRegex(mapModWindow);
+        return;
+    }
+    if (newValue < 80) {
+        regexQuantity = ".*([" + newValue[0] + "-9].|1..)";
+    } else if (newValue < 90) {
+        regexQuantity = ".*([" + newValue[0] + "9].|1..)";
+    } else if (newValue < 100) {
+        regexQuantity = ".*(" + newValue[0] + ".|1..)";
+    } else if (newValue < 200) {
+        regexQuantity = ".*1[" + newValue[1] + "-9].";
+    } else {
+        regexQuantity = ".*2[" + newValue[1] + "-9].";
+    }
+    showMapRegex(mapModWindow);
+}
+
+function changeMapRegexPackSize(newValue, mapModWindow) {
+    newValue = newValue.replace(/^0+/, '');
+    if (newValue.length < 2) {
+        regexPackSize = '';
+        showMapRegex(mapModWindow);
+        return;
+    }
+    if (newValue < 80) {
+        regexPackSize = ".*([" + newValue[0] + "-9].|1..)";
+    } else if (newValue < 90) {
+        regexPackSize = ".*([" + newValue[0] + "9].|1..)";
+    } else if (newValue < 100) {
+        regexPackSize = ".*(" + newValue[0] + ".|1..)";
+    } else if (newValue < 200) {
+        regexPackSize = ".*1[" + newValue[1] + "-9].";
+    } else {
+        regexPackSize = ".*2[" + newValue[1] + "-9].";
+    }
+    showMapRegex(mapModWindow);
+}
+
+function showMapRegex(mapModWindow) {
+    let regAll = '';
+    if (regexBad.length > 0) {
+        regAll = '"!' + regexBad.join('|') + '"';
+    }
+
+    if (regexGood.length > 0) {
+        if (regexBad.length > 0) {
+            regAll += ' ' + regexGood.join(' ');
+        } else {
+            regAll = regexGood.join(' ');
+        }
+    } 
+
+    if (regexKirac.length > 0) {
+        if (regexBad.length > 0 || regexGood.length > 0) {
+            regAll += ' "(' + regexKirac.join('|') + ').*lic"';
+        } else {
+            regAll += '"(' + regexKirac.join('|') + ').*lic"';
+        }
+    }
+
+    if (regexQuantity.length > 0) {
+        if (regexBad.length > 0 || regexGood.length > 0 || regexKirac.length > 0) {
+            regAll += ' "m q' + regexQuantity + '%"';
+        } else {
+            regAll += '"m q' + regexQuantity + '%"';
+        }
+    }
+
+    if (regexPackSize.length > 0) {
+        if (regexBad.length > 0 || regexGood.length > 0 || regexKirac.length > 0 || regexQuantity.length > 0) {
+            regAll += ' "ze' + regexPackSize + '%"';
+        } else {
+            regAll += '"ze' + regexPackSize + '%"';
+        }
+    }
+
+    mapModWindow.value = regAll;
+
+    const lengthElement = document.querySelector('#map_mod_window_counter');
+    if (lengthElement) {
+        lengthElement.innerHTML = regAll.length + ' / 50';
+    }
+}

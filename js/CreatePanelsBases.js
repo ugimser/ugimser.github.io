@@ -61,21 +61,55 @@ function createPanelRegexMapMods(panelID, panelCounter) {
         <textarea class="panel-name" maxlength="30">Map Modifiers Regex:</textarea>
         <div class="panel-regex-map-mods" id="id${panelID}">
             <div class="panel-content">
-                <input id="map_mod_window" placeholder="Put regex here..." />
-                <p id="map_mod_window_counter">44 / 50</p>
-                <input type="checkbox" id="map_mod_window_copy" title="Always copy on click" />
-                <div id="map_mod_quantity" style="display: none">Quantity, at least: 123%</div>
-                <div id="map_mod_packsize" style="display: none">Pack Size, at least: 23%</div>
-                <div id="map_mod_bad_list" style="display: none">
-                    <div>I don\'t want these mods:</div>
-                    <div>
-                        <div>Modifier 123</div>
+                <input id="map_mod_window" placeholder="Regex here..." readonly/>
+                <input type="checkbox" id="map_mod_window_copy" title="Always copy on click" checked/>
+                <p id="map_mod_window_counter">0 / 50</p>
+                <div>
+                    <div style="display: flex">
+                        <div class="map_mod_text">Quantity, at least:</div>
+                        <input id="map-mod-quantity-input" class="input-small" type="number"/>
+                        <div class="map_mod_text">%,</div>
+                        <div class="map_mod_text">Pack Size, at least:</div>
+                        <input id="map-mod-pack-size-input" class="input-small" type="number"/>
+                        <div class="map_mod_text">%</div>
+                    </div>
+                    <div id="map_mod_bad_list" style="display: none">
+                        <div>I don\'t want these mods:</div>
+                        <div>
+                            <div>Modifier 123</div>
+                        </div>
+                    </div>
+                    <div id="map_mod_good_list" style="display: none">
+                        <div>I want these mods:</div>
+                        <div>
+                            <div>Modifier 123</div>
+                        </div>
                     </div>
                 </div>
-                <div id="map_mod_good_list" style="display: none">
-                    <div>I want these mods:</div>
+                <button id="panel-regex-map-show-all" style="margin-top: 5px">Show Mods</button>
+                <button id="panel-regex-map-clear-all">Clear All</button>
+                <div id="panel-regex-map-all-mods" class='hidden'>
+                    <input id="panel-regex-map-search" class="input-search" placeholder="Search..." />
                     <div>
-                        <div>Modifier 123</div>
+                        <div id="panel-regex-map-all-bad">     
+                        <div style="display: flex">
+                            <div id="panel-regex-map-all-bad" style="width: 25%">
+                                <div class="map_mod_text">I don\'t want these mods:</div>
+                                <div id="panel-regex-map-all-bad-list" class="background-gradient-danger"></div>
+                            </div>
+                            <div id="panel-regex-map-all-good" style="width: 25%">
+                                <div class="map_mod_text">I want these mods:</div>
+                                <div id="panel-regex-map-all-good-list" class="background-gradient-popularity"></div>
+                            </div>
+                            <div id="panel-regex-map-all-kirac" style="width: 25%">
+                                <div class="map_mod_text">I want these Kirac mods:</div>
+                                <div id="panel-regex-map-all-kirac-list" class="background-gradient-popularity"></div>
+                            </div>
+                            <div id="panel-regex-map-all-vaal" style="width: 25%">
+                                <div class="map_mod_text">I want these vaal implicits:</div>
+                                <div id="panel-regex-map-all-vaal-list" class="background-gradient-popularity"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

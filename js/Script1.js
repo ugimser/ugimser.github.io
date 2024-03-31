@@ -45,12 +45,12 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
         newStartDate.setDate(newStartDate.getDate() + 28);
         newEndDate.setDate(newEndDate.getDate() + 28);
 
-        // Poprawka dla przesuniÃªcia do nowego miesiÂ¹ca
+        // Poprawka dla przesuniêcia do nowego miesi¹ca
         if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
-            newStartDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
-            newEndDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         stashSaleTimer(newStartDate, newEndDate);
     }
@@ -59,29 +59,70 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
 
 function panelRegexMapMods(panel, oldRegex, check) {
     const inputElement = panel.querySelector('#map_mod_window');
-    const lengthElement = panel.querySelector('#map_mod_window_counter');
-    const quantityElement = panel.querySelector('#map_mod_quantity');
-    const packsizeElement = panel.querySelector('#map_mod_packsize');
-    const badElement = panel.querySelector('#map_mod_bad_list');
-    const goodElement = panel.querySelector('#map_mod_good_list');
     const checkboxElement = panel.querySelector("#map_mod_window_copy");
-    
-    if (oldRegex) {
-        inputElement.value = oldRegex;
-        changeRegexEvent(oldRegex, lengthElement, quantityElement, packsizeElement, badElement, goodElement);
-        //console.log(oldRegex);
-    }
-    if (check) {
-        checkboxElement.checked = check;
-    }
+    const btnShowAllMods = panel.querySelector('#panel-regex-map-show-all');
+    const btnClearPanel = panel.querySelector('#panel-regex-map-clear-all');
+    const allMods = panel.querySelector('#panel-regex-map-all-mods');
+    const badList = panel.querySelector('#panel-regex-map-all-bad-list');
+    const goodList = panel.querySelector('#panel-regex-map-all-good-list');
+    const kiracList = panel.querySelector('#panel-regex-map-all-kirac-list');
+    const vaalList = panel.querySelector('#panel-regex-map-all-vaal-list');
+    const mapQuantityInput = panel.querySelector('#map-mod-quantity-input');
+    const mapPackSizeInput = panel.querySelector('#map-mod-pack-size-input');
+    const searchInput = panel.querySelector('#panel-regex-map-search');
 
-    inputElement.addEventListener('input', function (event) {
-        const text = event.target.value.toLowerCase();
-        if (text.length > 1 && checkboxElement.checked) {
-            copyToClipboard(text);
+    const mapDataPopularity = new Map([...mapData.entries()].sort((a, b) => { return b[1].popularity - a[1].popularity;}));
+    const t1 = createMapModifierList(mapDataPopularity, '', 'map_mod_bad_list', badList, inputElement, removeMapRegexBad, addMapRegexBad);
+    const t2 = createMapModifierList(mapData, '', 'map_mod_good_list', goodList, inputElement, removeMapRegexGood, addMapRegexGood);
+    const t3 = createMapModifierList(mapModsShadowShaping, '', 'map_mod_good_list', kiracList, inputElement, removeMapRegexKirac, addMapRegexKirac);
+    const t4 = createMapModifierList(mapModsCorrupted, '', 'map_mod_good_list', vaalList, inputElement, removeMapRegexKirac, addMapRegexKirac);
+
+    const allModsAllList = [...t1, ...t2, ...t3, ...t4];
+
+    searchInput.addEventListener('input', () => {
+        const input = searchInput.value.toLowerCase();
+        if (input.length > 1) {
+            allModsAllList.forEach(obj => {
+                if (obj.textContent.toLowerCase().includes(input)) {
+                    obj.classList.add('shown');
+                    obj.classList.remove('hidden');
+                } else {
+                    obj.classList.remove('shown');
+                    obj.classList.add('hidden');
+                }
+            });
+        } else if (input.length === 0) {
+            allModsAllList.forEach(obj => {
+                obj.classList.add('shown');
+                obj.classList.remove('hidden');
+            });
         }
-        changeRegexEvent(text, lengthElement, quantityElement, packsizeElement, badElement, goodElement);
-        console.log(text);
+    });
+
+    mapQuantityInput.addEventListener('input', () => {
+        try {
+            let number = parseInt(mapQuantityInput.value / 10) * 10;
+            changeMapRegexQuantity(number.toString(), inputElement);
+        } catch (err) {
+            console.log('mapQuantityInput ' + err);
+        }
+    });
+
+    mapPackSizeInput.addEventListener('input', () => {
+        try {
+            let number = parseInt(mapQuantityInput.value / 10) * 10;
+            changeMapRegexPackSize(mapPackSizeInput.value.toString(), inputElement);
+        } catch (err) {
+            console.log('mapQuantityInput ' + err);
+        }
+    });
+
+
+    btnShowAllMods.addEventListener('click', () => {
+        let flag = '';
+        allMods.className === 'hidden' ? flag = 'shown' : flag = 'hidden';
+        allMods.className = flag;
+        flag === 'hidden' ? btnShowAllMods.innerText = 'Show Mods' : btnShowAllMods.innerText = 'Hide Mods';
     });
 
     inputElement.addEventListener('click', function  (event) {
@@ -90,6 +131,28 @@ function panelRegexMapMods(panel, oldRegex, check) {
             copyToClipboard(text);
         }
     });
+
+    btnClearPanel.addEventListener('click', () => {
+        inputElement.value = '';
+        mapQuantityInput.value = '';
+        mapPackSizeInput.value = '';
+        searchInput.value = '';
+        allModsAllList.forEach(obj => {
+            obj.classList.remove('map-mod-selected');
+            obj.classList.remove('hidden');
+            obj.classList.add('shown');
+        });
+        clearMapRegex();
+    });
+
+    if (oldRegex) {
+        inputElement.value = oldRegex;
+        changeRegexEvent(oldRegex, document.querySelector('#map_mod_window_counter'), mapQuantityInput, mapPackSizeInput, t1, t2, t3.concat(t4));
+        //console.log(oldRegex);
+    }
+    if (check) {
+        checkboxElement.checked = check;
+    }
 }
 
 function panelRegexGwennen(panel, oldRegex, check) {
@@ -314,7 +377,7 @@ async function copyToClipboard(text) {
             await navigator.clipboard.writeText(text);
             notification('Copied: ' + text);
         } catch (err) {
-            console.log('BÂ³Â¹d podczas kopiowania do schowka:', err);
+            console.log('B³¹d podczas kopiowania do schowka:', err);
         }
     } else {
         copyToClipboardFallBack(text);
@@ -323,13 +386,13 @@ async function copyToClipboard(text) {
 
 function copyToClipboardFallBack(text) {
     var input = document.createElement('input'); // Utworzenie elementu input
-    input.style.position = 'fixed'; // Ustawienie pozycji na staÂ³e
+    input.style.position = 'fixed'; // Ustawienie pozycji na sta³e
     input.style.opacity = 0; // Ukrycie elementu
-    input.value = text; // Ustawienie wartoÂœci na tekst do skopiowania
-    document.body.appendChild(input); // Dodanie elementu do ciaÂ³a dokumentu
-    input.select(); // Zaznaczenie zawartoÂœci elementu
+    input.value = text; // Ustawienie wartoœci na tekst do skopiowania
+    document.body.appendChild(input); // Dodanie elementu do cia³a dokumentu
+    input.select(); // Zaznaczenie zawartoœci elementu
     document.execCommand('copy'); // Skopiowanie zaznaczonego tekstu do schowka
-    document.body.removeChild(input); // UsuniÃªcie tymczasowego elementu input
+    document.body.removeChild(input); // Usuniêcie tymczasowego elementu input
 }
 function notification(message) {
     const notification = document.querySelector(".notification");

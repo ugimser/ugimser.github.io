@@ -1,7 +1,148 @@
+const mapModsShadowShaping = [
+	{
+		nameLong: "Area contains The Sacred Grove",
+		nameShort: "sac",
+		popularity: 0,
+	},
+	{
+		nameLong: "Area contains an additional Legion Encounter",
+		nameShort: "leg",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area contains an additional Expedition Encounter",
+		nameShort: "xpe",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area contains an additional Smuggler's Cache",
+		nameShort: "r'",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area contains an additional Ultimatum Encounter",
+		nameShort: "tim",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Areas contain Ritual Altars",
+		nameShort: "ual",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area contains 2 additional Abysses",
+		nameShort: "sses",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area contains 3 additional Breaches",
+		nameShort: "reac",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area contains 3 additional Harbingers",
+		nameShort: "rbi",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area contains 3 additional Essences",
+		nameShort: "senc",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area contains 4 additional Strongboxes",
+		nameShort: "gb",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area is inhabited by 5 additional Tormented Spirits",
+		nameShort: "pir",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area contains 5 additional Shrines",
+		nameShort: "hrin",
+		popularity: 0,
+	}, 
+	{
+		nameLong: "Area is inhabited by 10 additional Rogue Exiles",
+		nameShort: "xil",
+		popularity: 0,
+	},
+];
+
+const mapModsCorrupted = [
+	{
+		nameLong: "+(10-20)% Item Quantity",
+		nameShort: "%.{6}q",
+		popularity: 0,
+	},
+	{
+		nameLong: "+(8-12)% Item Rarity",
+		nameShort: "rar",
+		popularity: 0,
+	},
+	{
+		nameLong: "+(5-10)% Pack Size",
+		nameShort: "ize",
+		popularity: 0,
+	},
+	{
+		nameLong: "(10-20)% increased Explicit Modifier magnitudes",
+		nameShort: "xpl",
+		popularity: 0,
+	},
+	{
+		nameLong: "Contains a Vaal Side Area",
+		nameShort: "a.va",
+		popularity: 0,
+	},
+	{
+		nameLong: "Area contains an additional guarded Exquisite Vaal Vessel",
+		nameShort: "xqu",
+		popularity: 0,
+	},
+	{
+		nameLong: "Unique Monsters drop Corrupted Items",
+		nameShort: "rru",
+		popularity: 0,
+	},
+	{
+		nameLong: "Players' Vaal Skills do not apply Soul Gain Prevention",
+		nameShort: "s'",
+		popularity: 0,
+	},
+	{
+		nameLong: "Map Crafting options for this Map have no cost",
+		nameShort: "ft",
+		popularity: 0,
+	},
+	{
+		nameLong: "Atlas Passives have (10-15)% increased Effect on Area",
+		nameShort: "effe",
+		popularity: 0,
+	},
+	{
+		nameLong: "Quality applies to Pack Size instead of Item Quantity",
+		nameShort: "app",
+		popularity: 0,
+	},
+	{
+		nameLong: "Area has an additional random Scarab effect",
+		nameShort: "sca",
+		popularity: 0,
+	},
+	{
+		nameLong: "Area is affected by (5-15) additional random Unallocated Notable Atlas Passives",
+		nameShort: "llo",
+		popularity: 0,
+	},
+];
+
 const mapData = new Map([
 	["Area contains many Totems", {
 		"nameLong": "Area contains many Totems",
-		"nameShort": "ms",
+		"nameShort": "tot",
 		"nameMod": "Ceremonial",
 		"packSize": 4,
 		"quantity": 10,
@@ -56,7 +197,7 @@ const mapData = new Map([
 	}],
 	["Area is inhabited by Sea Witches and their Spawn", {
 		"nameLong": "Area is inhabited by Sea Witches and their Spawn",
-		"nameShort": "awn",
+		"nameShort": "ei",
 		"nameMod": "Slithering",
 		"packSize": 5,
 		"quantity": 13,
@@ -67,7 +208,7 @@ const mapData = new Map([
 	}],
 	["Area is inhabited by Undead", {
 		"nameLong": "Area is inhabited by Undead",
-		"nameShort": "ead",
+		"nameShort": "by un",
 		"nameMod": "Undead",
 		"packSize": 5,
 		"quantity": 13,
@@ -89,7 +230,7 @@ const mapData = new Map([
 	}],
 	["Area is inhabited by Animals", {
 		"nameLong": "Area is inhabited by Animals",
-		"nameShort": "ima",
+		"nameShort": "nim",
 		"nameMod": "Feral",
 		"packSize": 6,
 		"quantity": 16,
@@ -100,7 +241,7 @@ const mapData = new Map([
 	}],
 	["Area is inhabited by Demons", {
 		"nameLong": "Area is inhabited by Demons",
-		"nameShort": "emo",
+		"nameShort": "emons",
 		"nameMod": "Demonic",
 		"packSize": 5,
 		"quantity": 13,
@@ -111,7 +252,7 @@ const mapData = new Map([
 	}],
 	["Area is inhabited by Humanoids", {
 		"nameLong": "Area is inhabited by Humanoids",
-		"nameShort": "hu",
+		"nameShort": "hum",
 		"nameMod": "Bipedal",
 		"packSize": 5,
 		"quantity": 13,
@@ -122,7 +263,7 @@ const mapData = new Map([
 	}],
 	["Area is inhabited by Solaris fanatics", {
 		"nameLong": "Area is inhabited by Solaris fanatics",
-		"nameShort": "lar",
+		"nameShort": "laris",
 		"nameMod": "Solar",
 		"packSize": 5,
 		"quantity": 13,
@@ -133,7 +274,7 @@ const mapData = new Map([
 	}],
 	["Area is inhabited by Lunaris fanatics", {
 		"nameLong": "Area is inhabited by Lunaris fanatics",
-		"nameShort": "una",
+		"nameShort": "unar",
 		"nameMod": "Lunar",
 		"packSize": 5,
 		"quantity": 13,
@@ -144,7 +285,7 @@ const mapData = new Map([
 	}],
 	["Area is inhabited by Ghosts", {
 		"nameLong": "Area is inhabited by Ghosts",
-		"nameShort": "ost",
+		"nameShort": "osts",
 		"nameMod": "Haunting",
 		"packSize": 5,
 		"quantity": 13,
@@ -188,7 +329,7 @@ const mapData = new Map([
 	}],
 	["Monsters' skills Chain 2 additional times", {
 		"nameLong": "Monsters' skills Chain 2 additional times",
-		"nameShort": "tim",
+		"nameShort": "s' s",
 		"nameMod": "Chaining",
 		"packSize": 6,
 		"quantity": 16,
@@ -206,7 +347,7 @@ const mapData = new Map([
 		"rarity": 9,
 		"parent": "prefix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 800
 	}],
 	["Monsters have 60% less effect of Curses on Monsters", {
 		"nameLong": "Monsters have 60% less effect of Curses on Monsters",
@@ -232,7 +373,7 @@ const mapData = new Map([
 	}],*/
 	["Area contains two Unique Bosses", {
 		"nameLong": "Area contains two Unique Bosses",
-		"nameShort": "tw",
+		"nameShort": "two",
 		"nameMod": "Twinned",
 		"packSize": 7,
 		"quantity": 19,
@@ -243,7 +384,7 @@ const mapData = new Map([
 	}],
 	["Monsters have (25-30)% more Life Monsters cannot be Stunned", {
 		"nameLong": "Monsters have (25-30)% more Life Monsters cannot be Stunned",
-		"nameShort": "ned",
+		"nameShort": "tun",
 		"nameMod": "Unwavering",
 		"packSize": 5,
 		"quantity": 13,
@@ -276,7 +417,7 @@ const mapData = new Map([
 	}],
 	["Monsters have (40-49)% more Life", {
 		"nameLong": "Monsters have (40-49)% more Life",
-		"nameShort": "undefined",
+		"nameShort": "re li",
 		"nameMod": "Fecund",
 		"packSize": 5,
 		"quantity": 13,
@@ -287,7 +428,7 @@ const mapData = new Map([
 	}],
 	["Monsters have (22-25)% increased Damage", {
 		"nameLong": "Monsters have (22-25)% increased Damage",
-		"nameShort": "undefined",
+		"nameShort": "rs.{8}2",
 		"nameMod": "Savage",
 		"packSize": 7,
 		"quantity": 19,
@@ -338,11 +479,11 @@ const mapData = new Map([
 		"rarity": 9,
 		"parent": "prefix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 800
 	}],
 	["Monsters have (25-30)% increased Movement Speed |Monsters have (35-45)% increased Attack Speed |Monsters have (25-30)% increased Cast Speed", {
 		"nameLong": "Monsters have (25-30)% increased Movement Speed |Monsters have (35-45)% increased Attack Speed |Monsters have (25-30)% increased Cast Speed",
-		"nameShort": "5-",
+		"nameShort": "k sp",
 		"nameMod": "Fleet",
 		"packSize": 7,
 		"quantity": 19,
@@ -360,22 +501,22 @@ const mapData = new Map([
 		"rarity": 6,
 		"parent": "prefix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 1000
 	}],
 	["Monsters reflect 18% of Elemental Damage", {
 		"nameLong": "Monsters reflect 18% of Elemental Damage",
-		"nameShort": "al d",
+		"nameShort": "tal d",
 		"nameMod": "Mirrored",
 		"packSize": 4,
 		"quantity": 10,
 		"rarity": 6,
 		"parent": "prefix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 1000
 	}],
 	["Unique Boss deals 25% increased Damage |Unique Boss has 30% increased Attack and Cast Speed", {
 		"nameLong": "Unique Boss deals 25% increased Damage |Unique Boss has 30% increased Attack and Cast Speed",
-		"nameShort": "|u",
+		"nameShort": "k a",
 		"nameMod": "Overlord's",
 		"packSize": 6,
 		"quantity": 16,
@@ -386,7 +527,7 @@ const mapData = new Map([
 	}],
 	["Unique Boss has 35% increased Life Unique |Boss has 70% increased Area of Effect", {
 		"nameLong": "Unique Boss has 35% increased Life Unique |Boss has 70% increased Area of Effect",
-		"nameShort": "|b",
+		"nameShort": "d li",
 		"nameMod": "Titan's",
 		"packSize": 5,
 		"quantity": 13,
@@ -408,7 +549,7 @@ const mapData = new Map([
 	}],
 	["Monsters cannot be Taunted |Monsters' Action Speed cannot be modified to below base value", {
 		"nameLong": "Monsters cannot be Taunted |Monsters' Action Speed cannot be modified to below base value",
-		"nameShort": "od",
+		"nameShort": "elo",
 		"nameMod": "Unstoppable",
 		"packSize": 4,
 		"quantity": 10,
@@ -430,7 +571,7 @@ const mapData = new Map([
 	}],
 	["+25% Monster Chaos Resistance |+40% Monster Elemental Resistances", {
 		"nameLong": "+25% Monster Chaos Resistance |+40% Monster Elemental Resistances",
-		"nameShort": "+2",
+		"nameShort": "r el",
 		"nameMod": "Resistant",
 		"packSize": 5,
 		"quantity": 13,
@@ -463,7 +604,7 @@ const mapData = new Map([
 	}],
 	["Monsters have +60% chance to Suppress Spell Damage", {
 		"nameLong": "Monsters have +60% chance to Suppress Spell Damage",
-		"nameShort": "+6",
+		"nameShort": "o su",
 		"nameMod": "Oppressive",
 		"packSize": 5,
 		"quantity": 13,
@@ -474,7 +615,7 @@ const mapData = new Map([
 	}],
 	["Monsters gain (40-49)% of Maximum Life as Extra Maximum Energy Shield", {
 		"nameLong": "Monsters gain (40-49)% of Maximum Life as Extra Maximum Energy Shield",
-		"nameShort": "m e",
+		"nameShort": "m li",
 		"nameMod": "Buffered",
 		"packSize": 5,
 		"quantity": 13,
@@ -492,11 +633,11 @@ const mapData = new Map([
 		"rarity": 9,
 		"parent": "prefix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 750
 	}],
 	["(20-30)% more Magic Monsters", {
 		"nameLong": "(20-30)% more Magic Monsters",
-		"nameShort": "gi",
+		"nameShort": "gic",
 		"nameMod": "of Bloodlines",
 		"packSize": 4,
 		"quantity": 10,
@@ -529,7 +670,7 @@ const mapData = new Map([
 	}],
 	["Monsters have 100% increased Area of Effect", {
 		"nameLong": "Monsters have 100% increased Area of Effect",
-		"nameShort": "00",
+		"nameShort": "e \d+%.{11}ar",
 		"nameMod": "of Giants",
 		"packSize": 5,
 		"quantity": 13,
@@ -540,7 +681,7 @@ const mapData = new Map([
 	}],
 	["Monsters have (360-400)% increased Critical Strike Chance |+(41-45)% to Monster Critical Strike Multiplier", {
 		"nameLong": "Monsters have (360-400)% increased Critical Strike Chance |+(41-45)% to Monster Critical Strike Multiplier",
-		"nameShort": "1-",
+		"nameShort": "tip",
 		"nameMod": "of Deadliness",
 		"packSize": 6,
 		"quantity": 16,
@@ -558,18 +699,18 @@ const mapData = new Map([
 		"rarity": 9,
 		"parent": "suffix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 850
 	}],
 	["Players cannot Regenerate Life, Mana or Energy Shield", {
 		"nameLong": "Players cannot Regenerate Life, Mana or Energy Shield",
-		"nameShort": "shi",
+		"nameShort": "gen",
 		"nameMod": "of Stasis",
 		"packSize": 6,
 		"quantity": 16,
 		"rarity": 9,
 		"parent": "suffix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 900
 	}],
 	["Area has patches of Burning Ground", {
 		"nameLong": "Area has patches of Burning Ground",
@@ -584,7 +725,7 @@ const mapData = new Map([
 	}],
 	["Area has patches of Chilled Ground", {
 		"nameLong": "Area has patches of Chilled Ground",
-		"nameShort": "lle",
+		"nameShort": "hil",
 		"nameMod": "of Ice",
 		"packSize": 4,
 		"quantity": 10,
@@ -617,7 +758,7 @@ const mapData = new Map([
 	}],
 	["Area has patches of Consecrated Ground", {
 		"nameLong": "Area has patches of Consecrated Ground",
-		"nameShort": "gro",
+		"nameShort": "nsecr",
 		"nameMod": "of Consecration",
 		"packSize": 4,
 		"quantity": 10,
@@ -668,18 +809,18 @@ const mapData = new Map([
 		"rarity": 8,
 		"parent": "suffix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 850
 	}],
 	["(-12--9)% maximum Player Resistances", {
 		"nameLong": "(-12--9)% maximum Player Resistances",
-		"nameShort": "mu",
+		"nameShort": "% ma",
 		"nameMod": "of Exposure",
 		"packSize": 7,
 		"quantity": 19,
 		"rarity": 11,
 		"parent": "suffix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 900
 	}],
 	["Cannot Leech from Monsters", {
 		"nameLong": "Cannot Leech from Monsters",
@@ -690,11 +831,11 @@ const mapData = new Map([
 		"rarity": 9,
 		"parent": "suffix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 900
 	}],
 	["Monsters have 70% chance to Avoid Elemental Ailments", {
 		"nameLong": "Monsters have 70% chance to Avoid Elemental Ailments",
-		"nameShort": "elem",
+		"nameShort": "d el",
 		"nameMod": "of Insulation",
 		"packSize": 4,
 		"quantity": 10,
@@ -727,7 +868,7 @@ const mapData = new Map([
 	}],
 	["Players have 30% less Armour |Players have 40% reduced Chance to Block", {
 		"nameLong": "Players have 30% less Armour |Players have 40% reduced Chance to Block",
-		"nameShort": "rm",
+		"nameShort": "o bl",
 		"nameMod": "of Rust",
 		"packSize": 5,
 		"quantity": 13,
@@ -738,7 +879,7 @@ const mapData = new Map([
 	}],
 	["Monsters have 50% increased Accuracy Rating |Players have -20% to amount of Suppressed Spell Damage Prevented", {
 		"nameLong": "Monsters have 50% increased Accuracy Rating |Players have -20% to amount of Suppressed Spell Damage Prevented",
-		"nameShort": "su",
+		"nameShort": "rev",
 		"nameMod": "of Miring",
 		"packSize": 5,
 		"quantity": 13,
@@ -749,7 +890,7 @@ const mapData = new Map([
 	}],
 	["Players have 25% less Area of Effect", {
 		"nameLong": "Players have 25% less Area of Effect",
-		"nameShort": "f ef",
+		"nameShort": "ss are",
 		"nameMod": "of Impotence",
 		"packSize": 5,
 		"quantity": 13,
@@ -771,7 +912,7 @@ const mapData = new Map([
 	}],
 	["Monsters gain an Endurance Charge on Hit", {
 		"nameLong": "Monsters gain an Endurance Charge on Hit",
-		"nameShort": "n an",
+		"nameShort": "an an",
 		"nameMod": "of Endurance",
 		"packSize": 5,
 		"quantity": 13,
@@ -782,7 +923,7 @@ const mapData = new Map([
 	}],
 	["Monsters gain a Power Charge on Hit", {
 		"nameLong": "Monsters gain a Power Charge on Hit",
-		"nameShort": "wer c",
+		"nameShort": "a pow",
 		"nameMod": "of Power",
 		"packSize": 5,
 		"quantity": 13,
@@ -804,7 +945,7 @@ const mapData = new Map([
 	}],
 	["Monsters Maim on Hit with Attacks", {
 		"nameLong": "Monsters Maim on Hit with Attacks",
-		"nameShort": "att",
+		"nameShort": "aim",
 		"nameMod": "of Carnage",
 		"packSize": 4,
 		"quantity": 10,
@@ -848,7 +989,7 @@ const mapData = new Map([
 	}],
 	["Buffs on Players expire 70% faster", {
 		"nameLong": "Buffs on Players expire 70% faster",
-		"nameShort": "pi",
+		"nameShort": "fs",
 		"nameMod": "of Transience",
 		"packSize": 4,
 		"quantity": 10,
@@ -866,11 +1007,11 @@ const mapData = new Map([
 		"rarity": 8,
 		"parent": "suffix",
 		"danger": 0,
-		"popularity": 0
+		"popularity": 750
 	}],
 	["Players have 25% less Accuracy Rating", {
 		"nameLong": "Players have 25% less Accuracy Rating",
-		"nameShort": "cu",
+		"nameShort": "s ac",
 		"nameMod": "of Imprecision",
 		"packSize": 5,
 		"quantity": 13,
