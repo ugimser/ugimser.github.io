@@ -65,8 +65,8 @@ function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badMo
         const qreg = inputValue.slice(start + 6, end);
         inputValue = inputValue.substring(0, start) + inputValue.substring(end + 2);
         try {
-            regexQuantity = extractNumbers(qreg);
-            quantityEle.value = regexQuantity;
+            regexQuantity = '.*' + qreg;
+            quantityEle.value = extractNumbers(qreg);
         }
         catch (err) {
             console.log('extractNumbers(qreg)' + err);
@@ -80,8 +80,8 @@ function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badMo
         const qreg = inputValue.slice(start + 5, end);
         inputValue = inputValue.substring(0, start) + inputValue.substring(end + 2);
         try {
-            regexPackSize = extractNumbers(qreg);
-            packsizeEle.value = regexPackSize;
+            regexPackSize = '.*' + qreg;
+            packsizeEle.value = extractNumbers(qreg);
         }
         catch (err) {
             console.log('extractNumbers(qreg)' + err);
@@ -198,6 +198,7 @@ function findDontWantedMods(inputValue, tab) {
 }
 function findWantedMods(inputValue, tab, implicits = false) {
     let sanitized;
+    inputValue = inputValue.trim();
 
     const betweenQuote = inputValue.match(/"(.*?)"/g);
     if (betweenQuote) {
@@ -224,7 +225,6 @@ function findWantedMods(inputValue, tab, implicits = false) {
             .replaceAll("!", "")
             .trim();
     }
-    //console.log(sanitized);
 
     tab.forEach(obj => {
         if (obj.textContent.toLowerCase().match(sanitized)) {
@@ -243,7 +243,7 @@ function extractNumbers(regex) {
     //const numbers = [];
     let firstNumber = 0;
 
-    // Utworzenie obiektu RegExp z wyra¿enia regularnego
+    // Utworzenie obiektu RegExp z wyraÅ¼enia regularnego
     const re = new RegExp(regex);
 
     // Iteracja po wszystkich liczbach w zakresie 20-99
@@ -251,7 +251,7 @@ function extractNumbers(regex) {
         // Konwersja liczby na string
         const numberString = i.toString();
 
-        // Sprawdzenie, czy liczba pasuje do wyra¿enia regularnego
+        // Sprawdzenie, czy liczba pasuje do wyraÅ¼enia regularnego
         if (re.test(numberString)) {
             // Dodanie liczby do tablicy
             // numbers.push(numberString);
@@ -259,12 +259,12 @@ function extractNumbers(regex) {
         }
     }
 
-    // Iteracja po wszystkich liczbach trzycyfrowych zaczynaj¹cych siê od 1
+    // Iteracja po wszystkich liczbach trzycyfrowych zaczynajÄ…cych siÄ™ od 1
     for (let i = 100; i <= 199; i++) {
         // Konwersja liczby na string
         const numberString = i.toString();
 
-        // Sprawdzenie, czy liczba pasuje do wyra¿enia regularnego
+        // Sprawdzenie, czy liczba pasuje do wyraÅ¼enia regularnego
         if (re.test(numberString)) {
             // Dodanie liczby do tablicy
             //numbers.push(numberString);
@@ -272,7 +272,7 @@ function extractNumbers(regex) {
         }
     }
 
-    // Zwrócenie tablicy liczb
+    // ZwrÃ³cenie tablicy liczb
     return firstNumber;
 }
 
@@ -384,6 +384,7 @@ function changeMapRegexQuantity(newValue, mapModWindow) {
     } else {
         regexQuantity = ".*2[" + newValue[1] + "-9].";
     }
+    if (mapModWindow)
     showMapRegex(mapModWindow);
 }
 
@@ -405,6 +406,7 @@ function changeMapRegexPackSize(newValue, mapModWindow) {
     } else {
         regexPackSize = ".*2[" + newValue[1] + "-9].";
     }
+    if (mapModWindow)
     showMapRegex(mapModWindow);
 }
 
