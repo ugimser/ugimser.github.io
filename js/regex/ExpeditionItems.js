@@ -36,7 +36,8 @@ function showHightValue() {
                     image: all.image,
                     chaosValueLeague: all.chaosValueLeague,
                     chaosValueHCLeague: all.chaosValueHCLeague,
-                    chaosValueStandard: all.chaosValueStandard
+                    chaosValueStandard: all.chaosValueStandard,
+                    alreadyShown: false
                 };
             }
         }

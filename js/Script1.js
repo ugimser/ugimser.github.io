@@ -45,12 +45,12 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
         newStartDate.setDate(newStartDate.getDate() + 28);
         newEndDate.setDate(newEndDate.getDate() + 28);
 
-        // Poprawka dla przesuniÄ™cia do nowego miesiÄ…ca
+        // Poprawka dla przesuniêcia do nowego miesi¹ca
         if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
-            newStartDate.setDate(0); // Ustawiamy na ostatni dzieÅ„ poprzedniego miesiÄ…ca
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
-            newEndDate.setDate(0); // Ustawiamy na ostatni dzieÅ„ poprzedniego miesiÄ…ca
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         stashSaleTimer(newStartDate, newEndDate);
     }
@@ -193,17 +193,23 @@ function panelRegexGwennen(panel, oldRegex, check) {
             regexLeague.push(i.regex);
         } else {
             break;
-        }
+        }        
 
-        const div = document.createElement('div');
-        div.title = i.name + ' (' + i.baseType + ')';
-        div.style.padding = '5px';
-        div.style.display = 'grid';
-        div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + i.image + '"><span class="chaos-value">' + chaosValueParser(i.chaosValueLeague) + '</span>';
-        divItemsLeague.appendChild(div);
+        items.forEach(others => {
+            if (others.baseType === i.baseType && others.alreadyShown === false) {
+                others.alreadyShown = true;
+                const div = document.createElement('div');
+                div.title = others.name + ' (' + others.baseType + ')';
+                div.style.padding = '5px';
+                div.style.display = 'grid';
+                div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + others.image + '"><span class="chaos-value">' + chaosValueParser(others.chaosValueLeague) + '</span>';
+                divItemsLeague.appendChild(div);
+            }
+        });
     }
     // leaguehc
     items.sort((a, b) => (b.chaosValueHCLeague - a.chaosValueHCLeague));
+    items.forEach(i => i.alreadyShown = false);
     for (const i of items) {
         let allStrings = 0;
         for (const i of regexLeaguehc) {
@@ -215,15 +221,21 @@ function panelRegexGwennen(panel, oldRegex, check) {
             break;
         }
 
-        const div = document.createElement('div');
-        div.title = i.name + ' (' + i.baseType + ')';
-        div.style.padding = '5px';
-        div.style.display = 'grid';
-        div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + i.image + '"><span class="chaos-value">' + chaosValueParser(i.chaosValueHCLeague) + '</span>';
-        divItemsLeaguehc.appendChild(div);
+        items.forEach(others => {
+            if (others.baseType === i.baseType && others.alreadyShown === false) {
+                others.alreadyShown = true;
+                const div = document.createElement('div');
+                div.title = others.name + ' (' + others.baseType + ')';
+                div.style.padding = '5px';
+                div.style.display = 'grid';
+                div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + others.image + '"><span class="chaos-value">' + chaosValueParser(others.chaosValueHCLeague) + '</span>';
+                divItemsLeaguehc.appendChild(div);
+            }
+        });
     }
     // std
     items.sort((a, b) => (b.chaosValueStandard - a.chaosValueStandard));
+    items.forEach(i => i.alreadyShown = false);
     for (const i of items) {
         let allStrings = 0;
         for (const i of regexLeaguestd) {
@@ -235,12 +247,17 @@ function panelRegexGwennen(panel, oldRegex, check) {
             break;
         }
 
-        const div = document.createElement('div');
-        div.title = i.name + ' (' + i.baseType + ')';
-        div.style.padding = '5px';
-        div.style.display = 'grid';
-        div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + i.image + '"><span class="chaos-value">' + chaosValueParser(i.chaosValueStandard) + '</span>';
-        divItemsLeaguestd.appendChild(div);
+        items.forEach(others => {
+            if (others.baseType === i.baseType && others.alreadyShown === false) {
+                others.alreadyShown = true;
+                const div = document.createElement('div');
+                div.title = others.name + ' (' + others.baseType + ')';
+                div.style.padding = '5px';
+                div.style.display = 'grid';
+                div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + others.image + '"><span class="chaos-value">' + chaosValueParser(others.chaosValueStandard) + '</span>';
+                divItemsLeaguestd.appendChild(div);
+            }
+        });
     }
 
 
@@ -389,7 +406,7 @@ async function copyToClipboard(text) {
             await navigator.clipboard.writeText(text);
             notification('Copied: ' + text);
         } catch (err) {
-            console.log('BÅ‚Ä…d podczas kopiowania do schowka:', err);
+            console.log('B³¹d podczas kopiowania do schowka:', err);
         }
     } else {
         copyToClipboardFallBack(text);
@@ -398,13 +415,13 @@ async function copyToClipboard(text) {
 
 function copyToClipboardFallBack(text) {
     var input = document.createElement('input'); // Utworzenie elementu input
-    input.style.position = 'fixed'; // Ustawienie pozycji na staÅ‚e
+    input.style.position = 'fixed'; // Ustawienie pozycji na sta³e
     input.style.opacity = 0; // Ukrycie elementu
-    input.value = text; // Ustawienie wartoÅ›ci na tekst do skopiowania
-    document.body.appendChild(input); // Dodanie elementu do ciaÅ‚a dokumentu
-    input.select(); // Zaznaczenie zawartoÅ›ci elementu
+    input.value = text; // Ustawienie wartoœci na tekst do skopiowania
+    document.body.appendChild(input); // Dodanie elementu do cia³a dokumentu
+    input.select(); // Zaznaczenie zawartoœci elementu
     document.execCommand('copy'); // Skopiowanie zaznaczonego tekstu do schowka
-    document.body.removeChild(input); // UsuniÄ™cie tymczasowego elementu input
+    document.body.removeChild(input); // Usuniêcie tymczasowego elementu input
     notification('Copied: ' + text);
 }
 function notification(message) {

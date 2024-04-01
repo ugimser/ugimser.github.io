@@ -245,7 +245,7 @@ function extractNumbers(regex) {
     //const numbers = [];
     let firstNumber = 0;
 
-    // Utworzenie obiektu RegExp z wyraÅ¼enia regularnego
+    // Utworzenie obiektu RegExp z wyra¿enia regularnego
     const re = new RegExp(regex);
 
     // Iteracja po wszystkich liczbach w zakresie 20-99
@@ -253,7 +253,7 @@ function extractNumbers(regex) {
         // Konwersja liczby na string
         const numberString = i.toString();
 
-        // Sprawdzenie, czy liczba pasuje do wyraÅ¼enia regularnego
+        // Sprawdzenie, czy liczba pasuje do wyra¿enia regularnego
         if (re.test(numberString)) {
             // Dodanie liczby do tablicy
             // numbers.push(numberString);
@@ -261,12 +261,12 @@ function extractNumbers(regex) {
         }
     }
 
-    // Iteracja po wszystkich liczbach trzycyfrowych zaczynajÄ…cych siÄ™ od 1
+    // Iteracja po wszystkich liczbach trzycyfrowych zaczynaj¹cych siê od 1
     for (let i = 100; i <= 199; i++) {
         // Konwersja liczby na string
         const numberString = i.toString();
 
-        // Sprawdzenie, czy liczba pasuje do wyraÅ¼enia regularnego
+        // Sprawdzenie, czy liczba pasuje do wyra¿enia regularnego
         if (re.test(numberString)) {
             // Dodanie liczby do tablicy
             //numbers.push(numberString);
@@ -274,7 +274,7 @@ function extractNumbers(regex) {
         }
     }
 
-    // ZwrÃ³cenie tablicy liczb
+    // Zwrócenie tablicy liczb
     return firstNumber;
 }
 
