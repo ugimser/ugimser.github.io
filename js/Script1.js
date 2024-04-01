@@ -121,10 +121,10 @@ function panelRegexMapMods(panel, oldRegex, check) {
 
     mapPackSizeInput.addEventListener('input', () => {
         try {
-            let number = parseInt(mapQuantityInput.value / 10) * 10;
-            changeMapRegexPackSize(mapPackSizeInput.value.toString(), mapRegexText);
+            let number = parseInt(mapPackSizeInput.value / 10) * 10;
+            changeMapRegexPackSize(number.toString(), mapRegexText);
         } catch (err) {
-            console.log('mapQuantityInput ' + err);
+            console.log('mapPackSizeInput ' + err);
         }
     });
 
@@ -134,6 +134,7 @@ function panelRegexMapMods(panel, oldRegex, check) {
         allMods.className === 'hidden' ? flag = 'shown' : flag = 'hidden';
         allMods.className = flag;
         flag === 'hidden' ? btnShowAllMods.innerText = 'Show Mods' : btnShowAllMods.innerText = 'Hide Mods';
+        panels.appendChild(panel);
     });
 
     mapRegexText.addEventListener('click', function  (event) {
