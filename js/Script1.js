@@ -45,12 +45,12 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
         newStartDate.setDate(newStartDate.getDate() + 28);
         newEndDate.setDate(newEndDate.getDate() + 28);
 
-        // Poprawka dla przesuniêcia do nowego miesi¹ca
+        // Poprawka dla przesunięcia do nowego miesiąca
         if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
-            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzień poprzedniego miesiąca
         }
         if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
-            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzień poprzedniego miesiąca
         }
         stashSaleTimer(newStartDate, newEndDate);
     }
@@ -58,7 +58,8 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
 //stashSaleTimer();
 
 function panelRegexMapMods(panel, oldRegex, check) {
-    const inputElement = panel.querySelector('#map_mod_window');
+    const mapRegexText = panel.querySelector('#map_mod_window');
+    const mapRegexTextCounter = panel.querySelector('#map_mod_window_counter');
     const checkboxElement = panel.querySelector("#map_mod_window_copy");
     const btnShowAllMods = panel.querySelector('#panel-regex-map-show-all');
     const btnClearPanel = panel.querySelector('#panel-regex-map-clear-all');
@@ -71,11 +72,21 @@ function panelRegexMapMods(panel, oldRegex, check) {
     const mapPackSizeInput = panel.querySelector('#map-mod-pack-size-input');
     const searchInput = panel.querySelector('#panel-regex-map-search');
 
-    const mapDataPopularity = new Map([...mapData.entries()].sort((a, b) => { return b[1].popularity - a[1].popularity;}));
-    const t1 = createMapModifierList(mapDataPopularity, '', 'map_mod_bad_list', badList, inputElement, removeMapRegexBad, addMapRegexBad);
-    const t2 = createMapModifierList(mapData, '', 'map_mod_good_list', goodList, inputElement, removeMapRegexGood, addMapRegexGood);
-    const t3 = createMapModifierList(mapModsShadowShaping, '', 'map_mod_good_list', kiracList, inputElement, removeMapRegexKirac, addMapRegexKirac);
-    const t4 = createMapModifierList(mapModsCorrupted, '', 'map_mod_good_list', vaalList, inputElement, removeMapRegexKirac, addMapRegexKirac);
+    const _panelID = panel.querySelector('.panel-regex-map-mods').id;
+    panelRegexes.push({
+        panelID: _panelID,
+        regexBad: [],
+        regexGood: [],
+        regexKirac: [],
+        regexQuantity: '',
+        regexPackSize: '',
+    });
+
+    const mapDataPopularity = new Map([...mapData.entries()].sort((a, b) => { return b[1].popularity - a[1].popularity; }));
+    const t1 = createMapModifierList(mapDataPopularity, 'map_mod_bad_list', badList, mapRegexText, removeMapRegexBad, addMapRegexBad);
+    const t2 = createMapModifierList(mapData, 'map_mod_good_list', goodList, mapRegexText, removeMapRegexGood, addMapRegexGood);
+    const t3 = createMapModifierList(mapModsShadowShaping, 'map_mod_good_list', kiracList, mapRegexText, removeMapRegexKirac, addMapRegexKirac);
+    const t4 = createMapModifierList(mapModsCorrupted, 'map_mod_good_list', vaalList, mapRegexText, removeMapRegexKirac, addMapRegexKirac);
 
     const allModsAllList = [...t1, ...t2, ...t3, ...t4];
 
@@ -102,7 +113,7 @@ function panelRegexMapMods(panel, oldRegex, check) {
     mapQuantityInput.addEventListener('input', () => {
         try {
             let number = parseInt(mapQuantityInput.value / 10) * 10;
-            changeMapRegexQuantity(number.toString(), inputElement);
+            changeMapRegexQuantity(number.toString(), mapRegexText);
         } catch (err) {
             console.log('mapQuantityInput ' + err);
         }
@@ -111,7 +122,7 @@ function panelRegexMapMods(panel, oldRegex, check) {
     mapPackSizeInput.addEventListener('input', () => {
         try {
             let number = parseInt(mapQuantityInput.value / 10) * 10;
-            changeMapRegexPackSize(mapPackSizeInput.value.toString(), inputElement);
+            changeMapRegexPackSize(mapPackSizeInput.value.toString(), mapRegexText);
         } catch (err) {
             console.log('mapQuantityInput ' + err);
         }
@@ -125,7 +136,7 @@ function panelRegexMapMods(panel, oldRegex, check) {
         flag === 'hidden' ? btnShowAllMods.innerText = 'Show Mods' : btnShowAllMods.innerText = 'Hide Mods';
     });
 
-    inputElement.addEventListener('click', function  (event) {
+    mapRegexText.addEventListener('click', function  (event) {
         const text = event.target.value;
         if (text.length > 1 && checkboxElement.checked) {
             copyToClipboard(text);
@@ -133,23 +144,22 @@ function panelRegexMapMods(panel, oldRegex, check) {
     });
 
     btnClearPanel.addEventListener('click', () => {
-        inputElement.value = '';
+        mapRegexText.value = '';
         mapQuantityInput.value = '';
         mapPackSizeInput.value = '';
         searchInput.value = '';
-        document.querySelector('#map_mod_window_counter').innerText = '0 / 50';
+        mapRegexTextCounter.innerText = '0 / 50';
         allModsAllList.forEach(obj => {
             obj.classList.remove('map-mod-selected');
             obj.classList.remove('hidden');
             obj.classList.add('shown');
         });
-        clearMapRegex();
+        clearMapRegex(_panelID);
     });
 
     if (oldRegex) {
-        inputElement.value = oldRegex;
-        changeRegexEvent(oldRegex, document.querySelector('#map_mod_window_counter'), mapQuantityInput, mapPackSizeInput, t1, t2, t3.concat(t4));
-        //console.log(oldRegex);
+        mapRegexText.value = oldRegex;
+        changeRegexEvent(_panelID, oldRegex, mapRegexTextCounter, mapQuantityInput, mapPackSizeInput, t1, t2, t3.concat(t4));
     }
     if (check) {
         checkboxElement.checked = check;
@@ -378,7 +388,7 @@ async function copyToClipboard(text) {
             await navigator.clipboard.writeText(text);
             notification('Copied: ' + text);
         } catch (err) {
-            console.log('B³¹d podczas kopiowania do schowka:', err);
+            console.log('Błąd podczas kopiowania do schowka:', err);
         }
     } else {
         copyToClipboardFallBack(text);
@@ -387,13 +397,13 @@ async function copyToClipboard(text) {
 
 function copyToClipboardFallBack(text) {
     var input = document.createElement('input'); // Utworzenie elementu input
-    input.style.position = 'fixed'; // Ustawienie pozycji na sta³e
+    input.style.position = 'fixed'; // Ustawienie pozycji na stałe
     input.style.opacity = 0; // Ukrycie elementu
-    input.value = text; // Ustawienie wartoci na tekst do skopiowania
-    document.body.appendChild(input); // Dodanie elementu do cia³a dokumentu
-    input.select(); // Zaznaczenie zawartoci elementu
+    input.value = text; // Ustawienie wartości na tekst do skopiowania
+    document.body.appendChild(input); // Dodanie elementu do ciała dokumentu
+    input.select(); // Zaznaczenie zawartości elementu
     document.execCommand('copy'); // Skopiowanie zaznaczonego tekstu do schowka
-    document.body.removeChild(input); // Usuniêcie tymczasowego elementu input
+    document.body.removeChild(input); // Usunięcie tymczasowego elementu input
     notification('Copied: ' + text);
 }
 function notification(message) {
