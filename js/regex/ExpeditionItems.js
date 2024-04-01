@@ -1,3 +1,63 @@
+function showGwennenLeagueItems(leagueName, cointainer) {
+    const items = showHightValue();
+    if (leagueName === 'leaguehc') {
+        items.sort((a, b) => (b.chaosValueHCLeague - a.chaosValueHCLeague));
+    } else if (leagueName === 'standard') {
+        items.sort((a, b) => (b.chaosValueStandard - a.chaosValueStandard));
+    } else {
+        items.sort((a, b) => (b.chaosValueLeague - a.chaosValueLeague));
+    }
+
+    const regexTab = [];
+    
+    for (const i of items) {
+        let allStrings = 0;
+        for (const i of regexTab) {
+            allStrings += i.length;
+        }
+        if (2 + regexTab.length + allStrings + i.regex.length < 50) {
+            regexTab.push(i.regex);
+        } else {
+            break;
+        }
+
+        const sameBases = [];
+        items.forEach(others => {
+            if (others.baseType === i.baseType && others.alreadyShown === false) {
+                others.alreadyShown = true;
+
+                const div = document.createElement('div');
+                div.title = others.name + ' (' + others.baseType + ')';
+                div.className = 'regex-gwennen-item';
+                if (leagueName === 'leaguehc') {
+                    div.innerHTML = `<image style="max-width: 100px; max-height: 100px" src="${others.image}">
+                                <span class="chaos-value">${chaosValueParser(others.chaosValueHCLeague)}</span>`;
+                } else if (leagueName === 'standard') {
+                    div.innerHTML = `<image style="max-width: 100px; max-height: 100px" src="${others.image}">
+                                <span class="chaos-value">${chaosValueParser(others.chaosValueStandard)}</span>`;
+                } else {
+                    div.innerHTML = `<image style="max-width: 100px; max-height: 100px" src="${others.image}">
+                                <span class="chaos-value">${chaosValueParser(others.chaosValueLeague)}</span>`;
+                }
+                sameBases.push(div);
+            }
+        });
+        if (sameBases.length > 1) {
+            const con = document.createElement('div');
+            con.className = 'regex-gwennen-same-base';
+            sameBases.forEach(i => {
+                con.appendChild(i);
+                cointainer.appendChild(con);
+            });
+        } else if (sameBases.length === 1) {
+            cointainer.appendChild(sameBases[0]);
+        }
+    }
+    return regexTab;
+}
+
+
+
 function generatePermutations(string) {
     const permutations = new Set();
     for (let i = 0; i < string.length; i++) {

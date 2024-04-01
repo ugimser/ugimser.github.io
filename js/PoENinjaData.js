@@ -18,6 +18,7 @@ for (const url of urls) {
 }
 */
 
+// https://poe.ninja/api/data/itemoverview?league=Necropolis&type=UniqueAccessory
 /**
  * Now prices
  */
@@ -88,7 +89,12 @@ function getPricesOfLeague(url, l) {
             if (data && data.lines) {
                 data.lines.forEach(item => {
                     const element = newTabAll.find(i => i.id === item.id);
-                    const newElement = { id: item.id };
+                    //const newElement = { id: item.id };
+
+                    //if (item.id === 71072) {
+                     //   console.log(item.name);
+                     //   console.log(item.chaosValue);
+                    //}
 
                     if (element) {
                         if (l === leagues[0]) {
@@ -99,7 +105,7 @@ function getPricesOfLeague(url, l) {
                             element.chaosValueStandard = item.chaosValue;
                         }
                         //changedTab.push(element);
-                    } else if (newElement) {
+                    } /*else if (newElement) {
                         if (l === leagues[0]) {
                             newElement.chaosValueLeague = 0;
                         } else if (l === leagues[1]) {
@@ -107,7 +113,7 @@ function getPricesOfLeague(url, l) {
                         } else if (l === leagues[2]) {
                             newElement.chaosValueStandard = 0;
                         }
-                    }
+                    }*/
                 });
             }
         })

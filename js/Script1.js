@@ -177,89 +177,9 @@ function panelRegexGwennen(panel, oldRegex, check) {
     const divItemsLeaguehc = panel.querySelector("#regex_items_leaguehc");
     const divItemsLeaguestd = panel.querySelector("#regex_items_leaguestd");
 
-    let regexLeague = [];
-    let regexLeaguehc = [];
-    let regexLeaguestd = [];
-
-    const items = showHightValue();
-    // league
-    items.sort((a, b) => (b.chaosValueLeague - a.chaosValueLeague));
-    for (const i of items) {
-        let allStrings = 0;
-        for (const i of regexLeague) {
-            allStrings += i.length;
-        }
-        if (2 + regexLeague.length + allStrings + i.regex.length < 50) {
-            regexLeague.push(i.regex);
-        } else {
-            break;
-        }        
-
-        items.forEach(others => {
-            if (others.baseType === i.baseType && others.alreadyShown === false) {
-                others.alreadyShown = true;
-                const div = document.createElement('div');
-                div.title = others.name + ' (' + others.baseType + ')';
-                div.style.padding = '5px';
-                div.style.display = 'grid';
-                div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + others.image + '"><span class="chaos-value">' + chaosValueParser(others.chaosValueLeague) + '</span>';
-                divItemsLeague.appendChild(div);
-            }
-        });
-    }
-    // leaguehc
-    items.sort((a, b) => (b.chaosValueHCLeague - a.chaosValueHCLeague));
-    items.forEach(i => i.alreadyShown = false);
-    for (const i of items) {
-        let allStrings = 0;
-        for (const i of regexLeaguehc) {
-            allStrings += i.length;
-        }
-        if (2 + regexLeaguehc.length + allStrings + i.regex.length < 50) {
-            regexLeaguehc.push(i.regex);
-        } else {
-            break;
-        }
-
-        items.forEach(others => {
-            if (others.baseType === i.baseType && others.alreadyShown === false) {
-                others.alreadyShown = true;
-                const div = document.createElement('div');
-                div.title = others.name + ' (' + others.baseType + ')';
-                div.style.padding = '5px';
-                div.style.display = 'grid';
-                div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + others.image + '"><span class="chaos-value">' + chaosValueParser(others.chaosValueHCLeague) + '</span>';
-                divItemsLeaguehc.appendChild(div);
-            }
-        });
-    }
-    // std
-    items.sort((a, b) => (b.chaosValueStandard - a.chaosValueStandard));
-    items.forEach(i => i.alreadyShown = false);
-    for (const i of items) {
-        let allStrings = 0;
-        for (const i of regexLeaguestd) {
-            allStrings += i.length;
-        }
-        if (2 + regexLeaguestd.length + allStrings + i.regex.length < 50) {
-            regexLeaguestd.push(i.regex);
-        } else {
-            break;
-        }
-
-        items.forEach(others => {
-            if (others.baseType === i.baseType && others.alreadyShown === false) {
-                others.alreadyShown = true;
-                const div = document.createElement('div');
-                div.title = others.name + ' (' + others.baseType + ')';
-                div.style.padding = '5px';
-                div.style.display = 'grid';
-                div.innerHTML = '<image style="max-width: 100px; max-height: 100px" src="' + others.image + '"><span class="chaos-value">' + chaosValueParser(others.chaosValueStandard) + '</span>';
-                divItemsLeaguestd.appendChild(div);
-            }
-        });
-    }
-
+    let regexLeague = showGwennenLeagueItems('league', divItemsLeague);
+    let regexLeaguehc = showGwennenLeagueItems('leaguehc', divItemsLeaguehc);
+    let regexLeaguestd = showGwennenLeagueItems('standard', divItemsLeaguestd);
 
     const str = '"' + regexLeague.join('|').toLowerCase() + '"';
     inputElement.value = str;
