@@ -54,7 +54,9 @@ function changeRegex(add = true, shortString) {
 }
 
 
-function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badModsTab, goodModsTab, implicitModsTab) {
+function changeRegexEvent(pID, inputValue, lengthEle, quantityEle, packsizeEle, badModsTab, goodModsTab, implicitModsTab) {
+    const objToChange = panelRegexes.find(obj => obj.panelID === pID);
+
     // length
     lengthEle.innerHTML = inputValue.length + ' / 50';
     
@@ -65,7 +67,7 @@ function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badMo
         const qreg = inputValue.slice(start + 6, end);
         inputValue = inputValue.substring(0, start) + inputValue.substring(end + 2);
         try {
-            regexQuantity = '.*' + qreg;
+            objToChange.regexQuantity = '.*' + qreg;
             quantityEle.value = extractNumbers(qreg);
         }
         catch (err) {
@@ -80,7 +82,7 @@ function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badMo
         const qreg = inputValue.slice(start + 5, end);
         inputValue = inputValue.substring(0, start) + inputValue.substring(end + 2);
         try {
-            regexPackSize = '.*' + qreg;
+            objToChange.regexPackSize = '.*' + qreg;
             packsizeEle.value = extractNumbers(qreg);
         }
         catch (err) {
@@ -97,7 +99,7 @@ function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badMo
         //console.log(inputValue);
         //console.log(qreg);
         try {
-            findWantedMods(qreg, implicitModsTab, true);
+            findWantedMods(objToChange, qreg, implicitModsTab, true);
         }
         catch (err) {
             console.log('extractNumbers(qreg)' + err);
@@ -114,16 +116,16 @@ function changeRegexEvent(inputValue, lengthEle, quantityEle, packsizeEle, badMo
         //console.log(splited[1]);
         //return;
         if (splited.length > 1) {
-            findDontWantedMods(splited[0].length < 1 ? splited[1] : splited[0], badModsTab);
+            findDontWantedMods(objToChange, splited[0].length < 1 ? splited[1] : splited[0], badModsTab);
             if (splited[1].length > 1 && splited[0].length > 1 && (splited[1].length !== splited[0].length + 2)) {
-                findWantedMods(splited[1], goodModsTab);
+                findWantedMods(objToChange, splited[1], goodModsTab);
                 //console.log('here');
             }
         } else {
-            findDontWantedMods(inputValue, badModsTab);
+            findDontWantedMods(objToChange, inputValue, badModsTab);
         }
     } else if (inputValue.length > 1) {
-        findWantedMods(inputValue, goodModsTab);
+        findWantedMods(objToChange, inputValue, goodModsTab);
     }
 }
 /*
@@ -174,7 +176,7 @@ inputElement.addEventListener('input', function (event) {
 });
 
 */
-function findDontWantedMods(inputValue, tab) {
+function findDontWantedMods(objToChange, inputValue, tab) {
     const sanitized = inputValue
         //.match(/"(.*?)"/g)
         .split("\" ")
@@ -189,14 +191,14 @@ function findDontWantedMods(inputValue, tab) {
         try {
             if (obj.textContent.toLowerCase().match(sanitized)) {
                 obj.classList.add('map-mod-selected');
-                regexBad.push(obj.title);
+                objToChange.regexBad.push(obj.title);
             }
         } catch (err) {
             console.log('findDontWantedMods ' + err);
         }
     });
 }
-function findWantedMods(inputValue, tab, implicits = false) {
+function findWantedMods(objToChange, inputValue, tab, implicits = false) {
     let sanitized;
     inputValue = inputValue.trim();
 
@@ -230,9 +232,9 @@ function findWantedMods(inputValue, tab, implicits = false) {
         if (obj.textContent.toLowerCase().match(sanitized)) {
             obj.classList.add('map-mod-selected');
             if (implicits) {
-                regexKirac.push(obj.title);
+                objToChange.regexKirac.push(obj.title);
             } else {
-                regexGood.push(obj.title);
+                objToChange.regexGood.push(obj.title);
             }
         }
     });
@@ -283,7 +285,7 @@ function extractNumbers(regex) {
 
 
 
-function createMapModifierList(table, limitByString, className, cointainer, regexWindow, removeFunction, addFunction) {
+function createMapModifierList(table, className, cointainer, regexWindow, removeFunction, addFunction) {
     modTab = [];
     table.forEach(mapMod => {
         const modLine = document.createElement('button');
@@ -307,151 +309,217 @@ function createMapModifierList(table, limitByString, className, cointainer, rege
     return modTab;
 }
 
-let regexBad = [];
-let regexGood = [];
-let regexKirac = [];
-let regexQuantity = '';
-let regexPackSize = '';
+const panelRegexes = [{
+    panelID: '',
+    regexBad: [],
+    regexGood: [],
+    regexKirac: [],
+    regexQuantity: '',
+    regexPackSize: '',
+}];
 
-function clearMapRegex() {
-    regexBad = [];
-    regexGood = [];
-    regexKirac = [];
-    regexQuantity = '';
-    regexPackSize = '';
+function clearMapRegex(pID) {
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            obj.regexBad = [];
+            obj.regexGood = [];
+            obj.regexKirac = [];
+            obj.regexQuantity = '';
+            obj.regexPackSize = '';
+            return;
+        }
+    });
 }
 
 function addMapRegexBad(shortName, mapModWindow) {
-    regexBad.push(shortName);
-    showMapRegex(mapModWindow);
+    const pID = mapModWindow.parentElement.parentElement.id;
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            obj.regexBad.push(shortName);
+            return;
+        }
+    });
+    
+    showMapRegex(mapModWindow, pID);
 }
 
 function removeMapRegexBad(shortName, mapModWindow) {
-    var index = regexBad.indexOf(shortName);
-    if (index !== -1) {
-        regexBad.splice(index, 1);
-    }
-    showMapRegex(mapModWindow);
+    const pID = mapModWindow.parentElement.parentElement.id;
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            var index = obj.regexBad.indexOf(shortName);
+            if (index !== -1) {
+                obj.regexBad.splice(index, 1);
+            }
+            return;
+        }
+    });
+    
+    showMapRegex(mapModWindow, pID);
 }
 
 function addMapRegexGood(shortName, mapModWindow) {
-    if (shortName.includes(' ')) {
-        shortName = '"' +shortName + '"';
-    }
-    regexGood.push(shortName);
-    showMapRegex(mapModWindow);
+    const pID = mapModWindow.parentElement.parentElement.id;
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            if (shortName.includes(' ')) {
+                shortName = '"' + shortName + '"';
+            }
+            obj.regexGood.push(shortName);
+            return;
+        }
+    });
+    
+    showMapRegex(mapModWindow, pID);
 }
 
 function removeMapRegexGood(shortName, mapModWindow) {
-    if (shortName.includes(' ')) {
-        shortName = '"' + shortName + '"';
-    }
-    var index = regexGood.indexOf(shortName);
-    if (index !== -1) {
-        regexGood.splice(index, 1);
-    }
-    showMapRegex(mapModWindow);
+    const pID = mapModWindow.parentElement.parentElement.id;
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            if (shortName.includes(' ')) {
+                shortName = '"' + shortName + '"';
+            }
+            var index = obj.regexGood.indexOf(shortName);
+            if (index !== -1) {
+                obj.regexGood.splice(index, 1);
+            }
+            return;
+        }
+    });
+
+    showMapRegex(mapModWindow, pID);
 }
 
 function addMapRegexKirac(shortName, mapModWindow) {
-    regexKirac.push(shortName);
-    showMapRegex(mapModWindow);
+    const pID = mapModWindow.parentElement.parentElement.id;
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            obj.regexKirac.push(shortName);
+            return;
+        }
+    });
+
+    showMapRegex(mapModWindow, pID);
 }
 
 function removeMapRegexKirac(shortName, mapModWindow) {
-    var index = regexKirac.indexOf(shortName);
-    if (index !== -1) {
-        regexKirac.splice(index, 1);
-    }
-    showMapRegex(mapModWindow);
+    const pID = mapModWindow.parentElement.parentElement.id;
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            var index = obj.regexKirac.indexOf(shortName);
+            if (index !== -1) {
+                obj.regexKirac.splice(index, 1);
+            }
+            return;
+        }
+    });
+
+    showMapRegex(mapModWindow, pID);
 }
 
 function changeMapRegexQuantity(newValue, mapModWindow) {
-    newValue = newValue.replace(/^0+/, '');
-    if (newValue.length < 2) {
-        regexQuantity = '';
-        showMapRegex(mapModWindow);
-        return;
-    }
-    if (newValue < 80) {
-        regexQuantity = ".*([" + newValue[0] + "-9].|1..)";
-    } else if (newValue < 90) {
-        regexQuantity = ".*([" + newValue[0] + "9].|1..)";
-    } else if (newValue < 100) {
-        regexQuantity = ".*(" + newValue[0] + ".|1..)";
-    } else if (newValue < 200) {
-        regexQuantity = ".*1[" + newValue[1] + "-9].";
-    } else {
-        regexQuantity = ".*2[" + newValue[1] + "-9].";
-    }
+    const pID = mapModWindow.parentElement.parentElement.id;
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            newValue = newValue.replace(/^0+/, '');
+            if (newValue.length < 2) {
+                obj.regexQuantity = '';
+                showMapRegex(mapModWindow, pID);
+                return;
+            }
+            if (newValue < 80) {
+                obj.regexQuantity = ".*([" + newValue[0] + "-9].|1..)";
+            } else if (newValue < 90) {
+                obj.regexQuantity = ".*([" + newValue[0] + "9].|1..)";
+            } else if (newValue < 100) {
+                obj.regexQuantity = ".*(" + newValue[0] + ".|1..)";
+            } else if (newValue < 200) {
+                obj.regexQuantity = ".*1[" + newValue[1] + "-9].";
+            } else {
+                obj.regexQuantity = ".*2[" + newValue[1] + "-9].";
+            }
+            return;
+        }
+    });
+
     if (mapModWindow)
-    showMapRegex(mapModWindow);
+    showMapRegex(mapModWindow, pID);
 }
 
 function changeMapRegexPackSize(newValue, mapModWindow) {
-    newValue = newValue.replace(/^0+/, '');
-    if (newValue.length < 2) {
-        regexPackSize = '';
-        showMapRegex(mapModWindow);
-        return;
-    }
-    if (newValue < 80) {
-        regexPackSize = ".*([" + newValue[0] + "-9].|1..)";
-    } else if (newValue < 90) {
-        regexPackSize = ".*([" + newValue[0] + "9].|1..)";
-    } else if (newValue < 100) {
-        regexPackSize = ".*(" + newValue[0] + ".|1..)";
-    } else if (newValue < 200) {
-        regexPackSize = ".*1[" + newValue[1] + "-9].";
-    } else {
-        regexPackSize = ".*2[" + newValue[1] + "-9].";
-    }
+    const pID = mapModWindow.parentElement.parentElement.id;
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            newValue = newValue.replace(/^0+/, '');
+            if (newValue.length < 2) {
+                obj.regexPackSize = '';
+                showMapRegex(mapModWindow, pID);
+                return;
+            }
+            if (newValue < 80) {
+                obj.regexPackSize = ".*([" + newValue[0] + "-9].|1..)";
+            } else if (newValue < 90) {
+                obj.regexPackSize = ".*([" + newValue[0] + "9].|1..)";
+            } else if (newValue < 100) {
+                obj.regexPackSize = ".*(" + newValue[0] + ".|1..)";
+            } else if (newValue < 200) {
+                obj.regexPackSize = ".*1[" + newValue[1] + "-9].";
+            } else {
+                obj.regexPackSize = ".*2[" + newValue[1] + "-9].";
+            }
+            return;
+        }
+    });
+
     if (mapModWindow)
-    showMapRegex(mapModWindow);
+    showMapRegex(mapModWindow, pID);
 }
 
-function showMapRegex(mapModWindow) {
+function showMapRegex(mapModWindow, pID) {
+    const objToChange = panelRegexes.find(obj => obj.panelID === pID);
     let regAll = '';
-    if (regexBad.length > 0) {
-        regAll = '"!' + regexBad.join('|') + '"';
+
+    if (objToChange.regexBad.length > 0) {
+        regAll = '"!' + objToChange.regexBad.join('|') + '"';
     }
 
-    if (regexGood.length > 0) {
-        if (regexBad.length > 0) {
-            regAll += ' ' + regexGood.join(' ');
+    if (objToChange.regexGood.length > 0) {
+        if (objToChange.regexBad.length > 0) {
+            regAll += ' ' + objToChange.regexGood.join(' ');
         } else {
-            regAll = regexGood.join(' ');
+            regAll = objToChange.regexGood.join(' ');
         }
     } 
 
-    if (regexKirac.length > 0) {
-        if (regexBad.length > 0 || regexGood.length > 0) {
-            regAll += ' "(' + regexKirac.join('|') + ').*lic"';
+    if (objToChange.regexKirac.length > 0) {
+        if (objToChange.regexBad.length > 0 || objToChange.regexGood.length > 0) {
+            regAll += ' "(' + objToChange.regexKirac.join('|') + ').*lic"';
         } else {
-            regAll += '"(' + regexKirac.join('|') + ').*lic"';
+            regAll += '"(' + objToChange.regexKirac.join('|') + ').*lic"';
         }
     }
 
-    if (regexQuantity.length > 0) {
-        if (regexBad.length > 0 || regexGood.length > 0 || regexKirac.length > 0) {
-            regAll += ' "m q' + regexQuantity + '%"';
+    if (objToChange.regexQuantity.length > 0) {
+        if (objToChange.regexBad.length > 0 || objToChange.regexGood.length > 0 || objToChange.regexKirac.length > 0) {
+            regAll += ' "m q' + objToChange.regexQuantity + '%"';
         } else {
-            regAll += '"m q' + regexQuantity + '%"';
+            regAll += '"m q' + objToChange.regexQuantity + '%"';
         }
     }
 
-    if (regexPackSize.length > 0) {
-        if (regexBad.length > 0 || regexGood.length > 0 || regexKirac.length > 0 || regexQuantity.length > 0) {
-            regAll += ' "ze' + regexPackSize + '%"';
+    if (objToChange.regexPackSize.length > 0) {
+        if (objToChange.regexBad.length > 0 || objToChange.regexGood.length > 0 || objToChange.regexKirac.length > 0 || objToChange.regexQuantity.length > 0) {
+            regAll += ' "ze' + objToChange.regexPackSize + '%"';
         } else {
-            regAll += '"ze' + regexPackSize + '%"';
+            regAll += '"ze' + objToChange.regexPackSize + '%"';
         }
     }
 
     mapModWindow.value = regAll;
 
-    const lengthElement = document.querySelector('#map_mod_window_counter');
+    const lengthElement = mapModWindow.parentElement.querySelector('#map_mod_window_counter');
     if (lengthElement) {
-        lengthElement.innerHTML = regAll.length + ' / 50';
+        lengthElement.innerText = regAll.length + ' / 50';
     }
 }
