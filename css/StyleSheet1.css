@@ -1,4 +1,4 @@
-﻿body {
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -210,6 +210,17 @@
     padding: 16px 10px;
     width: -webkit-fill-available;
     width: -moz-available;
+}
+
+.regex-gwennen-item {
+    padding: 5px;
+    display: grid;
+}
+
+.regex-gwennen-same-base {
+    display: flex;
+    border-style: dashed;
+    border-color: #444;
 }
 
 #blight-extractor-counter,
