@@ -16,6 +16,7 @@ let panelCounter = 0;
 let panelID = 0;
 
 mainMenuLogo.addEventListener('click', () => {
+    //savePanelPositions();
     //console.log(mainMenuLogo.className);
     if (mainMenu.className === 'shown') {
         mainMenu.className = 'hidden';
@@ -26,9 +27,11 @@ mainMenuLogo.addEventListener('click', () => {
     //mainMenuLogo.className = 'main-menu-logo';
 });
 
+
+
 function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = new Date("2024-03-11T12:00:00")) {
     var currentDate = new Date();
-
+    
     if (currentDate < startDate) {
         var timeLeft = startDate - currentDate;
         var daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
@@ -55,7 +58,6 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
         stashSaleTimer(newStartDate, newEndDate);
     }
 }
-//stashSaleTimer();
 
 function panelRegexMapMods(panel, oldRegex, check) {
     const mapRegexText = panel.querySelector('#map_mod_window');

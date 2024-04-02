@@ -1,10 +1,46 @@
 let dropZones = [];
 
+
+/**
+ * Za ka¿dym razem psuje quill
+ * edytuj tylko jak masz du¿o czasu
+ * @param {any} panel
+ */
+function panelMoveToTheTop(panel) {
+    const children = panels.childList;
+    var position = -1;
+    for (var i = 0; i < children.length; i++) {
+        if (children[i] === element) {
+            position = i;
+            break;
+        }
+    }
+    console.log(position);
+
+    const panelContent = panel.querySelector('.panel-content');
+    if (panelContent) {
+        panelContent.addEventListener('mouseover', () => {
+           // console.log(panel.querySelector('.panel-content'));
+            panels.appendChild(panel);
+        });
+    } else {
+        const inc = panel.querySelector('.panel-incursion-small');
+        if (inc) {
+            inc.addEventListener('mouseover', () => {
+                //console.log(panel.querySelector('.panel-content'));
+                panels.appendChild(panel);
+            });
+        }
+    }
+}
+
 function panelBehaviour(panel, id) {
     let offsetX = 0;//panel.offsetLeft;
     let offsetY = 0;// panel.offsetTop;
     let isDragging = false;
     let deletePanelCounter = 0;
+
+    //panelMoveToTheTop(panel);
 
     try {
         panel.querySelector('.panel-edit').addEventListener('click', (event) => {

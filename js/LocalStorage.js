@@ -27,10 +27,10 @@ function savePanelPositions() {
         };
 
         let childID;
-        if (panel.querySelector('.panel-textarea')) {
+        if (panel.querySelector('.ql-container')) {
             childID = panel.querySelector('.panel-textarea').id;
             panelData.content = getQuillContent(childID);
-
+            console.log(panel);
             let width = panel.querySelector('.ql-editor').clientWidth;
             if (panel.scrollHeight < panel.querySelector('.ql-editor').scrollHeight) {
                 // add some pixels to recompensate scrollbar
@@ -57,6 +57,7 @@ function savePanelPositions() {
             childID = panel.querySelector('.panel-syndicate-small').id;
         } else if (panel.querySelector('.panel-incursion-small')) {
             childID = panel.querySelector('.panel-incursion-small').id;
+            console.log(childID);
         } else if (panel.querySelector('.panel-blight-extractor')) {
             childID = panel.querySelector('.panel-blight-extractor').id;
         } else if (panel.querySelector('.panel-blight-anoitment')) {
@@ -117,7 +118,7 @@ window.addEventListener('load', () => {
                 panel.innerHTML = `
                 <textarea class="panel-name" maxlength="30">${panelData.name}</textarea>
                 <div class="${panelData.childClass}" id="id${lastID}">
-                    <div class="panel-content" style="width: ${panelData.width}px; height: ${panelData.height - 2}px">
+                    <div class="panel-content">
                         <input id="map_mod_window" placeholder="Regex here..." readonly/>
                         <input type="checkbox" id="map_mod_window_copy" title="Always copy on click" checked/>
                         <p id="map_mod_window_counter">44 / 50</p>
