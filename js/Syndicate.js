@@ -1,6 +1,6 @@
-﻿let colorGood = '#219c35';
-let colorMediocre = '#ba9c35';
-let colorBackground = '#121212';
+﻿let colorGood = '#226633';
+let colorMediocre = '#886622';
+let colorBackground = '#33333b';
 
 // Small panel
 function panelSyndicate(panel) {
@@ -37,6 +37,8 @@ function panelSyndicate(panel) {
 		pTab.forEach(function (p) {
 			p.style.fontSize = fontSize;
 		});
+
+		syndicateSetMinEmptySize();
 	});
 
 	buttonFull.addEventListener('click', function () {
@@ -86,9 +88,9 @@ function syndicateBigBehaviour(panelBig) {
 		syndicateCreateBigTable(true);
 
 		// Ustaw domyślne wartości kolorów
-		colorGood = '#117722';
-		colorMediocre = '#997711';
-		colorBackground = '#dddddd';
+		colorGood = '#226633';
+		colorMediocre = '#886622';
+		colorBackground = '#33333b';
 
 		// Ustaw wartości kolorów dla inputów
 		colorGoodInput.value = colorGood;
@@ -301,14 +303,14 @@ function syndicateStyles(element, choice) {
 	element.setAttribute("data-choice", choice);
 	if (choice === 0) {
 		element.style.backgroundColor = colorGood;
-		element.style.color = '#fdfdfd';
-		element.querySelector('img').style.opacity = 1;
+		//element.style.color = '#fdfdfd';
+		//element.querySelector('img').style.opacity = 1;
 	} else if (choice === 1) {
 		element.style.backgroundColor = colorMediocre;
 	} else if (choice === 2) {
-		element.style.backgroundColor = '#00000000';
-		element.querySelector('img').style.opacity = 0.1;
-		element.style.color = '#ffffff55';
+		element.style.backgroundColor = colorBackground;
+		//element.querySelector('img').style.opacity = 0.1;
+		//element.style.color = '#fdfdfd';
 	}
 }
 
@@ -338,6 +340,8 @@ function syndicateAddLieutenant(container, _row, _choice) {
 			}
 		});
 	} else {
+		localStorage.setItem('mySyndicateTableValues', JSON.stringify(syndicateSetDefaultValues()));
+		syndicateAddLieutenant(container, _row, _choice);
 		console.log('no data in localStorage');
 	}
 }
@@ -365,6 +369,8 @@ function syndicateCreateSmall() {
 	interventionGood.innerHTML = '';
 	interventionBad.innerHTML = '';
 
+	syndicateSetMinEmptySize();
+
 	syndicateAddLieutenant(transportationGood, '1', '0');
 	syndicateAddLieutenant(transportationBad, '1', '1');
 	syndicateAddLieutenant(fortificationGood, '2', '0');
@@ -373,7 +379,7 @@ function syndicateCreateSmall() {
 	syndicateAddLieutenant(researchBad, '3', '1');
 	syndicateAddLieutenant(interventionGood, '4', '0');
 	syndicateAddLieutenant(interventionBad, '4', '1');
-
+	/*
 	let liutenants = transportationGood.childElementCount;
 	liutenants += transportationBad.childElementCount;
 	liutenants += fortificationGood.childElementCount;
@@ -386,15 +392,15 @@ function syndicateCreateSmall() {
 	if (liutenants === 0) {
 		const btn = document.createElement('button');
 		btn.id = 'removeMe';
-		btn.textContent = '▼';
+		btn.textContent = '+';
 		btn.style.fontSize = '4em';
 		btn.style.position = 'absolute';
-		btn.style.left = '45%';
-		btn.style.top = '70%';
+		btn.style.left = '50%';
+		btn.style.top = '55%';
 		btn.style.transform = 'translate(-50%, -50%)';
 		btn.style.backgroundColor = '#00112200';
 		btn.style.color = '#fff';
-		btn.style.textShadow = '0px 12px #811';
+		btn.style.textShadow = '3px 5px 5px #811';
 		btn.style.border = '0px';
 		const panelSmall = document.getElementsByClassName('panel-syndicate-small');
 		panelSmall[0].appendChild(btn);
@@ -402,6 +408,29 @@ function syndicateCreateSmall() {
 			syndicateCreateBigTable();
 		});
 	}
+	*/
+}
+
+function syndicateSetMinEmptySize() {
+	const transportationGood = document.querySelector('#syndicate-transportation-good');
+	const transportationBad = document.querySelector('#syndicate-transportation-mediocre');
+	const fortificationGood = document.querySelector('#syndicate-fortification-good');
+	const fortificationnBad = document.querySelector('#syndicate-fortification-mediocre');
+	const researchGood = document.querySelector('#syndicate-research-good');
+	const researchBad = document.querySelector('#syndicate-research-mediocre');
+	const interventionGood = document.querySelector('#syndicate-intervention-good');
+	const interventionBad = document.querySelector('#syndicate-intervention-mediocre');
+
+	const minSize = localStorage.getItem('mySyndicateSmallSize') ? localStorage.getItem('mySyndicateSmallSize') : '100px';
+	console.log(minSize);
+	transportationGood.style.minHeight = minSize;
+	transportationBad.style.minHeight = minSize;
+	fortificationGood.style.minHeight = minSize;
+	fortificationnBad.style.minHeight = minSize;
+	researchGood.style.minHeight = minSize;
+	researchBad.style.minHeight = minSize;
+	interventionGood.style.minHeight = minSize;
+	interventionBad.style.minHeight = minSize;
 }
 
 function syndicateLoadData() {
@@ -455,9 +484,9 @@ function syndicateCreateBigTable(reset = false) {
 	if (singleton.length > 0) {
 		return;
 	}
-	colorGood = localStorage.getItem('mySyndicateValuesColorGood') !== null ? localStorage.getItem('mySyndicateValuesColorGood') : '#219c35';
-	colorMediocre = localStorage.getItem('mySyndicateValuesColorMediocre') !== null ? localStorage.getItem('mySyndicateValuesColorMediocre') : '#ba9c35';
-	colorBackground = localStorage.getItem('mySyndicateValuesColorBackground') !== null ? localStorage.getItem('mySyndicateValuesColorBackground') : '#121212';
+	colorGood = localStorage.getItem('mySyndicateValuesColorGood') !== null ? localStorage.getItem('mySyndicateValuesColorGood') : '#226633';
+	colorMediocre = localStorage.getItem('mySyndicateValuesColorMediocre') !== null ? localStorage.getItem('mySyndicateValuesColorMediocre') : '#886622';
+	colorBackground = localStorage.getItem('mySyndicateValuesColorBackground') !== null ? localStorage.getItem('mySyndicateValuesColorBackground') : '#33333b';
 	const panel = document.createElement('div');
 	panel.innerHTML = `
 	<div id="syndicate-big" style="display: flex">
@@ -847,4 +876,459 @@ function syndicateCreateBigTable(reset = false) {
 		});
 	}
 	syndicateBigBehaviour(panel);
+}
+
+function syndicateSetDefaultValues() {
+	return [
+		{
+			"row": 4,
+			"column": 4,
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "2",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "3",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "4",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "5",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "6",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "7",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "8",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "9",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "10",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "11",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "12",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "13",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "14",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "15",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "16",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "17",
+			"choice": 4
+		},
+		{
+			"row": 4,
+			"column": "18",
+			"choice": 4
+		},
+		{
+			"row": "1",
+			"column": 4,
+			"choice": 4
+		},
+		{
+			"row": "1",
+			"column": "2",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "3",
+			"choice": "0"
+		},
+		{
+			"row": "1",
+			"column": "4",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "5",
+			"choice": "1"
+		},
+		{
+			"row": "1",
+			"column": "6",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "7",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "8",
+			"choice": "0"
+		},
+		{
+			"row": "1",
+			"column": "9",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "10",
+			"choice": "1"
+		},
+		{
+			"row": "1",
+			"column": "11",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "12",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "13",
+			"choice": "0"
+		},
+		{
+			"row": "1",
+			"column": "14",
+			"choice": "1"
+		},
+		{
+			"row": "1",
+			"column": "15",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "16",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "17",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "18",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": 4,
+			"choice": 4
+		},
+		{
+			"row": "2",
+			"column": "2",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "3",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "4",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "5",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "6",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "7",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "8",
+			"choice": "1"
+		},
+		{
+			"row": "2",
+			"column": "9",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "10",
+			"choice": "0"
+		},
+		{
+			"row": "2",
+			"column": "11",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "12",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "13",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "14",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "15",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "16",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "17",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "18",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": 4,
+			"choice": 4
+		},
+		{
+			"row": "3",
+			"column": "2",
+			"choice": "1"
+		},
+		{
+			"row": "3",
+			"column": "3",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "4",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "5",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "6",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "7",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "8",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "9",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "10",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "11",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "12",
+			"choice": "0"
+		},
+		{
+			"row": "3",
+			"column": "13",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "14",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "15",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "16",
+			"choice": "1"
+		},
+		{
+			"row": "3",
+			"column": "17",
+			"choice": "2"
+		},
+		{
+			"row": "3",
+			"column": "18",
+			"choice": "0"
+		},
+		{
+			"row": "4",
+			"column": 4,
+			"choice": 4
+		},
+		{
+			"row": "4",
+			"column": "2",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "3",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "4",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "5",
+			"choice": "0"
+		},
+		{
+			"row": "4",
+			"column": "6",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "7",
+			"choice": "1"
+		},
+		{
+			"row": "4",
+			"column": "8",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "9",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "10",
+			"choice": "0"
+		},
+		{
+			"row": "4",
+			"column": "11",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "12",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "13",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "14",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "15",
+			"choice": "2"
+		},
+		{
+			"row": "4",
+			"column": "16",
+			"choice": "1"
+		},
+		{
+			"row": "4",
+			"column": "17",
+			"choice": "0"
+		},
+		{
+			"row": "4",
+			"column": "18",
+			"choice": "0"
+		}
+	];
 }

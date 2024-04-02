@@ -25,52 +25,54 @@ function panelBlightRegex(panel) {
     let oneMod = '';
 
     golden.forEach(obj => {
-        let oil3 = '';
-        if (obj.oil3 !== 'empty' && obj.oil3) {
-            oil3 = `<img src=${getOilUrl(obj.oil3)} />`;
-        }
-        oneMod += `<div style="display: flex; align-items: center"><img src=${getOilUrl(obj.oil1)}/><img src=${getOilUrl(obj.oil2)}/>${oil3} <p style="max-width: 500px" title="${obj.name}">${obj.name}</p></div>`;
+        if (obj.nameShort !== 'empty1234') {
+            let oil3 = '';
+            if (obj.oil3 !== 'empty' && obj.oil3) {
+                oil3 = `<img src=${getOilUrl(obj.oil3)} />`;
+            }
+            oneMod += `<div style="display: flex; align-items: center"><img src=${getOilUrl(obj.oil1)}/><img src=${getOilUrl(obj.oil2)}/>${oil3} <p style="max-width: 500px" title="${obj.name}">${obj.name}</p></div>`;
 
-        if (goldenRegex.length + obj.nameShort.length + 1 > 50) {
-            goldenRegex = goldenRegex.substring(0, goldenRegex.length - 1);
-            const div = document.createElement('div');
-            div.style.backgroundColor = '#444';
-            div.className = blightOilsPanelsTab.length > 0 ? 'hidden' : 'shown';
+            if (goldenRegex.length + obj.nameShort.length + 9 > 50) {
+                goldenRegex = goldenRegex.substring(0, goldenRegex.length - 1);
+                const div = document.createElement('div');
+                div.style.backgroundColor = '#444';
+                div.className = blightOilsPanelsTab.length > 0 ? 'hidden' : 'shown';
 
-            const d = document.createElement('div');
-            d.className = 'hidden';
-            d.innerHTML = `<div class="blight-extractor-regex-oils"">${oneMod}</div>`;
+                const d = document.createElement('div');
+                d.className = 'hidden';
+                d.innerHTML = `<div class="blight-extractor-regex-oils"">${oneMod}</div>`;
 
-            div.innerHTML = `
-                <div class="regex-input-window" id="blight-extractor-window-${blightOilsPanelsTab.length}" readonly>"${goldenRegex.toLowerCase()}"</div>
-			    <p id="blight-extractor-counter">${goldenRegex.length} / 50</p>
+                div.innerHTML = `
+                <div class="regex-input-window" id="blight-extractor-window-${blightOilsPanelsTab.length}" readonly>"(${goldenRegex.toLowerCase()}).*ant"</div>
+			    <p id="blight-extractor-counter">${goldenRegex.length + 9} / 50</p>
             `;
-            div.appendChild(d);
+                div.appendChild(d);
 
-            const regexWindow = div.querySelector(`#blight-extractor-window-${blightOilsPanelsTab.length}`);
-            regexWindow.addEventListener('click', (event) => {
-                copyToClipboard(event.target.innerText);
-            });
+                const regexWindow = div.querySelector(`#blight-extractor-window-${blightOilsPanelsTab.length}`);
+                regexWindow.addEventListener('click', (event) => {
+                    copyToClipboard(event.target.innerText);
+                });
 
-            const btn = document.createElement('button');
-            btn.innerText = 'Show Oils and Skils';
-            btn.addEventListener('click', () => {
-                if (d.className === 'hidden') {
-                    d.className = 'shown';
-                    btn.innerText = 'Hide Oils and Skils';
-                } else {
-                    d.className = 'hidden';
-                    btn.innerText = 'Show Oils and Skils';
-                }
-            });
-            div.appendChild(btn);
+                const btn = document.createElement('button');
+                btn.innerText = 'Show Oils and Skils';
+                btn.addEventListener('click', () => {
+                    if (d.className === 'hidden') {
+                        d.className = 'shown';
+                        btn.innerText = 'Hide Oils and Skils';
+                    } else {
+                        d.className = 'hidden';
+                        btn.innerText = 'Show Oils and Skils';
+                    }
+                });
+                div.appendChild(btn);
 
-            goldenBox.appendChild(div);
-            blightOilsPanelsTab.push(div);
-            oneMod = '';
-            goldenRegex = ``;
-        } else {
-            goldenRegex += obj.nameShort + '|';
+                goldenBox.appendChild(div);
+                blightOilsPanelsTab.push(div);
+                oneMod = '';
+                goldenRegex = ``;
+            } else {
+                goldenRegex += obj.nameShort + '|';
+            }
         }
     });
 }
@@ -246,7 +248,7 @@ function showChosenOils(oilName, con1, con2, con3, conName) {
             }
         });
         if (!found) {
-            conName.innerText = 'Reserved by devs for [hidden]';
+            conName.innerText = 'Reserved by for [hidden]';
         }
     }
 }
@@ -275,7 +277,6 @@ const permute = (arr) => {
 
 
 /** Only for start */
-
 function parseOilsPassiveSkills() {
     const inputTest = document.getElementById('testID');
 
@@ -335,11 +336,13 @@ function parseOilsPassiveSkills() {
     inputTest.value = str;
 }
 
-function generatePermutations(string) {
+function _generatePermutations(string) {
     const permutations = new Set();
     for (let i = 0; i < string.length; i++) {
         for (let j = 3; j < 8; j++) {
-            permutations.add(string.substring(i, i + j).trim());
+            if (string[i + j] !== '.') {
+                permutations.add(string.substring(i, i + j).trim());
+            }
         }
     }
     return permutations;
@@ -349,7 +352,7 @@ function generatePermutations(string) {
 function generateBlightRegexes() {
     let sets = new Map();
     for (const obj of oilsAnointmentsRings) {
-        let reg = generatePermutations(obj.name);
+        let reg = _generatePermutations(obj.name.toLocaleLowerCase());
         sets.set(obj.name, reg);
     }
 
@@ -372,8 +375,17 @@ function generateBlightRegexes() {
     for (const [name, nameShort] of sets) {
         let reg = 'empty1234';
         for (const s of nameShort) {
-            if (s.length < reg.length && s.length > 1) {
-                reg = s;
+            if (s.length <= reg.length && s.length > 1) {
+                let howManyTimes = 0;
+                oilsAnointmentsRings.concat(oilsPassiveSkills).forEach(n => {
+                    if (n.name.toLowerCase().includes(s)) {
+                        howManyTimes++;
+                    }
+                });
+                if (howManyTimes < 2) {
+                    reg = s;
+                    console.log(s);
+                }
             }
         }
 
@@ -387,6 +399,54 @@ function generateBlightRegexes() {
 }
 
 
+//generateBlightSkillsRegexes();
+function generateBlightSkillsRegexes() {
+    let sets = new Map();
+    for (const obj of oilsPassiveSkills) {
+        let reg = _generatePermutations(obj.name.toLocaleLowerCase());
+        sets.set(obj.name, reg);
+    }
+
+    for (const [key1, set1] of sets.entries()) {
+        for (const [key2, set2] of sets.entries()) {
+            if (key1 !== key2) {
+                const intersection = new Set([...set1].filter(x => set2.has(x)));
+                // Remove duplicates from both sets
+                for (const element of set1) {
+                    if (set1.size > 2 && set2.size > 2)
+                        if (intersection.has(element)) {
+                            set1.delete(element);
+                            set2.delete(element);
+                        }
+                }
+            }
+        }
+    }
+    
+    for (const [name, nameShort] of sets) {
+        let reg = 'empty1234';
+        for (const s of nameShort) {
+            if (s.length <= reg.length && s.length > 1) {
+                let howManyTimes = 0;
+                oilsPassiveSkills.concat(oilsAnointmentsRings).forEach(n => {
+                    if (n.name.toLowerCase().includes(s)) {
+                        howManyTimes++;
+                    }
+                });
+                if (howManyTimes < 2) {
+                    reg = s;
+                }
+            }
+        }
+
+        for (const item of oilsPassiveSkills) {
+            if (item.name === name) {
+                item.nameShort = reg;
+            }
+        }
+    }
+    console.log(oilsPassiveSkills);
+}
 
 
 

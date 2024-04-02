@@ -149,6 +149,8 @@ function incursionAddRoom(container, _choice) {
 			}
 		});
 	} else {
+		localStorage.setItem('myIncursionTableValues', JSON.stringify(incursionDefaultLocalStorageValue()));
+		incursionAddRoom(container, _choice);
 		console.log('no data in localStorage');
 	}
 }
@@ -335,4 +337,134 @@ function incursionCreateBigTable(reset = false) {
 		});
 	}
 	incursionBigBehaviour(panel);
+}
+
+function incursionDefaultLocalStorageValue() {
+	return [
+		{
+			"row": "0",
+			"column": "0",
+			"choice": "0"
+		},
+		{
+			"row": "0",
+			"column": "1",
+			"choice": "0"
+		},
+		{
+			"row": "0",
+			"column": "2",
+			"choice": "1"
+		},
+		{
+			"row": "0",
+			"column": "3",
+			"choice": "1"
+		},
+		{
+			"row": "0",
+			"column": "4",
+			"choice": "1"
+		},
+		{
+			"row": "0",
+			"column": "5",
+			"choice": "2"
+		},
+		{
+			"row": "0",
+			"column": "6",
+			"choice": "2"
+		},
+		{
+			"row": "0",
+			"column": "7",
+			"choice": "2"
+		},
+		{
+			"row": "0",
+			"column": "8",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "0",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "1",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "2",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "3",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "4",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "5",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "6",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "7",
+			"choice": "2"
+		},
+		{
+			"row": "1",
+			"column": "8",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "0",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "1",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "2",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "3",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "4",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "5",
+			"choice": "2"
+		},
+		{
+			"row": "2",
+			"column": "6",
+			"choice": "2"
+		}
+	];
 }
