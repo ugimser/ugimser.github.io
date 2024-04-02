@@ -1,5 +1,5 @@
 // show only those:
-const uniqueToShow = ["Mageblood", "Headhunter", "Defiance of Destin", "Atziri's Foible", "Wraithlor", "The Squir", "Ralakesh's Impatienc", "Lioneye's Glar",
+const uniqueToShow = ["Mageblood", "Headhunter", "Defiance of Destin", "Atziri's Foible", "The Squir", "Ralakesh's Impatienc", "Lioneye's Glar",
     "Hyrri's Ire", "The Dark Seer", "Inspired Learning", "Unnatural Instinct", "Ancestral Vision", "Stormshroud", "Intuitive Leap", "Void Battery", "Voltaxic Rift",
     "Dialla's Malefaction", "Rakiata's Dance", "The Covenant", "Soul Taker", "The Fourth Vow", "Mjölner", "Manastorm", "Aegis Aurora", "Divinarius", "Inpulsa's Broken Heart",
     "Prism Guardian", "Sunblast", "Badge of the Brotherhood", "Arakaali's Fang", "Garukhan's Flight", "Rathpith Globe", "Ryslatha's Coil", "Beltimber Blade", "Gruthkul's Pelt",
@@ -14,7 +14,7 @@ const uniqueToShow = ["Mageblood", "Headhunter", "Defiance of Destin", "Atziri's
     "Hrimsorrow", "Crown of Eyes", "Le Heup of All", "Hyrri's Truth", "Goldrim", "Rise of the Phoenix", "Singularity", "Memory Vault", "Doomfletch", "Quill Rain",
     "Thousand Ribbons", "Kikazaru", "Fractal Thoughts", "Perseverance", "Carcass Jack", "Ngamahu's Flame", "Bloodsoaked Medallion", "Stormseeker", "Goblinedge",
     "Kahuturoa's Certainty", "Kongming's Stratagem", "Torchoak Step", "Ewar's Mirage", "Grip of the Council", "Inya's Epiphany", "Cospri's Will", "Snakebite", "Blunderbore",
-    "Defiance of Destiny", "Wraithlord", "The Squire", "Ralakesh's Impatience", "Lioneye's Glare"
+    "Defiance of Destiny", "The Squire", "Ralakesh's Impatience", "Lioneye's Glare"
 ];
 
 
