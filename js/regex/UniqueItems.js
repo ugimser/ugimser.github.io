@@ -1,4 +1,4 @@
-﻿// show only those:
+// show only those:
 const uniqueToShow = ["Mageblood", "Headhunter", "Defiance of Destin", "Atziri's Foible", "Wraithlor", "The Squir", "Ralakesh's Impatienc", "Lioneye's Glar",
     "Hyrri's Ire", "The Dark Seer", "Inspired Learning", "Unnatural Instinct", "Ancestral Vision", "Stormshroud", "Intuitive Leap", "Void Battery", "Voltaxic Rift",
     "Dialla's Malefaction", "Rakiata's Dance", "The Covenant", "Soul Taker", "The Fourth Vow", "Mjölner", "Manastorm", "Aegis Aurora", "Divinarius", "Inpulsa's Broken Heart",
@@ -14,7 +14,7 @@ const uniqueToShow = ["Mageblood", "Headhunter", "Defiance of Destin", "Atziri's
     "Hrimsorrow", "Crown of Eyes", "Le Heup of All", "Hyrri's Truth", "Goldrim", "Rise of the Phoenix", "Singularity", "Memory Vault", "Doomfletch", "Quill Rain",
     "Thousand Ribbons", "Kikazaru", "Fractal Thoughts", "Perseverance", "Carcass Jack", "Ngamahu's Flame", "Bloodsoaked Medallion", "Stormseeker", "Goblinedge",
     "Kahuturoa's Certainty", "Kongming's Stratagem", "Torchoak Step", "Ewar's Mirage", "Grip of the Council", "Inya's Epiphany", "Cospri's Will", "Snakebite", "Blunderbore",
-    "Defiance of Destiny", "The Squire", "Yoke of Suffering", "Ralakesh's Impatience", "Lioneye's Glare"
+    "Defiance of Destiny", "Wraithlord", "The Squire", "Ralakesh's Impatience", "Lioneye's Glare"
 ];
 
 
@@ -25,9 +25,9 @@ const uniqueItemArray = [
         "shortName": "lar",
         "name": "Voices",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1VuaXF1ZUpld2VsQmFzZTMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/314c9905c8/UniqueJewelBase3.png",
-        "chaosValueLeague": 24702.56,
+        "chaosValueLeague": 20154.4,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 567765.22
+        "chaosValueStandard": 568672.6
     },
     {
         "id": 50063,
@@ -35,9 +35,9 @@ const uniqueItemArray = [
         "shortName": "lar",
         "name": "Voices",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1VuaXF1ZUpld2VsQmFzZTMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/314c9905c8/UniqueJewelBase3.png",
-        "chaosValueLeague": 7550.38,
+        "chaosValueLeague": 5974.34,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 72011.52
+        "chaosValueStandard": 72141.86
     },
     {
         "id": 483,
@@ -45,9 +45,9 @@ const uniqueItemArray = [
         "shortName": "c j",
         "name": "Emperor's Mastery",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL01hc3RlcnkiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/eb1cf5699e/Mastery.png",
-        "chaosValueLeague": 2920.43,
+        "chaosValueLeague": 3742.96,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 21792.96
+        "chaosValueStandard": 21968.01
     },
     {
         "id": 484,
@@ -55,9 +55,9 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Emperor's Might",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL01pZ2h0IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d1507b1ec4/Might.png",
-        "chaosValueLeague": 356.15,
-        "chaosValueHCLeague": 0,
-        "chaosValueStandard": 9745.92
+        "chaosValueLeague": 359.9,
+        "chaosValueHCLeague": 794.56,
+        "chaosValueStandard": 9899.16
     },
     {
         "id": 100723,
@@ -65,9 +65,9 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Rational Doctrine",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1ViZXJDb3J0ZXhKZXdlbCIsInciOjEsImgiOjEsInNjYWxlIjoxLCJzeW50aGVzaXNlZCI6dHJ1ZX1d/75a97b9ff9/UberCortexJewel.png",
-        "chaosValueLeague": 997.22,
+        "chaosValueLeague": 1266.85,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 10828.8
+        "chaosValueStandard": 10848.4
     },
     {
         "id": 485,
@@ -75,9 +75,9 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Emperor's Wit",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1dpdCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/bc537c241b/Wit.png",
-        "chaosValueLeague": 70,
+        "chaosValueLeague": 72.5,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 4060.8
+        "chaosValueStandard": 4068.15
     },
     {
         "id": 2030,
@@ -85,9 +85,9 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "The Green Nightmare",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RoZUdyZWVuRHJlYW1VcGdyYWRlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/2a2234606a/TheGreenDreamUpgrade.png",
-        "chaosValueLeague": 779.26,
+        "chaosValueLeague": 777.38,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 812.16
+        "chaosValueStandard": 813.63
     },
     {
         "id": 481,
@@ -95,9 +95,9 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Emperor's Cunning",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0N1bm5pbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/4b5d857ef3/Cunning.png",
-        "chaosValueLeague": 142.46,
+        "chaosValueLeague": 143.96,
         "chaosValueHCLeague": 10.1,
-        "chaosValueStandard": 2138.69
+        "chaosValueStandard": 2156.12
     },
     {
         "id": 2029,
@@ -105,9 +105,9 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "The Red Nightmare",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RoZVJlZERyZWFtVXBncmFkZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/69a20aa6e0/TheRedDreamUpgrade.png",
-        "chaosValueLeague": 911.74,
+        "chaosValueLeague": 950.14,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 406.08
+        "chaosValueStandard": 542.42
     },
     {
         "id": 2032,
@@ -125,8 +125,8 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Fortress Covenant",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVKZXdlbDQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/5801f4441d/BlueJewel4.png",
-        "chaosValueLeague": 284.92,
-        "chaosValueHCLeague": 187.98,
+        "chaosValueLeague": 287.92,
+        "chaosValueHCLeague": 198.64,
         "chaosValueStandard": 50
     },
     {
@@ -135,9 +135,9 @@ const uniqueItemArray = [
         "shortName": "c j",
         "name": "Sublime Vision",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1N1YmxpbWVWaXNpb24iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/ecd19a7f80/SublimeVision.png",
-        "chaosValueLeague": 826.27,
+        "chaosValueLeague": 1007.72,
         "chaosValueHCLeague": 50,
-        "chaosValueStandard": 541.44
+        "chaosValueStandard": 542.42
     },
     {
         "id": 585,
@@ -145,8 +145,8 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Grand Spectrum",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyYW5kU3BlY3RydW0zX0JsdWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/dad8b86c02/GrandSpectrum3_Blue.png",
-        "chaosValueLeague": 93,
-        "chaosValueHCLeague": 86.79,
+        "chaosValueLeague": 75,
+        "chaosValueHCLeague": 111.24,
         "chaosValueStandard": 60
     },
     {
@@ -157,7 +157,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dvbGVtSW5mZXJuYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a50b1917f5/GolemInfernal.png",
         "chaosValueLeague": 120,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 24.16
+        "chaosValueStandard": 28.5
     },
     {
         "id": 2302,
@@ -165,9 +165,9 @@ const uniqueItemArray = [
         "shortName": "c j",
         "name": "Watcher's Eye",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0VsZGVySmV3ZWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/278c673716/ElderJewel.png",
-        "chaosValueLeague": 60,
-        "chaosValueHCLeague": 93.99,
-        "chaosValueStandard": 270.72
+        "chaosValueLeague": 70.99,
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 246.97
     },
     {
         "id": 21663,
@@ -175,9 +175,9 @@ const uniqueItemArray = [
         "shortName": "s j",
         "name": "Lethal Pride",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0thcnVpQ2l2aWxpemF0aW9uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/04aefd20e6/KaruiCivilization.png",
-        "chaosValueLeague": 45,
-        "chaosValueHCLeague": 25,
-        "chaosValueStandard": 50
+        "chaosValueLeague": 50.6,
+        "chaosValueHCLeague": 30,
+        "chaosValueStandard": 270.13
     },
     {
         "id": 21701,
@@ -185,9 +185,9 @@ const uniqueItemArray = [
         "shortName": "s j",
         "name": "Elegant Hubris",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0V0ZXJuYWxFbXBpcmVDaXZpbGl6YXRpb24iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/8d1d098584/EternalEmpireCivilization.png",
-        "chaosValueLeague": 73,
-        "chaosValueHCLeague": 40.5,
-        "chaosValueStandard": 128
+        "chaosValueLeague": 50,
+        "chaosValueHCLeague": 40,
+        "chaosValueStandard": 264.09
     },
     {
         "id": 21780,
@@ -195,9 +195,9 @@ const uniqueItemArray = [
         "shortName": "s j",
         "name": "Brutal Restraint",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL01hcmFrZXRoQ2l2aWxpemF0aW9uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/8e18d378b4/MarakethCivilization.png",
-        "chaosValueLeague": 50,
+        "chaosValueLeague": 49,
         "chaosValueHCLeague": 83,
-        "chaosValueStandard": 69.6
+        "chaosValueStandard": 515.3
     },
     {
         "id": 50060,
@@ -205,7 +205,7 @@ const uniqueItemArray = [
         "shortName": "lar",
         "name": "Voices",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1VuaXF1ZUpld2VsQmFzZTMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/314c9905c8/UniqueJewelBase3.png",
-        "chaosValueLeague": 569.84,
+        "chaosValueLeague": 503.86,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 30
     },
@@ -215,9 +215,9 @@ const uniqueItemArray = [
         "shortName": "gh",
         "name": "Amanamu's Gaze",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0doYXN0bHlFeWVVbmlxdWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/301d98e6cb/GhastlyEyeUnique.png",
-        "chaosValueLeague": 840.51,
+        "chaosValueLeague": 950.14,
         "chaosValueHCLeague": 892.9,
-        "chaosValueStandard": 1231.78
+        "chaosValueStandard": 1098.4
     },
     {
         "id": 93025,
@@ -225,9 +225,9 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Forbidden Flame",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1B1enpsZVBpZWNlSmV3ZWxfQ2xlYW5zaW5nRmlyZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/ddfe57ac90/PuzzlePieceJewel_CleansingFire.png",
-        "chaosValueLeague": 35,
-        "chaosValueHCLeague": 469.95,
-        "chaosValueStandard": 541.44
+        "chaosValueLeague": 49,
+        "chaosValueHCLeague": 248.3,
+        "chaosValueStandard": 542.42
     },
     {
         "id": 93039,
@@ -236,8 +236,8 @@ const uniqueItemArray = [
         "name": "Melding of the Flesh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0VudGFuZ2xlZEVsZW1lbnRzSmV3ZWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/781ab651c4/EntangledElementsJewel.png",
         "chaosValueLeague": 20,
-        "chaosValueHCLeague": 695.53,
-        "chaosValueStandard": 270.72
+        "chaosValueHCLeague": 734.97,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 93067,
@@ -245,9 +245,9 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Forbidden Flesh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1B1enpsZVBpZWNlSmV3ZWxfR3JlYXRUYW5nbGUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9035b9ffd4/PuzzlePieceJewel_GreatTangle.png",
-        "chaosValueLeague": 44.1,
+        "chaosValueLeague": 50,
         "chaosValueHCLeague": 50,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 109524,
@@ -257,7 +257,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0FmZmxpY3Rpb25KZXdlbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/0794886e1c/AfflictionJewel.png",
         "chaosValueLeague": 303.92,
         "chaosValueHCLeague": 105,
-        "chaosValueStandard": 10612.22
+        "chaosValueStandard": 312769.93
     },
     {
         "id": 6893,
@@ -265,8 +265,8 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Combat Focus",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0VsZW1lbnRhbEhpdENvbGQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/2d08fbc4ec/ElementalHitCold.png",
-        "chaosValueLeague": 20.4,
-        "chaosValueHCLeague": 15,
+        "chaosValueLeague": 22.1,
+        "chaosValueHCLeague": 99.32,
         "chaosValueStandard": 5
     },
     {
@@ -285,9 +285,9 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Rain of Splinters",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEthcnVpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/283aad3d25/RedKarui.png",
-        "chaosValueLeague": 649.62,
-        "chaosValueHCLeague": 234.98,
-        "chaosValueStandard": 10.5
+        "chaosValueLeague": 575.84,
+        "chaosValueHCLeague": 258.23,
+        "chaosValueStandard": 11
     },
     {
         "id": 40065,
@@ -295,9 +295,9 @@ const uniqueItemArray = [
         "shortName": "sm",
         "name": "One With Nothing",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0RyYWdvblN0eWxlSmV3ZWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/fa9a94b12e/DragonStyleJewel.png",
-        "chaosValueLeague": 29,
-        "chaosValueHCLeague": 52,
-        "chaosValueStandard": 24.3
+        "chaosValueLeague": 29.5,
+        "chaosValueHCLeague": 56.5,
+        "chaosValueStandard": 21.2
     },
     {
         "id": 95710,
@@ -305,9 +305,9 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Impossible Escape",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL01pbmRib3JlUGVhcmwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/367683a1bb/MindborePearl.png",
-        "chaosValueLeague": 284.92,
+        "chaosValueLeague": 201.54,
         "chaosValueHCLeague": 317.1,
-        "chaosValueStandard": 116.7
+        "chaosValueStandard": 137.36
     },
     {
         "id": 1977,
@@ -315,9 +315,9 @@ const uniqueItemArray = [
         "shortName": "c j",
         "name": "The Anima Stone",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dvbGVtQ2hhb3MiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/2daa0c1149/GolemChaos.png",
-        "chaosValueLeague": 142.46,
+        "chaosValueLeague": 134,
         "chaosValueHCLeague": 60,
-        "chaosValueStandard": 53
+        "chaosValueStandard": 52
     },
     {
         "id": 6957,
@@ -335,9 +335,9 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Transcendent Spirit",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RyYW5zY2VuZGVudEdyZWVuIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/6eb091ee7a/TranscendentGreen.png",
-        "chaosValueLeague": 102.4,
+        "chaosValueLeague": 95,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 6961,
@@ -345,9 +345,9 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Transcendent Flesh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RyYW5zY2VuZGVudFJlZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/7dcf8933ad/TranscendentRed.png",
-        "chaosValueLeague": 58.4,
+        "chaosValueLeague": 49.2,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 89
+        "chaosValueStandard": 98
     },
     {
         "id": 21720,
@@ -355,9 +355,9 @@ const uniqueItemArray = [
         "shortName": "s j",
         "name": "Glorious Vanity",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1ZhYWxDaXZpbGl6YXRpb24iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/568c0e7c98/VaalCivilization.png",
-        "chaosValueLeague": 53,
-        "chaosValueHCLeague": 55,
-        "chaosValueStandard": 59.8
+        "chaosValueLeague": 50,
+        "chaosValueHCLeague": 54,
+        "chaosValueStandard": 170
     },
     {
         "id": 101151,
@@ -365,7 +365,7 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "The Balance of Terror",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTE5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/72dbd8bd3d/unique19.png",
-        "chaosValueLeague": 10,
+        "chaosValueLeague": 15,
         "chaosValueHCLeague": 40,
         "chaosValueStandard": 134
     },
@@ -375,9 +375,9 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Grand Spectrum",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEdyYW5kU3BlY3RydW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/3e6789a065/RedGrandSpectrum.png",
-        "chaosValueLeague": 10,
-        "chaosValueHCLeague": 93.99,
-        "chaosValueStandard": 28
+        "chaosValueLeague": 12.5,
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 36.88
     },
     {
         "id": 21665,
@@ -385,9 +385,9 @@ const uniqueItemArray = [
         "shortName": "s j",
         "name": "Militant Faith",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RlbXBsYXJDaXZpbGl6YXRpb24iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/09ecf8ac86/TemplarCivilization.png",
-        "chaosValueLeague": 72,
-        "chaosValueHCLeague": 140.98,
-        "chaosValueStandard": 541.44
+        "chaosValueLeague": 49.9,
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 150
     },
     {
         "id": 93024,
@@ -395,8 +395,8 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Dissolution of the Flesh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1Jlc2VydmVkQmxvb2RKZXdlbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/1a4688f335/ReservedBloodJewel.png",
-        "chaosValueLeague": 65,
-        "chaosValueHCLeague": 328.96,
+        "chaosValueLeague": 60,
+        "chaosValueHCLeague": 347.62,
         "chaosValueStandard": 50
     },
     {
@@ -405,8 +405,8 @@ const uniqueItemArray = [
         "shortName": "sm",
         "name": "The Interrogation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1NlY3JldHNPZkFnb255SmV3ZWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/fbc829657e/SecretsOfAgonyJewel.png",
-        "chaosValueLeague": 854.76,
-        "chaosValueHCLeague": 296.07,
+        "chaosValueLeague": 863.76,
+        "chaosValueHCLeague": 297.96,
         "chaosValueStandard": 20
     },
     {
@@ -415,9 +415,9 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "The Adorned",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RyaWFsbWFzdGVySmV3IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f04386d454/TrialmasterJew.png",
-        "chaosValueLeague": 74,
+        "chaosValueLeague": 60,
         "chaosValueHCLeague": 83,
-        "chaosValueStandard": 173
+        "chaosValueStandard": 172
     },
     {
         "id": 60160,
@@ -425,8 +425,8 @@ const uniqueItemArray = [
         "shortName": "ero",
         "name": "Tecrod's Gaze",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL011cmRlcm91c0V5ZVVuaXF1ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/f54f211029/MurderousEyeUnique.png",
-        "chaosValueLeague": 100,
-        "chaosValueHCLeague": 98.69,
+        "chaosValueLeague": 80,
+        "chaosValueHCLeague": 104.29,
         "chaosValueStandard": 50
     },
     {
@@ -435,9 +435,9 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Thread of Hope",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0Nvbm5lY3RlZEpld2VsIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1d2c1f698a/ConnectedJewel.png",
-        "chaosValueLeague": 398.89,
-        "chaosValueHCLeague": 76.91,
-        "chaosValueStandard": 29.2
+        "chaosValueLeague": 388.69,
+        "chaosValueHCLeague": 496.6,
+        "chaosValueStandard": 30
     },
     {
         "id": 587,
@@ -445,9 +445,9 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Grand Spectrum",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyZWVuR3JhbmRTcGVjdHJ1bSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/df87965e3f/GreenGrandSpectrum.png",
-        "chaosValueLeague": 30.8,
+        "chaosValueLeague": 32,
         "chaosValueHCLeague": 14,
-        "chaosValueStandard": 70
+        "chaosValueStandard": 61
     },
     {
         "id": 7376,
@@ -455,9 +455,9 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Unnatural Instinct",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1VubmF0dXJhbEluc3RpbmN0IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c37fa5c2b6/UnnaturalInstinct.png",
-        "chaosValueLeague": 1196.66,
+        "chaosValueLeague": 1269.73,
         "chaosValueHCLeague": 1127.88,
-        "chaosValueStandard": 812.16
+        "chaosValueStandard": 813.63
     },
     {
         "id": 40116,
@@ -465,9 +465,9 @@ const uniqueItemArray = [
         "shortName": "med",
         "name": "Megalomaniac",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1VuaXF1ZUpld2VsQmFzZTIiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/659b3e6b90/UniqueJewelBase2.png",
-        "chaosValueLeague": 35,
-        "chaosValueHCLeague": 187.98,
-        "chaosValueStandard": 100
+        "chaosValueLeague": 30,
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 32.84
     },
     {
         "id": 7301,
@@ -475,7 +475,7 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Combat Focus",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0VsZW1lbnRhbEhpdEZpcmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/7dac7ceff8/ElementalHitFire.png",
-        "chaosValueLeague": 20,
+        "chaosValueLeague": 20.9,
         "chaosValueHCLeague": 50,
         "chaosValueStandard": 5
     },
@@ -485,9 +485,9 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Stormshroud",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyZWVuSmV3ZWwyIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/75f171fff6/GreenJewel2.png",
-        "chaosValueLeague": 427.38,
-        "chaosValueHCLeague": 300.77,
-        "chaosValueStandard": 541.44
+        "chaosValueLeague": 431.88,
+        "chaosValueHCLeague": 332.72,
+        "chaosValueStandard": 786.51
     },
     {
         "id": 22378,
@@ -495,9 +495,9 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Quickening Covenant",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTEwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/46d92a634d/unique10.png",
-        "chaosValueLeague": 64.6,
+        "chaosValueLeague": 60,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 14.8
+        "chaosValueStandard": 14.9
     },
     {
         "id": 40069,
@@ -506,7 +506,7 @@ const uniqueItemArray = [
         "name": "Natural Affinity",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL05hdHVyZXNQYXRpZW5jZUpld2VsIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1f4e80dd70/NaturesPatienceJewel.png",
         "chaosValueLeague": 15,
-        "chaosValueHCLeague": 84.2,
+        "chaosValueHCLeague": 66,
         "chaosValueStandard": 25
     },
     {
@@ -516,8 +516,8 @@ const uniqueItemArray = [
         "name": "Immutable Force",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEpld2VsMiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/87ba4f5e53/RedJewel2.png",
         "chaosValueLeague": 45,
-        "chaosValueHCLeague": 156.02,
-        "chaosValueStandard": 270.72
+        "chaosValueHCLeague": 164.87,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 103434,
@@ -526,8 +526,8 @@ const uniqueItemArray = [
         "name": "Bloodnotch",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0lnbm9yZVBhaW4iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/191f378925/IgnorePain.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 32.6,
-        "chaosValueStandard": 270.72
+        "chaosValueHCLeague": 30.8,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 1952,
@@ -535,8 +535,8 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Primordial Harmony",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dvbGVtVGVtcGVzdCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/aac7579ae7/GolemTempest.png",
-        "chaosValueLeague": 14,
-        "chaosValueHCLeague": 33.4,
+        "chaosValueLeague": 12,
+        "chaosValueHCLeague": 27.4,
         "chaosValueStandard": 5
     },
     {
@@ -545,9 +545,9 @@ const uniqueItemArray = [
         "shortName": "yp",
         "name": "Kurgal's Gaze",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0h5cG5vdGljRXllVW5pcXVlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f909ca8b69/HypnoticEyeUnique.png",
-        "chaosValueLeague": 100,
-        "chaosValueHCLeague": 93.99,
-        "chaosValueStandard": 78
+        "chaosValueLeague": 80,
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 77
     },
     {
         "id": 103486,
@@ -555,9 +555,9 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Ancestral Vision",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1ByaXN0aW5lQ29uZGl0aW9uaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/5ad58d3a2e/PristineConditioning.png",
-        "chaosValueLeague": 584.09,
-        "chaosValueHCLeague": 493.45,
-        "chaosValueStandard": 270.72
+        "chaosValueLeague": 604.63,
+        "chaosValueHCLeague": 521.43,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 489,
@@ -565,7 +565,7 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Energy From Within",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVKZXdlbDYiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/43c313a2c4/BlueJewel6.png",
-        "chaosValueLeague": 100,
+        "chaosValueLeague": 88,
         "chaosValueHCLeague": 34,
         "chaosValueStandard": 10
     },
@@ -575,9 +575,9 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Healthy Mind",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVKZXdlbDciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/73584bc29e/BlueJewel7.png",
-        "chaosValueLeague": 467.41,
-        "chaosValueHCLeague": 187.98,
-        "chaosValueStandard": 6
+        "chaosValueLeague": 489.46,
+        "chaosValueHCLeague": 181.86,
+        "chaosValueStandard": 5.9
     },
     {
         "id": 676,
@@ -585,8 +585,8 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Inspired Learning",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/05e61f124f/unique7.png",
-        "chaosValueLeague": 441.63,
-        "chaosValueHCLeague": 69,
+        "chaosValueLeague": 374.3,
+        "chaosValueHCLeague": 64.5,
         "chaosValueStandard": 30
     },
     {
@@ -615,7 +615,7 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Split Personality",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1VuaXF1ZUpld2VsQmFzZTEiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/166fecc863/UniqueJewelBase1.png",
-        "chaosValueLeague": 17,
+        "chaosValueLeague": 15,
         "chaosValueHCLeague": 126,
         "chaosValueStandard": 10
     },
@@ -625,8 +625,8 @@ const uniqueItemArray = [
         "shortName": "sea",
         "name": "Ulaman's Gaze",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1NlYXJjaGluZ0V5ZVVuaXF1ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/fd2beeb2ad/SearchingEyeUnique.png",
-        "chaosValueLeague": 90,
-        "chaosValueHCLeague": 93.99,
+        "chaosValueLeague": 65,
+        "chaosValueHCLeague": 99.32,
         "chaosValueStandard": 29
     },
     {
@@ -635,7 +635,7 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Lioneye's Fall",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0xpb25leWVzRmFsbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/164c5c1080/LioneyesFall.png",
-        "chaosValueLeague": 32.4,
+        "chaosValueLeague": 30,
         "chaosValueHCLeague": 11.7,
         "chaosValueStandard": 15.4
     },
@@ -645,8 +645,8 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Intuitive Leap",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTYiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/f2dc5c37a5/unique6.png",
-        "chaosValueLeague": 120,
-        "chaosValueHCLeague": 42.5,
+        "chaosValueLeague": 100,
+        "chaosValueHCLeague": 42,
         "chaosValueStandard": 20
     },
     {
@@ -655,8 +655,8 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "The Red Dream",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RoZVJlZERyZWFtIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/5fc736ec75/TheRedDream.png",
-        "chaosValueLeague": 907.47,
-        "chaosValueHCLeague": 2819.7,
+        "chaosValueLeague": 762.99,
+        "chaosValueHCLeague": 2979.6,
         "chaosValueStandard": 36
     },
     {
@@ -666,7 +666,7 @@ const uniqueItemArray = [
         "name": "The Green Dream",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RoZUdyZWVuRHJlYW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/1a25683711/TheGreenDream.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 939.9,
+        "chaosValueHCLeague": 993.2,
         "chaosValueStandard": 70
     },
     {
@@ -676,7 +676,7 @@ const uniqueItemArray = [
         "name": "Replica Fragility",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZENvcnJ1cHQ2IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/161d0c411c/RedCorrupt6.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 93.99,
+        "chaosValueHCLeague": 99.32,
         "chaosValueStandard": 80
     },
     {
@@ -686,8 +686,8 @@ const uniqueItemArray = [
         "name": "Replica Pacifism",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyZWVuQ29ycnVwdDYiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/1b1c1912b2/GreenCorrupt6.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 93.99,
-        "chaosValueStandard": 180
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 189.1
     },
     {
         "id": 109200,
@@ -696,8 +696,8 @@ const uniqueItemArray = [
         "name": "Replica Powerlessness",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVDb3JydXB0NiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/281293a0c5/BlueCorrupt6.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 21,
-        "chaosValueStandard": 80
+        "chaosValueHCLeague": 21.9,
+        "chaosValueStandard": 28
     },
     {
         "id": 362,
@@ -715,9 +715,9 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Energised Armour",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEpld2VsNSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/5d09a69cbc/RedJewel5.png",
-        "chaosValueLeague": 75,
-        "chaosValueHCLeague": 183.28,
-        "chaosValueStandard": 4.9
+        "chaosValueLeague": 70,
+        "chaosValueHCLeague": 198.64,
+        "chaosValueStandard": 5
     },
     {
         "id": 1745,
@@ -736,7 +736,7 @@ const uniqueItemArray = [
         "name": "Replica Primordial Might",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dvbGVtSW5mZXJuYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a50b1917f5/GolemInfernal.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 13,
+        "chaosValueHCLeague": 10,
         "chaosValueStandard": 20
     },
     {
@@ -745,7 +745,7 @@ const uniqueItemArray = [
         "shortName": "lar",
         "name": "Voices",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1VuaXF1ZUpld2VsQmFzZTMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/314c9905c8/UniqueJewelBase3.png",
-        "chaosValueLeague": 29.7,
+        "chaosValueLeague": 30,
         "chaosValueHCLeague": 50,
         "chaosValueStandard": 5
     },
@@ -756,7 +756,7 @@ const uniqueItemArray = [
         "name": "Firesong",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEpld2VsNyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/dd6b13c77c/RedJewel7.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 21.2,
+        "chaosValueHCLeague": 18.8,
         "chaosValueStandard": 20
     },
     {
@@ -776,7 +776,7 @@ const uniqueItemArray = [
         "name": "Seething Fury",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1NwZWN0cmFsVGhyb3dUaHJlc2hvbGQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6de1cd92c9/SpectralThrowThreshold.png",
         "chaosValueLeague": 8,
-        "chaosValueHCLeague": 4.2,
+        "chaosValueHCLeague": 3.8,
         "chaosValueStandard": 5
     },
     {
@@ -785,9 +785,9 @@ const uniqueItemArray = [
         "shortName": "on j",
         "name": "Might of the Meek",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1BvdGVuY3lPZlRoZVVucmVtYXJrYWJsZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/10117c9173/PotencyOfTheUnremarkable.png",
-        "chaosValueLeague": 5.1,
-        "chaosValueHCLeague": 25,
-        "chaosValueStandard": 8.8
+        "chaosValueLeague": 8,
+        "chaosValueHCLeague": 20.2,
+        "chaosValueStandard": 7
     },
     {
         "id": 2284,
@@ -796,8 +796,8 @@ const uniqueItemArray = [
         "name": "Pure Talent",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1B1cmVUYWxlbnQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/64b53e536e/PureTalent.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 78.8,
-        "chaosValueStandard": 9.9
+        "chaosValueHCLeague": 79.86,
+        "chaosValueStandard": 9.8
     },
     {
         "id": 2007,
@@ -806,7 +806,7 @@ const uniqueItemArray = [
         "name": "The Blue Dream",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RoZUJsdWVEcmVhbSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/1cb1c74958/TheBlueDream.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 469.95,
+        "chaosValueHCLeague": 496.6,
         "chaosValueStandard": 10
     },
     {
@@ -825,8 +825,8 @@ const uniqueItemArray = [
         "shortName": "vir",
         "name": "Careful Planning",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0lOVHRvREVYIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/e30df474e0/INTtoDEX.png",
-        "chaosValueLeague": 6,
-        "chaosValueHCLeague": 26.4,
+        "chaosValueLeague": 5.3,
+        "chaosValueHCLeague": 25.3,
         "chaosValueStandard": 4
     },
     {
@@ -836,7 +836,7 @@ const uniqueItemArray = [
         "name": "Hidden Potential",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTE3IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c445828c50/unique17.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 4.7,
+        "chaosValueHCLeague": 5,
         "chaosValueStandard": 3.8
     },
     {
@@ -865,7 +865,7 @@ const uniqueItemArray = [
         "shortName": "sm",
         "name": "The Siege",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0tpbmV0aWNpc21KZXdlbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/d748a39b2e/KineticismJewel.png",
-        "chaosValueLeague": 1.92,
+        "chaosValueLeague": 2,
         "chaosValueHCLeague": 8,
         "chaosValueStandard": 5
     },
@@ -876,8 +876,8 @@ const uniqueItemArray = [
         "name": "Kitava's Teachings",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0Rpc2NpcGxlT2ZLaXRhdmFKZXdlbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/43d818445c/DiscipleOfKitavaJewel.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 432.35,
-        "chaosValueStandard": 5.9
+        "chaosValueHCLeague": 397.28,
+        "chaosValueStandard": 5.8
     },
     {
         "id": 44261,
@@ -886,7 +886,7 @@ const uniqueItemArray = [
         "name": "Replica Reckless Defence",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlY2tsZXNzRGVmZW5zZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/923e6cb6b5/RecklessDefense.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 10,
+        "chaosValueHCLeague": 9.4,
         "chaosValueStandard": 10
     },
     {
@@ -897,7 +897,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1NUUnRvREVYIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f5a4ea844d/STRtoDEX.png",
         "chaosValueLeague": 2,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 3.8
+        "chaosValueStandard": 3.9
     },
     {
         "id": 6892,
@@ -936,7 +936,7 @@ const uniqueItemArray = [
         "name": "Reckless Defence",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlY2tsZXNzRGVmZW5zZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/923e6cb6b5/RecklessDefense.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.9,
+        "chaosValueHCLeague": 2,
         "chaosValueStandard": 3
     },
     {
@@ -965,7 +965,7 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Tempered Mind",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RlbXBlcmVkQmx1ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/995f6d4810/TemperedBlue.png",
-        "chaosValueLeague": 4,
+        "chaosValueLeague": 3,
         "chaosValueHCLeague": 3.2,
         "chaosValueStandard": 5
     },
@@ -995,7 +995,7 @@ const uniqueItemArray = [
         "shortName": "cob",
         "name": "Apex Mode",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0ludGVuc2l0eUpld2VsMSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/2b116c20d2/IntensityJewel1.png",
-        "chaosValueLeague": 5,
+        "chaosValueLeague": 4,
         "chaosValueHCLeague": 82.5,
         "chaosValueStandard": 5
     },
@@ -1006,7 +1006,7 @@ const uniqueItemArray = [
         "name": "Chill of Corruption",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyZWVuQ29ycnVwdDIiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/567ed38e5d/GreenCorrupt2.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 3.6,
+        "chaosValueHCLeague": 3.8,
         "chaosValueStandard": 4.8
     },
     {
@@ -1037,7 +1037,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1NUUnRvSU5UIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d8b66f795b/STRtoINT.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 2
+        "chaosValueStandard": 2.1
     },
     {
         "id": 546,
@@ -1056,7 +1056,7 @@ const uniqueItemArray = [
         "name": "Pacifism",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyZWVuQ29ycnVwdDYiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/1b1c1912b2/GreenCorrupt6.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 2,
+        "chaosValueHCLeague": 2.4,
         "chaosValueStandard": 1
     },
     {
@@ -1077,7 +1077,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kU3dvcmRzL0Nvc21pY0ZvcmdlIiwidyI6MiwiaCI6NCwic2NhbGUiOjEsInJlbGljIjowfV0/0bd8d79633/CosmicForge.png",
         "chaosValueLeague": 45588,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 24364.8
+        "chaosValueStandard": 20069.54
     },
     {
         "id": 4937,
@@ -1085,9 +1085,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Voidforge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kU3dvcmRzL1N0YXJmb3JnZSIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/86b81685e1/Starforge.png",
-        "chaosValueLeague": 3775.19,
+        "chaosValueLeague": 4174.84,
         "chaosValueHCLeague": 2100,
-        "chaosValueStandard": 2003.33
+        "chaosValueStandard": 2006.95
     },
     {
         "id": 120,
@@ -1095,9 +1095,9 @@ const uniqueItemArray = [
         "shortName": "aal a",
         "name": "Atziri's Disfavour",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9BdHppcmlzRGlzZmF2b3VyIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/1ffab716f8/AtzirisDisfavour.png",
-        "chaosValueLeague": 1168.17,
+        "chaosValueLeague": 999.08,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 138.29
+        "chaosValueStandard": 138.48
     },
     {
         "id": 42726,
@@ -1107,7 +1107,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvSGFyYmluZ2VyU3RhZmZVcGdyYWRlZCIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/76cf7c8cb7/HarbingerStaffUpgraded.png",
         "chaosValueLeague": 911.76,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 10828.8
+        "chaosValueStandard": 10848.4
     },
     {
         "id": 101353,
@@ -1115,9 +1115,9 @@ const uniqueItemArray = [
         "shortName": "Fou",
         "name": "The Winds of Fate",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvQW53ZW5zU3RhZmYiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/e26a5d3c65/AnwensStaff.png",
-        "chaosValueLeague": 142.46,
+        "chaosValueLeague": 143.96,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 1309.46
+        "chaosValueStandard": 1311.81
     },
     {
         "id": 423,
@@ -1125,7 +1125,7 @@ const uniqueItemArray = [
         "shortName": "ial sk",
         "name": "Divinarius",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0RhZ2dlcjd1bmlxdWUiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/3deec3773b/Dagger7unique.png",
-        "chaosValueLeague": 185.2,
+        "chaosValueLeague": 175.63,
         "chaosValueHCLeague": 892.9,
         "chaosValueStandard": 5
     },
@@ -1135,9 +1135,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Starforge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kU3dvcmRzL1N0YXJmb3JnZSIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/86b81685e1/Starforge.png",
-        "chaosValueLeague": 740.79,
+        "chaosValueLeague": 834.97,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 335.69
+        "chaosValueStandard": 336.3
     },
     {
         "id": 25769,
@@ -1145,9 +1145,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "The Saviour",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL01pcmFnZUJsYWRlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/c84975781c/MirageBlade.png",
-        "chaosValueLeague": 4273.8,
+        "chaosValueLeague": 2749.64,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 541.44
+        "chaosValueStandard": 542.42
     },
     {
         "id": 45129,
@@ -1155,9 +1155,9 @@ const uniqueItemArray = [
         "shortName": "te st",
         "name": "The Fulcrum",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvRWxlbWVudGFsSGFybW9ueSIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/912f60acd7/ElementalHarmony.png",
-        "chaosValueLeague": 410.51,
-        "chaosValueHCLeague": 375.96,
-        "chaosValueStandard": 1082.88
+        "chaosValueLeague": 359.9,
+        "chaosValueHCLeague": 516.46,
+        "chaosValueStandard": 1084.84
     },
     {
         "id": 714,
@@ -1165,9 +1165,9 @@ const uniqueItemArray = [
         "shortName": "esp",
         "name": "Kingmaker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9BbGV4YXhlYW5kaGVhcnRicmVha2VyIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/fb47351eee/Alexaxeandheartbreaker.png",
-        "chaosValueLeague": 712.3,
+        "chaosValueLeague": 683.81,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 1448.35
+        "chaosValueStandard": 1356.05
     },
     {
         "id": 19061,
@@ -1176,8 +1176,8 @@ const uniqueItemArray = [
         "name": "Paradoxica",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9SYXBpZXJzL0Fzc2Fzc2luYXRpb25VbmlxdWUyIiwidyI6MSwiaCI6NCwic2NhbGUiOjF9XQ/b84147fcbd/AssassinationUnique2.png",
         "chaosValueLeague": 20,
-        "chaosValueHCLeague": 35,
-        "chaosValueStandard": 270.72
+        "chaosValueHCLeague": 33.2,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 4923,
@@ -1187,7 +1187,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvQW1lcmljc01hdWwiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/e1b9d35ca3/AmericsMaul.png",
         "chaosValueLeague": 22,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 42634,
@@ -1197,7 +1197,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvSGFyYmluZ2VyU3RhZmZVcGdyYWRlZCIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/76cf7c8cb7/HarbingerStaffUpgraded.png",
         "chaosValueLeague": 313.53,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 568.51
+        "chaosValueStandard": 569.54
     },
     {
         "id": 1335,
@@ -1205,9 +1205,9 @@ const uniqueItemArray = [
         "shortName": "ege a",
         "name": "Soul Taker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kQXhlcy9BbGV4YXhlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/647bb8bb63/Alexaxe.png",
-        "chaosValueLeague": 581.24,
-        "chaosValueHCLeague": 1409.85,
-        "chaosValueStandard": 50
+        "chaosValueLeague": 633.42,
+        "chaosValueHCLeague": 893.88,
+        "chaosValueStandard": 52
     },
     {
         "id": 109767,
@@ -1217,7 +1217,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvVm9vZG9vS2luZ1N0YWZmIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/295f49d20f/VoodooKingStaff.png",
         "chaosValueLeague": 3,
         "chaosValueHCLeague": 30,
-        "chaosValueStandard": 27072
+        "chaosValueStandard": 27121
     },
     {
         "id": 1813,
@@ -1225,9 +1225,9 @@ const uniqueItemArray = [
         "shortName": "spine",
         "name": "Voltaxic Rift",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL1ZvaWRzaGFmdCIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/aaa5cfdba1/Voidshaft.png",
-        "chaosValueLeague": 1139.68,
-        "chaosValueHCLeague": 244.37,
-        "chaosValueStandard": 49.78
+        "chaosValueLeague": 1422.32,
+        "chaosValueHCLeague": 377.42,
+        "chaosValueStandard": 50.58
     },
     {
         "id": 1997,
@@ -1237,7 +1237,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU29sYXJpc0x1bmFyaXNTdGFmZiIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/e5e9df18a4/SolarisLunarisStaff.png",
         "chaosValueLeague": 15,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 392.54
+        "chaosValueStandard": 393.25
     },
     {
         "id": 2008,
@@ -1245,7 +1245,7 @@ const uniqueItemArray = [
         "shortName": "aal A",
         "name": "Uul-Netol's Embrace",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9VdWxOZXRvbHNLaXNzVXBncmFkZWQiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/8c4738c8a9/UulNetolsKissUpgraded.png",
-        "chaosValueLeague": 179.5,
+        "chaosValueLeague": 126.9,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 26.4
     },
@@ -1255,9 +1255,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Echoforge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kU3dvcmRzL0Nvc21pY0ZvcmdlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/df82c06267/CosmicForge.png",
-        "chaosValueLeague": 378.94,
+        "chaosValueLeague": 431.88,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 541.44
+        "chaosValueStandard": 623.78
     },
     {
         "id": 103420,
@@ -1265,7 +1265,7 @@ const uniqueItemArray = [
         "shortName": "al w",
         "name": "Tulfall",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9UdWxib3JuVXBncmFkZWQiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/575d6058a2/TulbornUpgraded.png",
-        "chaosValueLeague": 146.73,
+        "chaosValueLeague": 142.57,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 88
     },
@@ -1275,9 +1275,9 @@ const uniqueItemArray = [
         "shortName": "ved g",
         "name": "Rakiata's Dance",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kU3dvcmRzL1Jha2lhdGFTd29yZCIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/ec593eeaa8/RakiataSword.png",
-        "chaosValueLeague": 413.13,
-        "chaosValueHCLeague": 375.96,
-        "chaosValueStandard": 2165.76
+        "chaosValueLeague": 431.88,
+        "chaosValueHCLeague": 397.28,
+        "chaosValueStandard": 2169.68
     },
     {
         "id": 103927,
@@ -1285,9 +1285,9 @@ const uniqueItemArray = [
         "shortName": "e W",
         "name": "Relic of the Pact",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9JcG9jaG90bFdhbmQiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/015c140e10/IpochotlWand.png",
-        "chaosValueLeague": 1745.14,
+        "chaosValueLeague": 2879.2,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 254.43
+        "chaosValueStandard": 254.73
     },
     {
         "id": 2022,
@@ -1295,9 +1295,9 @@ const uniqueItemArray = [
         "shortName": "utl",
         "name": "United in Dream",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0V0ZXJuYWxTbGVlcDIiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/8d706ed435/EternalSleep2.png",
-        "chaosValueLeague": 669.56,
+        "chaosValueLeague": 719.8,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 110
+        "chaosValueStandard": 115
     },
     {
         "id": 42576,
@@ -1305,9 +1305,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "The Surging Thoughts",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0hhcmJpbmdlclN3b3JkVXBncmFkZWQiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/bf1d1647f5/HarbingerSwordUpgraded.png",
-        "chaosValueLeague": 393.19,
+        "chaosValueLeague": 201.54,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 947.52
+        "chaosValueStandard": 949.24
     },
     {
         "id": 104107,
@@ -1327,7 +1327,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU29sYXJpc0x1bmFyaXNTdGFmZiIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/e5e9df18a4/SolarisLunarisStaff.png",
         "chaosValueLeague": 8,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 812.16
+        "chaosValueStandard": 813.63
     },
     {
         "id": 755,
@@ -1335,9 +1335,9 @@ const uniqueItemArray = [
         "shortName": "ial bo",
         "name": "Lioneye's Glare",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0Jvdzh1bmlxdWUiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/29fc966523/Bow8unique.png",
-        "chaosValueLeague": 434.5,
-        "chaosValueHCLeague": 469.95,
-        "chaosValueStandard": 4.8
+        "chaosValueLeague": 431.88,
+        "chaosValueHCLeague": 496.6,
+        "chaosValueStandard": 4.6
     },
     {
         "id": 955,
@@ -1345,7 +1345,7 @@ const uniqueItemArray = [
         "shortName": "ju",
         "name": "Pledge of Hands",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvUGxlZGdlb2ZIYW5kcyIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/1da7239060/PledgeofHands.png",
-        "chaosValueLeague": 20,
+        "chaosValueLeague": 18.66,
         "chaosValueHCLeague": 53,
         "chaosValueStandard": 5
     },
@@ -1365,9 +1365,9 @@ const uniqueItemArray = [
         "shortName": "tad",
         "name": "Xoph's Nurture",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0Jsb29kUGVyaWdyZWVCUkVBQ0giLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/c1e05d8e31/BloodPerigreeBREACH.png",
-        "chaosValueLeague": 119.75,
+        "chaosValueLeague": 99.9,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 26
+        "chaosValueStandard": 25
     },
     {
         "id": 60018,
@@ -1386,8 +1386,8 @@ const uniqueItemArray = [
         "name": "Actum",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kQXhlcy9IYW5sb25zUmF6b3IiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/a81f0f6259/HanlonsRazor.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 17.5,
-        "chaosValueStandard": 98
+        "chaosValueHCLeague": 18.03,
+        "chaosValueStandard": 100
     },
     {
         "id": 1992,
@@ -1407,7 +1407,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0ZhdGVPZlRoZVZhYWwiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/0a4128aace/FateOfTheVaal.png",
         "chaosValueLeague": 15,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 204.36
+        "chaosValueStandard": 204.6
     },
     {
         "id": 160,
@@ -1415,7 +1415,7 @@ const uniqueItemArray = [
         "shortName": "sla",
         "name": "Bino's Kitchen Knife",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0Jpbm9zS2l0Y2hlbktuaWZlIiwidyI6MSwiaCI6Mywic2NhbGUiOjF9XQ/499d39d615/BinosKitchenKnife.png",
-        "chaosValueLeague": 13,
+        "chaosValueLeague": 10.6,
         "chaosValueHCLeague": 29.3,
         "chaosValueStandard": 5
     },
@@ -1426,7 +1426,7 @@ const uniqueItemArray = [
         "name": "Replica Dreamfeather",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0RyZWFtZmVhdGhlciIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/89a3a7588c/Dreamfeather.png",
         "chaosValueLeague": 7,
-        "chaosValueHCLeague": 10,
+        "chaosValueHCLeague": 6.5,
         "chaosValueStandard": 100
     },
     {
@@ -1437,7 +1437,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvS29uZ29yc1VuZHlpbmdSYWdlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/5fa26110bc/KongorsUndyingRage.png",
         "chaosValueLeague": 8.4,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 541.44
+        "chaosValueStandard": 542.42
     },
     {
         "id": 45279,
@@ -1446,7 +1446,7 @@ const uniqueItemArray = [
         "name": "The Hidden Blade",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL1NlY3JldEJsYWRlIiwidyI6MSwiaCI6Mywic2NhbGUiOjF9XQ/a82388d924/SecretBlade.png",
         "chaosValueLeague": 8,
-        "chaosValueHCLeague": 36,
+        "chaosValueHCLeague": 36.5,
         "chaosValueStandard": 100
     },
     {
@@ -1456,7 +1456,7 @@ const uniqueItemArray = [
         "name": "Replica Frostbreath",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvRnJvc3RCcmVhdGgiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/8a6b305388/FrostBreath.png",
         "chaosValueLeague": 6,
-        "chaosValueHCLeague": 16,
+        "chaosValueHCLeague": 13.6,
         "chaosValueStandard": 60
     },
     {
@@ -1467,7 +1467,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9DbGF3cy9DbGF3NVVuaXF1ZTIiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/8041876a9e/Claw5Unique2.png",
         "chaosValueLeague": 5,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 4.6
+        "chaosValueStandard": 4.5
     },
     {
         "id": 900,
@@ -1495,8 +1495,8 @@ const uniqueItemArray = [
         "shortName": "l ra",
         "name": "Replica Paradoxica",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9SYXBpZXJzL0Fzc2Fzc2luYXRpb25VbmlxdWUyIiwidyI6MSwiaCI6NCwic2NhbGUiOjF9XQ/b84147fcbd/AssassinationUnique2.png",
-        "chaosValueLeague": 8,
-        "chaosValueHCLeague": 14.5,
+        "chaosValueLeague": 9,
+        "chaosValueHCLeague": 15,
         "chaosValueStandard": 40
     },
     {
@@ -1505,8 +1505,8 @@ const uniqueItemArray = [
         "shortName": "i m",
         "name": "Marohi Erqi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvVHdvSGFuZE1hY2UydW5pcXVlMiIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/6ae0a56923/TwoHandMace2unique2.png",
-        "chaosValueLeague": 10,
-        "chaosValueHCLeague": 23.4,
+        "chaosValueLeague": 12,
+        "chaosValueHCLeague": 27.2,
         "chaosValueStandard": 6.2
     },
     {
@@ -1515,9 +1515,9 @@ const uniqueItemArray = [
         "shortName": "ial bo",
         "name": "Replica Windripper",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0VhZ2xlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/01fdf37ac0/Eagle.png",
-        "chaosValueLeague": 4.7,
+        "chaosValueLeague": 5,
         "chaosValueHCLeague": 50,
-        "chaosValueStandard": 189.31
+        "chaosValueStandard": 189.65
     },
     {
         "id": 44565,
@@ -1525,8 +1525,8 @@ const uniqueItemArray = [
         "shortName": "ius",
         "name": "The Iron Mass",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL1NrZWxldG9uU3dvcmQiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/f3b8e5c988/SkeletonSword.png",
-        "chaosValueLeague": 45,
-        "chaosValueHCLeague": 90.79,
+        "chaosValueLeague": 37,
+        "chaosValueHCLeague": 148.98,
         "chaosValueStandard": 100
     },
     {
@@ -1537,7 +1537,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvSm9ycmhhc3RzQmxhY2tzdGVlbCIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/a1ee3a6a3c/JorrhastsBlacksteel.png",
         "chaosValueLeague": 4.1,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 581.4
+        "chaosValueStandard": 582.74
     },
     {
         "id": 44540,
@@ -1545,7 +1545,7 @@ const uniqueItemArray = [
         "shortName": "t m",
         "name": "Replica Trypanon",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvVHJ5cGFub24iLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/3152ab4124/Trypanon.png",
-        "chaosValueLeague": 7,
+        "chaosValueLeague": 7.1,
         "chaosValueHCLeague": 70,
         "chaosValueStandard": 146
     },
@@ -1555,7 +1555,7 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "The Rippling Thoughts",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0hhcmJpbmdlckxlYWd1ZVN3b3JkIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/e8a974a73b/HarbingerLeagueSword.png",
-        "chaosValueLeague": 9.7,
+        "chaosValueLeague": 9.9,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 10
     },
@@ -1565,8 +1565,8 @@ const uniqueItemArray = [
         "shortName": "ecy",
         "name": "Void Battery",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9Wb2lkQmF0dGVyeSIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/71a0fdc8db/VoidBattery.png",
-        "chaosValueLeague": 569.84,
-        "chaosValueHCLeague": 281.97,
+        "chaosValueLeague": 575.84,
+        "chaosValueHCLeague": 198.64,
         "chaosValueStandard": 95
     },
     {
@@ -1575,8 +1575,8 @@ const uniqueItemArray = [
         "shortName": "fien",
         "name": "Arakaali's Fang",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0ZhbmdVbmlxdWUiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/de6e51652e/FangUnique.png",
-        "chaosValueLeague": 70,
-        "chaosValueHCLeague": 93.99,
+        "chaosValueLeague": 69,
+        "chaosValueHCLeague": 99.32,
         "chaosValueStandard": 40
     },
     {
@@ -1585,7 +1585,7 @@ const uniqueItemArray = [
         "shortName": "arv",
         "name": "The Poet's Pen",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9Qb2V0c1BlbiIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/f6f0645739/PoetsPen.png",
-        "chaosValueLeague": 18.2,
+        "chaosValueLeague": 15,
         "chaosValueHCLeague": 20,
         "chaosValueStandard": 5
     },
@@ -1595,7 +1595,7 @@ const uniqueItemArray = [
         "shortName": "sin b",
         "name": "Arborix",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL1ZlcmRhbnRHdWFyZGlhbkJvdyIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/9008310cc7/VerdantGuardianBow.png",
-        "chaosValueLeague": 29.8,
+        "chaosValueLeague": 24.4,
         "chaosValueHCLeague": 100,
         "chaosValueStandard": 25.4
     },
@@ -1606,7 +1606,7 @@ const uniqueItemArray = [
         "name": "Replica Nebulis",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9TY2VwdHJlT2ZNZW1vcmllcyIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/a627a19fc4/SceptreOfMemories.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 26.8,
+        "chaosValueHCLeague": 27.86,
         "chaosValueStandard": 124
     },
     {
@@ -1615,9 +1615,9 @@ const uniqueItemArray = [
         "shortName": "aal sc",
         "name": "Yaomac's Accord",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9PbmF0emxpU2NlcHRyZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/49dafc0859/OnatzliSceptre.png",
-        "chaosValueLeague": 15,
+        "chaosValueLeague": 10,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 107146,
@@ -1625,9 +1625,9 @@ const uniqueItemArray = [
         "shortName": "ka",
         "name": "Maata's Teaching",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9NYWF0YVNjZXB0cmUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/27dd9da5a6/MaataSceptre.png",
-        "chaosValueLeague": 7,
-        "chaosValueHCLeague": 15,
-        "chaosValueStandard": 270.72
+        "chaosValueLeague": 6.8,
+        "chaosValueHCLeague": 14.4,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 179,
@@ -1636,7 +1636,7 @@ const uniqueItemArray = [
         "name": "Bloodseeker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9DbGF3cy9CbG9vZHNlZWtlciIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/0b888c4189/Bloodseeker.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 187.98,
+        "chaosValueHCLeague": 109.25,
         "chaosValueStandard": 5
     },
     {
@@ -1647,7 +1647,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0RhcmtzY29ybiIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/5145b7feef/Darkscorn.png",
         "chaosValueLeague": 4,
         "chaosValueHCLeague": 7.3,
-        "chaosValueStandard": 3.8
+        "chaosValueStandard": 3.2
     },
     {
         "id": 4892,
@@ -1655,7 +1655,7 @@ const uniqueItemArray = [
         "shortName": "rö",
         "name": "Disintegrator",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvRWxkZXJTdGFmZiIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/4d2bfda95c/ElderStaff.png",
-        "chaosValueLeague": 42.7,
+        "chaosValueLeague": 42.5,
         "chaosValueHCLeague": 420,
         "chaosValueStandard": 24
     },
@@ -1665,7 +1665,7 @@ const uniqueItemArray = [
         "shortName": "id s",
         "name": "Nebulis",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9TY2VwdHJlT2ZNZW1vcmllcyIsInciOjIsImgiOjMsInNjYWxlIjoxLCJzeW50aGVzaXNlZCI6dHJ1ZX1d/42c37f31d6/SceptreOfMemories.png",
-        "chaosValueLeague": 712.3,
+        "chaosValueLeague": 616.15,
         "chaosValueHCLeague": 90,
         "chaosValueStandard": 20
     },
@@ -1675,7 +1675,7 @@ const uniqueItemArray = [
         "shortName": "gn",
         "name": "Replica Fencoil",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU3RhZmYxdW5pcXVlIiwidyI6MSwiaCI6NCwic2NhbGUiOjF9XQ/cff9022931/Staff1unique.png",
-        "chaosValueLeague": 1,
+        "chaosValueLeague": 1.2,
         "chaosValueHCLeague": 2.8,
         "chaosValueStandard": 20
     },
@@ -1685,9 +1685,9 @@ const uniqueItemArray = [
         "shortName": "te d",
         "name": "Replica Cold Iron Point",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0NvbGRJcm9uUG9pbnQiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/1a4002957b/ColdIronPoint.png",
-        "chaosValueLeague": 9,
+        "chaosValueLeague": 10,
         "chaosValueHCLeague": 15,
-        "chaosValueStandard": 35.49
+        "chaosValueStandard": 37.09
     },
     {
         "id": 60091,
@@ -1696,8 +1696,8 @@ const uniqueItemArray = [
         "name": "Story of the Vaal",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL1N0b3J5T2ZUaGVWYWFsIiwidyI6MSwiaCI6Mywic2NhbGUiOjF9XQ/b83d2c0b68/StoryOfTheVaal.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 25,
-        "chaosValueStandard": 13.2
+        "chaosValueHCLeague": 10,
+        "chaosValueStandard": 14
     },
     {
         "id": 98727,
@@ -1705,7 +1705,7 @@ const uniqueItemArray = [
         "shortName": "Qua",
         "name": "The Annihilating Light",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvSW50cmVwaWR1c0RvbG9yZW0iLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MSwicmVsaWMiOjB9XQ/f24c49e79a/IntrepidusDolorem.png",
-        "chaosValueLeague": 707.3,
+        "chaosValueLeague": 287.92,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 200
     },
@@ -1726,7 +1726,7 @@ const uniqueItemArray = [
         "name": "The Crimson Storm",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0ZvcnRpZmljYXRpb25zVW5pcXVlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/b95b104d3e/FortificationsUnique.png",
         "chaosValueLeague": 4,
-        "chaosValueHCLeague": 10.2,
+        "chaosValueHCLeague": 11.4,
         "chaosValueStandard": 20
     },
     {
@@ -1736,7 +1736,7 @@ const uniqueItemArray = [
         "name": "Replica Midnight Bargain",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9XYW5kVW5pcXVlMyIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/1db4fb5dbf/WandUnique3.png",
         "chaosValueLeague": 4,
-        "chaosValueHCLeague": 21.2,
+        "chaosValueHCLeague": 17,
         "chaosValueStandard": 28
     },
     {
@@ -1745,9 +1745,9 @@ const uniqueItemArray = [
         "shortName": "gav",
         "name": "Mjölner",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvTWpvbG5lciIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/3e6fc15b26/Mjolner.png",
-        "chaosValueLeague": 135,
-        "chaosValueHCLeague": 25,
-        "chaosValueStandard": 14
+        "chaosValueLeague": 110,
+        "chaosValueHCLeague": 24.5,
+        "chaosValueStandard": 13
     },
     {
         "id": 1972,
@@ -1757,7 +1757,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9Tb2xhcmlzV2FuZCIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/8f2f75ad2e/SolarisWand.png",
         "chaosValueLeague": 3,
         "chaosValueHCLeague": 5,
-        "chaosValueStandard": 30
+        "chaosValueStandard": 30.5
     },
     {
         "id": 2084,
@@ -1766,7 +1766,7 @@ const uniqueItemArray = [
         "name": "Martyr of Innocence",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvTWFydHlySW5ub2NlbmNlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/6fd4eee9df/MartyrInnocence.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 14.3,
+        "chaosValueHCLeague": 14.2,
         "chaosValueStandard": 38.5
     },
     {
@@ -1816,7 +1816,7 @@ const uniqueItemArray = [
         "name": "Cospri's Malice",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kU3dvcmRzL0Nvc3ByaXNNYWxpY2UiLCJ3IjoxLCJoIjo0LCJzY2FsZSI6MX1d/e9e517220b/CosprisMalice.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 3.4,
+        "chaosValueHCLeague": 4,
         "chaosValueStandard": 10
     },
     {
@@ -1836,8 +1836,8 @@ const uniqueItemArray = [
         "name": "Varunastra",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL1ZhcnVuYXN0cmEiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/ce779b1e41/Varunastra.png",
         "chaosValueLeague": 4,
-        "chaosValueHCLeague": 4.37,
-        "chaosValueStandard": 7
+        "chaosValueHCLeague": 3.28,
+        "chaosValueStandard": 7.5
     },
     {
         "id": 1990,
@@ -1846,8 +1846,8 @@ const uniqueItemArray = [
         "name": "Severed in Sleep",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0V0ZXJuYWxTbGVlcDEiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/60deeaccc5/EternalSleep1.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 140.98,
-        "chaosValueStandard": 9.9
+        "chaosValueHCLeague": 60,
+        "chaosValueStandard": 8.9
     },
     {
         "id": 2235,
@@ -1885,9 +1885,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Beltimber Blade",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL1ZlcmRhbnRHdWFyZGlhblN3b3JkMiIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/3f09536952/VerdantGuardianSword2.png",
-        "chaosValueLeague": 18,
+        "chaosValueLeague": 14,
         "chaosValueHCLeague": 65,
-        "chaosValueStandard": 14.4
+        "chaosValueStandard": 14.1
     },
     {
         "id": 41672,
@@ -1916,7 +1916,7 @@ const uniqueItemArray = [
         "name": "Replica Tempestuous Steel",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL1RlbXBlc3R1b3VzU3RlZWwiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/72078201f9/TempestuousSteel.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 2.5,
+        "chaosValueHCLeague": 2.8,
         "chaosValueStandard": 10
     },
     {
@@ -1926,7 +1926,7 @@ const uniqueItemArray = [
         "name": "Replica Iron Commander",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0lyb25Db21tZW5kYW50IiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/001ca245e3/IronCommendant.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 5.5,
+        "chaosValueHCLeague": 7.6,
         "chaosValueStandard": 10
     },
     {
@@ -1985,7 +1985,7 @@ const uniqueItemArray = [
         "shortName": "lli",
         "name": "Law of the Wilds",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9DbGF3cy9Xb2xmQ2xhdyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/8dd39cb98e/WolfClaw.png",
-        "chaosValueLeague": 4,
+        "chaosValueLeague": 3,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 5
     },
@@ -1996,7 +1996,7 @@ const uniqueItemArray = [
         "name": "Second Piece of Brutality",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvSGFyYmluZ2VyU2hhcmRzL1NoYXJkMiIsInciOjEsImgiOjIsInNjYWxlIjoxfV0/992359550f/Shard2.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 93.99,
+        "chaosValueHCLeague": 99.32,
         "chaosValueStandard": 2.8
     },
     {
@@ -2016,7 +2016,7 @@ const uniqueItemArray = [
         "name": "Rebuke of the Vaal",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL09uZUhhbmRTd29yZDdVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/90312b1e4a/OneHandSword7Unique.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 10,
+        "chaosValueHCLeague": 9.9,
         "chaosValueStandard": 5
     },
     {
@@ -2037,7 +2037,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0ZyZW56aWVkVGVudGFjbGVzIiwidyI6MiwiaCI6NCwic2NhbGUiOjEsInJlbGljIjowfV0/7b25bca211/FrenziedTentacles.png",
         "chaosValueLeague": 8.6,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 1974,
@@ -2046,8 +2046,8 @@ const uniqueItemArray = [
         "name": "Kitava's Feast",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9LaXRhdmFzSHVuZ2VyIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/7e0b7ac41a/KitavasHunger.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 4,
-        "chaosValueStandard": 23
+        "chaosValueHCLeague": 3.2,
+        "chaosValueStandard": 23.5
     },
     {
         "id": 2089,
@@ -2056,7 +2056,7 @@ const uniqueItemArray = [
         "name": "Tidebreaker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvVGlkZWJyZWFrZXIiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/25b69a132f/Tidebreaker.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 8.3,
+        "chaosValueHCLeague": 8,
         "chaosValueStandard": 20
     },
     {
@@ -2067,7 +2067,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0hhcmJpbmdlckxlYWd1ZVNoYXJkcy9IYXJiaW5nZXJTd29yZFNoYXJkMSIsInciOjEsImgiOjIsInNjYWxlIjoxfV0/34740b6337/HarbingerSwordShard1.png",
         "chaosValueLeague": 3,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 3.6
+        "chaosValueStandard": 3.5
     },
     {
         "id": 41671,
@@ -2075,7 +2075,7 @@ const uniqueItemArray = [
         "shortName": "af",
         "name": "Third Piece of Brutality",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvSGFyYmluZ2VyU2hhcmRzL1NoYXJkMyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/b2ec5375d5/Shard3.png",
-        "chaosValueLeague": 2.2,
+        "chaosValueLeague": 2.6,
         "chaosValueHCLeague": 15,
         "chaosValueStandard": 2.9
     },
@@ -2097,7 +2097,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0RhZ2dlcjN1bmlxdWUiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/ec0e6a82fb/Dagger3unique.png",
         "chaosValueLeague": 3,
         "chaosValueHCLeague": 5,
-        "chaosValueStandard": 38.5
+        "chaosValueStandard": 39
     },
     {
         "id": 44533,
@@ -2136,7 +2136,7 @@ const uniqueItemArray = [
         "name": "Death's Harp",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0RlYXRoc2hhcnAiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/488e5f6267/Deathsharp.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 2,
+        "chaosValueHCLeague": 1.1,
         "chaosValueStandard": 2
     },
     {
@@ -2146,7 +2146,7 @@ const uniqueItemArray = [
         "name": "Ephemeral Edge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL09uZUhhbmRTd29yZDhVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/d2fdb4e56e/OneHandSword8Unique.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 4.2,
+        "chaosValueHCLeague": 5,
         "chaosValueStandard": 3
     },
     {
@@ -2156,8 +2156,8 @@ const uniqueItemArray = [
         "name": "The Scourge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9DbGF3cy9UaGVTY291cmdlIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/598a9f9893/TheScourge.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 18,
-        "chaosValueStandard": 8.9
+        "chaosValueHCLeague": 17,
+        "chaosValueStandard": 9
     },
     {
         "id": 1882,
@@ -2195,7 +2195,7 @@ const uniqueItemArray = [
         "shortName": "od sc",
         "name": "Cerberus Limb",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9DZXJlYnVzIExpbWIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/abffc5b395/Cerebus%20Limb.png",
-        "chaosValueLeague": 2.48,
+        "chaosValueLeague": 2.28,
         "chaosValueHCLeague": 10,
         "chaosValueStandard": 6.4
     },
@@ -2205,7 +2205,7 @@ const uniqueItemArray = [
         "shortName": "n sw",
         "name": "Second Piece of the Arcane",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0hhcmJpbmdlckxlYWd1ZVNoYXJkcy9IYXJiaW5nZXJTd29yZFNoYXJkMiIsInciOjEsImgiOjIsInNjYWxlIjoxfV0/244c6caa1e/HarbingerSwordShard2.png",
-        "chaosValueLeague": 2.97,
+        "chaosValueLeague": 3,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 4.3
     },
@@ -2235,8 +2235,8 @@ const uniqueItemArray = [
         "shortName": "e w",
         "name": "Replica Twyzel",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9XYW5kMVVuaXF1ZSIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/086aeb214c/Wand1Unique.png",
-        "chaosValueLeague": 1,
-        "chaosValueHCLeague": 5.5,
+        "chaosValueLeague": 1.6,
+        "chaosValueHCLeague": 5.6,
         "chaosValueStandard": 8
     },
     {
@@ -2246,8 +2246,8 @@ const uniqueItemArray = [
         "name": "Replica Infractem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0luZnJhY3RlbSIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/ea06e13fb8/Infractem.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 6.5,
-        "chaosValueStandard": 8.35
+        "chaosValueHCLeague": 5,
+        "chaosValueStandard": 8.38
     },
     {
         "id": 93031,
@@ -2255,9 +2255,9 @@ const uniqueItemArray = [
         "shortName": "qua",
         "name": "The Annihilating Light",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvSW50cmVwaWR1c0RvbG9yZW0iLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/8244c5f079/IntrepidusDolorem.png",
-        "chaosValueLeague": 284.92,
+        "chaosValueLeague": 172.75,
         "chaosValueHCLeague": 23,
-        "chaosValueStandard": 9.6
+        "chaosValueStandard": 9.7
     },
     {
         "id": 103363,
@@ -2266,8 +2266,8 @@ const uniqueItemArray = [
         "name": "Widowhail",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL1dpZG93aGFpbEJvdyIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/1f31742277/WidowhailBow.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.8,
-        "chaosValueStandard": 16.8
+        "chaosValueHCLeague": 1,
+        "chaosValueStandard": 13.9
     },
     {
         "id": 103412,
@@ -2276,8 +2276,8 @@ const uniqueItemArray = [
         "name": "Hand of Thought and Motion",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9DbGF3cy9UaG91Z2h0TW90aW9uMSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/cc443b5108/ThoughtMotion1.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 10,
-        "chaosValueStandard": 6
+        "chaosValueHCLeague": 5,
+        "chaosValueStandard": 7
     },
     {
         "id": 41676,
@@ -2306,7 +2306,7 @@ const uniqueItemArray = [
         "name": "Grelwood Shank",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL1ZlcmRhbnRHdWFyZGlhblN3b3JkMSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/b085f741a5/VerdantGuardianSword1.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 2.8,
+        "chaosValueHCLeague": 2.9,
         "chaosValueStandard": 5
     },
     {
@@ -2317,7 +2317,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0FmZmxpY3Rpb25Td29yZCIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/7b5d4f7c22/AfflictionSword.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 67.96
+        "chaosValueStandard": 53.5
     },
     {
         "id": 431,
@@ -2326,7 +2326,7 @@ const uniqueItemArray = [
         "name": "Doomfletch",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0Rvb21GbGV0Y2giLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/a284f1cdab/DoomFletch.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 5,
+        "chaosValueHCLeague": 4.7,
         "chaosValueStandard": 1
     },
     {
@@ -2346,7 +2346,7 @@ const uniqueItemArray = [
         "name": "Jack, the Axe",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kQXhlcy9KYWNrdGhlYXhlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/f1f813fe9f/Jacktheaxe.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 4,
+        "chaosValueHCLeague": 3.4,
         "chaosValueStandard": 3
     },
     {
@@ -2355,7 +2355,7 @@ const uniqueItemArray = [
         "shortName": "ron s",
         "name": "Dying Breath",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvRHlpbmdCcmVhdGgiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/3b7be0c935/DyingBreath.png",
-        "chaosValueLeague": 1,
+        "chaosValueLeague": 2,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 3
     },
@@ -2366,7 +2366,7 @@ const uniqueItemArray = [
         "name": "Tulborn",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9UdWxib3JuIiwidyI6MSwiaCI6Mywic2NhbGUiOjF9XQ/7c7cf3e1f2/Tulborn.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 4.6,
+        "chaosValueHCLeague": 3.9,
         "chaosValueStandard": 5
     },
     {
@@ -2407,7 +2407,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU3RhZmY2dW5pcXVlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/8b60f5a033/Staff6unique.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1.99,
-        "chaosValueStandard": 3.45
+        "chaosValueStandard": 3
     },
     {
         "id": 189,
@@ -2417,7 +2417,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvQnJhaW5TY3JhbWJsZXIiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/0749c07fa6/BrainScrambler.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 32.5,
-        "chaosValueStandard": 4.5
+        "chaosValueStandard": 5
     },
     {
         "id": 212,
@@ -2437,7 +2437,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvRG9vbkN1ZWJpeWFyaSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/8a4a0ccb6b/DoonCuebiyari.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1.3,
-        "chaosValueStandard": 3.6
+        "chaosValueStandard": 3.8
     },
     {
         "id": 611,
@@ -2465,7 +2465,7 @@ const uniqueItemArray = [
         "shortName": "tal s",
         "name": "Nycta's Lantern",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9MeWNobnVzbHlhZWkiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/c69b77ef8a/Lychnuslyaei.png",
-        "chaosValueLeague": 4,
+        "chaosValueLeague": 3,
         "chaosValueHCLeague": 7,
         "chaosValueStandard": 3
     },
@@ -2506,7 +2506,7 @@ const uniqueItemArray = [
         "name": "Vulconus",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL1Z1bGNvbnVzIiwidyI6MSwiaCI6Mywic2NhbGUiOjF9XQ/aefa0a977b/Vulconus.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 8.2,
+        "chaosValueHCLeague": 8,
         "chaosValueStandard": 5
     },
     {
@@ -2535,7 +2535,7 @@ const uniqueItemArray = [
         "shortName": "sti",
         "name": "Replica Bloodplay",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0Jsb29kUGxheSIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/3c8258f393/BloodPlay.png",
-        "chaosValueLeague": 1.5,
+        "chaosValueLeague": 2,
         "chaosValueHCLeague": 8.2,
         "chaosValueStandard": 10
     },
@@ -2556,7 +2556,7 @@ const uniqueItemArray = [
         "name": "Hezmana's Bloodlust",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9IZXptYW5hc0Jsb29kbHVzdCIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/fdbd48147f/HezmanasBloodlust.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.5,
+        "chaosValueHCLeague": 1.4,
         "chaosValueStandard": 2
     },
     {
@@ -2566,7 +2566,7 @@ const uniqueItemArray = [
         "name": "Mon'tregul's Grasp",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9Nb250cmVndWxzR3Jhc3AiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/c94034110b/MontregulsGrasp.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 2.4,
+        "chaosValueHCLeague": 2.7,
         "chaosValueStandard": 3
     },
     {
@@ -2577,7 +2577,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL051bGxCb3ciLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/067d0e5884/NullBow.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 3.47
+        "chaosValueStandard": 3.3
     },
     {
         "id": 1018,
@@ -2596,7 +2596,7 @@ const uniqueItemArray = [
         "name": "Rigwald's Savagery",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kQXhlcy9SaWd3YXJsQXhlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/e2ee95737e/RigwarlAxe.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.9,
+        "chaosValueHCLeague": 3,
         "chaosValueStandard": 3
     },
     {
@@ -2616,7 +2616,7 @@ const uniqueItemArray = [
         "name": "Slivertongue",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL1NpbHZlclRvbmd1ZSIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/15c7237f48/SilverTongue.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.06,
+        "chaosValueHCLeague": 1.23,
         "chaosValueStandard": 3
     },
     {
@@ -2705,7 +2705,7 @@ const uniqueItemArray = [
         "shortName": "sti",
         "name": "Bloodplay",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0Jsb29kUGxheSIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/3c8258f393/BloodPlay.png",
-        "chaosValueLeague": 0.99,
+        "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -2865,7 +2865,7 @@ const uniqueItemArray = [
         "shortName": "gn",
         "name": "Fencoil",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU3RhZmYxdW5pcXVlIiwidyI6MSwiaCI6NCwic2NhbGUiOjF9XQ/cff9022931/Staff1unique.png",
-        "chaosValueLeague": 0.7,
+        "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -2875,7 +2875,7 @@ const uniqueItemArray = [
         "shortName": "gg",
         "name": "Fidelitas' Spike",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0ZpZGVsaXRhc1NwaWtlIiwidyI6MSwiaCI6NCwic2NhbGUiOjF9XQ/de1d15ceb1/FidelitasSpike.png",
-        "chaosValueLeague": 0.47,
+        "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -2885,7 +2885,7 @@ const uniqueItemArray = [
         "shortName": "eam",
         "name": "Flesh-Eater",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvT25lSGFuZE1hY2U2VW5pcXVlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/2db8b10771/OneHandMace6Unique.png",
-        "chaosValueLeague": 0.95,
+        "chaosValueLeague": 0.9,
         "chaosValueHCLeague": 0.98,
         "chaosValueStandard": 1
     },
@@ -2905,7 +2905,7 @@ const uniqueItemArray = [
         "shortName": "ss m",
         "name": "Geofri's Baptism",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvVHdvSGFuZE1hY2U3VW5pcXVlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/378419527e/TwoHandMace7Unique.png",
-        "chaosValueLeague": 0.98,
+        "chaosValueLeague": 0.6,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -2915,7 +2915,7 @@ const uniqueItemArray = [
         "shortName": "lub",
         "name": "Gorebreaker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvT25lSGFuZE1hY2UzVW5pcXVlIiwidyI6MSwiaCI6Mywic2NhbGUiOjF9XQ/c3ca02cad8/OneHandMace3Unique.png",
-        "chaosValueLeague": 0.62,
+        "chaosValueLeague": 0.6,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -2925,7 +2925,7 @@ const uniqueItemArray = [
         "shortName": "sk",
         "name": "Goredrill",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0dvcmVkcmlsbCIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/e61d6f038e/Goredrill.png",
-        "chaosValueLeague": 0.47,
+        "chaosValueLeague": 0.62,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -2945,7 +2945,7 @@ const uniqueItemArray = [
         "shortName": "eh",
         "name": "Hrimnor's Hymn",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvVHdvSGFuZE1hY2U2VW5pcXVlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/31ad6258ac/TwoHandMace6Unique.png",
-        "chaosValueLeague": 0.38,
+        "chaosValueLeague": 0.78,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -3017,7 +3017,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9Ud29IYW5kQXhlMTFVbmlxdWUiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/544409d7f6/TwoHandAxe11Unique.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 2.04
+        "chaosValueStandard": 2.07
     },
     {
         "id": 723,
@@ -3065,7 +3065,7 @@ const uniqueItemArray = [
         "shortName": "ham",
         "name": "Lavianga's Wisdom",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvT25lSGFuZE1hY2UzYSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/3c0044c7be/OneHandMace3a.png",
-        "chaosValueLeague": 0.95,
+        "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -3256,7 +3256,7 @@ const uniqueItemArray = [
         "name": "Reverberation Rod",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9SZXZlcmJlcmF0aW9uUm9kIiwidyI6MSwiaCI6Mywic2NhbGUiOjF9XQ/676a395a5f/ReverberationRod.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.9,
+        "chaosValueHCLeague": 1.7,
         "chaosValueStandard": 1
     },
     {
@@ -3276,8 +3276,8 @@ const uniqueItemArray = [
         "name": "Rigwald's Command",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL1JpZ3dhcmxTd29yZCIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/90114046a7/RigwarlSword.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 2.1,
-        "chaosValueStandard": 2.2
+        "chaosValueHCLeague": 2.3,
+        "chaosValueStandard": 2.1
     },
     {
         "id": 1065,
@@ -3316,7 +3316,7 @@ const uniqueItemArray = [
         "name": "Shiversting",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kU3dvcmRzL1R3b0hhbmRTd29yZDZVbmlxdWUiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/084a248453/TwoHandSword6Unique.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 0.58,
+        "chaosValueHCLeague": 0.67,
         "chaosValueStandard": 1
     },
     {
@@ -3357,7 +3357,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kU3dvcmRzL1R3b0hhbmRTd29yZFVuaXF1ZTIiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/c5d5843861/TwoHandSwordUnique2.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 1.7
+        "chaosValueStandard": 1.55
     },
     {
         "id": 1434,
@@ -3375,7 +3375,7 @@ const uniqueItemArray = [
         "shortName": "gn",
         "name": "The Blood Thorn",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvVGhlQmxvb2RUaG9ybiIsInciOjEsImgiOjQsInNjYWxlIjoxfV0/3dac5ee34b/TheBloodThorn.png",
-        "chaosValueLeague": 0.52,
+        "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -3405,7 +3405,7 @@ const uniqueItemArray = [
         "shortName": "w sc",
         "name": "The Dark Seer",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9Wb2lkR2F6ZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/e24a55cd27/VoidGaze.png",
-        "chaosValueLeague": 569.84,
+        "chaosValueLeague": 287.92,
         "chaosValueHCLeague": 7.1,
         "chaosValueStandard": 5
     },
@@ -3415,7 +3415,7 @@ const uniqueItemArray = [
         "shortName": "wh",
         "name": "The Goddess Bound",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9SYXBpZXJzL1VuaXF1ZVJhcGllcjYiLCJ3IjoxLCJoIjo0LCJzY2FsZSI6MX1d/b9f0cc5e60/UniqueRapier6.png",
-        "chaosValueLeague": 0.55,
+        "chaosValueLeague": 0.69,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -3486,8 +3486,8 @@ const uniqueItemArray = [
         "name": "Tremor Rod",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvTWluZVN0YWZmIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/51a69e0959/MineStaff.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1,
-        "chaosValueStandard": 1.8
+        "chaosValueHCLeague": 1.1,
+        "chaosValueStandard": 1.85
     },
     {
         "id": 1722,
@@ -3567,7 +3567,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU3RhZmY3dW5pcXVlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/2437d7498a/Staff7unique.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 12.8
+        "chaosValueStandard": 13.2
     },
     {
         "id": 1955,
@@ -3786,7 +3786,7 @@ const uniqueItemArray = [
         "name": "Apep's Rage",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9BcGVwc1JhZ2UiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/074c66dadc/ApepsRage.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.7,
+        "chaosValueHCLeague": 1.8,
         "chaosValueStandard": 4.2
     },
     {
@@ -3795,9 +3795,9 @@ const uniqueItemArray = [
         "shortName": "hy",
         "name": "Original Sin",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvU2FuY3R1bVNwZWNpYWxVbmlxdWVSaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/e0ff1c1c6b/SanctumSpecialUniqueRing.png",
-        "chaosValueLeague": 20514.24,
+        "chaosValueLeague": 20730.24,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 227106.09
+        "chaosValueStandard": 227469.04
     },
     {
         "id": 101498,
@@ -3807,7 +3807,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVWJlckVhdGVyb2ZXb3JsZHMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MSwicmVsaWMiOjB9XQ/08766c45cc/UberEaterofWorlds.png",
         "chaosValueLeague": 175060.86,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 9749.92
+        "chaosValueStandard": 8141.3
     },
     {
         "id": 71072,
@@ -3815,9 +3815,9 @@ const uniqueItemArray = [
         "shortName": "y b",
         "name": "Mageblood",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSW5qZWN0b3JCZWx0IiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/21ec0269de/InjectorBelt.png",
-        "chaosValueLeague": 23847.8,
+        "chaosValueLeague": 24415.62,
         "chaosValueHCLeague": 36750,
-        "chaosValueStandard": 37900.8
+        "chaosValueStandard": 37969.4
     },
     {
         "id": 71912,
@@ -3825,9 +3825,9 @@ const uniqueItemArray = [
         "shortName": "et a",
         "name": "Uul-Netol's Vow",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9HaWZ0b2ZVdWxOZXRvbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/6cabe4da33/GiftofUulNetol.png",
-        "chaosValueLeague": 2407.57,
+        "chaosValueLeague": 2489.5,
         "chaosValueHCLeague": 525,
-        "chaosValueStandard": 5414.4
+        "chaosValueStandard": 5424.2
     },
     {
         "id": 72129,
@@ -3835,9 +3835,9 @@ const uniqueItemArray = [
         "shortName": "yx",
         "name": "Stranglegasp",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9HaWZ0T2ZHbG9waCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/babc794c98/GiftOfGloph.png",
-        "chaosValueLeague": 1393.26,
+        "chaosValueLeague": 1497.18,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 21657.6
+        "chaosValueStandard": 21696.8
     },
     {
         "id": 607,
@@ -3845,9 +3845,9 @@ const uniqueItemArray = [
         "shortName": "r be",
         "name": "Headhunter",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSGVhZGh1bnRlciIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/e9542ec6ee/Headhunter.png",
-        "chaosValueLeague": 11396.8,
-        "chaosValueHCLeague": 4699.5,
-        "chaosValueStandard": 6605.57
+        "chaosValueLeague": 11516.8,
+        "chaosValueHCLeague": 4985.86,
+        "chaosValueStandard": 6780.25
     },
     {
         "id": 100501,
@@ -3855,9 +3855,9 @@ const uniqueItemArray = [
         "shortName": "top",
         "name": "Nimis",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVWJlckVhdGVyb2ZXb3JsZHMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6dbfb1baea/UberEaterofWorlds.png",
-        "chaosValueLeague": 8690.06,
+        "chaosValueLeague": 9141.46,
         "chaosValueHCLeague": 13230,
-        "chaosValueStandard": 13536
+        "chaosValueStandard": 13560.5
     },
     {
         "id": 99075,
@@ -3865,9 +3865,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Kalandra's Touch",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTWlycm9yUmluZyIsInciOjEsImgiOjEsInNjYWxlIjoxLCJkdXBsaWNhdGVkIjp0cnVlfV0/2cbd02eced/MirrorRing.png",
-        "chaosValueLeague": 2279.36,
-        "chaosValueHCLeague": 11654.76,
-        "chaosValueStandard": 9475.2
+        "chaosValueLeague": 2441.56,
+        "chaosValueHCLeague": 12315.68,
+        "chaosValueStandard": 9492.35
     },
     {
         "id": 45546,
@@ -3875,9 +3875,9 @@ const uniqueItemArray = [
         "shortName": "n be",
         "name": "Replica Bated Breath",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQmF0ZWRCcmVhdGgiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/0a8cc4529f/BatedBreath.png",
-        "chaosValueLeague": 137.21,
+        "chaosValueLeague": 95.4,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 2707.2
+        "chaosValueStandard": 2712.1
     },
     {
         "id": 7760,
@@ -3885,9 +3885,9 @@ const uniqueItemArray = [
         "shortName": "top",
         "name": "Putembo's Mountain",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmx1ZUNvbXBvbmVudCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/086886e893/BlueComponent.png",
-        "chaosValueLeague": 70,
+        "chaosValueLeague": 103.03,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 541.44
+        "chaosValueStandard": 542.42
     },
     {
         "id": 93043,
@@ -3895,9 +3895,9 @@ const uniqueItemArray = [
         "shortName": "yx",
         "name": "Crystallised Omniscience",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9Bc2NlbmRhbmNlQW11bGV0IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/60368620d5/AscendanceAmulet.png",
-        "chaosValueLeague": 6695.62,
+        "chaosValueLeague": 4147.49,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 266.58
+        "chaosValueStandard": 266.97
     },
     {
         "id": 1564,
@@ -3915,9 +3915,9 @@ const uniqueItemArray = [
         "shortName": "yx",
         "name": "Presence of Chayula",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9QcmVzZW5jZU9mQ2hheXVsYSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/6460da7c94/PresenceOfChayula.png",
-        "chaosValueLeague": 698.05,
+        "chaosValueLeague": 679.49,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 6.2
+        "chaosValueStandard": 6.4
     },
     {
         "id": 44551,
@@ -3925,9 +3925,9 @@ const uniqueItemArray = [
         "shortName": "r be",
         "name": "Replica Headhunter",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSGVhZGh1bnRlciIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/e9542ec6ee/Headhunter.png",
-        "chaosValueLeague": 853.91,
-        "chaosValueHCLeague": 0,
-        "chaosValueStandard": 4060.8
+        "chaosValueLeague": 719.8,
+        "chaosValueHCLeague": 893.88,
+        "chaosValueStandard": 4068.15
     },
     {
         "id": 101142,
@@ -3935,8 +3935,8 @@ const uniqueItemArray = [
         "shortName": "ag",
         "name": "Eternal Damnation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9BbndlbnNBbXVsZXQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/1d40745e7d/AnwensAmulet.png",
-        "chaosValueLeague": 141.75,
-        "chaosValueHCLeague": 864.71,
+        "chaosValueLeague": 143.96,
+        "chaosValueHCLeague": 1013.06,
         "chaosValueStandard": 31.6
     },
     {
@@ -3945,9 +3945,9 @@ const uniqueItemArray = [
         "shortName": "top",
         "name": "Precursor's Emblem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQ29tYmluZWRCbHVlUmluZyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/8d07d0d3bb/CombinedBlueRing.png",
-        "chaosValueLeague": 142.46,
+        "chaosValueLeague": 143.96,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 1965,
@@ -3955,9 +3955,9 @@ const uniqueItemArray = [
         "shortName": "lap",
         "name": "Voice of the Storm",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9Wb2ljZU9mVGhlU3Rvcm0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c5fb24dbbe/VoiceOfTheStorm.png",
-        "chaosValueLeague": 712.3,
-        "chaosValueHCLeague": 1127.88,
-        "chaosValueStandard": 95.4
+        "chaosValueLeague": 719.8,
+        "chaosValueHCLeague": 1191.84,
+        "chaosValueStandard": 97.2
     },
     {
         "id": 2019,
@@ -3965,9 +3965,9 @@ const uniqueItemArray = [
         "shortName": "de a",
         "name": "The Pandemonius",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9HbGFjaWVyQ2Fjb29uVXBncmFkZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/f54aa988e2/GlacierCacoonUpgrade.png",
-        "chaosValueLeague": 142.46,
+        "chaosValueLeague": 129.1,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 26.5
+        "chaosValueStandard": 27
     },
     {
         "id": 1994,
@@ -3975,9 +3975,9 @@ const uniqueItemArray = [
         "shortName": "lap",
         "name": "Choir of the Storm",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9Wb2ljZU9mVGhlU3Rvcm1VcGdyYWRlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/50b59f1123/VoiceOfTheStormUpgrade.png",
-        "chaosValueLeague": 299.17,
+        "chaosValueLeague": 302.32,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 39.5
+        "chaosValueStandard": 38
     },
     {
         "id": 7628,
@@ -3987,7 +3987,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmx1ZUNvbXBvbmVudDIiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/e8d0f426fe/BlueComponent2.png",
         "chaosValueLeague": 15,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 107337,
@@ -3995,9 +3995,9 @@ const uniqueItemArray = [
         "shortName": "a a",
         "name": "Defiance of Destiny",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9IaW5la29yYUFtdWxldCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/d26f80f9c7/HinekoraAmulet.png",
-        "chaosValueLeague": 4302.29,
-        "chaosValueHCLeague": 1470,
-        "chaosValueStandard": 2707.2
+        "chaosValueLeague": 4333.2,
+        "chaosValueHCLeague": 9832.68,
+        "chaosValueStandard": 2712.1
     },
     {
         "id": 92942,
@@ -4005,9 +4005,9 @@ const uniqueItemArray = [
         "shortName": "yx",
         "name": "Ashes of the Stars",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9NYXN0ZXJPZkdlbXMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/f6497cbdfe/MasterOfGems.png",
-        "chaosValueLeague": 680.96,
+        "chaosValueLeague": 705.4,
         "chaosValueHCLeague": 315,
-        "chaosValueStandard": 2436.48
+        "chaosValueStandard": 2440.89
     },
     {
         "id": 99135,
@@ -4017,7 +4017,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVWJlckVsZGVyUmluZyIsInciOjEsImgiOjEsInNjYWxlIjoxLCJyZWxpYyI6MH1d/6bc57ba225/UberElderRing.png",
         "chaosValueLeague": 141.46,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 7599,
@@ -4027,7 +4027,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQ29tYmluZWRQcmlzbWF0aWNSaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/5dd23ff6ad/CombinedPrismaticRing.png",
         "chaosValueLeague": 410.29,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 1353.6
+        "chaosValueStandard": 1356.05
     },
     {
         "id": 7602,
@@ -4035,9 +4035,9 @@ const uniqueItemArray = [
         "shortName": "-s",
         "name": "Precursor's Emblem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQ29tYmluZWRSZWRCbHVlUmluZyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/6f6c0766b4/CombinedRedBlueRing.png",
-        "chaosValueLeague": 116.22,
+        "chaosValueLeague": 117.27,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 541.44
+        "chaosValueStandard": 542.42
     },
     {
         "id": 7738,
@@ -4045,9 +4045,9 @@ const uniqueItemArray = [
         "shortName": "sap",
         "name": "Uzaza's Valley",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvR3JlZW5Db21wb25lbnQzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/7e3d39e9a7/GreenComponent3.png",
-        "chaosValueLeague": 69.2,
+        "chaosValueLeague": 89.1,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 532.52
+        "chaosValueStandard": 537.79
     },
     {
         "id": 109035,
@@ -4056,8 +4056,8 @@ const uniqueItemArray = [
         "name": "Replica Badge of the Brotherhood",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9Bc3Nhc3NpblVuaXF1ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/3616219d7d/AssassinUnique.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 93.99,
-        "chaosValueStandard": 1109.95
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 1111.96
     },
     {
         "id": 42668,
@@ -4065,9 +4065,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "The Torrent's Reclamation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSGFyYmluZ2VyQmVsdFVwZ3JhZGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/0c8b942a94/HarbingerBeltUpgraded.png",
-        "chaosValueLeague": 284.92,
+        "chaosValueLeague": 287.92,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 182.43
+        "chaosValueStandard": 182.73
     },
     {
         "id": 99188,
@@ -4077,7 +4077,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQWx0Q2hhcmdlU3RyIiwidyI6MiwiaCI6MSwic2NhbGUiOjEsInJlbGljIjowfV0/4beabb66ed/AltChargeStr.png",
         "chaosValueLeague": 80,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 536.03
+        "chaosValueStandard": 537
     },
     {
         "id": 7761,
@@ -4085,9 +4085,9 @@ const uniqueItemArray = [
         "shortName": "rub",
         "name": "Ahkeli's Meadow",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvUmVkQ29tcG9uZW50MiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/0c950dc560/RedComponent2.png",
-        "chaosValueLeague": 30,
+        "chaosValueLeague": 20.5,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 22499,
@@ -4095,9 +4095,9 @@ const uniqueItemArray = [
         "shortName": "rq",
         "name": "Badge of the Brotherhood",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9Bc3Nhc3NpblVuaXF1ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/3616219d7d/AssassinUnique.png",
-        "chaosValueLeague": 110,
-        "chaosValueHCLeague": 75,
-        "chaosValueStandard": 270.72
+        "chaosValueLeague": 120,
+        "chaosValueHCLeague": 48,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 99239,
@@ -4105,9 +4105,9 @@ const uniqueItemArray = [
         "shortName": "Sap",
         "name": "Call of the Void",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvRnJvc3RHbGF6ZWRFeWVSaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjEsInJlbGljIjowfV0/812feec5df/FrostGlazedEyeRing.png",
-        "chaosValueLeague": 104.25,
+        "chaosValueLeague": 104.4,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 5279.04
+        "chaosValueStandard": 5288.6
     },
     {
         "id": 1993,
@@ -4115,7 +4115,7 @@ const uniqueItemArray = [
         "shortName": "mbe",
         "name": "Xoph's Blood",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9ZcGhldGhha2tzSGVhcnRVcGdyYWRlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/259f2be84d/YphethakksHeartUpgrade.png",
-        "chaosValueLeague": 142.46,
+        "chaosValueLeague": 132.79,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 10
     },
@@ -4125,7 +4125,7 @@ const uniqueItemArray = [
         "shortName": "sap",
         "name": "Uzaza's Mountain",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvR3JlZW5Db21wb25lbnQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/f6e55e6800/GreenComponent.png",
-        "chaosValueLeague": 25,
+        "chaosValueLeague": 24.4,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 94
     },
@@ -4135,9 +4135,9 @@ const uniqueItemArray = [
         "shortName": "sap",
         "name": "Precursor's Emblem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQ29tYmluZWRHcmVlblJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/76c5b311f3/CombinedGreenRing.png",
-        "chaosValueLeague": 50,
+        "chaosValueLeague": 65,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 7762,
@@ -4147,7 +4147,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQ29tYmluZWRSZWRSaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/ca98bb7e51/CombinedRedRing.png",
         "chaosValueLeague": 50,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 99320,
@@ -4157,7 +4157,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVWJlclNoYXBlclJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MSwicmVsaWMiOjB9XQ/158c99a6ae/UberShaperRing.png",
         "chaosValueLeague": 18,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 182.43
+        "chaosValueStandard": 204.85
     },
     {
         "id": 7523,
@@ -4166,7 +4166,7 @@ const uniqueItemArray = [
         "name": "Putembo's Valley",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmx1ZUNvbXBvbmVudDMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/cd1b931996/BlueComponent3.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 93.99,
+        "chaosValueHCLeague": 99.32,
         "chaosValueStandard": 30
     },
     {
@@ -4175,7 +4175,7 @@ const uniqueItemArray = [
         "shortName": "rub",
         "name": "Ahkeli's Valley",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvUmVkQ29tcG9uZW50MyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/fe1c0d1513/RedComponent3.png",
-        "chaosValueLeague": 19,
+        "chaosValueLeague": 15,
         "chaosValueHCLeague": 20,
         "chaosValueStandard": 39
     },
@@ -4185,9 +4185,9 @@ const uniqueItemArray = [
         "shortName": "op",
         "name": "Polaric Devastation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQXNoQW5kRnJvc3QiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/70630a6e17/AshAndFrost.png",
-        "chaosValueLeague": 883.25,
-        "chaosValueHCLeague": 1409.85,
-        "chaosValueStandard": 66.6
+        "chaosValueLeague": 961.65,
+        "chaosValueHCLeague": 1489.8,
+        "chaosValueStandard": 66.2
     },
     {
         "id": 99176,
@@ -4197,7 +4197,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQWx0Q2hhcmdlSW50IiwidyI6MiwiaCI6MSwic2NhbGUiOjEsInJlbGljIjowfV0/25a89da425/AltChargeInt.png",
         "chaosValueLeague": 45,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 351.94
+        "chaosValueStandard": 352.57
     },
     {
         "id": 54425,
@@ -4215,9 +4215,9 @@ const uniqueItemArray = [
         "shortName": "n be",
         "name": "Coward's Legacy",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQ293YXJkJ3MgTGVnYWN5IiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/2325fc7213/Coward%27s%20Legacy.png",
-        "chaosValueLeague": 253.58,
+        "chaosValueLeague": 230.34,
         "chaosValueHCLeague": 210,
-        "chaosValueStandard": 150.36
+        "chaosValueStandard": 150.6
     },
     {
         "id": 7070,
@@ -4235,7 +4235,7 @@ const uniqueItemArray = [
         "shortName": "rub",
         "name": "Ahkeli's Mountain",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvUmVkQ29tcG9uZW50IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/4c8c42f98b/RedComponent.png",
-        "chaosValueLeague": 4,
+        "chaosValueLeague": 3.7,
         "chaosValueHCLeague": 60,
         "chaosValueStandard": 10
     },
@@ -4245,9 +4245,9 @@ const uniqueItemArray = [
         "shortName": "rub",
         "name": "Replica Emberwake",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvUmluZzEwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/55c8711fd7/Ring10.png",
-        "chaosValueLeague": 85,
-        "chaosValueHCLeague": 53.5,
-        "chaosValueStandard": 270.72
+        "chaosValueLeague": 70,
+        "chaosValueHCLeague": 50,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 99367,
@@ -4257,7 +4257,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvU2lydXNCZWx0IiwidyI6MiwiaCI6MSwic2NhbGUiOjEsInJlbGljIjowfV0/fcc30c748f/SirusBelt.png",
         "chaosValueLeague": 76,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 5414.4
+        "chaosValueStandard": 5424.2
     },
     {
         "id": 95720,
@@ -4265,7 +4265,7 @@ const uniqueItemArray = [
         "shortName": "sap",
         "name": "Call of the Void",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvRnJvc3RHbGF6ZWRFeWVSaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/e10b85c4f1/FrostGlazedEyeRing.png",
-        "chaosValueLeague": 68,
+        "chaosValueLeague": 60,
         "chaosValueHCLeague": 315,
         "chaosValueStandard": 60
     },
@@ -4277,7 +4277,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQWx0Q2hhcmdlRGV4IiwidyI6MiwiaCI6MSwic2NhbGUiOjEsInJlbGljIjowfV0/5f83eaba26/AltChargeDex.png",
         "chaosValueLeague": 52,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 406.08
+        "chaosValueStandard": 406.82
     },
     {
         "id": 7709,
@@ -4285,7 +4285,7 @@ const uniqueItemArray = [
         "shortName": "yx",
         "name": "Aul's Uprising",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9BaG4gQXJ0aWZhY3QiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/5234506d57/Ahn%20Artifact.png",
-        "chaosValueLeague": 55.99,
+        "chaosValueLeague": 57.33,
         "chaosValueHCLeague": 945,
         "chaosValueStandard": 40
     },
@@ -4297,7 +4297,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmV0cmF5YWxFeHBlcmltZW50YXRpb25SaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/0131f81491/BetrayalExperimentationRing.png",
         "chaosValueLeague": 3,
         "chaosValueHCLeague": 10,
-        "chaosValueStandard": 38.65
+        "chaosValueStandard": 39.42
     },
     {
         "id": 509,
@@ -4306,7 +4306,7 @@ const uniqueItemArray = [
         "name": "Eyes of the Greatwolf",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9SaWd3YWxkc1RhbGlzbWFuIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/4936fcad86/RigwaldsTalisman.png",
         "chaosValueLeague": 20,
-        "chaosValueHCLeague": 11.5,
+        "chaosValueHCLeague": 12,
         "chaosValueStandard": 200
     },
     {
@@ -4315,8 +4315,8 @@ const uniqueItemArray = [
         "shortName": "moo",
         "name": "Anathema",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVW5pcXVlQ3Vyc2VSaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/db99b5c4d2/UniqueCurseRing.png",
-        "chaosValueLeague": 242.18,
-        "chaosValueHCLeague": 77,
+        "chaosValueLeague": 215.94,
+        "chaosValueHCLeague": 70,
         "chaosValueStandard": 141
     },
     {
@@ -4335,7 +4335,7 @@ const uniqueItemArray = [
         "shortName": "a r",
         "name": "Fated End",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvRm9yYmlkZGVuU2VhbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/f402209b8f/ForbiddenSeal.png",
-        "chaosValueLeague": 4,
+        "chaosValueLeague": 4.2,
         "chaosValueHCLeague": 56,
         "chaosValueStandard": 60
     },
@@ -4346,7 +4346,7 @@ const uniqueItemArray = [
         "name": "The Taming",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVGhlVGFtaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/17c5d3d74b/TheTaming.png",
         "chaosValueLeague": 30,
-        "chaosValueHCLeague": 21,
+        "chaosValueHCLeague": 29,
         "chaosValueStandard": 25
     },
     {
@@ -4365,8 +4365,8 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Replica Soul Tether",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvU291bFRldGhlciIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/a2b7447a4a/SoulTether.png",
-        "chaosValueLeague": 9,
-        "chaosValueHCLeague": 35,
+        "chaosValueLeague": 10,
+        "chaosValueHCLeague": 22,
         "chaosValueStandard": 44.5
     },
     {
@@ -4375,8 +4375,8 @@ const uniqueItemArray = [
         "shortName": "y b",
         "name": "Replica Siegebreaker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvODU0ODIiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/ee893f3cb8/85482.png",
-        "chaosValueLeague": 7,
-        "chaosValueHCLeague": 31,
+        "chaosValueLeague": 6,
+        "chaosValueHCLeague": 37,
         "chaosValueStandard": 46
     },
     {
@@ -4386,7 +4386,7 @@ const uniqueItemArray = [
         "name": "Graven's Secret",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQWx0Q2hhcmdlSW50IiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/1300aed2ac/AltChargeInt.png",
         "chaosValueLeague": 15,
-        "chaosValueHCLeague": 131.59,
+        "chaosValueHCLeague": 93.52,
         "chaosValueStandard": 10
     },
     {
@@ -4396,7 +4396,7 @@ const uniqueItemArray = [
         "name": "The Eternal Struggle",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9Wb2lkY29yZUFtdWxldCIsInciOjEsImgiOjEsInNjYWxlIjoxLCJzZWFyaW5nIjp0cnVlLCJ0YW5nbGVkIjp0cnVlfV0/3ca1f8ecb5/VoidcoreAmulet.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 9.6,
+        "chaosValueHCLeague": 9.7,
         "chaosValueStandard": 30
     },
     {
@@ -4406,7 +4406,7 @@ const uniqueItemArray = [
         "name": "Circle of Nostalgia",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvU3ludGhlc2lzUGh5c2ljYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MSwic3ludGhlc2lzZWQiOnRydWV9XQ/91f50b535b/SynthesisPhysical.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 12.5,
+        "chaosValueHCLeague": 10,
         "chaosValueStandard": 10
     },
     {
@@ -4415,8 +4415,8 @@ const uniqueItemArray = [
         "shortName": "yx",
         "name": "Astramentis",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9BbXVsZXQzNiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/95da0d04a4/Amulet36.png",
-        "chaosValueLeague": 55,
-        "chaosValueHCLeague": 31.2,
+        "chaosValueLeague": 51.9,
+        "chaosValueHCLeague": 30,
         "chaosValueStandard": 5
     },
     {
@@ -4435,7 +4435,7 @@ const uniqueItemArray = [
         "shortName": "y b",
         "name": "Doryani's Invitation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvRG9yeWFuaXNJbnZpdGF0aW9uIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/d0085639cc/DoryanisInvitation.png",
-        "chaosValueLeague": 284.92,
+        "chaosValueLeague": 287.92,
         "chaosValueHCLeague": 40,
         "chaosValueStandard": 15
     },
@@ -4445,8 +4445,8 @@ const uniqueItemArray = [
         "shortName": "mbe",
         "name": "Xoph's Heart",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9ZcGhldGhha2tzSGVhcnQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/8fce3ec78f/YphethakksHeart.png",
-        "chaosValueLeague": 20,
-        "chaosValueHCLeague": 770.72,
+        "chaosValueLeague": 19.78,
+        "chaosValueHCLeague": 814.42,
         "chaosValueStandard": 15
     },
     {
@@ -4455,7 +4455,7 @@ const uniqueItemArray = [
         "shortName": "ded b",
         "name": "Ryslatha's Coil",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvUnl1c2xhdGhhc0NsdXRjaGVzIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b990decd3/RyuslathasClutches.png",
-        "chaosValueLeague": 54.9,
+        "chaosValueLeague": 50,
         "chaosValueHCLeague": 18,
         "chaosValueStandard": 50
     },
@@ -4476,7 +4476,7 @@ const uniqueItemArray = [
         "name": "Circle of Guilt",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvU3ludGhlc2lzUGh5c2ljYWwyIiwidyI6MSwiaCI6MSwic2NhbGUiOjEsInN5bnRoZXNpc2VkIjp0cnVlfV0/9345ce30d7/SynthesisPhysical2.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 8.6,
+        "chaosValueHCLeague": 9.3,
         "chaosValueStandard": 19.99
     },
     {
@@ -4486,7 +4486,7 @@ const uniqueItemArray = [
         "name": "Circle of Fear",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvU3ludGhlc2lzQ29sZCIsInciOjEsImgiOjEsInNjYWxlIjoxLCJzeW50aGVzaXNlZCI6dHJ1ZX1d/f2a949365a/SynthesisCold.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 9.8,
+        "chaosValueHCLeague": 10,
         "chaosValueStandard": 10
     },
     {
@@ -4495,9 +4495,9 @@ const uniqueItemArray = [
         "shortName": "de a",
         "name": "Replica Hyrri's Truth",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9TeW50aGVzaXNBY2N1cmFjeUFtdWxldCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/6062fd361e/SynthesisAccuracyAmulet.png",
-        "chaosValueLeague": 8.1,
+        "chaosValueLeague": 9,
         "chaosValueHCLeague": 14.5,
-        "chaosValueStandard": 28
+        "chaosValueStandard": 29.5
     },
     {
         "id": 44217,
@@ -4505,7 +4505,7 @@ const uniqueItemArray = [
         "shortName": "a a",
         "name": "Replica Atziri's Foible",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9RdWlkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/00c2b3a588/Quid.png",
-        "chaosValueLeague": 9,
+        "chaosValueLeague": 8,
         "chaosValueHCLeague": 24,
         "chaosValueStandard": 20
     },
@@ -4526,7 +4526,7 @@ const uniqueItemArray = [
         "name": "Replica Karui Ward",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9BbXVsZXQ0VW5pcXVlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/069e4f76ea/Amulet4Unique.png",
         "chaosValueLeague": 8,
-        "chaosValueHCLeague": 11.3,
+        "chaosValueHCLeague": 10,
         "chaosValueStandard": 15
     },
     {
@@ -4546,7 +4546,7 @@ const uniqueItemArray = [
         "name": "Leadership's Price",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9LdXJhaXNNYXN0ZXJ5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/bf33f8013a/KuraisMastery.png",
         "chaosValueLeague": 25,
-        "chaosValueHCLeague": 281.97,
+        "chaosValueHCLeague": 80.86,
         "chaosValueStandard": 10
     },
     {
@@ -4556,7 +4556,7 @@ const uniqueItemArray = [
         "name": "Survivor's Guilt",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSW1iYWxhbmNlZENvcmQiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/0560075a4c/ImbalancedCord.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 12.9,
+        "chaosValueHCLeague": 13.1,
         "chaosValueStandard": 19.98
     },
     {
@@ -4565,7 +4565,7 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "The Flow Untethered",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSGFyYmluZ2VyQmVsdCIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/805aeb48f1/HarbingerBelt.png",
-        "chaosValueLeague": 25.8,
+        "chaosValueLeague": 30,
         "chaosValueHCLeague": 82.5,
         "chaosValueStandard": 11.5
     },
@@ -4575,9 +4575,9 @@ const uniqueItemArray = [
         "shortName": "top",
         "name": "Astral Projector",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQXN0cmFsUHJvamVjdG9yIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/92eca463f2/AstralProjector.png",
-        "chaosValueLeague": 20,
+        "chaosValueLeague": 17,
         "chaosValueHCLeague": 30,
-        "chaosValueStandard": 55
+        "chaosValueStandard": 63
     },
     {
         "id": 391,
@@ -4586,7 +4586,7 @@ const uniqueItemArray = [
         "name": "Death Rush",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQW1ldGh5c3RSaW5nVW5pcXVlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1ade97e0ac/AmethystRingUnique.png",
         "chaosValueLeague": 40,
-        "chaosValueHCLeague": 13.2,
+        "chaosValueHCLeague": 12.2,
         "chaosValueStandard": 8
     },
     {
@@ -4595,7 +4595,7 @@ const uniqueItemArray = [
         "shortName": "a r",
         "name": "Perandus Signet",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTGFkeVJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/d696be5b25/LadyRing.png",
-        "chaosValueLeague": 4,
+        "chaosValueLeague": 5,
         "chaosValueHCLeague": 8,
         "chaosValueStandard": 5
     },
@@ -4605,9 +4605,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Sunblast",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQmVsdDgiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/c50a807f09/Belt8.png",
-        "chaosValueLeague": 65,
-        "chaosValueHCLeague": 19.5,
-        "chaosValueStandard": 2.09
+        "chaosValueLeague": 60,
+        "chaosValueHCLeague": 19.6,
+        "chaosValueStandard": 2.07
     },
     {
         "id": 1770,
@@ -4615,9 +4615,9 @@ const uniqueItemArray = [
         "shortName": "ld r",
         "name": "Ventor's Gamble",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvRGllT2ZEZXN0aW55IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1470dfcdce/DieOfDestiny.png",
-        "chaosValueLeague": 4,
+        "chaosValueLeague": 5,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 7.7
+        "chaosValueStandard": 10
     },
     {
         "id": 1961,
@@ -4655,9 +4655,9 @@ const uniqueItemArray = [
         "shortName": "yx",
         "name": "Replica Hinekora's Sight",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9IaW5la29yYXNTaWdodCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/13820d857f/HinekorasSight.png",
-        "chaosValueLeague": 3,
-        "chaosValueHCLeague": 20,
-        "chaosValueStandard": 81
+        "chaosValueLeague": 3.5,
+        "chaosValueHCLeague": 20.5,
+        "chaosValueStandard": 67.5
     },
     {
         "id": 6906,
@@ -4665,7 +4665,7 @@ const uniqueItemArray = [
         "shortName": "n be",
         "name": "Coward's Chains",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQ293YXJkJ3MgQ2hhaW5zIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/b1cb3d3a26/Coward%27s%20Chains.png",
-        "chaosValueLeague": 35,
+        "chaosValueLeague": 30,
         "chaosValueHCLeague": 47,
         "chaosValueStandard": 15
     },
@@ -4686,7 +4686,7 @@ const uniqueItemArray = [
         "name": "Circle of Anguish",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvU3ludGhlc2lzRmlyZSIsInciOjEsImgiOjEsInNjYWxlIjoxLCJzeW50aGVzaXNlZCI6dHJ1ZX1d/f64b382150/SynthesisFire.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 9,
+        "chaosValueHCLeague": 9.5,
         "chaosValueStandard": 10
     },
     {
@@ -4697,7 +4697,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQnJpbmVyb3QiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c1d39c178d/Brinerot.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 9.4
+        "chaosValueStandard": 9.5
     },
     {
         "id": 123,
@@ -4705,8 +4705,8 @@ const uniqueItemArray = [
         "shortName": "a a",
         "name": "Atziri's Foible",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9RdWlkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/00c2b3a588/Quid.png",
-        "chaosValueLeague": 213.69,
-        "chaosValueHCLeague": 657.93,
+        "chaosValueLeague": 230.34,
+        "chaosValueHCLeague": 536.33,
         "chaosValueStandard": 5
     },
     {
@@ -4716,7 +4716,7 @@ const uniqueItemArray = [
         "name": "Berek's Respite",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmVyZWtzUmVzcGl0ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/82b228798a/BereksRespite.png",
         "chaosValueLeague": 20,
-        "chaosValueHCLeague": 10,
+        "chaosValueHCLeague": 9.4,
         "chaosValueStandard": 10
     },
     {
@@ -4725,7 +4725,7 @@ const uniqueItemArray = [
         "shortName": "y b",
         "name": "Doryani's Invitation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvRG9yeWFuaXNJbnZpdGF0aW9uIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/d0085639cc/DoryanisInvitation.png",
-        "chaosValueLeague": 60,
+        "chaosValueLeague": 40,
         "chaosValueHCLeague": 105,
         "chaosValueStandard": 5
     },
@@ -4736,7 +4736,7 @@ const uniqueItemArray = [
         "name": "Darkness Enthroned",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvRGFya25lc3NFbnRocm9uZWQiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/2e418e2c4d/DarknessEnthroned.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 23.6,
+        "chaosValueHCLeague": 22,
         "chaosValueStandard": 5
     },
     {
@@ -4766,7 +4766,7 @@ const uniqueItemArray = [
         "name": "Mark of the Shaper",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVWJlclNoYXBlclJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/302889cfca/UberShaperRing.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 26,
+        "chaosValueHCLeague": 25,
         "chaosValueStandard": 5
     },
     {
@@ -4776,7 +4776,7 @@ const uniqueItemArray = [
         "name": "Solstice Vigil",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9TaGFwZXJzUHJlc2VuY2UiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/57d45e4009/ShapersPresence.png",
         "chaosValueLeague": 4,
-        "chaosValueHCLeague": 33,
+        "chaosValueHCLeague": 34,
         "chaosValueStandard": 10
     },
     {
@@ -4786,7 +4786,7 @@ const uniqueItemArray = [
         "name": "Hyperboreus",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQmV0cmF5YWxfVW5pcXVlX1RyYW5zcG9ydF9CZWx0IiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/52b9b09a12/Betrayal_Unique_Transport_Belt.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 6.8,
+        "chaosValueHCLeague": 6.2,
         "chaosValueStandard": 10
     },
     {
@@ -4816,8 +4816,8 @@ const uniqueItemArray = [
         "name": "Replica Prismweave",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvUHJpc213ZWF2ZSIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/822582fe24/Prismweave.png",
         "chaosValueLeague": 7,
-        "chaosValueHCLeague": 9,
-        "chaosValueStandard": 15
+        "chaosValueHCLeague": 8.1,
+        "chaosValueStandard": 10.5
     },
     {
         "id": 54394,
@@ -4826,7 +4826,7 @@ const uniqueItemArray = [
         "name": "Rotblood Promise",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQ3Vyc2VkRXllIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/6f6b42ce7e/CursedEye.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 29.7,
+        "chaosValueHCLeague": 29.8,
         "chaosValueStandard": 18.6
     },
     {
@@ -4835,8 +4835,8 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Olesya's Delight",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQWx0Q2hhcmdlRGV4IiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/caa418edee/AltChargeDex.png",
-        "chaosValueLeague": 4,
-        "chaosValueHCLeague": 17,
+        "chaosValueLeague": 3,
+        "chaosValueHCLeague": 18,
         "chaosValueStandard": 20
     },
     {
@@ -4845,7 +4845,7 @@ const uniqueItemArray = [
         "shortName": "set r",
         "name": "Triumvirate Authority",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVmFhbFVuc2V0UmluZyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/21c7f71af2/VaalUnsetRing.png",
-        "chaosValueLeague": 2,
+        "chaosValueLeague": 3,
         "chaosValueHCLeague": 5,
         "chaosValueStandard": 10
     },
@@ -4855,9 +4855,9 @@ const uniqueItemArray = [
         "shortName": "ry",
         "name": "The Burden of Truth",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvU2lydXNCZWx0IiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/757f213691/SirusBelt.png",
-        "chaosValueLeague": 9,
-        "chaosValueHCLeague": 93.99,
-        "chaosValueStandard": 14.1
+        "chaosValueLeague": 8,
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 13.8
     },
     {
         "id": 44283,
@@ -4865,7 +4865,7 @@ const uniqueItemArray = [
         "shortName": "a r",
         "name": "Replica Doedre's Damning",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvUmluZzNVbmlxdWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/d06b386d73/Ring3Unique.png",
-        "chaosValueLeague": 2,
+        "chaosValueLeague": 3,
         "chaosValueHCLeague": 18.2,
         "chaosValueStandard": 20
     },
@@ -4875,8 +4875,8 @@ const uniqueItemArray = [
         "shortName": "itr",
         "name": "The Jinxed Juju",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9KdWp1c1NvdWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6d30276e6f/JujusSoul.png",
-        "chaosValueLeague": 20,
-        "chaosValueHCLeague": 39,
+        "chaosValueLeague": 18,
+        "chaosValueHCLeague": 30,
         "chaosValueStandard": 10
     },
     {
@@ -4886,7 +4886,7 @@ const uniqueItemArray = [
         "name": "Impresence",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9FbGRlckNvbGQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/157b678ffb/ElderCold.png",
         "chaosValueLeague": 4,
-        "chaosValueHCLeague": 71.5,
+        "chaosValueHCLeague": 72.03,
         "chaosValueStandard": 5
     },
     {
@@ -4897,7 +4897,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvU2hhcmRzL0hhcmJpbmdlckJlbHRTaGFyZDIiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/65a4798357/HarbingerBeltShard2.png",
         "chaosValueLeague": 5,
         "chaosValueHCLeague": 105,
-        "chaosValueStandard": 4
+        "chaosValueStandard": 3.9
     },
     {
         "id": 42662,
@@ -4915,7 +4915,7 @@ const uniqueItemArray = [
         "shortName": "yx",
         "name": "Yoke of Suffering",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9Zb2tlT2ZTdWZmZXJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/80cc716213/YokeOfSuffering.png",
-        "chaosValueLeague": 1709.52,
+        "chaosValueLeague": 1626.75,
         "chaosValueHCLeague": 11,
         "chaosValueStandard": 20
     },
@@ -4945,8 +4945,8 @@ const uniqueItemArray = [
         "shortName": "y b",
         "name": "Dyadian Dawn",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTW90aGVyRHlhZHVzIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/ca299e5015/MotherDyadus.png",
-        "chaosValueLeague": 10,
-        "chaosValueHCLeague": 106,
+        "chaosValueLeague": 8,
+        "chaosValueHCLeague": 99.39,
         "chaosValueStandard": 4
     },
     {
@@ -4955,8 +4955,8 @@ const uniqueItemArray = [
         "shortName": "lap",
         "name": "Marylene's Fallacy",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9NYXJ5bGVuZXNGYWxsYWN5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1665e40d51/MarylenesFallacy.png",
-        "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.1,
+        "chaosValueLeague": 2,
+        "chaosValueHCLeague": 1.3,
         "chaosValueStandard": 5
     },
     {
@@ -4966,7 +4966,7 @@ const uniqueItemArray = [
         "name": "Ming's Heart",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTWluZ3NIZWFydCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/7395d98bba/MingsHeart.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 4,
+        "chaosValueHCLeague": 3.5,
         "chaosValueStandard": 5
     },
     {
@@ -4995,9 +4995,9 @@ const uniqueItemArray = [
         "shortName": "y b",
         "name": "Doryani's Invitation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvRG9yeWFuaXNJbnZpdGF0aW9uIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/d0085639cc/DoryanisInvitation.png",
-        "chaosValueLeague": 70.49,
+        "chaosValueLeague": 67.9,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 2.7
+        "chaosValueStandard": 2.8
     },
     {
         "id": 2226,
@@ -5036,8 +5036,8 @@ const uniqueItemArray = [
         "name": "Sacrificial Heart",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9TYWNyaWZpY2lhbF9IZWFydCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/e3daa4cd32/Sacrificial_Heart.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 5,
-        "chaosValueStandard": 4.3
+        "chaosValueHCLeague": 3.4,
+        "chaosValueStandard": 5
     },
     {
         "id": 24537,
@@ -5046,7 +5046,7 @@ const uniqueItemArray = [
         "name": "Warrior's Legacy",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvV2FycmlvcnNMZWdhY3kiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/80c16ee4e7/WarriorsLegacy.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 939.9,
+        "chaosValueHCLeague": 993.2,
         "chaosValueStandard": 25
     },
     {
@@ -5066,7 +5066,7 @@ const uniqueItemArray = [
         "name": "Replica Winterheart",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9XaW50ZXJIZWFydEFMVCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/ff8c8c67f2/WinterHeartALT.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 16.5,
+        "chaosValueHCLeague": 11.2,
         "chaosValueStandard": 10
     },
     {
@@ -5077,7 +5077,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9TdHJpbmdPZlJpbmdzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/a79e77693d/StringOfRings.png",
         "chaosValueLeague": 3,
         "chaosValueHCLeague": 11.5,
-        "chaosValueStandard": 541.44
+        "chaosValueStandard": 542.42
     },
     {
         "id": 845,
@@ -5087,7 +5087,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTXV0ZXdpbmQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/3c7eee1d2b/Mutewind.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 2.8
+        "chaosValueStandard": 2.7
     },
     {
         "id": 2080,
@@ -5106,7 +5106,7 @@ const uniqueItemArray = [
         "name": "Chains of Emancipation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvU2xhdmVyc0JlbHQiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/0b8d818fbb/SlaversBelt.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 46,
+        "chaosValueHCLeague": 45,
         "chaosValueStandard": 5
     },
     {
@@ -5126,7 +5126,7 @@ const uniqueItemArray = [
         "name": "Le Heup of All",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTGVoZXVwb2ZhbGwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6ea73cc7e4/Leheupofall.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 4,
+        "chaosValueHCLeague": 4.5,
         "chaosValueStandard": 2
     },
     {
@@ -5136,8 +5136,8 @@ const uniqueItemArray = [
         "name": "Pyre",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQ2hlcnVmZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/08c38718a4/Cherufe.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 3,
-        "chaosValueStandard": 3.1
+        "chaosValueHCLeague": 3.3,
+        "chaosValueStandard": 3.9
     },
     {
         "id": 1058,
@@ -5156,7 +5156,7 @@ const uniqueItemArray = [
         "name": "Snakepit",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvU2VycGVudHNlZWQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/634a5c8913/Serpentseed.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 3,
+        "chaosValueHCLeague": 3.4,
         "chaosValueStandard": 5
     },
     {
@@ -5167,7 +5167,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9BbXVsZXQxMyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/8dd083062d/Amulet13.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 5
+        "chaosValueStandard": 4.7
     },
     {
         "id": 2300,
@@ -5176,7 +5176,7 @@ const uniqueItemArray = [
         "name": "Gloomfang",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9TaGFkb3dSYXkiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9c05fb0b03/ShadowRay.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 9.4,
+        "chaosValueHCLeague": 10,
         "chaosValueStandard": 5
     },
     {
@@ -5216,8 +5216,8 @@ const uniqueItemArray = [
         "name": "Fury Valve",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9NZXRhbW9ycGhvc2lzQW11bGV0IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f8bdb14091/MetamorphosisAmulet.png",
         "chaosValueLeague": 4,
-        "chaosValueHCLeague": 7,
-        "chaosValueStandard": 12.2
+        "chaosValueHCLeague": 6.4,
+        "chaosValueStandard": 12.6
     },
     {
         "id": 24989,
@@ -5225,7 +5225,7 @@ const uniqueItemArray = [
         "shortName": "r be",
         "name": "Leash of Oblation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTGVhc2hPZk9ibGF0aW9uIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/f865c7f643/LeashOfOblation.png",
-        "chaosValueLeague": 2,
+        "chaosValueLeague": 3,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 5
     },
@@ -5246,7 +5246,7 @@ const uniqueItemArray = [
         "name": "Tainted Pact",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9UYWludGVkUGFjdCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/77ad55d4dd/TaintedPact.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.5,
+        "chaosValueHCLeague": 1.6,
         "chaosValueStandard": 5
     },
     {
@@ -5267,7 +5267,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmVyZWtzR3JpcCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/7abb06d839/BereksGrip.png",
         "chaosValueLeague": 2,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 1.97
+        "chaosValueStandard": 2
     },
     {
         "id": 154,
@@ -5285,9 +5285,9 @@ const uniqueItemArray = [
         "shortName": "sap",
         "name": "Dream Fragments",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvUmluZzZVbmlxdWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/0c74ddd77c/Ring6Unique.png",
-        "chaosValueLeague": 4,
+        "chaosValueLeague": 4.35,
         "chaosValueHCLeague": 10,
-        "chaosValueStandard": 3
+        "chaosValueStandard": 3.45
     },
     {
         "id": 631,
@@ -5317,7 +5317,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9VbmlxdWVEaXJlQ2xhd1RhbGlzbWFuIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/e8cd3f0898/UniqueDireClawTalisman.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 3.4
+        "chaosValueStandard": 4.6
     },
     {
         "id": 1588,
@@ -5335,8 +5335,8 @@ const uniqueItemArray = [
         "shortName": "ua",
         "name": "Perseverance",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvUGVyc2VydmVyYW5jZSIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/1ff634248a/Perserverance.png",
-        "chaosValueLeague": 1.2,
-        "chaosValueHCLeague": 2.2,
+        "chaosValueLeague": 1,
+        "chaosValueHCLeague": 3,
         "chaosValueStandard": 4
     },
     {
@@ -5347,7 +5347,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9CaXNjb3NDb2xsYXIiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/8aa730c40e/BiscosCollar.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 3.6
+        "chaosValueStandard": 3.55
     },
     {
         "id": 2094,
@@ -5356,7 +5356,7 @@ const uniqueItemArray = [
         "name": "Auxium",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQXV4aXVtIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/acf784e82e/Auxium.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.3,
+        "chaosValueHCLeague": 1.6,
         "chaosValueStandard": 5
     },
     {
@@ -5376,7 +5376,7 @@ const uniqueItemArray = [
         "name": "Stormfire",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvU3Rvcm1GaXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/6b3db4e8df/StormFire.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 3,
+        "chaosValueHCLeague": 2,
         "chaosValueStandard": 1
     },
     {
@@ -5397,7 +5397,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTW90aGVyc0VtYnJhY2UiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/e576fccc3e/MothersEmbrace.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 5.3
+        "chaosValueStandard": 5.5
     },
     {
         "id": 100487,
@@ -5416,7 +5416,7 @@ const uniqueItemArray = [
         "name": "Kaom's Binding",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvS2FvbUJlbHQiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/94edbfb12d/KaomBelt.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.2,
+        "chaosValueHCLeague": 2,
         "chaosValueStandard": 3
     },
     {
@@ -5436,7 +5436,7 @@ const uniqueItemArray = [
         "name": "Umbilicus Immortalis",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvVW1iaWxpY3VzSW1tb3J0YWxpcyIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/822946a168/UmbilicusImmortalis.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 2,
+        "chaosValueHCLeague": 1,
         "chaosValueStandard": 2
     },
     {
@@ -5496,7 +5496,7 @@ const uniqueItemArray = [
         "name": "Blackheart",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvUmluZzFVbmlxdWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/40666e2827/Ring1Unique.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 2,
+        "chaosValueHCLeague": 1.8,
         "chaosValueStandard": 1
     },
     {
@@ -5517,7 +5517,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9BbXVsZXQzNyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/451ac32a56/Amulet37.png",
         "chaosValueLeague": 2,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 2.04
+        "chaosValueStandard": 2.64
     },
     {
         "id": 349,
@@ -5757,7 +5757,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9SYXNoa2FsZG9yc1BhdGllbmNlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/336e3419f4/RashkaldorsPatience.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 1.84
+        "chaosValueStandard": 1.75
     },
     {
         "id": 1067,
@@ -5906,7 +5906,7 @@ const uniqueItemArray = [
         "name": "Valako's Sign",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVmFsYWtvc1NpZ24iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/cd646c8c54/ValakosSign.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 5,
+        "chaosValueHCLeague": 4,
         "chaosValueStandard": 1
     },
     {
@@ -6015,7 +6015,7 @@ const uniqueItemArray = [
         "shortName": "ld a",
         "name": "Perquil's Toe",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9QZXJxdWlsc1RvZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/7509c4517f/PerquilsToe.png",
-        "chaosValueLeague": 1,
+        "chaosValueLeague": 2,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -6086,7 +6086,7 @@ const uniqueItemArray = [
         "name": "Retaliation Charm",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9TaGFyZWRVbnNpZ2h0IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d12260a7ac/SharedUnsight.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 0.99,
+        "chaosValueHCLeague": 0.98,
         "chaosValueStandard": 1
     },
     {
@@ -6106,7 +6106,7 @@ const uniqueItemArray = [
         "name": "The Ephemeral Bond",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9DaGFyZ2UgQW1wbGlmaWVyIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/a285d4c77a/Charge%20Amplifier.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.5,
+        "chaosValueHCLeague": 1.7,
         "chaosValueStandard": 1
     },
     {
@@ -6196,7 +6196,7 @@ const uniqueItemArray = [
         "name": "Bound Fate",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSGluZWtvcmFCZWx0IiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/0ffa60853d/HinekoraBelt.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.3,
+        "chaosValueHCLeague": 2,
         "chaosValueStandard": 4
     },
     {
@@ -6207,7 +6207,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9Bc3BoeXhpYXNXcmF0aCIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/e33bd46903/AsphyxiasWrath.png",
         "chaosValueLeague": 175060.86,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 2.37
+        "chaosValueStandard": 2.55
     },
     {
         "id": 102266,
@@ -6217,7 +6217,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvU291bEFzY2Vuc2lvbiIsInciOjIsImgiOjIsInNjYWxlIjoxLCJyZWxpYyI6MH1d/1a968d4cec/SoulAscension.png",
         "chaosValueLeague": 969.71,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 539376.96
+        "chaosValueStandard": 540238.97
     },
     {
         "id": 285,
@@ -6225,9 +6225,9 @@ const uniqueItemArray = [
         "shortName": "sav",
         "name": "Cloak of Tawm'r Isley",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Ub21PUmVpbGx5Q2xvYWsiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/595ee9c868/TomOReillyCloak.png",
-        "chaosValueLeague": 1,
-        "chaosValueHCLeague": 12,
-        "chaosValueStandard": 568.51
+        "chaosValueLeague": 2,
+        "chaosValueHCLeague": 9,
+        "chaosValueStandard": 569.54
     },
     {
         "id": 21263,
@@ -6237,7 +6237,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0RlbWlnb2RzU2hpZWxkQWx0IiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/bce9c1e2b6/DemigodsShieldAlt.png",
         "chaosValueLeague": 87530.43,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 94752
+        "chaosValueStandard": 94923.5
     },
     {
         "id": 72070,
@@ -6245,9 +6245,9 @@ const uniqueItemArray = [
         "shortName": "l Arm",
         "name": "Stasis Prison",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9DaHJvbm9tYW5jZXJBcm1vdXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/12a9d49478/ChronomancerArmour.png",
-        "chaosValueLeague": 2279.36,
+        "chaosValueLeague": 2360.94,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 24364.8
+        "chaosValueStandard": 24408.9
     },
     {
         "id": 4770,
@@ -6255,7 +6255,7 @@ const uniqueItemArray = [
         "shortName": "l arm",
         "name": "Shroud of the Lightless",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BYnlzc0JvZHkiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/cd67f9b5d3/AbyssBody.png",
-        "chaosValueLeague": 1139.68,
+        "chaosValueLeague": 1033.63,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 53
     },
@@ -6265,9 +6265,9 @@ const uniqueItemArray = [
         "shortName": "nt Ga",
         "name": "Hateforge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvVmFhbFJhZ2VHbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/fbc53ac89d/VaalRageGloves.png",
-        "chaosValueLeague": 5698.4,
+        "chaosValueLeague": 5758.4,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 35518.46
+        "chaosValueStandard": 35582.75
     },
     {
         "id": 101397,
@@ -6277,7 +6277,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9VYmVyU2VhcmluZ0V4YXJjaEJvb3QiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MSwicmVsaWMiOjB9XQ/23d39ae6f1/UberSearingExarchBoot.png",
         "chaosValueLeague": 7598,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 571013.86
+        "chaosValueStandard": 571927.12
     },
     {
         "id": 99266,
@@ -6287,7 +6287,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Db2xsZWN0b3JzR2FyYkRpZmYiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MSwicmVsaWMiOjB9XQ/7406b9667a/CollectorsGarbDiff.png",
         "chaosValueLeague": 3039.2,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 5143.68
+        "chaosValueStandard": 5152.99
     },
     {
         "id": 22574,
@@ -6297,7 +6297,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9TdXBwb3J0ZXIxYm9keUEiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/2eeb350e76/Supporter1bodyA.png",
         "chaosValueLeague": 59,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 2138.69
+        "chaosValueStandard": 1410.29
     },
     {
         "id": 42680,
@@ -6305,9 +6305,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "The Immortal Will",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0hhcmJpbmdlclNoaWVsZFVwZ3JhZGVkIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/a259d55fe1/HarbingerShieldUpgraded.png",
-        "chaosValueLeague": 142.46,
+        "chaosValueLeague": 143.96,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 177.82
+        "chaosValueStandard": 178.04
     },
     {
         "id": 2006,
@@ -6315,9 +6315,9 @@ const uniqueItemArray = [
         "shortName": "te t",
         "name": "The Surrender",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0xvbmdpbmcyIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/c97882a68e/Longing2.png",
-        "chaosValueLeague": 695.2,
+        "chaosValueLeague": 575.84,
         "chaosValueHCLeague": 1260,
-        "chaosValueStandard": 245.36
+        "chaosValueStandard": 271.21
     },
     {
         "id": 44311,
@@ -6325,9 +6325,9 @@ const uniqueItemArray = [
         "shortName": "ier b",
         "name": "Replica Alberon's Warpath",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9BbGJlcm9uc3dhcnBhdGgiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/be7b089ef3/Alberonswarpath.png",
-        "chaosValueLeague": 854.76,
-        "chaosValueHCLeague": 780.12,
-        "chaosValueStandard": 2707.2
+        "chaosValueLeague": 719.8,
+        "chaosValueHCLeague": 695.24,
+        "chaosValueStandard": 2712.1
     },
     {
         "id": 60066,
@@ -6335,9 +6335,9 @@ const uniqueItemArray = [
         "shortName": "l k",
         "name": "Mahuxotl's Machination",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL01haHV4b3RsU2hpZWxkIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/b39b6fe011/MahuxotlShield.png",
-        "chaosValueLeague": 1780.75,
+        "chaosValueLeague": 1134.38,
         "chaosValueHCLeague": 6825,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 100527,
@@ -6345,9 +6345,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Annihilation's Approach",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9VYmVyU2VhcmluZ0V4YXJjaEJvb3QiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/705e9f657f/UberSearingExarchBoot.png",
-        "chaosValueLeague": 1196.66,
+        "chaosValueLeague": 1037.95,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 1353.6
+        "chaosValueStandard": 1518.78
     },
     {
         "id": 71376,
@@ -6355,9 +6355,9 @@ const uniqueItemArray = [
         "shortName": "nt ro",
         "name": "The Squire",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0Nhc3Bpcm9zUmVzb25hbmNlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/94531d2461/CaspirosResonance.png",
-        "chaosValueLeague": 2728.11,
-        "chaosValueHCLeague": 6109.35,
-        "chaosValueStandard": 2977.92
+        "chaosValueLeague": 2907.99,
+        "chaosValueHCLeague": 6455.8,
+        "chaosValueStandard": 2712.1
     },
     {
         "id": 109032,
@@ -6365,9 +6365,9 @@ const uniqueItemArray = [
         "shortName": "zod",
         "name": "Replica Hyrri's Ire",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Cb2R5RGV4M0NVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/fb532d6c21/BodyDex3CUnique.png",
-        "chaosValueLeague": 112.7,
-        "chaosValueHCLeague": 93.99,
-        "chaosValueStandard": 2625.98
+        "chaosValueLeague": 100,
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 2603.62
     },
     {
         "id": 101577,
@@ -6375,9 +6375,9 @@ const uniqueItemArray = [
         "shortName": "'s M",
         "name": "Entropic Devastation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvVWJlclNoYXBlckdsb3ZlcyIsInciOjIsImgiOjIsInNjYWxlIjoxLCJyZWxpYyI6MH1d/6493ac198e/UberShaperGloves.png",
-        "chaosValueLeague": 284.92,
+        "chaosValueLeague": 143.96,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 9339.84
+        "chaosValueStandard": 9356.74
     },
     {
         "id": 7735,
@@ -6385,9 +6385,9 @@ const uniqueItemArray = [
         "shortName": "mag",
         "name": "Crown of the Tyrant",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RoZUltcG9zaW5nIENyb3duIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/e9e915daa7/TheImposing%20Crown.png",
-        "chaosValueLeague": 299.17,
+        "chaosValueLeague": 339.75,
         "chaosValueHCLeague": 150,
-        "chaosValueStandard": 379.01
+        "chaosValueStandard": 393.25
     },
     {
         "id": 101140,
@@ -6395,9 +6395,9 @@ const uniqueItemArray = [
         "shortName": "r ci",
         "name": "Sandstorm Visage",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Fud2Vuc1RpYXJhIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/db74af1ed2/AnwensTiara.png",
-        "chaosValueLeague": 270.67,
-        "chaosValueHCLeague": 300.77,
-        "chaosValueStandard": 1353.6
+        "chaosValueLeague": 261.43,
+        "chaosValueHCLeague": 317.82,
+        "chaosValueStandard": 1356.05
     },
     {
         "id": 42636,
@@ -6405,9 +6405,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "The Tempest's Liberation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0hhcmJpbmdlckhlbG1VcGdyYWRlZCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/f4b2c70b07/HarbingerHelmUpgraded.png",
-        "chaosValueLeague": 835.78,
+        "chaosValueLeague": 287.92,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 541.44
+        "chaosValueStandard": 542.42
     },
     {
         "id": 22627,
@@ -6416,7 +6416,7 @@ const uniqueItemArray = [
         "name": "Cowl of the Thermophile",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1N1cHBvcnRlcjFoZWxtZXRCIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/3a31f05cd3/Supporter1helmetB.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 6,
+        "chaosValueHCLeague": 6.8,
         "chaosValueStandard": 45.5
     },
     {
@@ -6425,9 +6425,9 @@ const uniqueItemArray = [
         "shortName": "riu",
         "name": "Replica Farrul's Fur",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UaWdlckJvZHlBcm1vdXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/1cfa248b9b/TigerBodyArmour.png",
-        "chaosValueLeague": 726.55,
-        "chaosValueHCLeague": 874.11,
-        "chaosValueStandard": 2436.48
+        "chaosValueLeague": 853.68,
+        "chaosValueHCLeague": 744.9,
+        "chaosValueStandard": 2440.89
     },
     {
         "id": 4974,
@@ -6435,9 +6435,9 @@ const uniqueItemArray = [
         "shortName": "n bu",
         "name": "Atziri's Reflection",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZERleDVVbmlxdWUiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/78fb81c375/ShieldDex5Unique.png",
-        "chaosValueLeague": 484.36,
+        "chaosValueLeague": 544.17,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 812.16
+        "chaosValueStandard": 813.63
     },
     {
         "id": 42594,
@@ -6447,7 +6447,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9IYXJiaW5nZXJRdWl2ZXJVcGdyYWRlZCIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/866d1ab1b7/HarbingerQuiverUpgraded.png",
         "chaosValueLeague": 80,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 433.15
+        "chaosValueStandard": 433.94
     },
     {
         "id": 6991,
@@ -6457,7 +6457,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0FwZXBzU3VwcmVtYWN5IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/e97426b026/ApepsSupremacy.png",
         "chaosValueLeague": 26.6,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 433.15
+        "chaosValueStandard": 447.5
     },
     {
         "id": 717,
@@ -6465,7 +6465,7 @@ const uniqueItemArray = [
         "shortName": "nq",
         "name": "Kingsguard",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9LaW5nc2d1YXJkIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/28d6e7ff11/Kingsguard.png",
-        "chaosValueLeague": 8.5,
+        "chaosValueLeague": 9,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 1
     },
@@ -6475,9 +6475,9 @@ const uniqueItemArray = [
         "shortName": "amb",
         "name": "Slavedriver's Hand",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvU2xhdmVkcml2ZXJzSGFuZCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/96ae934cf8/SlavedriversHand.png",
-        "chaosValueLeague": 70.5,
+        "chaosValueLeague": 70.3,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 812.16
+        "chaosValueStandard": 813.63
     },
     {
         "id": 45086,
@@ -6486,8 +6486,8 @@ const uniqueItemArray = [
         "name": "Replica Shroud of the Lightless",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BYnlzc0JvZHkiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/cd67f9b5d3/AbyssBody.png",
         "chaosValueLeague": 40,
-        "chaosValueHCLeague": 93.99,
-        "chaosValueStandard": 1353.6
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 1356.05
     },
     {
         "id": 6952,
@@ -6497,7 +6497,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL01hc2tvZnRoZVN0aXRjaGVkRGVtb24iLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/0e24c9f156/MaskoftheStitchedDemon.png",
         "chaosValueLeague": 90,
         "chaosValueHCLeague": 210,
-        "chaosValueStandard": 611.83
+        "chaosValueStandard": 621.07
     },
     {
         "id": 19057,
@@ -6505,8 +6505,8 @@ const uniqueItemArray = [
         "shortName": "r ci",
         "name": "The Devouring Diadem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RoZURldm91cmluZ0RpYWRlbSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/8bc93d2104/TheDevouringDiadem.png",
-        "chaosValueLeague": 142.46,
-        "chaosValueHCLeague": 49.5,
+        "chaosValueLeague": 143.96,
+        "chaosValueHCLeague": 50,
         "chaosValueStandard": 30
     },
     {
@@ -6517,7 +6517,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1ViZXJFbGRlckhlbG1ldCIsInciOjIsImgiOjIsInNjYWxlIjoxLCJyZWxpYyI6MH1d/30e6573c80/UberElderHelmet.png",
         "chaosValueLeague": 303.92,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 6009.98
+        "chaosValueStandard": 6020.86
     },
     {
         "id": 23106,
@@ -6526,7 +6526,7 @@ const uniqueItemArray = [
         "name": "Garb of the Ephemeral",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UaGVUZW1wbGFyc1JvYmVzIiwidyI6MiwiaCI6Mywic2NhbGUiOjEsInN5bnRoZXNpc2VkIjp0cnVlfV0/bd9f49e4b4/TheTemplarsRobes.png",
         "chaosValueLeague": 70,
-        "chaosValueHCLeague": 0,
+        "chaosValueHCLeague": 496.6,
         "chaosValueStandard": 158
     },
     {
@@ -6535,9 +6535,9 @@ const uniqueItemArray = [
         "shortName": "l T",
         "name": "Dawnbreaker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1N1cGVyaGVhdGVkU2hpZWxkIiwidyI6MiwiaCI6NCwic2NhbGUiOjEsInJlbGljIjowfV0/1072780db5/SuperheatedShield.png",
-        "chaosValueLeague": 29,
+        "chaosValueLeague": 25,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 547.3
+        "chaosValueStandard": 614.54
     },
     {
         "id": 44374,
@@ -6545,9 +6545,9 @@ const uniqueItemArray = [
         "shortName": "fl",
         "name": "Crest of Desire",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL01hZ25pZmljYXRpb24iLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/1c4139ef41/Magnification.png",
-        "chaosValueLeague": 25,
-        "chaosValueHCLeague": 516.94,
-        "chaosValueStandard": 541.44
+        "chaosValueLeague": 20,
+        "chaosValueHCLeague": 337.69,
+        "chaosValueStandard": 542.42
     },
     {
         "id": 99249,
@@ -6557,7 +6557,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvSGFuZHNPZlRoZUhpZ2hUZW1wbGFyIiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlbGljIjowfV0/40b59493f1/HandsOfTheHighTemplar.png",
         "chaosValueLeague": 161.57,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 1996,
@@ -6565,7 +6565,7 @@ const uniqueItemArray = [
         "shortName": "zod",
         "name": "The Perfect Form",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UaGVQZXJmZWN0Rm9ybSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/b149b68ecb/ThePerfectForm.png",
-        "chaosValueLeague": 142.46,
+        "chaosValueLeague": 96,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 40
     },
@@ -6575,7 +6575,7 @@ const uniqueItemArray = [
         "shortName": "yal bu",
         "name": "The Formless Inferno",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Zvcm1sZXNzSW5GbGFtZXNVUEdSQURFIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/3ac12068fd/FormlessInFlamesUPGRADE.png",
-        "chaosValueLeague": 104.25,
+        "chaosValueLeague": 63,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 138
     },
@@ -6585,9 +6585,9 @@ const uniqueItemArray = [
         "shortName": "sage'",
         "name": "Dialla's Malefaction",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9EaWFsbGFzTWFsZWZhY3Rpb24iLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/842ace4d64/DiallasMalefaction.png",
-        "chaosValueLeague": 370.4,
-        "chaosValueHCLeague": 40,
-        "chaosValueStandard": 7
+        "chaosValueLeague": 388.69,
+        "chaosValueHCLeague": 25.5,
+        "chaosValueStandard": 6.2
     },
     {
         "id": 4767,
@@ -6595,9 +6595,9 @@ const uniqueItemArray = [
         "shortName": "l arm",
         "name": "Shroud of the Lightless",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BYnlzc0JvZHkiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/cd67f9b5d3/AbyssBody.png",
-        "chaosValueLeague": 370.4,
-        "chaosValueHCLeague": 187.98,
-        "chaosValueStandard": 203.88
+        "chaosValueLeague": 374.3,
+        "chaosValueHCLeague": 198.64,
+        "chaosValueStandard": 202.25
     },
     {
         "id": 54658,
@@ -6605,9 +6605,9 @@ const uniqueItemArray = [
         "shortName": "dis",
         "name": "Doppelgänger Guise",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Db2xsZWN0b3JzR2FyYkRpZmYiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/eb8a6d36ef/CollectorsGarbDiff.png",
-        "chaosValueLeague": 33,
-        "chaosValueHCLeague": 375.96,
-        "chaosValueStandard": 270.72
+        "chaosValueLeague": 30,
+        "chaosValueHCLeague": 307.89,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 60177,
@@ -6615,9 +6615,9 @@ const uniqueItemArray = [
         "shortName": "amb",
         "name": "Architect's Hand",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQXJjaGl0ZWN0c0hhbmQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/8f303b6f98/ArchitectsHand.png",
-        "chaosValueLeague": 15.6,
+        "chaosValueLeague": 20,
         "chaosValueHCLeague": 15,
-        "chaosValueStandard": 84
+        "chaosValueStandard": 84.5
     },
     {
         "id": 99134,
@@ -6627,7 +6627,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Nyb3duT2ZUaGVJbndhcmRFeWUiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MSwicmVsaWMiOjB9XQ/84df7e118d/CrownOfTheInwardEye.png",
         "chaosValueLeague": 151.96,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 228.29
+        "chaosValueStandard": 228.48
     },
     {
         "id": 99406,
@@ -6637,7 +6637,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9FbGRhclF1aXZlciIsInciOjIsImgiOjMsInNjYWxlIjoxLCJyZWxpYyI6MH1d/34f7859b94/EldarQuiver.png",
         "chaosValueLeague": 151.96,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 1218.24
+        "chaosValueStandard": 2386.65
     },
     {
         "id": 100702,
@@ -6645,9 +6645,9 @@ const uniqueItemArray = [
         "shortName": "'s m",
         "name": "Entropic Devastation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvVWJlclNoYXBlckdsb3ZlcyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/50bd7171bf/UberShaperGloves.png",
-        "chaosValueLeague": 30,
+        "chaosValueLeague": 24.7,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 812.16
+        "chaosValueStandard": 813.63
     },
     {
         "id": 101137,
@@ -6657,7 +6657,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9JbmZlY3Rpb3VzQ29uc3RydWN0IiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlbGljIjowfV0/3bfcf1a89b/InfectiousConstruct.png",
         "chaosValueLeague": 151.96,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 581.44
+        "chaosValueStandard": 582.42
     },
     {
         "id": 60130,
@@ -6665,9 +6665,9 @@ const uniqueItemArray = [
         "shortName": "mag",
         "name": "Mask of the Spirit Drinker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL01hc2tvZnRoZVNwaXJpdERyaW5rZXIiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/7a9bcf5886/MaskoftheSpiritDrinker.png",
-        "chaosValueLeague": 35,
+        "chaosValueLeague": 30,
         "chaosValueHCLeague": 93,
-        "chaosValueStandard": 82
+        "chaosValueStandard": 86
     },
     {
         "id": 99129,
@@ -6675,9 +6675,9 @@ const uniqueItemArray = [
         "shortName": "Pr",
         "name": "Viridi's Veil",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0NvbnN0cmljdGluZ0Nyb3duIiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlbGljIjowfV0/8095dcdc0e/ConstrictingCrown.png",
-        "chaosValueLeague": 146.76,
+        "chaosValueLeague": 200,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 99238,
@@ -6687,7 +6687,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvU2hhcGVyc0dsb3ZlcyIsInciOjIsImgiOjIsInNjYWxlIjoxLCJyZWxpYyI6MH1d/854ef8443e/ShapersGloves.png",
         "chaosValueLeague": 135,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 297.79
+        "chaosValueStandard": 298.33
     },
     {
         "id": 99224,
@@ -6697,7 +6697,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Dcm9zc2luZ1RoZVZvaWQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MSwicmVsaWMiOjB9XQ/75adbf10e0/CrossingTheVoid.png",
         "chaosValueLeague": 131.18,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 244.15
+        "chaosValueStandard": 244.59
     },
     {
         "id": 1036,
@@ -6706,7 +6706,7 @@ const uniqueItemArray = [
         "name": "Redblade Banner",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1JlZGJsYWRlQmFubmVyIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/33221fb3e1/RedbladeBanner.png",
         "chaosValueLeague": 7,
-        "chaosValueHCLeague": 4,
+        "chaosValueHCLeague": 5,
         "chaosValueStandard": 5
     },
     {
@@ -6717,7 +6717,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9WaW5lZ3Jhc3BCb290c1VuaXF1ZSIsInciOjIsImgiOjIsInNjYWxlIjoxLCJyZWxpYyI6MH1d/7aa4ba1863/VinegraspBootsUnique.png",
         "chaosValueLeague": 130,
         "chaosValueHCLeague": 210,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 4949,
@@ -6725,9 +6725,9 @@ const uniqueItemArray = [
         "shortName": "riu",
         "name": "Farrul's Fur",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UaWdlckJvZHlBcm1vdXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/1cfa248b9b/TigerBodyArmour.png",
-        "chaosValueLeague": 400.31,
+        "chaosValueLeague": 331.11,
         "chaosValueHCLeague": 1575,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 2001,
@@ -6735,9 +6735,9 @@ const uniqueItemArray = [
         "shortName": "al s",
         "name": "Esh's Visage",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0VzaHNNaXJyb3JVcGdyYWRlZCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/f965a13213/EshsMirrorUpgraded.png",
-        "chaosValueLeague": 98.5,
+        "chaosValueLeague": 80,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 62.2
+        "chaosValueStandard": 62.84
     },
     {
         "id": 4771,
@@ -6745,8 +6745,8 @@ const uniqueItemArray = [
         "shortName": "rder b",
         "name": "Bubonic Trail",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9BYnlzc0Jvb3RzIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/61dd23f86c/AbyssBoots.png",
-        "chaosValueLeague": 200.87,
-        "chaosValueHCLeague": 469.95,
+        "chaosValueLeague": 215.94,
+        "chaosValueHCLeague": 496.6,
         "chaosValueStandard": 50
     },
     {
@@ -6756,8 +6756,8 @@ const uniqueItemArray = [
         "name": "The Stampede",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9TdXBwb3J0ZXIxYm9vdEEiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/f0b4c611d1/Supporter1bootA.png",
         "chaosValueLeague": 20,
-        "chaosValueHCLeague": 69,
-        "chaosValueStandard": 157
+        "chaosValueHCLeague": 68.1,
+        "chaosValueStandard": 160
     },
     {
         "id": 2277,
@@ -6765,9 +6765,9 @@ const uniqueItemArray = [
         "shortName": "eted b",
         "name": "Ralakesh's Impatience",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9SYWxha2VzaHNJbXBhdGllbmNlIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/54540f0f3d/RalakeshsImpatience.png",
-        "chaosValueLeague": 2136.9,
-        "chaosValueHCLeague": 827.11,
-        "chaosValueStandard": 12
+        "chaosValueLeague": 2303.36,
+        "chaosValueHCLeague": 933.61,
+        "chaosValueStandard": 17
     },
     {
         "id": 109184,
@@ -6776,8 +6776,8 @@ const uniqueItemArray = [
         "name": "Replica Covenant",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9FbWJyYWNlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/d0110e7660/Embrace.png",
         "chaosValueLeague": 15,
-        "chaosValueHCLeague": 60,
-        "chaosValueStandard": 1055.81
+        "chaosValueHCLeague": 52,
+        "chaosValueStandard": 1084.84
     },
     {
         "id": 67823,
@@ -6786,8 +6786,8 @@ const uniqueItemArray = [
         "name": "Faithguard",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1NwaXJpdEhlbG1ldFVuaXF1ZSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/0921dc17df/SpiritHelmetUnique.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 7,
-        "chaosValueStandard": 649.73
+        "chaosValueHCLeague": 7.5,
+        "chaosValueStandard": 1193.32
     },
     {
         "id": 99294,
@@ -6797,7 +6797,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RoZVR3aXN0aW5nU2NyZWFtIiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlbGljIjowfV0/8a95f24fca/TheTwistingScream.png",
         "chaosValueLeague": 60.71,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 164.43
+        "chaosValueStandard": 164.73
     },
     {
         "id": 2503,
@@ -6805,9 +6805,9 @@ const uniqueItemArray = [
         "shortName": "nna",
         "name": "Magna Eclipsis",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL01hZ25pc0VjbGlwc2lzIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/1e76b68e1a/MagnisEclipsis.png",
-        "chaosValueLeague": 8,
+        "chaosValueLeague": 7.5,
         "chaosValueHCLeague": 45,
-        "chaosValueStandard": 54
+        "chaosValueStandard": 55
     },
     {
         "id": 4879,
@@ -6815,8 +6815,8 @@ const uniqueItemArray = [
         "shortName": "hu",
         "name": "Indigon",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1ViZXJFbGRlckhlbG1ldCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/005bcc2179/UberElderHelmet.png",
-        "chaosValueLeague": 1424.6,
-        "chaosValueHCLeague": 751.92,
+        "chaosValueLeague": 1439.6,
+        "chaosValueHCLeague": 725.04,
         "chaosValueStandard": 50
     },
     {
@@ -6825,8 +6825,8 @@ const uniqueItemArray = [
         "shortName": "pid",
         "name": "The Covenant",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9FbWJyYWNlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/d0110e7660/Embrace.png",
-        "chaosValueLeague": 284.92,
-        "chaosValueHCLeague": 119.37,
+        "chaosValueLeague": 287.92,
+        "chaosValueHCLeague": 99.32,
         "chaosValueStandard": 5
     },
     {
@@ -6835,7 +6835,7 @@ const uniqueItemArray = [
         "shortName": "n gr",
         "name": "The Red Trail",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9UaGVJbmZpbml0ZVB1cnN1aXQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/518d10f12f/TheInfinitePursuit.png",
-        "chaosValueLeague": 284.92,
+        "chaosValueLeague": 220.26,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 7.8
     },
@@ -6846,7 +6846,7 @@ const uniqueItemArray = [
         "name": "The Formless Flame",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Zvcm1sZXNzSW5GbGFtZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/baa0d0009b/FormlessInFlames.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 50,
+        "chaosValueHCLeague": 48,
         "chaosValueStandard": 50
     },
     {
@@ -6857,7 +6857,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9UcmlnZ2VyUXVpdmVyQmFzZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/1f3958bdb3/TriggerQuiverBase.png",
         "chaosValueLeague": 15,
         "chaosValueHCLeague": 19.6,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 45096,
@@ -6866,7 +6866,7 @@ const uniqueItemArray = [
         "name": "Expedition's End",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BZG1pcmFsc0phY2tldCIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/8c204b4c87/AdmiralsJacket.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 0,
+        "chaosValueHCLeague": 198.64,
         "chaosValueStandard": 100
     },
     {
@@ -6876,7 +6876,7 @@ const uniqueItemArray = [
         "name": "Thunderfist",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvdGh1bmRlcmNsYXciLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/c566a6b7aa/thunderclaw.png",
         "chaosValueLeague": 25,
-        "chaosValueHCLeague": 15,
+        "chaosValueHCLeague": 14,
         "chaosValueStandard": 2
     },
     {
@@ -6896,8 +6896,8 @@ const uniqueItemArray = [
         "name": "Replica Tukohama's Fortress",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1R1a29oYW1hc0ZvcnRyZXNzIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/e502c4bcf2/TukohamasFortress.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 78.7,
-        "chaosValueStandard": 270.72
+        "chaosValueHCLeague": 60,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 392,
@@ -6906,7 +6906,7 @@ const uniqueItemArray = [
         "name": "Death's Door",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9EZWF0aHNkb29yIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/49384091d3/Deathsdoor.png",
         "chaosValueLeague": 7,
-        "chaosValueHCLeague": 45.6,
+        "chaosValueHCLeague": 40,
         "chaosValueStandard": 29
     },
     {
@@ -6925,7 +6925,7 @@ const uniqueItemArray = [
         "shortName": "al g",
         "name": "Atziri's Acuity",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQXR6aXJpc0FjdWl0eSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/2c0f04ae47/AtzirisAcuity.png",
-        "chaosValueLeague": 15,
+        "chaosValueLeague": 21,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 50
     },
@@ -6935,7 +6935,7 @@ const uniqueItemArray = [
         "shortName": "aal m",
         "name": "The Vertex",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RoZVZlcnRleCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/e4cca2929d/TheVertex.png",
-        "chaosValueLeague": 15,
+        "chaosValueLeague": 14,
         "chaosValueHCLeague": 22,
         "chaosValueStandard": 10
     },
@@ -6945,7 +6945,7 @@ const uniqueItemArray = [
         "shortName": "t c",
         "name": "Forbidden Shako",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RoZUVwaXBoYW55IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/e8e44ba854/TheEpiphany.png",
-        "chaosValueLeague": 10,
+        "chaosValueLeague": 15,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 40
     },
@@ -6956,8 +6956,8 @@ const uniqueItemArray = [
         "name": "Black Zenith",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvRWJiQW5kRmxvdyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/3e5e1a62ea/EbbAndFlow.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 10,
-        "chaosValueStandard": 31
+        "chaosValueHCLeague": 15,
+        "chaosValueStandard": 31.5
     },
     {
         "id": 98716,
@@ -6965,9 +6965,9 @@ const uniqueItemArray = [
         "shortName": "l mi",
         "name": "Soul Ascension",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvU291bEFzY2Vuc2lvbiIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/b4122195a9/SoulAscension.png",
-        "chaosValueLeague": 90,
+        "chaosValueLeague": 91.5,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 1353.6
+        "chaosValueStandard": 1356.05
     },
     {
         "id": 25289,
@@ -6985,8 +6985,8 @@ const uniqueItemArray = [
         "shortName": "n gr",
         "name": "Doryani's Delusion",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Eb3JpeWFuaXNSZWQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/10255d4b05/DoriyanisRed.png",
-        "chaosValueLeague": 7,
-        "chaosValueHCLeague": 54.4,
+        "chaosValueLeague": 7.8,
+        "chaosValueHCLeague": 54.93,
         "chaosValueStandard": 29
     },
     {
@@ -7007,7 +7007,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9TY29yY2hlZEVhcnRoIiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlbGljIjowfV0/9d6fc11a33/ScorchedEarth.png",
         "chaosValueLeague": 34,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 93030,
@@ -7016,8 +7016,8 @@ const uniqueItemArray = [
         "name": "Dawnbreaker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1N1cGVyaGVhdGVkU2hpZWxkIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/59e3552a9b/SuperheatedShield.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 19.4,
-        "chaosValueStandard": 30
+        "chaosValueHCLeague": 15,
+        "chaosValueStandard": 27.5
     },
     {
         "id": 1976,
@@ -7025,9 +7025,9 @@ const uniqueItemArray = [
         "shortName": "te t",
         "name": "The Anticipation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0xvbmdpbmcxIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/50fbf4d6ba/Longing1.png",
-        "chaosValueLeague": 498.61,
+        "chaosValueLeague": 403.09,
         "chaosValueHCLeague": 50,
-        "chaosValueStandard": 47
+        "chaosValueStandard": 48
     },
     {
         "id": 2079,
@@ -7035,9 +7035,9 @@ const uniqueItemArray = [
         "shortName": "do",
         "name": "Gruthkul's Pelt",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9XaWxlZmFuZ3NQZWx0IiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/e393dbd9af/WilefangsPelt.png",
-        "chaosValueLeague": 58,
-        "chaosValueHCLeague": 92.59,
-        "chaosValueStandard": 270.72
+        "chaosValueLeague": 60,
+        "chaosValueHCLeague": 99.32,
+        "chaosValueStandard": 271.21
     },
     {
         "id": 2092,
@@ -7047,7 +7047,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Ud29Ub25lZEJvb3RzQUxUIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/4e0bb109ae/TwoTonedBootsALT.png",
         "chaosValueLeague": 59,
         "chaosValueHCLeague": 10,
-        "chaosValueStandard": 68.78
+        "chaosValueStandard": 71.34
     },
     {
         "id": 44547,
@@ -7056,8 +7056,8 @@ const uniqueItemArray = [
         "name": "Replica Stampede",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9TdXBwb3J0ZXIxYm9vdEEiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/f0b4c611d1/Supporter1bootA.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 187.98,
-        "chaosValueStandard": 43
+        "chaosValueHCLeague": 146.08,
+        "chaosValueStandard": 44
     },
     {
         "id": 44693,
@@ -7066,8 +7066,8 @@ const uniqueItemArray = [
         "name": "Replica Restless Ward",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UaGVSZXN0bGVzc1dhcmQiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/2508832517/TheRestlessWard.png",
         "chaosValueLeague": 50,
-        "chaosValueHCLeague": 10,
-        "chaosValueStandard": 77.29
+        "chaosValueHCLeague": 6,
+        "chaosValueStandard": 77.67
     },
     {
         "id": 54439,
@@ -7076,8 +7076,8 @@ const uniqueItemArray = [
         "name": "Hand of the Fervent",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvR3JpcG9mU2FjcmlmaWNlIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/9ac4073c28/GripofSacrifice.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 58.8,
-        "chaosValueStandard": 460.22
+        "chaosValueHCLeague": 59.86,
+        "chaosValueStandard": 461.06
     },
     {
         "id": 109027,
@@ -7085,8 +7085,8 @@ const uniqueItemArray = [
         "shortName": "r ho",
         "name": "Replica Heatshiver",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0hlYXRzaGl2ZXIiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/b1860c890e/Heatshiver.png",
-        "chaosValueLeague": 8,
-        "chaosValueHCLeague": 14.5,
+        "chaosValueLeague": 7.5,
+        "chaosValueHCLeague": 10.2,
         "chaosValueStandard": 88
     },
     {
@@ -7095,9 +7095,9 @@ const uniqueItemArray = [
         "shortName": "al g",
         "name": "Replica Atziri's Acuity",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQXR6aXJpc0FjdWl0eSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/2c0f04ae47/AtzirisAcuity.png",
-        "chaosValueLeague": 5,
+        "chaosValueLeague": 4.8,
         "chaosValueHCLeague": 5.6,
-        "chaosValueStandard": 79
+        "chaosValueStandard": 80
     },
     {
         "id": 44956,
@@ -7115,7 +7115,7 @@ const uniqueItemArray = [
         "shortName": "n ro",
         "name": "Shattershard",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0V2ZXJnbGFzc0JhcnJpZXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/179a505595/EverglassBarrier.png",
-        "chaosValueLeague": 3.2,
+        "chaosValueLeague": 4,
         "chaosValueHCLeague": 22.5,
         "chaosValueStandard": 50
     },
@@ -7127,7 +7127,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9NYW50bGVPZkRpc21hbnRsaW5nIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/166d15bbe2/MantleOfDismantling.png",
         "chaosValueLeague": 5,
         "chaosValueHCLeague": 58,
-        "chaosValueStandard": 84
+        "chaosValueStandard": 82
     },
     {
         "id": 2233,
@@ -7135,7 +7135,7 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "The Fracturing Spinner",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9IYXJiaW5nZXJRdWl2ZXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/288bd960f9/HarbingerQuiver.png",
-        "chaosValueLeague": 7.8,
+        "chaosValueLeague": 8,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 20
     },
@@ -7146,7 +7146,7 @@ const uniqueItemArray = [
         "name": "The Iron Fortress",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Jcm9uSGVhcnQgRmluYWwiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/113c4e83b6/IronHeart%20Final.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 9.8,
+        "chaosValueHCLeague": 5.5,
         "chaosValueStandard": 100
     },
     {
@@ -7156,8 +7156,8 @@ const uniqueItemArray = [
         "name": "Qotra's Regulator",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0Fnb255T2ZEZWNheSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/025ae438c5/AgonyOfDecay.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 93.99,
-        "chaosValueStandard": 487.3
+        "chaosValueHCLeague": 72.93,
+        "chaosValueStandard": 488.18
     },
     {
         "id": 22665,
@@ -7186,8 +7186,8 @@ const uniqueItemArray = [
         "name": "Asenath's Mark",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0h5cnJpc01hcmsiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/4e0f1cc6a8/HyrrisMark.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 2.7,
-        "chaosValueStandard": 5
+        "chaosValueHCLeague": 2.6,
+        "chaosValueStandard": 4.7
     },
     {
         "id": 652,
@@ -7195,9 +7195,9 @@ const uniqueItemArray = [
         "shortName": "zod",
         "name": "Hyrri's Ire",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Cb2R5RGV4M0NVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/fb532d6c21/BodyDex3CUnique.png",
-        "chaosValueLeague": 783.53,
-        "chaosValueHCLeague": 25,
-        "chaosValueStandard": 26.5
+        "chaosValueLeague": 719.8,
+        "chaosValueHCLeague": 20,
+        "chaosValueStandard": 26
     },
     {
         "id": 4928,
@@ -7207,7 +7207,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9TcGlkZXJBcm1vdXJCb2R5IiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/f48eff23e8/SpiderArmourBody.png",
         "chaosValueLeague": 15,
         "chaosValueHCLeague": 40,
-        "chaosValueStandard": 32
+        "chaosValueStandard": 33
     },
     {
         "id": 4946,
@@ -7217,7 +7217,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1NwaWRlckFybW91ckhlbG1ldCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/da7582cbf6/SpiderArmourHelmet.png",
         "chaosValueLeague": 10,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 38.5
+        "chaosValueStandard": 30.5
     },
     {
         "id": 68695,
@@ -7236,7 +7236,7 @@ const uniqueItemArray = [
         "name": "Legacy of Fury",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9TY29yY2hlZEVhcnRoIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/fda63f7588/ScorchedEarth.png",
         "chaosValueLeague": 7,
-        "chaosValueHCLeague": 140.2,
+        "chaosValueHCLeague": 114.73,
         "chaosValueStandard": 20
     },
     {
@@ -7255,8 +7255,8 @@ const uniqueItemArray = [
         "shortName": "amp",
         "name": "Aegis Aurora",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZFN0ckludFVuaXF1ZTd1bmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/ae1ec0f5d1/ShieldStrIntUnique7unique.png",
-        "chaosValueLeague": 156.71,
-        "chaosValueHCLeague": 227.93,
+        "chaosValueLeague": 158.36,
+        "chaosValueHCLeague": 248.3,
         "chaosValueStandard": 100
     },
     {
@@ -7265,7 +7265,7 @@ const uniqueItemArray = [
         "shortName": "ex",
         "name": "Kintsugi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9LaW50c3VnaSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/8fcd7ea593/Kintsugi.png",
-        "chaosValueLeague": 40,
+        "chaosValueLeague": 35,
         "chaosValueHCLeague": 10,
         "chaosValueStandard": 14
     },
@@ -7275,7 +7275,7 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Prism Guardian",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1RoZUNvcnVuZHVtIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/f9ca50a663/TheCorundum.png",
-        "chaosValueLeague": 65,
+        "chaosValueLeague": 50,
         "chaosValueHCLeague": 20,
         "chaosValueStandard": 10
     },
@@ -7286,8 +7286,8 @@ const uniqueItemArray = [
         "name": "Seven-League Step",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Cb290c0RleFVuaXF1ZTMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/23e4614336/BootsDexUnique3.png",
         "chaosValueLeague": 60,
-        "chaosValueHCLeague": 64,
-        "chaosValueStandard": 6.2
+        "chaosValueHCLeague": 64.3,
+        "chaosValueStandard": 6
     },
     {
         "id": 1927,
@@ -7295,8 +7295,8 @@ const uniqueItemArray = [
         "shortName": "fi",
         "name": "Atziri's Splendour",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BdHppcmlzU3BsZW5kb3VyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/24c910e168/AtzirisSplendour.png",
-        "chaosValueLeague": 5.4,
-        "chaosValueHCLeague": 93.99,
+        "chaosValueLeague": 7,
+        "chaosValueHCLeague": 99.32,
         "chaosValueStandard": 26.6
     },
     {
@@ -7305,7 +7305,7 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "The Unshattered Will",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0NoYW5uZWxpbmcgU2hpZWxkIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/95b237ca78/Channeling%20Shield.png",
-        "chaosValueLeague": 19,
+        "chaosValueLeague": 15,
         "chaosValueHCLeague": 315,
         "chaosValueStandard": 10
     },
@@ -7315,8 +7315,8 @@ const uniqueItemArray = [
         "shortName": "dis",
         "name": "Inpulsa's Broken Heart",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9PblNob2NrZWQiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/ce499f7b0b/OnShocked.png",
-        "chaosValueLeague": 142.46,
-        "chaosValueHCLeague": 40,
+        "chaosValueLeague": 120,
+        "chaosValueHCLeague": 34.5,
         "chaosValueStandard": 40
     },
     {
@@ -7325,9 +7325,9 @@ const uniqueItemArray = [
         "shortName": "rai",
         "name": "Saqawal's Nest",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BdmlhbkJvZHlBcm1vdXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/260410472f/AvianBodyArmour.png",
-        "chaosValueLeague": 30,
-        "chaosValueHCLeague": 187.98,
-        "chaosValueStandard": 37.74
+        "chaosValueLeague": 40,
+        "chaosValueHCLeague": 198.64,
+        "chaosValueStandard": 38.54
     },
     {
         "id": 4933,
@@ -7335,7 +7335,7 @@ const uniqueItemArray = [
         "shortName": "en p",
         "name": "Craiceann's Carapace",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9DcmFiVW5pcXVlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/b6db96049a/CrabUnique.png",
-        "chaosValueLeague": 15.4,
+        "chaosValueLeague": 15,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 30
     },
@@ -7355,7 +7355,7 @@ const uniqueItemArray = [
         "shortName": "eq",
         "name": "Farrul's Bite",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RpZ2VySGVsbWV0IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/c056a59c62/TigerHelmet.png",
-        "chaosValueLeague": 65,
+        "chaosValueLeague": 55,
         "chaosValueHCLeague": 20,
         "chaosValueStandard": 23.5
     },
@@ -7377,7 +7377,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Eb3JpeWFuaXNCbHVlIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/0288b52fee/DoriyanisBlue.png",
         "chaosValueLeague": 5,
         "chaosValueHCLeague": 51,
-        "chaosValueStandard": 27.3
+        "chaosValueStandard": 25.5
     },
     {
         "id": 22573,
@@ -7416,8 +7416,8 @@ const uniqueItemArray = [
         "name": "Replica Mistwall",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL01pc3R3YWxsIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/d81f034c2d/Mistwall.png",
         "chaosValueLeague": 9,
-        "chaosValueHCLeague": 15,
-        "chaosValueStandard": 35.2
+        "chaosValueHCLeague": 17,
+        "chaosValueStandard": 35.84
     },
     {
         "id": 44559,
@@ -7426,7 +7426,7 @@ const uniqueItemArray = [
         "name": "Replica Kaom's Heart",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Cb2R5U3RyM0NVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/1027cdf1ad/BodyStr3CUnique.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 140.98,
+        "chaosValueHCLeague": 90.93,
         "chaosValueStandard": 40
     },
     {
@@ -7456,7 +7456,7 @@ const uniqueItemArray = [
         "name": "Medved's Challenge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQWRhcHRhdGlvbkdsb3Zlc1VuaXF1ZSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/865b871153/AdaptationGlovesUnique.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 5.1,
+        "chaosValueHCLeague": 3.6,
         "chaosValueStandard": 23
     },
     {
@@ -7466,7 +7466,7 @@ const uniqueItemArray = [
         "name": "Vorana's March",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9TcGlyaXRCb290c1VuaXF1ZSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/90177dcbec/SpiritBootsUnique.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 7.1,
+        "chaosValueHCLeague": 7.4,
         "chaosValueStandard": 46
     },
     {
@@ -7475,9 +7475,9 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Gravebind",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvRGVhdGhHcmlwIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/371752d95c/DeathGrip.png",
-        "chaosValueLeague": 12,
-        "chaosValueHCLeague": 25,
-        "chaosValueStandard": 31.5
+        "chaosValueLeague": 13,
+        "chaosValueHCLeague": 22.4,
+        "chaosValueStandard": 45
     },
     {
         "id": 60112,
@@ -7485,7 +7485,7 @@ const uniqueItemArray = [
         "shortName": "al bo",
         "name": "Dance of the Offered",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9EYW5jZU9mVGhlT2ZmZXJlZCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/ca6a0319e6/DanceOfTheOffered.png",
-        "chaosValueLeague": 7.9,
+        "chaosValueLeague": 7,
         "chaosValueHCLeague": 15.8,
         "chaosValueStandard": 40
     },
@@ -7496,7 +7496,7 @@ const uniqueItemArray = [
         "name": "Abberath's Hooves",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9BYmJlcmF0aHNIb292ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/445b84d83c/AbberathsHooves.png",
         "chaosValueLeague": 4,
-        "chaosValueHCLeague": 46.5,
+        "chaosValueHCLeague": 33,
         "chaosValueStandard": 21
     },
     {
@@ -7507,7 +7507,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9VbHRpbWF0dW1Cb290cyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/2e5d0d7dc7/UltimatumBoots.png",
         "chaosValueLeague": 2,
         "chaosValueHCLeague": 5,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 42333,
@@ -7515,8 +7515,8 @@ const uniqueItemArray = [
         "shortName": "cr",
         "name": "Fleshcrafter",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Fc3NlbmNlR2lmdGVyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/3b3446e019/EssenceGifter.png",
-        "chaosValueLeague": 13,
-        "chaosValueHCLeague": 30,
+        "chaosValueLeague": 10,
+        "chaosValueHCLeague": 28.5,
         "chaosValueStandard": 20
     },
     {
@@ -7525,7 +7525,7 @@ const uniqueItemArray = [
         "shortName": "fi",
         "name": "Atziri's Splendour",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BdHppcmlzU3BsZW5kb3VyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/24c910e168/AtzirisSplendour.png",
-        "chaosValueLeague": 6.8,
+        "chaosValueLeague": 5,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 20
     },
@@ -7535,9 +7535,9 @@ const uniqueItemArray = [
         "shortName": "sola",
         "name": "Galesight",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0V4cGxvcmVyc1Zpc2lvbkNvbGQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/702f0515fb/ExplorersVisionCold.png",
-        "chaosValueLeague": 18,
+        "chaosValueLeague": 15,
         "chaosValueHCLeague": 15,
-        "chaosValueStandard": 12.4
+        "chaosValueStandard": 12.5
     },
     {
         "id": 46258,
@@ -7565,9 +7565,9 @@ const uniqueItemArray = [
         "shortName": "lsc",
         "name": "Tombfist",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQWJ5c3NHbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/d0d174823c/AbyssGloves.png",
-        "chaosValueLeague": 40,
-        "chaosValueHCLeague": 37.2,
-        "chaosValueStandard": 13.5
+        "chaosValueLeague": 35,
+        "chaosValueHCLeague": 38.8,
+        "chaosValueStandard": 14
     },
     {
         "id": 1920,
@@ -7575,7 +7575,7 @@ const uniqueItemArray = [
         "shortName": "fi",
         "name": "Atziri's Splendour",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BdHppcmlzU3BsZW5kb3VyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/24c910e168/AtzirisSplendour.png",
-        "chaosValueLeague": 7,
+        "chaosValueLeague": 5.4,
         "chaosValueHCLeague": 80,
         "chaosValueStandard": 9.6
     },
@@ -7586,8 +7586,8 @@ const uniqueItemArray = [
         "name": "Replica Loreweave",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Mb3Jld2VhdmUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/fd11495220/Loreweave.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 8.5,
-        "chaosValueStandard": 31.8
+        "chaosValueHCLeague": 8.6,
+        "chaosValueStandard": 32.1
     },
     {
         "id": 1928,
@@ -7605,8 +7605,8 @@ const uniqueItemArray = [
         "shortName": "d ga",
         "name": "Cloak of Defiance",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9DbG9ha09mRGVmaWFuY2UiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/87997e3b8a/CloakOfDefiance.png",
-        "chaosValueLeague": 7,
-        "chaosValueHCLeague": 40,
+        "chaosValueLeague": 6,
+        "chaosValueHCLeague": 30,
         "chaosValueStandard": 26.5
     },
     {
@@ -7615,8 +7615,8 @@ const uniqueItemArray = [
         "shortName": "niu",
         "name": "Rathpith Globe",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZEludDZ1bmlxdWUiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/5f2434a635/ShieldInt6unique.png",
-        "chaosValueLeague": 70,
-        "chaosValueHCLeague": 35,
+        "chaosValueLeague": 60,
+        "chaosValueHCLeague": 43,
         "chaosValueStandard": 20
     },
     {
@@ -7626,7 +7626,7 @@ const uniqueItemArray = [
         "name": "The Brass Dome",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Eb21lT2ZCcmFzcyIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/41f06694f2/DomeOfBrass.png",
         "chaosValueLeague": 20,
-        "chaosValueHCLeague": 263.17,
+        "chaosValueHCLeague": 278.1,
         "chaosValueStandard": 30
     },
     {
@@ -7635,7 +7635,7 @@ const uniqueItemArray = [
         "shortName": "fi",
         "name": "Atziri's Splendour",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BdHppcmlzU3BsZW5kb3VyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/24c910e168/AtzirisSplendour.png",
-        "chaosValueLeague": 8.6,
+        "chaosValueLeague": 9,
         "chaosValueHCLeague": 80,
         "chaosValueStandard": 20
     },
@@ -7645,7 +7645,7 @@ const uniqueItemArray = [
         "shortName": "fi",
         "name": "Atziri's Splendour",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BdHppcmlzU3BsZW5kb3VyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/24c910e168/AtzirisSplendour.png",
-        "chaosValueLeague": 6.6,
+        "chaosValueLeague": 5,
         "chaosValueHCLeague": 80,
         "chaosValueStandard": 11.5
     },
@@ -7656,7 +7656,7 @@ const uniqueItemArray = [
         "name": "Light of Lunaris",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0x1bmFyaXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/a684af2793/Lunaris.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 9.1,
+        "chaosValueHCLeague": 72.16,
         "chaosValueStandard": 15
     },
     {
@@ -7675,7 +7675,7 @@ const uniqueItemArray = [
         "shortName": "as",
         "name": "Fenumus' Spinnerets",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9TcGlkZXJBcm1vdXJCb290cyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/ba3f1e4f2a/SpiderArmourBoots.png",
-        "chaosValueLeague": 12,
+        "chaosValueLeague": 11.5,
         "chaosValueHCLeague": 26,
         "chaosValueStandard": 30
     },
@@ -7686,8 +7686,8 @@ const uniqueItemArray = [
         "name": "Unyielding Flame",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0RhbW5hdGlvQWV0ZXJuYSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/755ec1c5d8/DamnatioAeterna.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 12,
-        "chaosValueStandard": 31.1
+        "chaosValueHCLeague": 9.2,
+        "chaosValueStandard": 30.71
     },
     {
         "id": 23101,
@@ -7696,7 +7696,7 @@ const uniqueItemArray = [
         "name": "Perepiteia",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0xpZ2h0bmluZ1NoaWVsZCIsInciOjIsImgiOjIsInNjYWxlIjoxLCJzeW50aGVzaXNlZCI6dHJ1ZX1d/05aa542efd/LightningShield.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 45.4,
+        "chaosValueHCLeague": 45.93,
         "chaosValueStandard": 10
     },
     {
@@ -7715,7 +7715,7 @@ const uniqueItemArray = [
         "shortName": "nk b",
         "name": "Farrul's Chase",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9UaWdlckJvb3RzIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/640a42e82a/TigerBoots.png",
-        "chaosValueLeague": 2,
+        "chaosValueLeague": 3,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 10
     },
@@ -7725,7 +7725,7 @@ const uniqueItemArray = [
         "shortName": "amb",
         "name": "Abhorrent Interrogation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvRGVjYXlpbmdHcmlwIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/fa04f8c987/DecayingGrip.png",
-        "chaosValueLeague": 9.1,
+        "chaosValueLeague": 9,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 9.5
     },
@@ -7745,7 +7745,7 @@ const uniqueItemArray = [
         "shortName": "pr",
         "name": "Viridi's Veil",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0NvbnN0cmljdGluZ0Nyb3duIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/04ee655ca5/ConstrictingCrown.png",
-        "chaosValueLeague": 165.25,
+        "chaosValueLeague": 119.8,
         "chaosValueHCLeague": 105,
         "chaosValueStandard": 20
     },
@@ -7755,9 +7755,9 @@ const uniqueItemArray = [
         "shortName": "een b",
         "name": "Temptation Step",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9BdGFpdG9sQm9vdHMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/dd0d386124/AtaitolBoots.png",
-        "chaosValueLeague": 6.2,
+        "chaosValueLeague": 5.4,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 45
+        "chaosValueStandard": 48
     },
     {
         "id": 1060,
@@ -7766,7 +7766,7 @@ const uniqueItemArray = [
         "name": "Rigwald's Quills",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9SaWd3YWxkc1F1aWxscyIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/b8325e5214/RigwaldsQuills.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 9,
+        "chaosValueHCLeague": 7.6,
         "chaosValueStandard": 20
     },
     {
@@ -7775,7 +7775,7 @@ const uniqueItemArray = [
         "shortName": "al bo",
         "name": "Omeyocan",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9PbWV5b2NhbiIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/f72f6a000d/Omeyocan.png",
-        "chaosValueLeague": 14.9,
+        "chaosValueLeague": 15,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 12.3
     },
@@ -7805,7 +7805,7 @@ const uniqueItemArray = [
         "shortName": "fi",
         "name": "Atziri's Splendour",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BdHppcmlzU3BsZW5kb3VyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/24c910e168/AtzirisSplendour.png",
-        "chaosValueLeague": 5,
+        "chaosValueLeague": 6.2,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 26.2
     },
@@ -7817,7 +7817,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9BZGFwdGF0aW9uQm9vdHNVbmlxdWUiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/a0b7d6e35c/AdaptationBootsUnique.png",
         "chaosValueLeague": 2,
         "chaosValueHCLeague": 15.5,
-        "chaosValueStandard": 270.72
+        "chaosValueStandard": 271.21
     },
     {
         "id": 44586,
@@ -7826,8 +7826,8 @@ const uniqueItemArray = [
         "name": "Replica Perfect Form",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UaGVQZXJmZWN0Rm9ybSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/b149b68ecb/ThePerfectForm.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 7.5,
-        "chaosValueStandard": 34
+        "chaosValueHCLeague": 6.5,
+        "chaosValueStandard": 30
     },
     {
         "id": 99,
@@ -7845,7 +7845,7 @@ const uniqueItemArray = [
         "shortName": "nk b",
         "name": "Atziri's Step",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9BdHppcmlzU3RlcCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/ec85575514/AtzirisStep.png",
-        "chaosValueLeague": 22,
+        "chaosValueLeague": 20,
         "chaosValueHCLeague": 50,
         "chaosValueStandard": 5
     },
@@ -7856,7 +7856,7 @@ const uniqueItemArray = [
         "name": "Heatshiver",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0hlYXRzaGl2ZXIiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/b1860c890e/Heatshiver.png",
         "chaosValueLeague": 18,
-        "chaosValueHCLeague": 2,
+        "chaosValueHCLeague": 2.9,
         "chaosValueStandard": 10
     },
     {
@@ -7865,8 +7865,8 @@ const uniqueItemArray = [
         "shortName": "rt",
         "name": "Lightning Coil",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9MaWdodG5pbmdDb2lsIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/1b36c39f5a/LightningCoil.png",
-        "chaosValueLeague": 4.1,
-        "chaosValueHCLeague": 24,
+        "chaosValueLeague": 5,
+        "chaosValueHCLeague": 30,
         "chaosValueStandard": 10
     },
     {
@@ -7876,7 +7876,7 @@ const uniqueItemArray = [
         "name": "Shavronne's Wrappings",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Cb2R5SW50MUNVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/4f3e22a163/BodyInt1CUnique.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 14.7,
+        "chaosValueHCLeague": 15,
         "chaosValueStandard": 10
     },
     {
@@ -7886,8 +7886,8 @@ const uniqueItemArray = [
         "name": "Skyforth",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Ta3lmb3J0aCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/56fee4545a/Skyforth.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 469.95,
-        "chaosValueStandard": 20.5
+        "chaosValueHCLeague": 397.28,
+        "chaosValueStandard": 21
     },
     {
         "id": 1517,
@@ -7905,8 +7905,8 @@ const uniqueItemArray = [
         "shortName": "ced g",
         "name": "Windscream",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9XaW5kc2NyZWFtIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/7cc293769c/Windscream.png",
-        "chaosValueLeague": 5,
-        "chaosValueHCLeague": 3.8,
+        "chaosValueLeague": 8,
+        "chaosValueHCLeague": 5,
         "chaosValueStandard": 10
     },
     {
@@ -7915,7 +7915,7 @@ const uniqueItemArray = [
         "shortName": "fi",
         "name": "Atziri's Splendour",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9BdHppcmlzU3BsZW5kb3VyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/24c910e168/AtzirisSplendour.png",
-        "chaosValueLeague": 8,
+        "chaosValueLeague": 5,
         "chaosValueHCLeague": 80,
         "chaosValueStandard": 50
     },
@@ -7926,8 +7926,8 @@ const uniqueItemArray = [
         "name": "Tukohama's Fortress",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1R1a29oYW1hc0ZvcnRyZXNzIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/e502c4bcf2/TukohamasFortress.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 5.8,
-        "chaosValueStandard": 66.59
+        "chaosValueHCLeague": 8.2,
+        "chaosValueStandard": 68.51
     },
     {
         "id": 2228,
@@ -7957,7 +7957,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0F2aWFuSGVsbWV0IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/29e7c95170/AvianHelmet.png",
         "chaosValueLeague": 5,
         "chaosValueHCLeague": 0,
-        "chaosValueStandard": 22
+        "chaosValueStandard": 21
     },
     {
         "id": 4932,
@@ -7985,7 +7985,7 @@ const uniqueItemArray = [
         "shortName": "emptyyyyy",
         "name": "Farrul's Pounce",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvVGlnZXJHbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/294e636cf1/TigerGloves.png",
-        "chaosValueLeague": 2.3,
+        "chaosValueLeague": 2.4,
         "chaosValueHCLeague": 50,
         "chaosValueStandard": 10
     },
@@ -7995,7 +7995,7 @@ const uniqueItemArray = [
         "shortName": "ele",
         "name": "Loreweave",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Mb3Jld2VhdmUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/fd11495220/Loreweave.png",
-        "chaosValueLeague": 28.2,
+        "chaosValueLeague": 29.9,
         "chaosValueHCLeague": 38,
         "chaosValueStandard": 10
     },
@@ -8016,7 +8016,7 @@ const uniqueItemArray = [
         "name": "Maloney's Mechanism",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9UcmlnZ2VyUXVpdmVyQmFzZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/1f3958bdb3/TriggerQuiverBase.png",
         "chaosValueLeague": 10,
-        "chaosValueHCLeague": 13.2,
+        "chaosValueHCLeague": 12.6,
         "chaosValueStandard": 20
     },
     {
@@ -8025,7 +8025,7 @@ const uniqueItemArray = [
         "shortName": "mag",
         "name": "Mask of the Tribunal",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0hlbG1ldE9mRG9taW5hbmNlMiIsInciOjIsImgiOjIsInNjYWxlIjoxLCJzeW50aGVzaXNlZCI6dHJ1ZX1d/7cac104f3e/HelmetOfDominance2.png",
-        "chaosValueLeague": 56,
+        "chaosValueLeague": 40,
         "chaosValueHCLeague": 14.6,
         "chaosValueStandard": 10
     },
@@ -8046,7 +8046,7 @@ const uniqueItemArray = [
         "name": "Doryani's Prototype",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9TaG9ja0Nsb2FrIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/44e73cc73c/ShockCloak.png",
         "chaosValueLeague": 4,
-        "chaosValueHCLeague": 6,
+        "chaosValueHCLeague": 6.2,
         "chaosValueStandard": 50
     },
     {
@@ -8056,7 +8056,7 @@ const uniqueItemArray = [
         "name": "Replica Lioneye's Paws",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9MaW9uZXllc1Bhd3MiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/550a8f59d4/LioneyesPaws.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 8,
+        "chaosValueHCLeague": 8.5,
         "chaosValueStandard": 10.6
     },
     {
@@ -8066,8 +8066,8 @@ const uniqueItemArray = [
         "name": "Replica Volkuur's Guidance",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvUGFsZUNvdW5jaWxHbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/3271f5441a/PaleCouncilGloves.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 5,
-        "chaosValueStandard": 11
+        "chaosValueHCLeague": 5.3,
+        "chaosValueStandard": 10.1
     },
     {
         "id": 44371,
@@ -8086,8 +8086,8 @@ const uniqueItemArray = [
         "name": "Replica Victario's Charity",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1ZpY3Rhcm9zQ2hhcml0eSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/baf0e57fb2/VictarosCharity.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 3.1,
-        "chaosValueStandard": 23
+        "chaosValueHCLeague": 4,
+        "chaosValueStandard": 23.6
     },
     {
         "id": 48484,
@@ -8105,9 +8105,9 @@ const uniqueItemArray = [
         "shortName": "al bo",
         "name": "Corpsewalker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9EaXN0dXJiVGhlRGVhZCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/fabb05d84e/DisturbTheDead.png",
-        "chaosValueLeague": 17,
+        "chaosValueLeague": 16,
         "chaosValueHCLeague": 5.9,
-        "chaosValueStandard": 20
+        "chaosValueStandard": 20.5
     },
     {
         "id": 93075,
@@ -8125,9 +8125,9 @@ const uniqueItemArray = [
         "shortName": "dev",
         "name": "The Fourth Vow",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9DbGVyaWNzU2FuY3R1YXJ5IiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/447f6b17b1/ClericsSanctuary.png",
-        "chaosValueLeague": 398.89,
-        "chaosValueHCLeague": 610.94,
-        "chaosValueStandard": 52.5
+        "chaosValueLeague": 431.88,
+        "chaosValueHCLeague": 854.15,
+        "chaosValueStandard": 53
     },
     {
         "id": 103607,
@@ -8136,7 +8136,7 @@ const uniqueItemArray = [
         "name": "The Snowblind Grace",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UaGVTbm93YmxpbmRHcmFjZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/1f9378f004/TheSnowblindGrace.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 32,
+        "chaosValueHCLeague": 12.1,
         "chaosValueStandard": 12.5
     },
     {
@@ -8146,8 +8146,8 @@ const uniqueItemArray = [
         "name": "Utula's Hunger",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9VdGFsYUJvZHlBcm1vdXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/4a4891f3f3/UtalaBodyArmour.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 35,
-        "chaosValueStandard": 83.6
+        "chaosValueHCLeague": 31.5,
+        "chaosValueStandard": 85.4
     },
     {
         "id": 109088,
@@ -8157,7 +8157,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0FmZmxpY3Rpb25TaGllbGQiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/e24ff32b75/AfflictionShield.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 56.5
+        "chaosValueStandard": 50
     },
     {
         "id": 109561,
@@ -8167,7 +8167,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9HcmVlbmV5ZXNBcm1vdXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/bef792208d/GreeneyesArmour.png",
         "chaosValueLeague": 4,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 1082.88
+        "chaosValueStandard": 1084.84
     },
     {
         "id": 2237,
@@ -8175,7 +8175,7 @@ const uniqueItemArray = [
         "shortName": "us",
         "name": "Third Piece of Storms",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0hhcmJpbmdlclNoYXJkcy9TaGFyZDMiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/130f12073c/Shard3.png",
-        "chaosValueLeague": 5,
+        "chaosValueLeague": 4.1,
         "chaosValueHCLeague": 0,
         "chaosValueStandard": 2.7
     },
@@ -8196,8 +8196,8 @@ const uniqueItemArray = [
         "name": "Replica Alpha's Howl",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1dvbGZoZWFkIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/2acc10e593/Wolfhead.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 9.5,
-        "chaosValueStandard": 15
+        "chaosValueHCLeague": 10,
+        "chaosValueStandard": 17.5
     },
     {
         "id": 2236,
@@ -8225,8 +8225,8 @@ const uniqueItemArray = [
         "shortName": "r'",
         "name": "Cloak of Flame",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Cb2R5SW50MUF1bmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/41c15c6511/BodyInt1Aunique.png",
-        "chaosValueLeague": 14,
-        "chaosValueHCLeague": 51,
+        "chaosValueLeague": 14.3,
+        "chaosValueHCLeague": 60,
         "chaosValueStandard": 5
     },
     {
@@ -8235,8 +8235,8 @@ const uniqueItemArray = [
         "shortName": "der g",
         "name": "Shaper's Touch",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvU2hhcGVyc0dsb3ZlcyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/633aead741/ShapersGloves.png",
-        "chaosValueLeague": 10,
-        "chaosValueHCLeague": 24,
+        "chaosValueLeague": 8,
+        "chaosValueHCLeague": 25,
         "chaosValueStandard": 5
     },
     {
@@ -8246,8 +8246,8 @@ const uniqueItemArray = [
         "name": "Volkuur's Guidance",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvUGFsZUNvdW5jaWxHbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/3271f5441a/PaleCouncilGloves.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 9.7,
-        "chaosValueStandard": 6.6
+        "chaosValueHCLeague": 10,
+        "chaosValueStandard": 5.9
     },
     {
         "id": 4904,
@@ -8265,8 +8265,8 @@ const uniqueItemArray = [
         "shortName": "ri",
         "name": "Command of the Pit",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQ29tbWFuZG9mdGhlUGl0IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/cc7772a880/CommandofthePit.png",
-        "chaosValueLeague": 8,
-        "chaosValueHCLeague": 8,
+        "chaosValueLeague": 7,
+        "chaosValueHCLeague": 9,
         "chaosValueStandard": 20
     },
     {
@@ -8306,8 +8306,8 @@ const uniqueItemArray = [
         "name": "Replica Ambu's Charge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9TdHJJbnQzQVVuaXF1ZTIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/9928614b24/StrInt3AUnique2.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 9,
-        "chaosValueStandard": 7.3
+        "chaosValueHCLeague": 10,
+        "chaosValueStandard": 7
     },
     {
         "id": 44357,
@@ -8315,8 +8315,8 @@ const uniqueItemArray = [
         "shortName": "rder b",
         "name": "Replica Voidwalker",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Dcm9zc2luZ1RoZVZvaWQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/f3747eb0f4/CrossingTheVoid.png",
-        "chaosValueLeague": 4,
-        "chaosValueHCLeague": 6.2,
+        "chaosValueLeague": 4.1,
+        "chaosValueHCLeague": 7.8,
         "chaosValueStandard": 13.2
     },
     {
@@ -8346,7 +8346,7 @@ const uniqueItemArray = [
         "name": "Replica Grip of the Council",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvR2xvdmVzSW50M1VuaXF1ZTIiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/88338fac41/GlovesInt3Unique2.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 9.2,
+        "chaosValueHCLeague": 9,
         "chaosValueStandard": 10
     },
     {
@@ -8377,7 +8377,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1NvdWxsZXNzRWxlZ2FuY2UiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/9c572a99fe/SoullessElegance.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 8,
-        "chaosValueStandard": 6.6
+        "chaosValueStandard": 6.4
     },
     {
         "id": 198,
@@ -8396,7 +8396,7 @@ const uniqueItemArray = [
         "name": "Machina Mitts",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvODU0NzkiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/360a5df732/85479.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 3.5,
+        "chaosValueHCLeague": 2,
         "chaosValueStandard": 10
     },
     {
@@ -8406,7 +8406,7 @@ const uniqueItemArray = [
         "name": "Alpha's Howl",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1dvbGZoZWFkIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/2acc10e593/Wolfhead.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 4,
+        "chaosValueHCLeague": 3,
         "chaosValueStandard": 6
     },
     {
@@ -8457,7 +8457,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Cb2R5U3RyM0NVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/1027cdf1ad/BodyStr3CUnique.png",
         "chaosValueLeague": 4,
         "chaosValueHCLeague": 11,
-        "chaosValueStandard": 7
+        "chaosValueStandard": 6.6
     },
     {
         "id": 846,
@@ -8467,7 +8467,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9UYXJnZW10YWJpIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/fb8815a6bd/Targemtabi.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 2.4
+        "chaosValueStandard": 2.3
     },
     {
         "id": 1081,
@@ -8486,7 +8486,7 @@ const uniqueItemArray = [
         "name": "Thousand Ribbons",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UaG91c2FuZHJpYmJvbnMiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/65a99640e9/Thousandribbons.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 10,
+        "chaosValueHCLeague": 8,
         "chaosValueStandard": 2
     },
     {
@@ -8516,7 +8516,7 @@ const uniqueItemArray = [
         "name": "Haemophilia",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvYmxlZWRnbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/005045bec7/bleedgloves.png",
         "chaosValueLeague": 4,
-        "chaosValueHCLeague": 3,
+        "chaosValueHCLeague": 2.9,
         "chaosValueStandard": 5
     },
     {
@@ -8546,7 +8546,7 @@ const uniqueItemArray = [
         "name": "First Piece of Storms",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0hhcmJpbmdlclNoYXJkcy9TaGFyZDEiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/571346519c/Shard1.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 0,
+        "chaosValueHCLeague": 15,
         "chaosValueStandard": 2.6
     },
     {
@@ -8585,8 +8585,8 @@ const uniqueItemArray = [
         "shortName": "rder b",
         "name": "Bubonic Trail",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9BYnlzc0Jvb3RzIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/61dd23f86c/AbyssBoots.png",
-        "chaosValueLeague": 4,
-        "chaosValueHCLeague": 15.4,
+        "chaosValueLeague": 3,
+        "chaosValueHCLeague": 14.5,
         "chaosValueStandard": 5
     },
     {
@@ -8616,7 +8616,7 @@ const uniqueItemArray = [
         "name": "Thundersight",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0V4cGxvcmVyc1Zpc2lvbkxpZ2h0bmluZyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/56f2f88c51/ExplorersVisionLightning.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 2.3,
+        "chaosValueHCLeague": 5,
         "chaosValueStandard": 5
     },
     {
@@ -8656,7 +8656,7 @@ const uniqueItemArray = [
         "name": "The Ivory Tower",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UaGVJdm9yeVRvd2VyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/26d71eb965/TheIvoryTower.png",
         "chaosValueLeague": 8,
-        "chaosValueHCLeague": 6.8,
+        "chaosValueHCLeague": 7,
         "chaosValueStandard": 10
     },
     {
@@ -8695,7 +8695,7 @@ const uniqueItemArray = [
         "shortName": "yal bu",
         "name": "Echoes of Creation",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RoZVR3aXN0aW5nU2NyZWFtIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/4815fa0fc8/TheTwistingScream.png",
-        "chaosValueLeague": 10.8,
+        "chaosValueLeague": 10,
         "chaosValueHCLeague": 105,
         "chaosValueStandard": 10
     },
@@ -8705,8 +8705,8 @@ const uniqueItemArray = [
         "shortName": "tit",
         "name": "Kaom's Spirit",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvS2FvbXNTcGlyaXQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/eefa7c48f9/KaomsSpirit.png",
-        "chaosValueLeague": 3,
-        "chaosValueHCLeague": 1.14,
+        "chaosValueLeague": 4,
+        "chaosValueHCLeague": 1.16,
         "chaosValueStandard": 25
     },
     {
@@ -8736,7 +8736,7 @@ const uniqueItemArray = [
         "name": "Esh's Mirror",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0VzaHNNaXJyb3IiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/983cf91bf4/EshsMirror.png",
         "chaosValueLeague": 3,
-        "chaosValueHCLeague": 54.4,
+        "chaosValueHCLeague": 50,
         "chaosValueStandard": 10
     },
     {
@@ -8746,7 +8746,7 @@ const uniqueItemArray = [
         "name": "Replica Three-step Assault",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9UaHJlZVN0ZXBBc3NhdWx0IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/56daf8a36a/ThreeStepAssault.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 8.4,
+        "chaosValueHCLeague": 5.9,
         "chaosValueStandard": 14.8
     },
     {
@@ -8756,7 +8756,7 @@ const uniqueItemArray = [
         "name": "First Piece of Focus",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoYXJkcy9DaGFubmVsaW5nU2hpZWxkU2hhcmQxIiwidyI6MSwiaCI6Miwic2NhbGUiOjF9XQ/37cf3313be/ChannelingShieldShard1.png",
         "chaosValueLeague": 5,
-        "chaosValueHCLeague": 0,
+        "chaosValueHCLeague": 30,
         "chaosValueStandard": 5.5
     },
     {
@@ -8766,7 +8766,7 @@ const uniqueItemArray = [
         "name": "Broken Faith",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NhbnRvbmlzRmFpdGgiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/82ea2899a8/SantonisFaith.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 5.5,
+        "chaosValueHCLeague": 4.6,
         "chaosValueStandard": 2.9
     },
     {
@@ -8777,7 +8777,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0F6bWVyaUhlbG1ldCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/8f7af19434/AzmeriHelmet.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 80
+        "chaosValueStandard": 60
     },
     {
         "id": 223,
@@ -8806,7 +8806,7 @@ const uniqueItemArray = [
         "name": "Leer Cast",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0hlbG1ldERleEludDl4IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/6693f97fdf/HelmetDexInt9x.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 2,
+        "chaosValueHCLeague": 3,
         "chaosValueStandard": 4
     },
     {
@@ -8826,7 +8826,7 @@ const uniqueItemArray = [
         "name": "Maligaro's Virtuosity",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvTWFsaWdhcm9zVmlydG91c2l0eSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/7cdbba458f/MaligarosVirtousity.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 5.5,
+        "chaosValueHCLeague": 5,
         "chaosValueStandard": 5
     },
     {
@@ -8847,7 +8847,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQWJ5c3NHbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/d0d174823c/AbyssGloves.png",
         "chaosValueLeague": 2,
         "chaosValueHCLeague": 10,
-        "chaosValueStandard": 2.77
+        "chaosValueStandard": 2.62
     },
     {
         "id": 40041,
@@ -8856,7 +8856,7 @@ const uniqueItemArray = [
         "name": "Assailum",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RhbmdtYXp1YXJtb3VyaGVsbWV0IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/6e327593b9/Tangmazuarmourhelmet.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 14.2,
+        "chaosValueHCLeague": 14,
         "chaosValueStandard": 5
     },
     {
@@ -8866,7 +8866,7 @@ const uniqueItemArray = [
         "name": "Beacon of Madness",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9UYW5nbWF6dWFybW91cmJvb3RzIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/664521517c/Tangmazuarmourboots.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 5.2,
+        "chaosValueHCLeague": 5,
         "chaosValueStandard": 5
     },
     {
@@ -8877,7 +8877,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvR29yZWZpc3RHbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/4c11aafeb7/GorefistGloves.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 8
+        "chaosValueStandard": 7.82
     },
     {
         "id": 2252,
@@ -8946,7 +8946,7 @@ const uniqueItemArray = [
         "name": "Daresso's Defiance",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9EYXJlc3Nvc0RlZmlhbmNlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/2e5802be5f/DaressosDefiance.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 5,
+        "chaosValueHCLeague": 3,
         "chaosValueStandard": 3
     },
     {
@@ -8957,7 +8957,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9EZWF0aHNvYXRoIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/f81375e335/Deathsoath.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 5,
-        "chaosValueStandard": 5.1
+        "chaosValueStandard": 5.2
     },
     {
         "id": 575,
@@ -8996,7 +8996,7 @@ const uniqueItemArray = [
         "name": "Queen of the Forest",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9RdWVlbm9mdGhlRm9yZXN0IiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/bd3ec993e7/QueenoftheForest.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 2.57,
+        "chaosValueHCLeague": 3,
         "chaosValueStandard": 5
     },
     {
@@ -9017,7 +9017,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1ZvbGxzVmlzaW9uIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/c8dd3f6cf3/VollsVision.png",
         "chaosValueLeague": 2,
         "chaosValueHCLeague": 4,
-        "chaosValueStandard": 5.4
+        "chaosValueStandard": 5.3
     },
     {
         "id": 2286,
@@ -9026,7 +9026,7 @@ const uniqueItemArray = [
         "name": "Invictus Solaris",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0ludmljdHVzIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/98194c56fe/Invictus.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 4.6,
+        "chaosValueHCLeague": 3,
         "chaosValueStandard": 5
     },
     {
@@ -9056,7 +9056,7 @@ const uniqueItemArray = [
         "name": "Volkuur's Guidance",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvUGFsZUNvdW5jaWxHbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/3271f5441a/PaleCouncilGloves.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1,
+        "chaosValueHCLeague": 1.2,
         "chaosValueStandard": 7.5
     },
     {
@@ -9077,7 +9077,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0FieXNzSGVsbWV0IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/45c869b05c/AbyssHelmet.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 10,
-        "chaosValueStandard": 2.5
+        "chaosValueStandard": 2.4
     },
     {
         "id": 5975,
@@ -9086,7 +9086,7 @@ const uniqueItemArray = [
         "name": "Chains of Command",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9DaGFpbnNPZkNvbW1hbmQiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/3919d27d1b/ChainsOfCommand.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 1.8,
+        "chaosValueHCLeague": 2,
         "chaosValueStandard": 5
     },
     {
@@ -9105,8 +9105,8 @@ const uniqueItemArray = [
         "shortName": "one c",
         "name": "Plume of Pursuit",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1JhdmVuc0Nyb3duIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/dc40362912/RavensCrown.png",
-        "chaosValueLeague": 3,
-        "chaosValueHCLeague": 12.5,
+        "chaosValueLeague": 2.68,
+        "chaosValueHCLeague": 10,
         "chaosValueStandard": 5
     },
     {
@@ -9176,7 +9176,7 @@ const uniqueItemArray = [
         "name": "Daresso's Courage",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZFN0ckRleFVuaXF1ZTEiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/320f1e78fa/ShieldStrDexUnique1.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 5,
+        "chaosValueHCLeague": 2.2,
         "chaosValueStandard": 1
     },
     {
@@ -9245,7 +9245,7 @@ const uniqueItemArray = [
         "shortName": "on p",
         "name": "Obscurantis",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL09ic2N1cmFudGlzIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/95ebfbbef1/Obscurantis.png",
-        "chaosValueLeague": 3,
+        "chaosValueLeague": 2,
         "chaosValueHCLeague": 2,
         "chaosValueStandard": 5
     },
@@ -9256,7 +9256,7 @@ const uniqueItemArray = [
         "name": "Rainbowstride",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9yYWluYm93c3RyaWRlIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/bf663baf47/rainbowstride.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 3.4,
+        "chaosValueHCLeague": 3,
         "chaosValueStandard": 3
     },
     {
@@ -9285,7 +9285,7 @@ const uniqueItemArray = [
         "shortName": "mos",
         "name": "Rise of the Phoenix",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1Jpc2VvZnRoZXBob2VuaXgiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/965404630a/Riseofthephoenix.png",
-        "chaosValueLeague": 2,
+        "chaosValueLeague": 3,
         "chaosValueHCLeague": 5,
         "chaosValueStandard": 3
     },
@@ -9326,7 +9326,7 @@ const uniqueItemArray = [
         "name": "The Bringer of Rain",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RoZUJyaW5nZXJvZlJhaW4iLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/3878572958/TheBringerofRain.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 2.6,
+        "chaosValueHCLeague": 2.4,
         "chaosValueStandard": 4
     },
     {
@@ -9366,7 +9366,7 @@ const uniqueItemArray = [
         "name": "Tinkerskin",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UcmFwcGVyQXJtb3VyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/3e6bd8eefe/TrapperArmour.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 3.3,
+        "chaosValueHCLeague": 4,
         "chaosValueStandard": 3
     },
     {
@@ -9455,9 +9455,9 @@ const uniqueItemArray = [
         "shortName": "ew",
         "name": "Manastorm",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL01hbmFzdG9ybSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/d816fe3053/Manastorm.png",
-        "chaosValueLeague": 32.5,
+        "chaosValueLeague": 30,
         "chaosValueHCLeague": 7.6,
-        "chaosValueStandard": 3.11
+        "chaosValueStandard": 3.3
     },
     {
         "id": 1366,
@@ -9495,7 +9495,7 @@ const uniqueItemArray = [
         "shortName": "tu",
         "name": "Ashrend",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Bc2hyZW5kIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/9755e9fe99/Ashrend.png",
-        "chaosValueLeague": 0.99,
+        "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -9507,7 +9507,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0JsYWNrc3VuY3Jlc3QiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/d5c3617a52/Blacksuncrest.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 2.13
+        "chaosValueStandard": 2.62
     },
     {
         "id": 185,
@@ -9537,7 +9537,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Ccm9ubnNsaXRoZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/80b9cf6b0b/Bronnslithe.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 1.3
+        "chaosValueStandard": 1.5
     },
     {
         "id": 252,
@@ -9636,7 +9636,7 @@ const uniqueItemArray = [
         "name": "Deidbell",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0RlaWRiZWxsIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/fd66b0b28f/Deidbell.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 0.93,
+        "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
     {
@@ -9647,7 +9647,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0hlbG1ldFN0ckRleDJ1bmlxdWUiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/65fa7daa88/HelmetStrDex2unique.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 2,
-        "chaosValueStandard": 2.02
+        "chaosValueStandard": 2
     },
     {
         "id": 429,
@@ -9696,7 +9696,7 @@ const uniqueItemArray = [
         "name": "Empire's Grasp",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvSGl0aGVyIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/c23bccbc39/Hither.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 0.98,
+        "chaosValueHCLeague": 0.97,
         "chaosValueStandard": 1
     },
     {
@@ -9826,7 +9826,7 @@ const uniqueItemArray = [
         "name": "Infernal Mantle",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9JbmZlcm5hbG1hbnRsZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/ea1b86d7f9/Infernalmantle.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 2,
+        "chaosValueHCLeague": 2.2,
         "chaosValueStandard": 1
     },
     {
@@ -9865,9 +9865,9 @@ const uniqueItemArray = [
         "shortName": "eal",
         "name": "Kitava's Thirst",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0tpdGF2YXNUaGlyc3QiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/585034f884/KitavasThirst.png",
-        "chaosValueLeague": 1,
+        "chaosValueLeague": 2,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 2.53
+        "chaosValueStandard": 2.7
     },
     {
         "id": 745,
@@ -9956,8 +9956,8 @@ const uniqueItemArray = [
         "name": "Mindspiral",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL01pbmRzcGlyYWwiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/e4b2c14ad7/Mindspiral.png",
         "chaosValueLeague": 2,
-        "chaosValueHCLeague": 7,
-        "chaosValueStandard": 1.55
+        "chaosValueHCLeague": 5,
+        "chaosValueStandard": 1.7
     },
     {
         "id": 867,
@@ -10026,7 +10026,7 @@ const uniqueItemArray = [
         "name": "Shackles of the Wretched",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvUmVjYWxsaW5ndGhlV3JldGNoZWQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/faf70b1bf0/RecallingtheWretched.png",
         "chaosValueLeague": 1,
-        "chaosValueHCLeague": 0.71,
+        "chaosValueHCLeague": 0.75,
         "chaosValueStandard": 1
     },
     {
@@ -10215,7 +10215,7 @@ const uniqueItemArray = [
         "shortName": "go",
         "name": "The Three Dragons",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RocmVlRHJhZ29ucyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/50afe0768b/ThreeDragons.png",
-        "chaosValueLeague": 1,
+        "chaosValueLeague": 2,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -10317,7 +10317,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9WaXNNb3J0aXMiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/771efa547e/VisMortis.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 1.33
+        "chaosValueStandard": 1.45
     },
     {
         "id": 1796,
@@ -10355,7 +10355,7 @@ const uniqueItemArray = [
         "shortName": "ott",
         "name": "Wheel of the Stormsail",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1doZWVsb2Z0aGVzdG9ybXNhaWwiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/9ff4153db8/Wheelofthestormsail.png",
-        "chaosValueLeague": 0.19,
+        "chaosValueLeague": 0.86,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -10475,7 +10475,7 @@ const uniqueItemArray = [
         "shortName": "one c",
         "name": "Wraithlord",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1dyYWl0aGxvcmQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/090d3d6bb3/Wraithlord.png",
-        "chaosValueLeague": 2336.34,
+        "chaosValueLeague": 1727.52,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -10585,7 +10585,7 @@ const uniqueItemArray = [
         "shortName": "as",
         "name": "Curtain Call",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0N1cnRhaW5DYWxsIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/5f3eb95031/CurtainCall.png",
-        "chaosValueLeague": 5,
+        "chaosValueLeague": 10,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 1
     },
@@ -10665,7 +10665,7 @@ const uniqueItemArray = [
         "shortName": "go",
         "name": "Willclash",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL01pbmRCbG9ja01hc2siLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/aeb4a78ada/MindBlockMask.png",
-        "chaosValueLeague": 9,
+        "chaosValueLeague": 10,
         "chaosValueHCLeague": 1,
         "chaosValueStandard": 5
     },
@@ -10707,7 +10707,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9TaGFyZFF1aXZlciIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/f531e46359/ShardQuiver.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 12
+        "chaosValueStandard": 11.5
     },
     {
         "id": 70856,
@@ -10837,7 +10837,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvRW1iYWxtZXJzR2xvdmVzIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/62148488f8/EmbalmersGloves.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 2.3
+        "chaosValueStandard": 2.4
     },
     {
         "id": 103394,
@@ -10867,7 +10867,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Jsb29kUHJpY2VIZWxtVW5pcXVlIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/ae8ee271e3/BloodPriceHelmUnique.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 2.69
+        "chaosValueStandard": 2.7
     },
     {
         "id": 106451,
@@ -10907,7 +10907,7 @@ const uniqueItemArray = [
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9BaHVhbmFRdWl2ZXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/4cc0ef813d/AhuanaQuiver.png",
         "chaosValueLeague": 1,
         "chaosValueHCLeague": 1,
-        "chaosValueStandard": 2.45
+        "chaosValueStandard": 2.47
     }
 ];
 
