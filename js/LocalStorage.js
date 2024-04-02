@@ -9,6 +9,9 @@ function savePanelPositions() {
     if (syndicateBig) {
         syndicateBig.remove();
     }
+
+    const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
     
     //mainMenuLogo.className = 'main-menu-logo';
     const panelsData = [];
@@ -18,8 +21,8 @@ function savePanelPositions() {
             id: '',
             name: panel.querySelector('.panel-name').value,
             content: '',
-            top: panel.getBoundingClientRect().top < 10 ? 10 : panel.getBoundingClientRect().top,
-            left: panel.getBoundingClientRect().left < 10 ? 10 : panel.getBoundingClientRect().left,
+            top: panel.getBoundingClientRect().top < 10 ? 10 : panel.getBoundingClientRect().top + scrollTop,
+            left: panel.getBoundingClientRect().left < 10 ? 10 : panel.getBoundingClientRect().left + scrollLeft,
             width: '',
             height: '',
             childClass: panel.children[1].className,
@@ -244,8 +247,8 @@ window.addEventListener('load', () => {
 
 			        </div>
 			        <div style="margin-top: 10px">
-				        <button id="syndicate-size" style="margin-right: 20px; margin-bottom: -10px">Size: ${size.substring(0, size.length - 2)}%</button>
-				        <button id="syndicate-full" style="margin-right: 20px; margin-bottom: -10px">Full Screen - Edit</button>
+				        <button id="syndicate-size">Size: ${size.substring(0, size.length - 2)}%</button>
+				        <button id="syndicate-full">Full Screen - Edit</button>
 			        </div>
 		        </div>
 		        <div class="panel-controls" style="display: flex">

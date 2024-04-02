@@ -6,8 +6,16 @@ let colorBackground = '#33333b';
 function panelSyndicate(panel) {
 	const buttonSize = panel.querySelector('#syndicate-size');
 	const buttonFull = panel.querySelector('#syndicate-full');
+	const panelContent = panel.querySelector('.panel-content');
 
 	syndicateCreateSmall();
+	
+	panelContent.addEventListener('click', () => {
+		buttonFull.style.transform = 'scale(1.5)';
+		setTimeout(() => {
+			buttonFull.style.transform = 'scale(1)';
+		}, 500);
+	});
 
 	buttonSize.addEventListener('click', function () {
 		const imgTab = panel.querySelectorAll('img');

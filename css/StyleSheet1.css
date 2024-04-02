@@ -359,6 +359,14 @@ td, th {
     text-align: center;
 }
 
+#syndicate-size,
+#syndicate-full {
+    margin-right: 20px;
+    margin-bottom: -10px;
+    transition: transform 0.3s;
+}
+
+
 .incursion-big-table,
 .syndicate-big-table {
     background: #111;

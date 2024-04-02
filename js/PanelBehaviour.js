@@ -50,8 +50,10 @@ function panelBehaviour(panel, id) {
         panel.querySelector('.panel-move').addEventListener('mousedown', (event) => {
             event.preventDefault();
             isDragging = true;
-            offsetX = event.clientX - panel.getBoundingClientRect().left + 10;
-            offsetY = event.clientY - panel.getBoundingClientRect().top + 10;
+            const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            offsetX = event.clientX - panel.getBoundingClientRect().left + 10 - scrollLeft;
+            offsetY = event.clientY - panel.getBoundingClientRect().top + 10 - scrollTop;
             panels.appendChild(panel);
         });
 
@@ -129,11 +131,13 @@ function updateDropZones(panel, x, y) {
 
     // Tworzenie nowych obszarów docelowych
     let panelRect = panel.getBoundingClientRect();
+    const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
     dropZones = [
-        createDropZone(0, y, document.body.clientWidth, 3), // Górna krawêdŸ
-        createDropZone(x, 0, 3, window.innerHeight), // Lewa krawêdŸ
-        createDropZone(x + panelRect.width, 0, 3, window.innerHeight), // Prawa krawêdŸ
-        createDropZone(0, y + panelRect.height, document.body.clientWidth, 3) // Dolna krawêdŸ
+        createDropZone(0, y, document.body.clientWidth + scrollLeft, 3), // Górna krawêdŸ
+        createDropZone(x, 0, 3, window.innerHeight + scrollTop), // Lewa krawêdŸ
+        createDropZone(x + panelRect.width, 0, 3, window.innerHeight + scrollTop), // Prawa krawêdŸ
+        createDropZone(0, y + panelRect.height, document.body.clientWidth + scrollLeft, 3) // Dolna krawêdŸ
     ];
 }
 

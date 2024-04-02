@@ -1,5 +1,5 @@
-// show only those:
-const uniqueToShow = ["Mageblood", "Headhunter", "Defiance of Destin", "Atziri's Foible", "The Squir", "Ralakesh's Impatienc", "Lioneye's Glar",
+﻿// show only those:
+const uniqueToShow = ["Mageblood", "Headhunter", "Atziri's Foible", "Ralakesh's Impatienc", 
     "Hyrri's Ire", "The Dark Seer", "Inspired Learning", "Unnatural Instinct", "Ancestral Vision", "Stormshroud", "Intuitive Leap", "Void Battery", "Voltaxic Rift",
     "Dialla's Malefaction", "Rakiata's Dance", "The Covenant", "Soul Taker", "The Fourth Vow", "Mjölner", "Manastorm", "Aegis Aurora", "Divinarius", "Inpulsa's Broken Heart",
     "Prism Guardian", "Sunblast", "Badge of the Brotherhood", "Arakaali's Fang", "Garukhan's Flight", "Rathpith Globe", "Ryslatha's Coil", "Beltimber Blade", "Gruthkul's Pelt",

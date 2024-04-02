@@ -200,8 +200,8 @@ function createPanelSyndicate(panelID, panelCounter) {
 
 			</div>
 			<div style="margin-top: 10px">
-				<button id="syndicate-size" style="margin-right: 20px; margin-bottom: -10px">Size: ${size.substring(0, size.length - 2)}%</button>
-				<button id="syndicate-full" style="margin-right: 20px; margin-bottom: -10px">Edit - Full Screen</button>
+				<button id="syndicate-size">Size: ${size.substring(0, size.length - 2)}%</button>
+				<button id="syndicate-full">Edit - Full Screen</button>
 			</div>
 		</div>
 		<div class="panel-controls" style="display: flex">
