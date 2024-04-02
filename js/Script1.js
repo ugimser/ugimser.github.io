@@ -48,12 +48,12 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
         newStartDate.setDate(newStartDate.getDate() + 28);
         newEndDate.setDate(newEndDate.getDate() + 28);
 
-        // Poprawka dla przesuniêcia do nowego miesi¹ca
+        // Poprawka dla przesuniÃªcia do nowego miesiÂ¹ca
         if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
-            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
         }
         if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
-            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
         }
         stashSaleTimer(newStartDate, newEndDate);
     }
@@ -227,7 +227,7 @@ addPanelButton.addEventListener('click', () => {
     const panel = createPanelTextArea(++panelID, panelCounter++);
     panels.appendChild(panel);
     panelBehaviour(panel, panelID);
-    addQuill("id" + panelID, `<h2><strong><u>Panel Example</u></strong></h2><p>This panel is completely editable, and data is saved to local storage. Change it and reload the page.</p><p>I've added some useful functions for poe to the editor.You can copy all text with a single click on the bottom - left button.</p><p>This is a very convenient option for Discord posts, as you can easily paste messages without forgetting to add "WTS Softcore".</p><p>If you choose the copy icon in the editor toolbar, you can set a custom text snippet to be automatically copied when clicked, </p><p>like the example here: <em>"click me!"</em></p><p><strong>Please note:</strong> Don't build anything complex here. This page is very young and will undergo frequent changes.</p><p>----</p><p>My carry notepad, for example:</p><p>----</p><p><em>%go in with me, don't move, do NOT leave if you die</em></p><p>Feared:</p><p><br></p><p><br></p><p>---------</p><p><em>%please wait in ho, join when I write adasdad, don't move inside, don't leave if you die</em></p><p>UE:</p><p><br></p><p><br></p><p>---</p><p>or just small note: </p><p>compasses: shaper, unid, grove, blue/purple </p><p>scarabs: 4x the cheapest</p>`, true);
+    addQuill("id" + panelID, `<h2><strong><u>Panel Example</u></strong></h2><p>This panel is completely editable, and data is saved to local storage. Change it and reload the page.</p><p>I've added some useful functions for poe to the editor.You can copy all text with a single click on the bottom - left button.</p><p>This is a very convenient option for Discord posts, as you can easily paste messages without forgetting to add "WTS Softcore".</p><p>If you choose the copy icon in the editor toolbar, you can set a custom text snippet to be automatically copied when clicked, </p><p>like the example here: <em>"click me!"</em></p><p><strong>Please note:</strong>This page is very young and all feedback is like gold!</p><p>----</p><p>My carry notepad, for example:</p><p>----</p><p><em>%go in with me, don't move, do NOT leave if you die</em></p><p>Feared:</p><p><br></p><p><br></p><p>---------</p><p><em>%please wait in ho, join when I write adasdad, don't move inside, don't leave if you die</em></p><p>UE:</p><p><br></p><p><br></p><p>---</p><p>or just small note: </p><p>compasses: shaper, unid, grove, blue/purple </p><p>scarabs: 4x the cheapest</p>`, true);
     highlightBorder(panel);
 });
 
@@ -335,7 +335,7 @@ async function copyToClipboard(text) {
             await navigator.clipboard.writeText(text);
             notification('Copied: ' + text);
         } catch (err) {
-            console.log('B³¹d podczas kopiowania do schowka:', err);
+            console.log('BÂ³Â¹d podczas kopiowania do schowka:', err);
         }
     } else {
         copyToClipboardFallBack(text);
@@ -344,13 +344,13 @@ async function copyToClipboard(text) {
 
 function copyToClipboardFallBack(text) {
     var input = document.createElement('input'); // Utworzenie elementu input
-    input.style.position = 'fixed'; // Ustawienie pozycji na sta³e
+    input.style.position = 'fixed'; // Ustawienie pozycji na staÂ³e
     input.style.opacity = 0; // Ukrycie elementu
-    input.value = text; // Ustawienie wartoœci na tekst do skopiowania
-    document.body.appendChild(input); // Dodanie elementu do cia³a dokumentu
-    input.select(); // Zaznaczenie zawartoœci elementu
+    input.value = text; // Ustawienie wartoÂœci na tekst do skopiowania
+    document.body.appendChild(input); // Dodanie elementu do ciaÂ³a dokumentu
+    input.select(); // Zaznaczenie zawartoÂœci elementu
     document.execCommand('copy'); // Skopiowanie zaznaczonego tekstu do schowka
-    document.body.removeChild(input); // Usuniêcie tymczasowego elementu input
+    document.body.removeChild(input); // UsuniÃªcie tymczasowego elementu input
     notification('Copied: ' + text);
 }
 function notification(message) {
