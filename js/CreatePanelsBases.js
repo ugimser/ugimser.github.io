@@ -141,9 +141,9 @@ function createPanelRegexGwennen(panelID, panelCounter) {
                     <div id="regex_items_leaguestd" style="display: none"></div>
                 </div>
                 <select id="regex_league-list">
-                    <option value="league">League</option>
-                    <option value="leaguehc">League HC</option>
-                    <option value="standard">Standard</option>
+                    <option value="league">${leagueCurrent}</option>
+                    <option value="leaguehc">${leagueCurrentHC.replace('+', ' ')}</option>
+					<option value="standard">${leagueStandard}</option>
                 </select>
 			</div>
 		</div>

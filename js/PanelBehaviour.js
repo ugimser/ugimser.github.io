@@ -50,8 +50,8 @@ function panelBehaviour(panel, id) {
         panel.querySelector('.panel-move').addEventListener('mousedown', (event) => {
             event.preventDefault();
             isDragging = true;
-            offsetX = event.clientX - panel.getBoundingClientRect().left;
-            offsetY = event.clientY - panel.getBoundingClientRect().top;
+            offsetX = event.clientX - panel.getBoundingClientRect().left + 10;
+            offsetY = event.clientY - panel.getBoundingClientRect().top + 10;
             panels.appendChild(panel);
         });
 

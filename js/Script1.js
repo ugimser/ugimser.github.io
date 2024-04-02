@@ -255,6 +255,13 @@ addPanelRegexMapMods.addEventListener('click', () => {
 });
 
 addPanelRegexGwennen.addEventListener('click', () => {
+    const gwennenElements = document.querySelectorAll('.panel-regex-gwennen-mods');
+    if (gwennenElements.length > 0) {
+        notification('You already have one');
+        highlightBorder(gwennenElements[0].parentElement);
+        panels.appendChild(gwennenElements[0].parentElement);
+        return;
+    }
     const panel = createPanelRegexGwennen(++panelID, panelCounter++);
     panels.appendChild(panel);
     panelBehaviour(panel, panelID);
