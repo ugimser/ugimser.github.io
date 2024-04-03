@@ -1,0 +1,20 @@
+name: Update File
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # Run the action every 5 minutes
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update File
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const currentDate = new Date().toString();
+            const content = `Last update: ${currentDate}`;
+            fs.writeFileSync('save.js', content);
+            console.log('File updated.');
