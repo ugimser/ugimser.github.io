@@ -32,5 +32,9 @@ jobs:
             } else {
               const c = 'New file created and content written';
               fs.writeFileSync(filePath, c);
+              console.log(currentDate);
+              console.log(content);
+              console.log(path);
+              console.log(filePath);
               console.log('File created and updated successfully');
             }
