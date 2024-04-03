@@ -11,6 +11,9 @@ function showGwennenLeagueItems(leagueName, cointainer) {
     const regexTab = [];
     
     for (const i of items) {
+        if (i.alreadyShown === true) {
+            continue;
+        }
         let allStrings = 0;
         for (const i of regexTab) {
             allStrings += i.length;
@@ -25,6 +28,7 @@ function showGwennenLeagueItems(leagueName, cointainer) {
         items.forEach(others => {
             if (others.baseType === i.baseType && others.alreadyShown === false) {
                 others.alreadyShown = true;
+                i.alreadyShown = true;
 
                 const div = document.createElement('div');
                 div.title = others.name + ' (' + others.baseType + ')';
@@ -53,6 +57,7 @@ function showGwennenLeagueItems(leagueName, cointainer) {
             cointainer.appendChild(sameBases[0]);
         }
     }
+    //console.log(regexTab);
     return regexTab;
 }
 
