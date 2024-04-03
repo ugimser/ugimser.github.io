@@ -6,7 +6,7 @@ const currentDate = new Date().toString();
 const content = `Ostatnia aktualizacja: ${currentDate}`;
 
 // Ścieżka do pliku
-const filePath = 'ActionTest.js';
+const filePath = 'save.js';
 
 // Zapisanie danych do pliku
 fs.writeFileSync(filePath, content);
