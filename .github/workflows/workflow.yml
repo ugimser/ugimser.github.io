@@ -1,6 +1,11 @@
 name: Update File
 
 on:
+  push:
+    branches:
+      - main
+      - release/*
+
   schedule:
     - cron: '*/5 * * * *' # Run the action every 5 minutes
 
@@ -18,15 +23,11 @@ jobs:
             const fs = require('fs');
             const currentDate = new Date().toString();
             const content = `Last update: ${currentDate}`;
-
-            // Check if the save.js file exists
             if (fs.existsSync('save.js')) {
-              // File exists, proceed with writing content
               const c = 'This is the content to be written';
               fs.writeFileSync('save.js', currentDate + ' - ' + c);
               console.log(currentDate + ' - File updated successfully');
             } else {
-              // File doesn't exist, create it and write content
               const c = 'New file created and content written';
               fs.writeFileSync('save.js', c);
               console.log('File created and updated successfully');
