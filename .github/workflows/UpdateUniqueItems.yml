@@ -2,7 +2,7 @@ name: Update Data
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # Uruchamia akcję co 4 godziny
+    - cron: '0 */1 * * *' # Uruchamia akcję co 4 godziny
 
 jobs:
   build:
