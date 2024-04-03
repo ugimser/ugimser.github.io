@@ -23,12 +23,14 @@ jobs:
             const fs = require('fs');
             const currentDate = new Date().toString();
             const content = `Last update: ${currentDate}`;
+            const path = require('path');
+            const filePath = path.join(process.env.GITHUB_WORKSPACE, 'save.js');
             if (fs.existsSync('save.js')) {
               const c = 'This is the content to be written';
-              fs.writeFileSync('save.js', currentDate + ' - ' + c);
+              fs.writeFileSync(filePath, currentDate + ' - ' + c);
               console.log(currentDate + ' - File updated successfully');
             } else {
               const c = 'New file created and content written';
-              fs.writeFileSync('save.js', c);
+              fs.writeFileSync(filePath, c);
               console.log('File created and updated successfully');
             }
