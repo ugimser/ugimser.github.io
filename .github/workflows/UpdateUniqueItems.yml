@@ -1,20 +1,2 @@
-name: Update File
-
-on:
-  schedule:
-    - cron: '*/5 * * * *' # Uruchamia akcję co 5 minut
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Update File
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const fs = require('fs');
-            const currentDate = new Date().toString();
-            const content = `Ostatnia aktualizacja: ${currentDate}`;
-            fs.writeFileSync('save.js', content);
-            console.log('Plik został zaktualizowany.');
+- name: Checkout
+  uses: actions/checkout@v4.1.1
