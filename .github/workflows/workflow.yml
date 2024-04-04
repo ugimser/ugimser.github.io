@@ -83,20 +83,7 @@ jobs:
 
       # Wykonaj operacje na pliku JSON
     - name: Process downloaded file
-      run: |
-        const fs = require('fs');
-        const fileContent = fs.readFileSync('Ninja_json/Standard_UniqueJewel.json', 'utf8');
-        const jsonData = JSON.parse(fileContent);
-        console.log(jsonData); // Wyświetl zawartość pliku JSON w konsoli
-
-    # Zaktualizuj plik JSON
-    - name: Update JSON file
-      run: |
-        // Tutaj możesz wprowadzić dowolne zmiany w danych JSON i zapisać je ponownie do pliku
-        // Na przykład, możesz dodać nowe pola, usunąć istniejące, zmienić wartości itp.
-        const fs = require('fs');
-        const updatedData = {...}; // Dane JSON po zaktualizowaniu
-        fs.writeFileSync('Ninja_json/Standard_UniqueJewel.json', JSON.stringify(updatedData), 'utf8');
+      run: node processFile.js
     
     - name: Making new list
       run: |
