@@ -1,4 +1,4 @@
-module.exports = { uniqueItemArray };
+
 // show only those:
 const uniqueToShow = ["Mageblood", "Headhunter", "Atziri's Foible", "Ralakesh's Impatienc", 
     "Hyrri's Ire", "Inspired Learning", "Unnatural Instinct", "Ancestral Vision", "Stormshroud", "Intuitive Leap", "Void Battery", "Voltaxic Rift",
@@ -10921,3 +10921,4 @@ const uniqueItemArray = [
 
 
 
+module.exports = { uniqueItemArray };
