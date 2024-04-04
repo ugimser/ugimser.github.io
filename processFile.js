@@ -38,8 +38,8 @@ function changeArray () {
 }
 
 function changePrices (tab, l) {
-    let tab = JSON.parse(tab);
-    tab.forEach(t => {
+    let tab2 = JSON.parse(tab);
+    tab2.forEach(t => {
         if (t) {
             t.lines.forEach(item => {
                 const element = uniqueArray.find(i => i.id === item.id);
