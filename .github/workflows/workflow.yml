@@ -3,7 +3,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron:  '0/5 * * * *' 
-
 env:
   LEAGUE: Necropolis
   
@@ -17,12 +16,15 @@ jobs:
         ref: 'gh-pages'
 
     # Standard Economy
-    - uses: suisei-cn/actions-download-file@v1.3.0
+    - name: Download unique items economy files
+      uses: suisei-cn/actions-download-file@v1.3.0
       id: standard_jewel 
       with:
         url: "https://poe.ninja/api/data/itemoverview?league=Standard&type=UniqueJewel"
         target: t/
         filename: eco_Standard_UniqueJewel.json
+    - name: Run curl with --user root option
+      run: curl --user root
 
 
         
