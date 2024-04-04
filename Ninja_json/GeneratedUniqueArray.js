@@ -1089,5 +1089,3 @@ const uniqueItemArray2 = [
 { id: 106590, baseType: "Regicide Mask", shortName: "eg",  name: "Akoya's Gaze", image: "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Frb3lhTWFzayIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/bee9827a02/AkoyaMask.png", chaosValueLeague: 1, chaosValueHCLeague: 1, chaosValueStandard: 3.7 },
 { id: 106711, baseType: "Sharktooth Arrow Quiver", shortName: "kt",  name: "Ahuana's Bite", image: "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9BaHVhbmFRdWl2ZXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/4cc0ef813d/AhuanaQuiver.png", chaosValueLeague: 1, chaosValueHCLeague: 1, chaosValueStandard: 2.02 },
 ];
-
-module.exports = { uniqueItemArray2 };
