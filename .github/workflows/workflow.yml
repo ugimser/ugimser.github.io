@@ -2,7 +2,7 @@ name: Economy
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '* */2 * * *' 
+    - cron:  '0 */2 * * *' 
 env:
   LEAGUE: Necropolis
   
@@ -80,6 +80,21 @@ jobs:
         url: "https://poe.ninja/api/data/itemoverview?league=Hardcore ${{ env.LEAGUE }}&type=UniqueAccessory"
         target: Ninja_json/
         filename: "Hardcore ${{ env.LEAGUE }}_UniqueAccessory.json"
+    
+    - name: Making new list
+      run: |
+        const fs = require('fs');
+        const stdA = fs.readFileSync('Ninja_json/Standard_UniqueJewel.json', 'utf8');
+        const stdB = fs.readFileSync('Ninja_json/Standard_UniqueWeapon.json', 'utf8');
+        const stdC = fs.readFileSync('Ninja_json/Standard_UniqueArmour.json', 'utf8');
+        const stdD = fs.readFileSync('Ninja_json/Standard_UniqueAccessory.json', 'utf8');
+        const arrayAll = [...JSON.parse(stdA), ...JSON.parse(stdB), ...JSON.parse(stdC), ...JSON.parse(stdD)];
+        let string = '';
+        for (const item of arrayAll) {
+          string += `{ id: ${item.id}, baseType: "${item.baseType}", shortName: "${item.shortName}", name: "${item.name}", image: "${item.image}", chaosValueLeague: ${item.chaosValueLeague}, chaosValueHCLeague: ${item.chaosValueHCLeague}, chaosValueStandard: ${item.chaosValueStandard} },\n`;
+        }
+        const strAll = 'const uniqueItemArray = [\n' + string + '];';
+        fs.writeFileSync('Ninja_json/GeneratedUniqueArray.js', strAll, 'utf8');
 
         
     - run: |
