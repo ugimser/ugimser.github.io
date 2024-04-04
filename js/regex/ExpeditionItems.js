@@ -1,3 +1,5 @@
+const { uniqueItemArray2 } = require('./Ninja_json/GeneratedUniqueArray.js');
+
 function showGwennenLeagueItems(leagueName, cointainer) {
     const items = showHightValue();
     if (leagueName === 'leaguehc') {
@@ -92,7 +94,7 @@ function showHightValue() {
     let itemsArray = [];
     for (const showThis of uniqueToShow) {
         let line;
-        for (const all of uniqueItemArray) {
+        for (const all of uniqueItemArray2) {
             if (showThis === all.name) {
                 line = {
                     baseType: all.baseType,
