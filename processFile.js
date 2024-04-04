@@ -3,7 +3,7 @@ console.log('processFile.js 123');
 const { uniqueItemArray } = require('./js/regex/UniqueItems.js');
 
 const uniqueArray = uniqueItemArray;
-console.log(uniqueItemArray.length);
+//console.log(uniqueItemArray.length);
 changeArray ();
 
 function changeArray () {
@@ -52,7 +52,7 @@ function changeArray () {
     for (const item of uniqueArray) {
        string += `{ id: ${item.id}, baseType: "${item.baseType}", shortName: "${item.shortName}",  name: "${item.name}", image: "${item.image}", chaosValueLeague: ${item.chaosValueLeague}, chaosValueHCLeague: ${item.chaosValueHCLeague}, chaosValueStandard: ${item.chaosValueStandard} },\n`;
     }
-    const strAll = 'const uniqueItemArray = [\n' + string + '];';
+    const strAll = 'const uniqueItemArray2 = [\n' + string + '];\n\nmodule.exports = { uniqueItemArray2 };';
 
     try {
         fs.writeFileSync('Ninja_json/GeneratedUniqueArray.js', strAll, 'utf8');
