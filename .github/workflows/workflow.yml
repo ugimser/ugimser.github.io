@@ -20,7 +20,7 @@ jobs:
     - uses: suisei-cn/actions-download-file@v1.3.0
       id: standard_jewel 
       with:
-        url: "https://poe.ninja/api/data/itemoverview?league=Standard&type=UniqueJewel"
+        url: "https://jsonplaceholder.typicode.com/posts/1"
         target: t/
         filename: eco_Standard_UniqueJewel.json
 
