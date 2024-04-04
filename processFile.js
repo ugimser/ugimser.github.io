@@ -15,7 +15,12 @@ function changeArray () {
     const stdC = fs.readFileSync('Ninja_json/Standard_UniqueArmour.json', 'utf8');
     const stdD = fs.readFileSync('Ninja_json/Standard_UniqueAccessory.json', 'utf8');
     const stdTab = [stdA, stdB, stdC, stdD];
-    changePrices (stdTab, 2);
+    console.log('stdTab done');
+    try {
+        changePrices (stdTab, 2);
+    } catch (err) {
+         console.log('changePrices (stdTab, 2)', err);
+    }
 /*
      // league hc
     const lhcA = fs.readFileSync('Ninja_json/Hardcore_Necropolis_UniqueJewel.json', 'utf8');
@@ -24,7 +29,7 @@ function changeArray () {
     const lhcD = fs.readFileSync('Ninja_json/Hardcore_Necropolis_UniqueAccessory.json', 'utf8');
     const lhcTab = [lhcA, lhcB, lhcC, lhcD];
     changePrices (lhcTab, 1);
-    */
+    
      // league
     const lA = fs.readFileSync('Ninja_json/Necropolis_UniqueJewel.json', 'utf8');
     const lB = fs.readFileSync('Ninja_json/Necropolis_UniqueWeapon.json', 'utf8');
@@ -32,7 +37,7 @@ function changeArray () {
     const lD = fs.readFileSync('Ninja_json/Necropolis_UniqueAccessory.json', 'utf8');
     const lTab = [lA, lB, lC, lD];
     changePrices (lTab, 0);
-
+*/
     let string = '';
     for (const item of uniqueArray) {
        string += `{ id: ${item.id}, 
@@ -46,7 +51,11 @@ function changeArray () {
     }
     const strAll = 'const uniqueItemArray = [\n' + string + '];';
 
-    fs.writeFileSync('Ninja_json/GeneratedUniqueArray.js', strAll, 'utf8');
+    try {
+        fs.writeFileSync('Ninja_json/GeneratedUniqueArray.js', strAll, 'utf8');
+    } catch (err) {
+        console.log('fs.writeFileSync ', err);
+    }
 }
 
 function changePrices (tab, l) {
