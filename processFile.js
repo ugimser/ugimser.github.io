@@ -21,14 +21,19 @@ function changeArray () {
     } catch (err) {
          console.log('changePrices (stdTab, 2)', err);
     }
-/*
+
      // league hc
     const lhcA = fs.readFileSync('Ninja_json/Hardcore_Necropolis_UniqueJewel.json', 'utf8');
     const lhcB = fs.readFileSync('Ninja_json/Hardcore_Necropolis_UniqueWeapon.json', 'utf8');
     const lhcC = fs.readFileSync('Ninja_json/Hardcore_Necropolis_UniqueArmour.json', 'utf8');
     const lhcD = fs.readFileSync('Ninja_json/Hardcore_Necropolis_UniqueAccessory.json', 'utf8');
     const lhcTab = [lhcA, lhcB, lhcC, lhcD];
-    changePrices (lhcTab, 1);
+    console.log('league hc done');
+    try {
+        changePrices (lhcTab, 1);
+    } catch (err) {
+         console.log('changePrices (lhcTab, 1)', err);
+    }
     
      // league
     const lA = fs.readFileSync('Ninja_json/Necropolis_UniqueJewel.json', 'utf8');
@@ -36,18 +41,16 @@ function changeArray () {
     const lC = fs.readFileSync('Ninja_json/Necropolis_UniqueArmour.json', 'utf8');
     const lD = fs.readFileSync('Ninja_json/Necropolis_UniqueAccessory.json', 'utf8');
     const lTab = [lA, lB, lC, lD];
-    changePrices (lTab, 0);
-*/
+    console.log('league done');
+    try {
+        changePrices (lTab, 0);
+    } catch (err) {
+         console.log('changePrices (lTab, 0)', err);
+    }
+
     let string = '';
     for (const item of uniqueArray) {
-       string += `{ id: ${item.id}, 
-            baseType: "${item.baseType}", 
-            shortName: "${item.shortName}", 
-            name: "${item.name}", 
-            image: "${item.image}", 
-            chaosValueLeague: ${item.chaosValueLeague}, 
-            chaosValueHCLeague: ${item.chaosValueHCLeague}, 
-            chaosValueStandard: ${item.chaosValueStandard} },\n`;
+       string += `{ id: ${item.id}, baseType: "${item.baseType}", shortName: "${item.shortName}",  name: "${item.name}", image: "${item.image}", chaosValueLeague: ${item.chaosValueLeague}, chaosValueHCLeague: ${item.chaosValueHCLeague}, chaosValueStandard: ${item.chaosValueStandard} },\n`;
     }
     const strAll = 'const uniqueItemArray = [\n' + string + '];';
 
@@ -61,7 +64,6 @@ function changeArray () {
 function changePrices (tab, l) {
     tab.forEach(t => {
         let tab2 = JSON.parse(t);
-        console.log(tab2);
         if (tab2) {
             tab2.lines.forEach(item => {
                 const element = uniqueArray.find(i => i.id === item.id);
