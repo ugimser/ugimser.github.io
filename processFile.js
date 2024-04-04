@@ -1,26 +1,61 @@
 console.log('processFile.js 123');
-testSaving ();
+changeArray ();
 
-//const uniqueArray = uniqueItemArray;
+const { uniqueToShow } = require('../js/regex/UniqueItems.js');
+const { uniqueItemArray } = require('../js/regex/UniqueItems.js');
 
-function uniqueNewPrices(fileContent, l) {
-    const data = JSON.parse(fileContent);
-    if (data && data.lines) {
-        data.lines.forEach(item => {
-            const element = uniqueArray.find(i => i.id === item.id);
+const uniqueArray = uniqueItemArray;
 
-            if (element) {
-                if (l === leagues[0]) {
-                    element.chaosValueLeague = item.chaosValue;
-                } else if (l === leagues[1]) {
-                    element.chaosValueHCLeague = item.chaosValue;
-                } else if (l === leagues[2]) {
-                    element.chaosValueStandard = item.chaosValue;
-                }
-            }
-        });
-    }
+function changeArray () {
+    const fs = require('fs');
+
+    //std
+    const stdA = fs.readFileSync('Ninja_json/Standard_UniqueJewel.json', 'utf8');
+    const stdB = fs.readFileSync('Ninja_json/Standard_UniqueWeapon.json', 'utf8');
+    const stdC = fs.readFileSync('Ninja_json/Standard_UniqueArmour.json', 'utf8');
+    const stdD = fs.readFileSync('Ninja_json/Standard_UniqueAccessory.json', 'utf8');
+    const stdTab = [stdA, stdB, stdC, stdD];
+    changePrices (stdTab, 2);
+/*
+     // league hc
+    const lhcA = fs.readFileSync('Ninja_json/Hardcore_Necropolis_UniqueJewel.json', 'utf8');
+    const lhcB = fs.readFileSync('Ninja_json/Hardcore_Necropolis_UniqueWeapon.json', 'utf8');
+    const lhcC = fs.readFileSync('Ninja_json/Hardcore_Necropolis_UniqueArmour.json', 'utf8');
+    const lhcD = fs.readFileSync('Ninja_json/Hardcore_Necropolis_UniqueAccessory.json', 'utf8');
+    const lhcTab = [lhcA, lhcB, lhcC, lhcD];
+    changePrices (lhcTab, 1);
+    */
+     // league
+    const lA = fs.readFileSync('Ninja_json/Necropolis_UniqueJewel.json', 'utf8');
+    const lB = fs.readFileSync('Ninja_json/Necropolis_UniqueWeapon.json', 'utf8');
+    const lC = fs.readFileSync('Ninja_json/Necropolis_UniqueArmour.json', 'utf8');
+    const lD = fs.readFileSync('Ninja_json/Necropolis_UniqueAccessory.json', 'utf8');
+    const lTab = [lA, lB, lC, lD];
+    changePrices (lTab, 0);
+
+    fs.writeFileSync('Ninja_json/GeneratedUniqueArray.js', `const uniqueItemArray = \n${uniqueItemArray};`, 'utf8');
 }
+
+function changePrices (tab, l) {
+    tab.forEach(t => {
+        if (t) {
+            t.lines.forEach(item => {
+                const element = uniqueArray.find(i => i.id === item.id);
+                if (element) {
+                    if (l === 0) {
+                        element.chaosValueLeague = item.chaosValue;
+                    } else if (l === 1) {
+                        element.chaosValueHCLeague = item.chaosValue;
+                    } else if (l === 2) {
+                        element.chaosValueStandard = item.chaosValue;
+                    }
+                }
+            });
+        }
+    });
+}
+
+
 
 function uniqueNewFile() {
     let string = '';
