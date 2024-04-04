@@ -1,35 +1,24 @@
-name: Economy
+name: JSON to file
+
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - release/*
+
   schedule:
     - cron: '*/5 * * * *' # Run the action every 5 minutes
 
-env:
-  ACTIONS_STEP_DEBUG: true
-  
 jobs:
-  build:
-    name: Update unique items economy files
+  update:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-      with:
-        ref: 'gh-pages'
+      - name: Update File
+        uses: devops-actions/json-to-file@v1.0.0
+        with:
+          json: '{"test": "test"}'
+          filename: 'test.json'
 
-    # Standard Economy
-    - uses: suisei-cn/actions-download-file@v1.3.0
-      id: standard_jewel 
-      with:
-        url: "https://jsonplaceholder.typicode.com/posts/1"
-        target: t/
-        filename: eco_Standard_UniqueJewel.json
-
-
+      - name: Print confirmation
+        run: echo "File updated successfully xyz"
         
-    - run: |
-       date > generated.txt
-       git config user.name github-actions
-       git config user.email github-actions@github.com
-       git add .
-       git commit -m "generated"
-       git push
