@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - release/*
 
   schedule:
     - cron: '*/5 * * * *' # Run the action every 5 minutes
