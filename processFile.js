@@ -1,10 +1,11 @@
 console.log('processFile.js 123');
-changeArray ();
 
 const { uniqueToShow } = require('../js/regex/UniqueItems.js');
 const { uniqueItemArray } = require('../js/regex/UniqueItems.js');
 
 const uniqueArray = uniqueItemArray;
+console.log(uniqueToShow);
+changeArray ();
 
 function changeArray () {
     const fs = require('fs');
