@@ -1,4 +1,4 @@
-const uniqueItemArray = [
+const uniqueItemArray2 = [
 { id: 40773, baseType: "Large Cluster Jewel", shortName: "lar",  name: "Voices", image: "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1VuaXF1ZUpld2VsQmFzZTMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/314c9905c8/UniqueJewelBase3.png", chaosValueLeague: 68624.64, chaosValueHCLeague: 0, chaosValueStandard: 617335.05 },
 { id: 50063, baseType: "Large Cluster Jewel", shortName: "lar",  name: "Voices", image: "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1VuaXF1ZUpld2VsQmFzZTMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/314c9905c8/UniqueJewelBase3.png", chaosValueLeague: 14917.25, chaosValueHCLeague: 0, chaosValueStandard: 74239.2 },
 { id: 483, baseType: "Prismatic Jewel", shortName: "c j",  name: "Emperor's Mastery", image: "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL01hc3RlcnkiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/eb1cf5699e/Mastery.png", chaosValueLeague: 5113.73, chaosValueHCLeague: 4662.5, chaosValueStandard: 21476.34 },
@@ -1089,3 +1089,5 @@ const uniqueItemArray = [
 { id: 106590, baseType: "Regicide Mask", shortName: "eg",  name: "Akoya's Gaze", image: "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Frb3lhTWFzayIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/bee9827a02/AkoyaMask.png", chaosValueLeague: 1, chaosValueHCLeague: 1, chaosValueStandard: 3.7 },
 { id: 106711, baseType: "Sharktooth Arrow Quiver", shortName: "kt",  name: "Ahuana's Bite", image: "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9BaHVhbmFRdWl2ZXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/4cc0ef813d/AhuanaQuiver.png", chaosValueLeague: 1, chaosValueHCLeague: 1, chaosValueStandard: 2.02 },
 ];
+
+module.exports = { uniqueItemArray2 };
