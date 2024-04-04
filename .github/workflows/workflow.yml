@@ -1,40 +1,32 @@
-name: Update File
+name: Overwrite some file (on specific events)
 
 on:
+  # Replace with your desired trigger (e.g., push to main branch)
   push:
-    branches:
-      - main
-      - release/*
-
-  schedule:
-    - cron: '*/5 * * * *' # Run the action every 5 minutes
+    branches: [ main ]
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Update File
-        uses: actions/github-script@v7.0.1
-        env:
-          NODE_VERSION: '20'  # Set Node.js version to 20
+      - uses: actions/checkout@v3
+
+      - name: Get overwrite content (from file or environment variable)
+        # ... (logic to obtain content)
+
+      - name: Overwrite file and log timestamp
+        run: |
+          # Use the `write-file` action directly (if suitable for your logic)
+          # write-file path=/home/runner/work/ugimser.github.io/ugimser.github.io/save.js write-mode=overwrite contents="${{ steps.get-content.outputs.content }}"
+
+          # OR, use a script for more control (adjust as needed)
+          current_date_time=$(date +'%Y-%m-%d %H:%M:%S')
+          echo "Aktualna data i czas: $current_date_time" >> /home/runner/work/ugimser.github.io/ugimser.github.io/log.txt
+          # Add file overwriting logic here
+
+      - name: Commit & Push (consider avoiding force push if possible)
+        uses: Andro999b/push@v1.3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const fs = require('fs');
-            const currentDate = new Date().toString();
-            const content = `Last update: ${currentDate}`;
-            const path = require('path');
-            const filePath = path.join(process.env.GITHUB_WORKSPACE, 'save.js');
-            if (fs.existsSync(filePath)) {
-              const c = 'This is the content to be written';
-              fs.writeFileSync(filePath, currentDate + ' - ' + c);
-              console.log(currentDate + ' - File updated successfully');
-            } else {
-              const c = 'New file created and content written';
-              fs.writeFileSync(filePath, c);
-              console.log(currentDate);
-              console.log(content);
-              console.log(path);
-              console.log(filePath);
-              console.log('File created and updated successfully');
-            }
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}  # Use the branch that triggered the workflow
+          message: 'Overwritten by Github Actions - ${{ github.sha[:7] }}'  # Use shortened commit SHA
