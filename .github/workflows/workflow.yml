@@ -11,22 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Get overwrite content (from file or environment variable)
-        # ... (logic to obtain content)
-
       - name: Overwrite file and log timestamp
         run: |
-          # Use the `write-file` action directly (if suitable for your logic)
-          # write-file path=/home/runner/work/ugimser.github.io/ugimser.github.io/save.js write-mode=overwrite contents="${{ steps.get-content.outputs.content }}"
-
-          # OR, use a script for more control (adjust as needed)
           current_date_time=$(date +'%Y-%m-%d %H:%M:%S')
           echo "Aktualna data i czas: $current_date_time" >> /home/runner/work/ugimser.github.io/ugimser.github.io/log.txt
-          # Add file overwriting logic here
-
-      - name: Commit & Push (consider avoiding force push if possible)
-        uses: Andro999b/push@v1.3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}  # Use the branch that triggered the workflow
-          message: 'Overwritten by Github Actions - ${{ github.sha[:7] }}'  # Use shortened commit SHA
