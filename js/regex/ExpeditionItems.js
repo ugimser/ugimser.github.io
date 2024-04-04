@@ -1,5 +1,3 @@
-const { uniqueItemArray2 } = require('./Ninja_json/GeneratedUniqueArray.js');
-
 function showGwennenLeagueItems(leagueName, cointainer) {
     const items = showHightValue();
     if (leagueName === 'leaguehc') {
