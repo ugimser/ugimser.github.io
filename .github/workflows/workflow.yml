@@ -5,7 +5,7 @@ on:
     - cron: '*/5 * * * *' # Run the action every 5 minutes
 
 env:
-  LEAGUE: Necropolis
+  ACTIONS_STEP_DEBUG: true
   
 jobs:
   build:
