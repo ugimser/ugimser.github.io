@@ -1,7 +1,7 @@
 console.log('processFile.js 123');
 
-const { uniqueToShow } = require('../js/regex/UniqueItems.js');
-const { uniqueItemArray } = require('../js/regex/UniqueItems.js');
+const { uniqueToShow } = require('./js/regex/UniqueItems.js');
+const { uniqueItemArray } = require('./js/regex/UniqueItems.js');
 
 const uniqueArray = uniqueItemArray;
 console.log(uniqueToShow);
