@@ -23,9 +23,6 @@ jobs:
         url: "https://poe.ninja/api/data/itemoverview?league=Standard&type=UniqueJewel"
         target: t/
         filename: eco_Standard_UniqueJewel.json
-    - name: Run curl with --user root option
-      run: curl --user root
-
 
         
     - run: |
