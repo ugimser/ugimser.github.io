@@ -64,22 +64,22 @@ jobs:
       with:
         url: "https://poe.ninja/api/data/itemoverview?league=Hardcore ${{ env.LEAGUE }}&type=UniqueJewel"
         target: Ninja_json/
-        filename: "Hardcore ${{ env.LEAGUE }}_UniqueJewel.json"
+        filename: "Hardcore_${{ env.LEAGUE }}_UniqueJewel.json"
     - uses: suisei-cn/actions-download-file@v1.3.0
       with:
         url: "https://poe.ninja/api/data/itemoverview?league=Hardcore ${{ env.LEAGUE }}&type=UniqueWeapon"
         target: Ninja_json/
-        filename: "Hardcore ${{ env.LEAGUE }}_UniqueWeapon.json"
+        filename: "Hardcore_${{ env.LEAGUE }}_UniqueWeapon.json"
     - uses: suisei-cn/actions-download-file@v1.3.0
       with:
         url: "https://poe.ninja/api/data/itemoverview?league=Hardcore ${{ env.LEAGUE }}&type=UniqueArmour"
         target: Ninja_json/
-        filename: "Hardcore ${{ env.LEAGUE }}_UniqueArmour.json"
+        filename: "Hardcore_${{ env.LEAGUE }}_UniqueArmour.json"
     - uses: suisei-cn/actions-download-file@v1.3.0
       with:
         url: "https://poe.ninja/api/data/itemoverview?league=Hardcore ${{ env.LEAGUE }}&type=UniqueAccessory"
         target: Ninja_json/
-        filename: "Hardcore ${{ env.LEAGUE }}_UniqueAccessory.json"
+        filename: "Hardcore_${{ env.LEAGUE }}_UniqueAccessory.json"
 
       # Wykonaj operacje na pliku JSON
     - name: Process downloaded file
