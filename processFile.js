@@ -1,10 +1,9 @@
 console.log('processFile.js 123');
 
-const { uniqueToShow } = require('./js/regex/UniqueItems.js');
 const { uniqueItemArray } = require('./js/regex/UniqueItems.js');
 
 const uniqueArray = uniqueItemArray;
-console.log(uniqueToShow);
+console.log(uniqueItemArray.length);
 changeArray ();
 
 function changeArray () {
@@ -34,7 +33,20 @@ function changeArray () {
     const lTab = [lA, lB, lC, lD];
     changePrices (lTab, 0);
 
-    fs.writeFileSync('Ninja_json/GeneratedUniqueArray.js', `const uniqueItemArray = \n${uniqueItemArray};`, 'utf8');
+    let string = '';
+    for (const item of uniqueArray) {
+       string += `{ id: ${item.id}, 
+            baseType: "${item.baseType}", 
+            shortName: "${item.shortName}", 
+            name: "${item.name}", 
+            image: "${item.image}", 
+            chaosValueLeague: ${item.chaosValueLeague}, 
+            chaosValueHCLeague: ${item.chaosValueHCLeague}, 
+            chaosValueStandard: ${item.chaosValueStandard} },\n`;
+    }
+    const strAll = 'const uniqueItemArray = [\n' + string + '];';
+
+    fs.writeFileSync('Ninja_json/GeneratedUniqueArray.js', strAll, 'utf8');
 }
 
 function changePrices (tab, l) {
