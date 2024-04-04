@@ -20,5 +20,6 @@ jobs:
 
       - name: Print confirmation
         run: echo "File updated successfully xyz"
+            git add .
+            git commit
             git push
-        
