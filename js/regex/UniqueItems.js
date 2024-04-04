@@ -10921,4 +10921,7 @@ const uniqueItemArray = [
 
 
 
-module.exports = { uniqueItemArray };
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { uniqueItemArray };
+}
