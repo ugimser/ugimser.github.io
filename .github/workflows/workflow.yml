@@ -26,9 +26,9 @@ jobs:
 
     - name: Process downloaded file
       run: |
-        const { uniqueNewPrices } = require('../js/PoENinjaParser.js');
-        const { uniqueNewFile } = require('../js/PoENinjaParser.js');
-        const { uniqueArray } = require('../js/PoENinjaParser.js');
+        node -e "require('../js/PoENinjaParser.js').uniqueNewPrices();"
+        node -e "require('../js/PoENinjaParser.js').uniqueNewFile();"
+        node -e "require('../js/PoENinjaParser.js').uniqueArray();"
         const fs = require('fs');
         const fileContent = fs.readFileSync('t/eco_Standard_UniqueJewel.json', 'utf8');
         const modifiedContent = uniqueNewPrices(fileContent, 2);
