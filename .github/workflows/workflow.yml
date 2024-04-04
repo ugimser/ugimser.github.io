@@ -24,6 +24,17 @@ jobs:
         target: t/
         filename: eco_Standard_UniqueJewel.json
 
+    - name: Process downloaded file
+      run: |
+        const { uniqueNewPrices } = require('./js/PoENinjaParser.js');
+        const { uniqueNewFile } = require('./js/PoENinjaParser.js');
+        const { uniqueArray } = require('./js/PoENinjaParser.js');
+        const fs = require('fs');
+        const fileContent = fs.readFileSync('t/eco_Standard_UniqueJewel.json', 'utf8');
+        const modifiedContent = uniqueNewPrices(fileContent, 2);
+        uniqueNewFile();    
+        console.log("Plik został pomyślnie zmodfikowany.");
+
         
     - run: |
        date > generated.txt
