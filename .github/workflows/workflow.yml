@@ -2,7 +2,7 @@ name: Economy
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '0/5 * * * *' 
+    - cron:  '* */2 * * *' 
 env:
   LEAGUE: Necropolis
   
@@ -16,24 +16,70 @@ jobs:
         ref: 'main'
 
     # Standard Economy
-    - name: Download unique items economy files
-      uses: suisei-cn/actions-download-file@v1.3.0
-      id: standard_jewel 
+    - uses: suisei-cn/actions-download-file@v1.3.0
       with:
         url: "https://poe.ninja/api/data/itemoverview?league=Standard&type=UniqueJewel"
-        target: t/
-        filename: eco_Standard_UniqueJewel.json
-
-    - name: Process downloaded file
-      run: |
-        node -e "require('../js/PoENinjaParser.js').uniqueNewPrices();"
-        node -e "require('../js/PoENinjaParser.js').uniqueNewFile();"
-        node -e "require('../js/PoENinjaParser.js').uniqueArray();"
-        const fs = require('fs');
-        const fileContent = fs.readFileSync('t/eco_Standard_UniqueJewel.json', 'utf8');
-        const modifiedContent = uniqueNewPrices(fileContent, 2);
-        uniqueNewFile();    
-        console.log("Plik został pomyślnie zmodfikowany.");
+        target: Ninja_json/
+        filename: Standard_UniqueJewel.json
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=Standard&type=UniqueWeapon"
+        target: Ninja_json/
+        filename: Standard_UniqueWeapon.json
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=Standard&type=UniqueArmour"
+        target: Ninja_json/
+        filename: Standard_UniqueArmour.json
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=Standard&type=UniqueAccessory"
+        target: Ninja_json/
+        filename: Standard_UniqueAccessory.json
+        
+    # League Economy
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=${{ env.LEAGUE }}&type=UniqueJewel"
+        target: Ninja_json/
+        filename: "${{ env.LEAGUE }}_UniqueJewel.json"
+    - uses: suisei-cn/actions-download-file@v1.3.0=
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=${{ env.LEAGUE }}&type=UniqueWeapon"
+        target: Ninja_json/
+        filename: "${{ env.LEAGUE }}_UniqueWeapon.json"
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=${{ env.LEAGUE }}&type=UniqueArmour"
+        target: Ninja_json/
+        filename: "${{ env.LEAGUE }}_UniqueArmour.json"
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=${{ env.LEAGUE }}&type=UniqueAccessory"
+        target: Ninja_json/
+        filename: "${{ env.LEAGUE }}_UniqueAccessory.json"
+        
+    # League Hardcore Economy
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=Hardcore ${{ env.LEAGUE }}&type=UniqueJewel"
+        target: Ninja_json/
+        filename: "Hardcore ${{ env.LEAGUE }}_UniqueJewel.json"
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=Hardcore ${{ env.LEAGUE }}&type=UniqueWeapon"
+        target: Ninja_json/
+        filename: "Hardcore ${{ env.LEAGUE }}_UniqueWeapon.json"
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=Hardcore ${{ env.LEAGUE }}&type=UniqueArmour"
+        target: Ninja_json/
+        filename: "Hardcore ${{ env.LEAGUE }}_UniqueArmour.json"
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=Hardcore ${{ env.LEAGUE }}&type=UniqueAccessory"
+        target: Ninja_json/
+        filename: "Hardcore ${{ env.LEAGUE }}_UniqueAccessory.json"
 
         
     - run: |
