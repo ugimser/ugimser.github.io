@@ -11,9 +11,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
       - name: Overwrite file and log timestamp
         run: |
           current_date_time=$(date +'%Y-%m-%d %H:%M:%S')
-          echo "Aktualna data i czas: $current_date_time" >> /home/runner/work/ugimser.github.io/ugimser.github.io/log.txt
+          echo "Aktualna data i czas: $current_date_time"
+          echo "$current_date_time - ${{ github.workspace }}/save.js"
+          echo "Content of save.js:"
+          cat "${{ github.workspace }}/save.js"
