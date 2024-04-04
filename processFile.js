@@ -60,6 +60,7 @@ function changeArray () {
 
 function changePrices (tab, l) {
     let tab2 = JSON.parse(tab);
+    console.log(tab2);
     tab2.forEach(t => {
         if (t) {
             t.lines.forEach(item => {
