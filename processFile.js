@@ -1,7 +1,7 @@
 console.log('processFile.js 123');
 testSaving ();
 
-const uniqueArray = uniqueItemArray;
+//const uniqueArray = uniqueItemArray;
 
 function uniqueNewPrices(fileContent, l) {
     const data = JSON.parse(fileContent);
@@ -42,7 +42,7 @@ function testSaving () {
   //const stdD = fs.readFileSync('Ninja_json/Standard_UniqueAccessory.json', 'utf8');
   //const arrayAll = [...JSON.parse(stdA), ...JSON.parse(stdB), ...JSON.parse(stdC), ...JSON.parse(stdD)];
   //console.log('processFile.js stdA ' + stdA);
-  console.log('processFile.js parse ' + JSON.parse(stdA));
+  console.log('processFile.js parse ', JSON.parse(stdA));
   let string = '';
   //for (const item of arrayAll) {
   //  string += `{ id: ${item.id}, baseType: "${item.baseType}", shortName: "${item.shortName}", name: "${item.name}", image: "${item.image}", chaosValueLeague: ${item.chaosValueLeague}, chaosValueHCLeague: ${item.chaosValueHCLeague}, chaosValueStandard: ${item.chaosValueStandard} },\n`;
