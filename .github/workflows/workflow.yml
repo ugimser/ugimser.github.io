@@ -81,6 +81,20 @@ jobs:
         target: Ninja_json/
         filename: "Hardcore_${{ env.LEAGUE }}_UniqueAccessory.json"
 
+    # Coffins
+    # League
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=${{ env.LEAGUE }}&type=Coffin"
+        target: Ninja_json/
+        filename: "${{ env.LEAGUE }}_Coffin.json"
+    # League HC
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      with:
+        url: "https://poe.ninja/api/data/itemoverview?league=${{ env.LEAGUE }}&type=Coffin"
+        target: Ninja_json/
+        filename: "Hardcore_${{ env.LEAGUE }}_Coffin.json"
+
       # Wykonaj operacje na pliku JSON
     - name: Process downloaded file
       run: node processFile.js
