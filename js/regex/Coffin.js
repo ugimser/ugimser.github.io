@@ -7092,7 +7092,7 @@ const coffinArray = [
 ];
 
 function showCoffinLeagueItems(leagueName, minPrice, _minIlvl) {
-    const items = coffinArray;
+    const items = coffinArray2;
     if (leagueName === 'leaguehc') {
         items.sort((a, b) => (b.chaosValueHCLeague - a.chaosValueHCLeague));
     } else if (leagueName === 'standard') {
