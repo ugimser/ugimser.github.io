@@ -542,6 +542,8 @@ button {
     color: #fff;
     width: 50px;
     border: none;
+    height: 26px;
+    text-align: center;
 }
 
 .input-search {
@@ -551,4 +553,23 @@ button {
     width: calc(100% - 20px);
     padding: 10px;
     margin: 10px 0px 10px 0px;
+}
+
+.regex-coffin-item {
+    display: flex;
+    align-items: center;
+}
+
+.regex-coffin-cointainer-shown {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: -8px;
+    background-color: #444;
+}
+
+.regex-coffin-cointainer-hidden {
+    display: none;
+    margin-bottom: 10px;
+    margin-top: -8px;
+    background-color: #444;
 }
