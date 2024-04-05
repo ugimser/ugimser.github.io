@@ -5,6 +5,7 @@ const addPanelButton = document.getElementById('add-panel');
 const addPanelStashTabSale = document.getElementById('add-panel-stashTab');
 const addPanelRegexMapMods = document.getElementById('add-panel-regex-map-mods');
 const addPanelRegexGwennen = document.getElementById('add-panel-regex-gewnnen');
+const addPanelRegexCoffin = document.getElementById('add-panel-regex-coffin');
 const addPanelRegexBlight = document.getElementById('add-panel-regex-blight');
 const addPanelBlightAnoitments = document.getElementById('add-panel-ring-anointments-blight');
 const addPanelSyndicate = document.getElementById('add-panel-syndicate');
@@ -28,19 +29,18 @@ mainMenuLogo.addEventListener('click', () => {
 });
 
 
-
 function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = new Date("2024-03-11T12:00:00")) {
     var currentDate = new Date();
     
     if (currentDate < startDate) {
         var timeLeft = startDate - currentDate;
-        var daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        var daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24 + 24));
         let messageDateStart = startDate.getDate() + " " + startDate.toLocaleDateString('default', { month: 'long' });
         let messageDateEnd = endDate.getDate() + " " + endDate.toLocaleDateString('default', { month: 'long' });
         document.querySelector('.panel-stashtabsale .panel-content').innerHTML = "Stash Tab Sale: " + messageDateStart + " - " + messageDateEnd + " (" + daysLeft + " days left)";
     } else if (currentDate >= startDate && currentDate <= endDate) {
         var timeLeft = endDate - currentDate;
-        var daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        var daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24 + 24));
         document.querySelector('.panel-stashtabsale .panel-content').innerHTML = "Stash Tab Sale is now! " + daysLeft + " days to the end.";
     } else {
         var newStartDate = new Date(startDate);
@@ -48,12 +48,12 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
         newStartDate.setDate(newStartDate.getDate() + 28);
         newEndDate.setDate(newEndDate.getDate() + 28);
 
-        // Poprawka dla przesuniÃªcia do nowego miesiÂ¹ca
+        // Poprawka dla przesuniêcia do nowego miesi¹ca
         if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
-            newStartDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
-            newEndDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         stashSaleTimer(newStartDate, newEndDate);
     }
@@ -221,7 +221,116 @@ function panelRegexGwennen(panel, oldRegex, check) {
     });
 }
 
+function panelRegexCoffin(panel) {
+    const inputElement = panel.querySelector('#regex_window');
+    const lengthElement = panel.querySelector('#regex_window_length');
+    const leagueElement = panel.querySelector('#regex_league-list');
 
+    const divItemsLeague = panel.querySelector("#regex_items_league");
+    const divItemsLeaguehc = panel.querySelector("#regex_items_leaguehc");
+    const divItemsLeaguestd = panel.querySelector("#regex_items_leaguestd");
+
+    const buttonShowList= panel.querySelector('#regex-coffin-show-list');
+    const buttonLimit50 = panel.querySelector('#regex-coffin-limit-stash');
+    const buttonLimit100 = panel.querySelector('#regex-coffin-limit-morgue');
+    const inputPriceMin = panel.querySelector('#regex-coffin-price-min');
+    const inputIlvl = panel.querySelector('#regex-coffin-ilvl');
+
+    let stashLimit = 100;
+    let minIlvl = 1;
+    let minPrice = inputPriceMin.value;
+    let shownState = 'regex-coffin-cointainer-shown';
+
+    const dataOld = JSON.parse(localStorage.getItem('dataPanelCoffin'));
+    if (dataOld) {
+        stashLimit = dataOld.stashLimit;
+        minIlvl = dataOld.minIlvl;
+        minPrice = dataOld.minPrice;
+        shownState = dataOld.shownState;
+
+        inputIlvl.value = minIlvl;
+        inputPriceMin.value = minPrice;
+    }
+
+    let regexLeague = showCoffinLeagueItems('league', inputPriceMin.value, minIlvl);
+    let regexLeaguehc = showCoffinLeagueItems('leaguehc', inputPriceMin.value, minIlvl);
+    //let regexLeaguestd = showCoffinLeagueItems('standard', divItemsLeaguestd, inputPriceMin.value, minIlvl);
+    let currentChoose = regexLeague;
+
+    buttonLimit50.addEventListener('click', () => {
+        stashLimit = 50;
+        fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, shownState, minPrice }));
+    });
+
+    buttonLimit100.addEventListener('click', () => {
+        stashLimit = 100;
+        fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, shownState, minPrice }));
+    });
+
+    buttonShowList.addEventListener('click', () => {
+        const cointainersShown = panel.querySelectorAll('.regex-coffin-cointainer-shown');
+        if (cointainersShown.length > 0) {
+            cointainersShown.forEach(ele => ele.className = 'regex-coffin-cointainer-hidden');
+            buttonShowList.textContent = 'Show Coffins List';
+            shownState = 'regex-coffin-cointainer-hidden';
+        } else {
+            const cointainersHidden = panel.querySelectorAll('.regex-coffin-cointainer-hidden');
+            if (cointainersHidden.length > 0) {
+                cointainersHidden.forEach(ele => ele.className = 'regex-coffin-cointainer-shown');
+                buttonShowList.textContent = 'Hide Coffins List';
+                shownState = 'regex-coffin-cointainer-shown';
+            }
+        }
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, shownState, minPrice }));
+    });
+
+    inputPriceMin.addEventListener('change', () => {
+        minPrice = inputPriceMin.value;
+        if (leagueElement.options[leagueElement.selectedIndex].value === 'leaguehc') {
+            regexLeaguehc = showCoffinLeagueItems('leaguehc', minPrice, minIlvl);
+            currentChoose = regexLeaguehc;
+        } else if (leagueElement.options[leagueElement.selectedIndex].value === 'standard') {
+            currentChoose = regexLeaguestd;
+        } else {
+            regexLeague = showCoffinLeagueItems('league', minPrice, minIlvl);
+            currentChoose = regexLeague;
+        }
+        fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, shownState, minPrice }));
+    });
+
+    inputIlvl.addEventListener('change', () => {
+        minIlvl = inputIlvl.value;
+        if (leagueElement.options[leagueElement.selectedIndex].value === 'leaguehc') {
+            regexLeaguehc = showCoffinLeagueItems('leaguehc', inputPriceMin.value, minIlvl);
+            currentChoose = regexLeaguehc;
+        } else if (leagueElement.options[leagueElement.selectedIndex].value === 'standard') {
+            currentChoose = regexLeaguestd;
+        } else {
+            regexLeague = showCoffinLeagueItems('league', inputPriceMin.value, minIlvl);
+            currentChoose = regexLeague;
+        }
+        fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, shownState, minPrice }));
+    });
+
+    fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
+
+    leagueElement.addEventListener('change', function () {
+        if (leagueElement.options[leagueElement.selectedIndex].value === 'leaguehc') {
+            currentChoose = regexLeaguehc;
+            fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
+        } else if (leagueElement.options[leagueElement.selectedIndex].value === 'standard') {
+            currentChoose = regexLeaguestd;
+            fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
+        } else {//(leagueElement.options[leagueElement.selectedIndex].value === 'league') {
+            currentChoose = regexLeague;
+            fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
+        }
+    });
+}
 
 addPanelButton.addEventListener('click', () => {
     const panel = createPanelTextArea(++panelID, panelCounter++);
@@ -266,6 +375,21 @@ addPanelRegexGwennen.addEventListener('click', () => {
     panels.appendChild(panel);
     panelBehaviour(panel, panelID);
     panelRegexGwennen(panel);
+    highlightBorder(panel);
+});
+
+addPanelRegexCoffin.addEventListener('click', () => {
+    const elements = document.querySelectorAll('.panel-stashtabsale');
+    if (elements.length > 0) {
+        notification('You already have one');
+        highlightBorder(elements[0].parentElement);
+        panels.appendChild(elements[0].parentElement);
+        return;
+    }
+    const panel = createPanelRegexCoffin(++panelID, panelCounter++);
+    panels.appendChild(panel);
+    panelRegexCoffin(panel);
+    panelBehaviour(panel, panelID);
     highlightBorder(panel);
 });
 
@@ -335,7 +459,7 @@ async function copyToClipboard(text) {
             await navigator.clipboard.writeText(text);
             notification('Copied: ' + text);
         } catch (err) {
-            console.log('BÂ³Â¹d podczas kopiowania do schowka:', err);
+            console.log('B³¹d podczas kopiowania do schowka:', err);
         }
     } else {
         copyToClipboardFallBack(text);
@@ -344,13 +468,13 @@ async function copyToClipboard(text) {
 
 function copyToClipboardFallBack(text) {
     var input = document.createElement('input'); // Utworzenie elementu input
-    input.style.position = 'fixed'; // Ustawienie pozycji na staÂ³e
+    input.style.position = 'fixed'; // Ustawienie pozycji na sta³e
     input.style.opacity = 0; // Ukrycie elementu
-    input.value = text; // Ustawienie wartoÂœci na tekst do skopiowania
-    document.body.appendChild(input); // Dodanie elementu do ciaÂ³a dokumentu
-    input.select(); // Zaznaczenie zawartoÂœci elementu
+    input.value = text; // Ustawienie wartoœci na tekst do skopiowania
+    document.body.appendChild(input); // Dodanie elementu do cia³a dokumentu
+    input.select(); // Zaznaczenie zawartoœci elementu
     document.execCommand('copy'); // Skopiowanie zaznaczonego tekstu do schowka
-    document.body.removeChild(input); // UsuniÃªcie tymczasowego elementu input
+    document.body.removeChild(input); // Usuniêcie tymczasowego elementu input
     notification('Copied: ' + text);
 }
 function notification(message) {
