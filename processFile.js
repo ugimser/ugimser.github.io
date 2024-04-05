@@ -84,7 +84,7 @@ function changeArray () {
        string += `{ id: ${item.id}, name: "${item.name}", regex: "${item.regex}", image: "${item.image}", ilvl: "${item.ilvl}" chaosValueLeague: ${item.chaosValueLeague}, chaosValueHCLeague: ${item.chaosValueHCLeague}, chaosValueStandard: ${item.chaosValueStandard} },\n`;
     }
     
-    const strAll = `const coffinArray2 = [\n ${string}];\n\n if (typeof module !== 'undefined' && module.exports) { module.exports = { coffinArray2 }; }`;
+    strAll = `const coffinArray2 = [\n ${string}];\n\n if (typeof module !== 'undefined' && module.exports) { module.exports = { coffinArray2 }; }`;
  
     try {
         fs.writeFileSync('Ninja_json/GeneratedCoffinArray.js', strAll, 'utf8');
