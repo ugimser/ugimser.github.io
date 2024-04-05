@@ -60,11 +60,12 @@ function savePanelPositions() {
             childID = panel.querySelector('.panel-syndicate-small').id;
         } else if (panel.querySelector('.panel-incursion-small')) {
             childID = panel.querySelector('.panel-incursion-small').id;
-            console.log(childID);
         } else if (panel.querySelector('.panel-blight-extractor')) {
             childID = panel.querySelector('.panel-blight-extractor').id;
         } else if (panel.querySelector('.panel-blight-anoitment')) {
             childID = panel.querySelector('.panel-blight-anoitment').id;
+        } else if (panel.querySelector('.panel-regex-coffin-mods')) {
+            childID = panel.querySelector('.panel-regex-coffin-mods').id;
         }
 
         panelData.id = childID;
@@ -377,6 +378,39 @@ window.addEventListener('load', () => {
 			            <button class="panel-delete">x</button>
 		            </div>
                 `;
+            } else if (panelData.childClass === 'panel-regex-coffin-mods') {
+                panel.innerHTML = `
+                <textarea class="panel-name" maxlength="30">Coffin Regex:</textarea>
+		        <div class="${panelData.childClass}" id="id${panelID}">
+			        <div class="panel-content">
+				        <button id="regex-coffin-show-list" style="margin-top: 10px">Hide Coffins List</button>
+				        <button id="regex-coffin-limit-stash" style="margin-top: 10px">Stash limit (50 chars)</button>
+				        <button id="regex-coffin-limit-morgue" style="margin-top: 10px">Necropolis Morgue limit (100 chars)</button>
+				        <span>Minimum price</span>
+				        <input class="input-small" id="regex-coffin-price-min" type="number" value="25" />
+				        <span>Min ilvl:</span>
+				        <input class="input-small" id="regex-coffin-ilvl" type="number" value="1" />
+				        <input id="regex_window" readonly="true" style="display: none"/>
+				        <p id="regex_window_length" style="display: none">0 / 50</p>
+				        <input type="checkbox" checked="true" id="regex_window_copy" title="Always copy on click"  style="display: none"/>
+				        <div id="regex_items" style="margin-top: -10px">
+                            <div id="regex_items_league" style="display: block; padding-top: 10px;"></div>
+                            <div id="regex_items_leaguehc" style="display: none; padding-top: 10px;"></div>
+                            <div id="regex_items_leaguestd" style="display: none; padding-top: 10px;"></div>
+                        </div>
+                        <select id="regex_league-list">
+                            <option value="league">${leagueCurrent}</option>
+                            <option value="leaguehc">${leagueCurrentHC.replace('+', ' ')}</option>
+                            <option value="league" style="display: none">${leagueStandard}</option>
+                        </select>
+			        </div>
+		        </div>
+		        <div class="panel-controls" style="display: flex">
+			        <button class="panel-edit"></button>
+			        <div class="panel-move"></div>
+			        <button class="panel-delete">x</button>
+		        </div>
+                `;
             }
             //console.log(panelData.childClass + "child class");
 
@@ -405,6 +439,8 @@ window.addEventListener('load', () => {
                 panelBlightRegex(panel);
             } else if (panelData.childClass === 'panel-blight-anoitment') {
                 panelBlightAnoitment(panel);
+            } else if (panelData.childClass === 'panel-regex-coffin-mods') {
+                panelRegexCoffin(panel);
             }
         });
 
