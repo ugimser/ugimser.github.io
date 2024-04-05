@@ -52,8 +52,9 @@ function changeArray () {
     for (const item of uniqueArray) {
        string += `{ id: ${item.id}, baseType: "${item.baseType}", shortName: "${item.shortName}",  name: "${item.name}", image: "${item.image}", chaosValueLeague: ${item.chaosValueLeague}, chaosValueHCLeague: ${item.chaosValueHCLeague}, chaosValueStandard: ${item.chaosValueStandard} },\n`;
     }
-    const strAll = 'const uniqueItemArray2 = [\n' + string + '];\n\nmodule.exports = { uniqueItemArray2 };';
-
+    
+    const strAll = `const uniqueItemArray2 = [\n ${string}];\n\n if (typeof module !== 'undefined' && module.exports) { module.exports = { uniqueItemArray2 }; }`;
+ 
     try {
         fs.writeFileSync('Ninja_json/GeneratedUniqueArray.js', strAll, 'utf8');
     } catch (err) {
