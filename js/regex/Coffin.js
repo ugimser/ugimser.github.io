@@ -7355,3 +7355,7 @@ function _generatePermutations(string) {
     }
     return permutations;
 }
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { coffinArray };
+}
