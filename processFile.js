@@ -73,7 +73,7 @@ function changeArray () {
     const coffinTab = [coffinA, coffinB];
     console.log('coffinTab done');
     try {
-        changePrices (coffinTab, 0);
+        changePricesCoffin (coffinTab, 0);
     } catch (err) {
          console.log('changePrices (lTab, 0)', err);
     }
@@ -99,6 +99,26 @@ function changePrices (tab, l) {
         if (tab2) {
             tab2.lines.forEach(item => {
                 const element = uniqueArray.find(i => i.id === item.id);
+                if (element) {
+                    if (l === 0) {
+                        element.chaosValueLeague = item.chaosValue;
+                    } else if (l === 1) {
+                        element.chaosValueHCLeague = item.chaosValue;
+                    } else if (l === 2) {
+                        element.chaosValueStandard = item.chaosValue;
+                    }
+                }
+            });
+        }
+    });
+}
+
+function changePricesCoffin (tab, l) {
+    tab.forEach(t => {
+        let tab2 = JSON.parse(t);
+        if (tab2) {
+            tab2.lines.forEach(item => {
+                const element = coffinArrayTemp.find(i => i.id === item.id);
                 if (element) {
                     if (l === 0) {
                         element.chaosValueLeague = item.chaosValue;
