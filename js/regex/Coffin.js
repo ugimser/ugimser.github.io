@@ -7092,7 +7092,7 @@ const coffinArray = [
 ];
 
 function showCoffinLeagueItems(leagueName, minPrice, _minIlvl) {
-    const items = typeof coffinArray2 !== 'undefined' ? coffinArray2 : coffinArray;
+    const items = typeof (coffinArray2) === 'undefined' ? coffinArray : coffinArray2;
     if (leagueName === 'leaguehc') {
         items.sort((a, b) => (b.chaosValueHCLeague - a.chaosValueHCLeague));
     } else if (leagueName === 'standard') {
@@ -7184,7 +7184,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
             somethingLeft = true;
         } else {
             somethingLeft = false;
-            regexTextLeague = Array.from(setLeague).map(i => i.toLowerCase()).join('|');
+            regexTextLeague = Array.from(setLeague).map(i => i.replace(/\\/g, '\\\\').toLowerCase()).join('|');
             widowField.value = '"' + regexTextLeague + '"';
 
             widowFieldLength.style.display = 'block';
@@ -7196,7 +7196,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
 
             widowField = inputElement.cloneNode(true);
             widowField.style.display = 'block';
-            regexTextLeague = Array.from(setLeague).map(i => i.toLowerCase()).join('|');
+            regexTextLeague = Array.from(setLeague).map(i => i.replace(/\\/g, '\\\\').toLowerCase()).join('|');
             widowField.value = '"' + regexTextLeague + '"';
             widowField.addEventListener('click', function (event) {
                 const text = event.target.value;
@@ -7223,7 +7223,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
     });
 
     if (somethingLeft) {
-        regexTextLeague = Array.from(setLeague).map(i => i.toLowerCase()).join('|');
+        regexTextLeague = Array.from(setLeague).map(i => i.replace(/\\/g, '\\\\').toLowerCase()).join('|');
         widowField.value = '"' + regexTextLeague + '"';
 
         widowFieldLength.style.display = 'block';
@@ -7235,7 +7235,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
 
         widowField = inputElement.cloneNode(true);
         widowField.style.display = 'block';
-        regexTextLeague = Array.from(setLeague).map(i => i.toLowerCase()).join('|');
+        regexTextLeague = Array.from(setLeague).map(i => i.replace(/\\/g, '\\\\').toLowerCase()).join('|');
         widowField.value = '"' + regexTextLeague + '"';
         widowField.addEventListener('click', function (event) {
             const text = event.target.value;
