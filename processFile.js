@@ -83,7 +83,7 @@ function changeArray () {
     for (const item of coffinArrayTemp) {
         let reg = item.regex;
         if (reg.lenght > 1 && reg[0] === "\\") {
-            reg = "\\" + reg;
+            reg = "\\\\" + reg;
         }
         string += `{ id: ${item.id}, name: "${item.name}", regex: "${reg}", image: "${item.image}", ilvl: "${item.ilvl}", chaosValueLeague: ${item.chaosValueLeague}, chaosValueHCLeague: ${item.chaosValueHCLeague}, chaosValueStandard: ${item.chaosValueStandard} },\n`;
     }
