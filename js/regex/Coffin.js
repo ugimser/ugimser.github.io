@@ -12,7 +12,7 @@ const coffinArray = [
     {
         "id": 116239,
         "name": "20% chance to craft an additional Item",
-        "regex": "dd",
+        "regex": "ddi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 231.68,
@@ -32,7 +32,7 @@ const coffinArray = [
     {
         "id": 116304,
         "name": "20% chance to craft an additional Item",
-        "regex": "dd",
+        "regex": "ddi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 203.67,
@@ -42,7 +42,7 @@ const coffinArray = [
     {
         "id": 116073,
         "name": "20% chance to craft an additional Item",
-        "regex": "dd",
+        "regex": "ddi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 200,
@@ -422,7 +422,7 @@ const coffinArray = [
     {
         "id": 116293,
         "name": "Creates a Bone Ring",
-        "regex": "one",
+        "regex": "bone",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 33,
@@ -682,7 +682,7 @@ const coffinArray = [
     {
         "id": 116264,
         "name": "+50 to Caster Modifier Tier Rating",
-        "regex": "50.*as",
+        "regex": "+5.*as",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 25,
@@ -912,7 +912,7 @@ const coffinArray = [
     {
         "id": 116068,
         "name": "25% increased Effect of Corpses in this Grave Row",
-        "regex": "ow",
+        "regex": "row",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 20,
@@ -1172,7 +1172,7 @@ const coffinArray = [
     {
         "id": 116098,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\\+5.*a",
+        "regex": "\\\+5.*ra",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 16.4,
@@ -2052,7 +2052,7 @@ const coffinArray = [
     {
         "id": 115665,
         "name": "25% increased Effect of Corpses in this Grave Row",
-        "regex": "ow",
+        "regex": "row",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2342,7 +2342,7 @@ const coffinArray = [
     {
         "id": 116000,
         "name": "+50 to Caster Modifier Tier Rating",
-        "regex": "50.*as",
+        "regex": "+5.*as",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2782,7 +2782,7 @@ const coffinArray = [
     {
         "id": 115805,
         "name": "Creates a Bone Ring",
-        "regex": "one",
+        "regex": "bone",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 7,
@@ -3602,7 +3602,7 @@ const coffinArray = [
     {
         "id": 115792,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\\+5.*a",
+        "regex": "\\\+5.*ra",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3852,7 +3852,7 @@ const coffinArray = [
     {
         "id": 115910,
         "name": "25% increased Effect of Corpses in this Grave Row",
-        "regex": "ow",
+        "regex": "row",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4182,7 +4182,7 @@ const coffinArray = [
     {
         "id": 116149,
         "name": "+50 to Caster Modifier Tier Rating",
-        "regex": "50.*as",
+        "regex": "+5.*as",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4212,7 +4212,7 @@ const coffinArray = [
     {
         "id": 116170,
         "name": "25% increased Effect of Corpses in this Grave Row",
-        "regex": "ow",
+        "regex": "row",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 5,
@@ -4882,7 +4882,7 @@ const coffinArray = [
     {
         "id": 116128,
         "name": "+50 to Caster Modifier Tier Rating",
-        "regex": "50.*as",
+        "regex": "+5.*as",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2.8,
@@ -5732,7 +5732,7 @@ const coffinArray = [
     {
         "id": 116065,
         "name": "Creates a Bone Ring",
-        "regex": "one",
+        "regex": "bone",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5772,7 +5772,7 @@ const coffinArray = [
     {
         "id": 116095,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\\+5.*a",
+        "regex": "\\\+5.*ra",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -6672,7 +6672,7 @@ const coffinArray = [
     {
         "id": 115928,
         "name": "Creates a Bone Ring",
-        "regex": "one",
+        "regex": "bone",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6872,7 +6872,7 @@ const coffinArray = [
     {
         "id": 115984,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\\+5.*a",
+        "regex": "\\\+5.*ra",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
