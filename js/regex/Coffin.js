@@ -22,7 +22,7 @@ const coffinArray = [
     {
         "id": 116298,
         "name": "Gem Modifiers are 100% scarcer",
-        "regex": "m .*1",
+        "regex": "ge.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 204.42,
@@ -102,7 +102,7 @@ const coffinArray = [
     {
         "id": 116251,
         "name": "Gem Modifiers are 300% scarcer",
-        "regex": "m .*3",
+        "regex": "ge.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 136.28,
@@ -182,7 +182,7 @@ const coffinArray = [
     {
         "id": 116138,
         "name": "Gem Modifiers are 300% scarcer",
-        "regex": "m .*3",
+        "regex": "ge.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 80,
@@ -192,7 +192,7 @@ const coffinArray = [
     {
         "id": 115951,
         "name": "Gem Modifiers are 100% scarcer",
-        "regex": "m .*1",
+        "regex": "ge.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 70,
@@ -252,7 +252,7 @@ const coffinArray = [
     {
         "id": 116152,
         "name": "Gem Modifiers are 100% scarcer",
-        "regex": "m .*1",
+        "regex": "ge.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 50,
@@ -262,7 +262,7 @@ const coffinArray = [
     {
         "id": 116169,
         "name": "Gem Modifiers are 300% scarcer",
-        "regex": "m .*3",
+        "regex": "ge.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 50,
@@ -272,7 +272,7 @@ const coffinArray = [
     {
         "id": 116203,
         "name": "Gem Modifiers are 300% scarcer",
-        "regex": "m .*3",
+        "regex": "ge.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 50,
@@ -342,7 +342,7 @@ const coffinArray = [
     {
         "id": 116147,
         "name": "Gem Modifiers are 100% scarcer",
-        "regex": "m .*1",
+        "regex": "ge.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 40,
@@ -512,7 +512,7 @@ const coffinArray = [
     {
         "id": 116231,
         "name": "Reroll Implicit Modifier Values 3 times, keeping the best outcome",
-        "regex": "es 3",
+        "regex": "ues.3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 29.7,
@@ -682,7 +682,7 @@ const coffinArray = [
     {
         "id": 116264,
         "name": "+50 to Caster Modifier Tier Rating",
-        "regex": "0 .*as",
+        "regex": "50.*as",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 25,
@@ -1102,7 +1102,7 @@ const coffinArray = [
     {
         "id": 116127,
         "name": "Attack Modifiers are 150% scarcer",
-        "regex": "k.*1",
+        "regex": "k.*15",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 18,
@@ -2242,7 +2242,7 @@ const coffinArray = [
     {
         "id": 115873,
         "name": "Attack Modifiers are 150% scarcer",
-        "regex": "k.*1",
+        "regex": "k.*15",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2342,7 +2342,7 @@ const coffinArray = [
     {
         "id": 116000,
         "name": "+50 to Caster Modifier Tier Rating",
-        "regex": "0 .*as",
+        "regex": "50.*as",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -3542,7 +3542,7 @@ const coffinArray = [
     {
         "id": 115781,
         "name": "Reroll Implicit Modifier Values 3 times, keeping the best outcome",
-        "regex": "es 3",
+        "regex": "ues.3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -4182,7 +4182,7 @@ const coffinArray = [
     {
         "id": 116149,
         "name": "+50 to Caster Modifier Tier Rating",
-        "regex": "0 .*as",
+        "regex": "50.*as",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4402,7 +4402,7 @@ const coffinArray = [
     {
         "id": 115924,
         "name": "Attack Modifiers are 150% scarcer",
-        "regex": "k.*1",
+        "regex": "k.*15",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 4,
@@ -4662,7 +4662,7 @@ const coffinArray = [
     {
         "id": 115847,
         "name": "Attack Modifiers are 150% scarcer",
-        "regex": "k.*1",
+        "regex": "k.*15",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 3,
@@ -4882,7 +4882,7 @@ const coffinArray = [
     {
         "id": 116128,
         "name": "+50 to Caster Modifier Tier Rating",
-        "regex": "0 .*as",
+        "regex": "50.*as",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2.8,
@@ -5252,7 +5252,7 @@ const coffinArray = [
     {
         "id": 115817,
         "name": "Reroll Implicit Modifier Values 3 times, keeping the best outcome",
-        "regex": "es 3",
+        "regex": "ues.3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -7032,7 +7032,7 @@ const coffinArray = [
     {
         "id": 116156,
         "name": "Reroll Implicit Modifier Values 3 times, keeping the best outcome",
-        "regex": "es 3",
+        "regex": "ues.3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -7092,7 +7092,7 @@ const coffinArray = [
 ];
 
 function showCoffinLeagueItems(leagueName, minPrice, _minIlvl) {
-    const items = coffinArray2;
+    const items = coffinArray;
     if (leagueName === 'leaguehc') {
         items.sort((a, b) => (b.chaosValueHCLeague - a.chaosValueHCLeague));
     } else if (leagueName === 'standard') {
@@ -7127,27 +7127,33 @@ function showCoffinLeagueItems(leagueName, minPrice, _minIlvl) {
 
         let str = '';
         if (leagueName === 'leaguehc') {
-            str = `<image style="max-width: 100px; max-height: 100px" src="${i.image}">
-                                <span class="chaos-value" style="min-width: 50px">${chaosValueParser(i.chaosValueHCLeague)}</span>
-                                <span class="chaos-value" style="min-width: 50px">${i.regex}</span>
-                                <span class="chaos-value">${i.name}</span>`;
+            str = `<image style="max-width: 60px; max-height: 60px; margin-right: 10px" src="${i.image}">
+                                <span class="chaos-value" style="min-width: 60px; margin-right: 20px; background-color: transparent;">${chaosValueParser(i.chaosValueHCLeague)}</span>
+                                <span style="min-width: 60px; margin-right: 20px; text-align: center">${i.regex}</span>
+                                <span style="min-width: 60px; margin-right: 20px; text-align: center">${i.ilvl}</span>
+                                <span>${makeEnterAgain(i.name)}</span>`;
         } else if (leagueName === 'standard') {
-            str = `<image style="max-width: 100px; max-height: 100px" src="${i.image}">
-                                <span class="chaos-value" style="min-width: 50px">${chaosValueParser(i.chaosValueStandard)}</span>
-                                <span class="chaos-value" style="min-width: 50px">${i.regex}</span>
-                                <span class="chaos-value">${i.name}</span>`;
+            str = `<image style="max-width: 60px; max-height: 60px; margin-right: 10px" src="${i.image}">
+                                <span class="chaos-value" style="min-width: 60px; margin-right: 20px; background-color: transparent;">${chaosValueParser(i.chaosValueStandard)}</span>
+                                <span style="min-width: 60px; margin-right: 20px; text-align: center">${i.regex}</span>
+                                <span style="min-width: 60px; margin-right: 20px; text-align: center">${i.ilvl}</span>
+                                <span>${makeEnterAgain(i.name)}</span>`;
         } else {
             str = `<image style="max-width: 60px; max-height: 60px; margin-right: 10px" src="${i.image}">
                                 <span class="chaos-value" style="min-width: 60px; margin-right: 20px; background-color: transparent;">${chaosValueParser(i.chaosValueLeague)}</span>
                                 <span style="min-width: 60px; margin-right: 20px; text-align: center">${i.regex}</span>
                                 <span style="min-width: 60px; margin-right: 20px; text-align: center">${i.ilvl}</span>
-                                <span>${i.name}</span>`;
+                                <span>${makeEnterAgain(i.name)}</span>`;
         }
         itemsTab.push({ regex: i.regex, element: str, shown: false });
     }
     //cointainer.appendChild(portion);
     //console.log(regexTab);
     return itemsTab;
+}
+
+function makeEnterAgain(string) {
+    return string.replaceAll('|', '\n');
 }
 
 function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLimit, shownState) {
@@ -7173,13 +7179,13 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
     tab.forEach(line => {
         const setLength = Array.from(setLeague).reduce((acc, str) => acc + str.length, 0);
 
-        if (setLeague.size + setLength + line.regex.length < stashLimit) {
+        if (2 + setLeague.size + setLength + line.regex.length < stashLimit) {
             setLeague.add(line.regex);
             somethingLeft = true;
         } else {
             somethingLeft = false;
             regexTextLeague = Array.from(setLeague).map(i => i.toLowerCase()).join('|');
-            widowField.value = regexTextLeague;
+            widowField.value = '"' + regexTextLeague + '"';
 
             widowFieldLength.style.display = 'block';
             widowFieldLength.innerText = regexTextLeague.length + ' / ' + stashLimit;
@@ -7191,7 +7197,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
             widowField = inputElement.cloneNode(true);
             widowField.style.display = 'block';
             regexTextLeague = Array.from(setLeague).map(i => i.toLowerCase()).join('|');
-            widowField.value = regexTextLeague;
+            widowField.value = '"' + regexTextLeague + '"';
             widowField.addEventListener('click', function (event) {
                 const text = event.target.value;
                 if (text.length > 1) {
@@ -7217,7 +7223,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
 
     if (somethingLeft) {
         regexTextLeague = Array.from(setLeague).map(i => i.toLowerCase()).join('|');
-        widowField.value = regexTextLeague;
+        widowField.value = '"' + regexTextLeague + '"';
 
         widowFieldLength.style.display = 'block';
         widowFieldLength.innerText = regexTextLeague.length + ' / ' + stashLimit;
@@ -7229,7 +7235,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
         widowField = inputElement.cloneNode(true);
         widowField.style.display = 'block';
         regexTextLeague = Array.from(setLeague).map(i => i.toLowerCase()).join('|');
-        widowField.value = regexTextLeague;
+        widowField.value = '"' + regexTextLeague + '"';
         widowField.addEventListener('click', function (event) {
             const text = event.target.value;
             if (text.length > 1) {
@@ -7342,20 +7348,11 @@ function _generatePermutations(string) {
 
                 permutations.add(string.substring(i, i + 1) + '.*' + string.substring(i + 3 + j, i + 5 + j).trim());
                 permutations.add(string.substring(i, i + 2) + '.*' + string.substring(i + 3 + j, i + 6 + j).trim());
-
-               // for (let k = 1; k < 30; k++) {
-              //      permutations.add(string.substring[i, i + 1] + '.{' + k + '}' + string.substring[i + 2 + k, i + 3 + k]);
-              //      permutations.add(string.substring[i, i + 2] + '.{' + k + '}' + string.substring[i + 3 + k, i + 4 + k]);
-//
-               //     permutations.add(string.substring[i, i + 1] + '.{' + k + '}' + string.substring[i + 2 + k, i + 4 + k]);
-               //     permutations.add(string.substring[i, i + 2] + '.{' + k + '}' + string.substring[i + 3 + k, i + 5 + k]);
-               // }
             }
         }
     }
     return permutations;
 }
-
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { coffinArray };
 }
