@@ -82,7 +82,7 @@ const coffinArray = [
     {
         "id": 116297,
         "name": "+50 to Critical Modifier Tier Rating",
-        "regex": "\\+5.*cr",
+        "regex": "\\\+5.*cr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 140.65,
@@ -402,7 +402,7 @@ const coffinArray = [
     {
         "id": 116245,
         "name": "+50 to Chaos Modifier Tier Rating",
-        "regex": "\\+5.*os",
+        "regex": "\\\+5.*os",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 37.5,
@@ -592,7 +592,7 @@ const coffinArray = [
     {
         "id": 116208,
         "name": "+50 to Gem Modifier Tier Rating",
-        "regex": "\\+5.*ge",
+        "regex": "\\\+5.*ge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 26,
@@ -652,7 +652,7 @@ const coffinArray = [
     {
         "id": 116051,
         "name": "+50 to Minion Modifier Tier Rating",
-        "regex": "\\+5.*n",
+        "regex": "\\\+5.*n",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 25,
@@ -832,7 +832,7 @@ const coffinArray = [
     {
         "id": 116192,
         "name": "+50 to Resistance Modifier Tier Rating",
-        "regex": "\\+5.*ta",
+        "regex": "\\\+5.*ta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 20.4,
@@ -942,7 +942,7 @@ const coffinArray = [
     {
         "id": 116096,
         "name": "+50 to Speed Modifier Tier Rating",
-        "regex": "\\+5.*ed",
+        "regex": "\\\+5.*ed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 20,
@@ -952,7 +952,7 @@ const coffinArray = [
     {
         "id": 116097,
         "name": "+50 to Defence Modifier Tier Rating",
-        "regex": "\\+5.*ef",
+        "regex": "\\\+5.*ef",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 20,
@@ -972,7 +972,7 @@ const coffinArray = [
     {
         "id": 116118,
         "name": "+50 to Attribute Modifier Tier Rating",
-        "regex": "\\+5.*ut",
+        "regex": "\\\+5.*ut",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 20,
@@ -1172,7 +1172,7 @@ const coffinArray = [
     {
         "id": 116098,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\+5.*a",
+        "regex": "\\\+5.*a",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 16.4,
@@ -1182,7 +1182,7 @@ const coffinArray = [
     {
         "id": 116177,
         "name": "+25 to Caster Modifier Tier Rating",
-        "regex": "\\+2.*",
+        "regex": "\\\+2.*",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15.5,
@@ -1262,7 +1262,7 @@ const coffinArray = [
     {
         "id": 115962,
         "name": "Haunted by Fausta Veruso",
-        "regex": "ust",
+        "regex": "usta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1452,7 +1452,7 @@ const coffinArray = [
     {
         "id": 116160,
         "name": "Haunted by Marius Nevalius",
-        "regex": "ari",
+        "regex": "mari",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1612,7 +1612,7 @@ const coffinArray = [
     {
         "id": 116244,
         "name": "+50 to Cold Modifier Tier Rating",
-        "regex": "\\+5.*d",
+        "regex": "\\\+5.*d",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1712,7 +1712,7 @@ const coffinArray = [
     {
         "id": 116307,
         "name": "Randomises the numeric values of base Defences on an Armour 6 times, keeping the best outcome",
-        "regex": "ur 6",
+        "regex": "6.*s,",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 14.8,
@@ -1752,7 +1752,7 @@ const coffinArray = [
     {
         "id": 116263,
         "name": "+50 to Life Modifier Tier Rating",
-        "regex": "\\+5.*ife",
+        "regex": "\\\+5.*ife",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 14.5,
@@ -1782,7 +1782,7 @@ const coffinArray = [
     {
         "id": 116180,
         "name": "+50 to Fire Modifier Tier Rating",
-        "regex": "\\+5.*f",
+        "regex": "\\\+5.*f",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 14,
@@ -1842,7 +1842,7 @@ const coffinArray = [
     {
         "id": 116100,
         "name": "+50 to Physical Modifier Tier Rating",
-        "regex": "\\+5.*ca",
+        "regex": "\\\+5.*ca",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 13,
@@ -1852,7 +1852,7 @@ const coffinArray = [
     {
         "id": 116235,
         "name": "+50 to Lightning Modifier Tier Rating",
-        "regex": "\\+5.*l",
+        "regex": "\\\+5.*l",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 13,
@@ -1902,7 +1902,7 @@ const coffinArray = [
     {
         "id": 116285,
         "name": "Reroll Modifier Values of each Explicit Modifier 3 times, keeping the best outcome",
-        "regex": "er 3",
+        "regex": "exp.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 12,
@@ -1972,7 +1972,7 @@ const coffinArray = [
     {
         "id": 116323,
         "name": "Randomises the numeric values of base Defences on an Armour 3 times, keeping the best outcome",
-        "regex": "ur 3",
+        "regex": "3.*s,",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 10.5,
@@ -2182,7 +2182,7 @@ const coffinArray = [
     {
         "id": 115755,
         "name": "+50 to Speed Modifier Tier Rating",
-        "regex": "\\+5.*ed",
+        "regex": "\\\+5.*ed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2252,7 +2252,7 @@ const coffinArray = [
     {
         "id": 115895,
         "name": "+50 to Minion Modifier Tier Rating",
-        "regex": "\\+5.*n",
+        "regex": "\\\+5.*n",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2282,7 +2282,7 @@ const coffinArray = [
     {
         "id": 115920,
         "name": "+100 to Attribute Modifier Tier Rating",
-        "regex": "\\+.*g",
+        "regex": "\\\+.*g",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2322,7 +2322,7 @@ const coffinArray = [
     {
         "id": 115987,
         "name": "Reroll Modifier Values of each Explicit Modifier 3 times, keeping the best outcome",
-        "regex": "er 3",
+        "regex": "exp.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2432,7 +2432,7 @@ const coffinArray = [
     {
         "id": 116058,
         "name": "+1 Explicit Modifier",
-        "regex": "\\+1 e",
+        "regex": "\\\+1 e",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 10,
@@ -2602,7 +2602,7 @@ const coffinArray = [
     {
         "id": 115754,
         "name": "+50 to Critical Modifier Tier Rating",
-        "regex": "\\+5.*cr",
+        "regex": "\\\+5.*cr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 9.68,
@@ -2622,7 +2622,7 @@ const coffinArray = [
     {
         "id": 115767,
         "name": "+50 to Gem Modifier Tier Rating",
-        "regex": "\\+5.*ge",
+        "regex": "\\\+5.*ge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 9,
@@ -2692,7 +2692,7 @@ const coffinArray = [
     {
         "id": 116255,
         "name": "+100 to Attribute Modifier Tier Rating",
-        "regex": "\\+.*g",
+        "regex": "\\\+.*g",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 8.5,
@@ -2802,7 +2802,7 @@ const coffinArray = [
     {
         "id": 116107,
         "name": "Randomises the numeric values of base Defences on an Armour 6 times, keeping the best outcome",
-        "regex": "ur 6",
+        "regex": "6.*s,",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 7,
@@ -2872,7 +2872,7 @@ const coffinArray = [
     {
         "id": 115590,
         "name": "+25 to Caster Modifier Tier Rating",
-        "regex": "\\+2.*",
+        "regex": "\\\+2.*",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -2882,7 +2882,7 @@ const coffinArray = [
     {
         "id": 115593,
         "name": "+1 Explicit Modifier",
-        "regex": "\\+1 e",
+        "regex": "\\\+1 e",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -2902,7 +2902,7 @@ const coffinArray = [
     {
         "id": 115595,
         "name": "+50 to Attribute Modifier Tier Rating",
-        "regex": "\\+5.*ut",
+        "regex": "\\\+5.*ut",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -2942,7 +2942,7 @@ const coffinArray = [
     {
         "id": 115600,
         "name": "Randomises the numeric values of base Defences on an Armour 3 times, keeping the best outcome",
-        "regex": "ur 3",
+        "regex": "3.*s,",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3382,7 +3382,7 @@ const coffinArray = [
     {
         "id": 115733,
         "name": "Haunted by Fausta Veruso",
-        "regex": "ust",
+        "regex": "usta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3452,7 +3452,7 @@ const coffinArray = [
     {
         "id": 115758,
         "name": "Haunted by Marius Nevalius",
-        "regex": "ari",
+        "regex": "mari",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3562,7 +3562,7 @@ const coffinArray = [
     {
         "id": 115788,
         "name": "+50 to Fire Modifier Tier Rating",
-        "regex": "\\+5.*f",
+        "regex": "\\\+5.*f",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3582,7 +3582,7 @@ const coffinArray = [
     {
         "id": 115790,
         "name": "+50 to Chaos Modifier Tier Rating",
-        "regex": "\\+5.*os",
+        "regex": "\\\+5.*os",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3592,7 +3592,7 @@ const coffinArray = [
     {
         "id": 115791,
         "name": "+50 to Life Modifier Tier Rating",
-        "regex": "\\+5.*ife",
+        "regex": "\\\+5.*ife",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3602,7 +3602,7 @@ const coffinArray = [
     {
         "id": 115792,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\+5.*a",
+        "regex": "\\\+5.*a",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3762,7 +3762,7 @@ const coffinArray = [
     {
         "id": 115892,
         "name": "+50 to Physical Modifier Tier Rating",
-        "regex": "\\+5.*ca",
+        "regex": "\\\+5.*ca",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3772,7 +3772,7 @@ const coffinArray = [
     {
         "id": 115893,
         "name": "+50 to Resistance Modifier Tier Rating",
-        "regex": "\\+5.*ta",
+        "regex": "\\\+5.*ta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3862,7 +3862,7 @@ const coffinArray = [
     {
         "id": 115913,
         "name": "+50 to Cold Modifier Tier Rating",
-        "regex": "\\+5.*d",
+        "regex": "\\\+5.*d",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -4032,7 +4032,7 @@ const coffinArray = [
     {
         "id": 115997,
         "name": "+50 to Lightning Modifier Tier Rating",
-        "regex": "\\+5.*l",
+        "regex": "\\\+5.*l",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -4042,7 +4042,7 @@ const coffinArray = [
     {
         "id": 115998,
         "name": "+50 to Defence Modifier Tier Rating",
-        "regex": "\\+5.*ef",
+        "regex": "\\\+5.*ef",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -4052,7 +4052,7 @@ const coffinArray = [
     {
         "id": 116014,
         "name": "+50 to Minion Modifier Tier Rating",
-        "regex": "\\+5.*n",
+        "regex": "\\\+5.*n",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4082,7 +4082,7 @@ const coffinArray = [
     {
         "id": 116023,
         "name": "+100 to Attribute Modifier Tier Rating",
-        "regex": "\\+.*g",
+        "regex": "\\\+.*g",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4142,7 +4142,7 @@ const coffinArray = [
     {
         "id": 116088,
         "name": "Reroll Modifier Values of each Explicit Modifier 3 times, keeping the best outcome",
-        "regex": "er 3",
+        "regex": "exp.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4242,7 +4242,7 @@ const coffinArray = [
     {
         "id": 116184,
         "name": "Randomises the numeric values of base Defences on an Armour 3 times, keeping the best outcome",
-        "regex": "ur 3",
+        "regex": "3.*s,",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4382,7 +4382,7 @@ const coffinArray = [
     {
         "id": 115906,
         "name": "+50 to Critical Modifier Tier Rating",
-        "regex": "\\+5.*cr",
+        "regex": "\\\+5.*cr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 4,
@@ -4472,7 +4472,7 @@ const coffinArray = [
     {
         "id": 116146,
         "name": "+100 to Attribute Modifier Tier Rating",
-        "regex": "\\+.*g",
+        "regex": "\\\+.*g",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 4,
@@ -4642,7 +4642,7 @@ const coffinArray = [
     {
         "id": 115831,
         "name": "+50 to Resistance Modifier Tier Rating",
-        "regex": "\\+5.*ta",
+        "regex": "\\\+5.*ta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4672,7 +4672,7 @@ const coffinArray = [
     {
         "id": 115907,
         "name": "+50 to Speed Modifier Tier Rating",
-        "regex": "\\+5.*ed",
+        "regex": "\\\+5.*ed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4772,7 +4772,7 @@ const coffinArray = [
     {
         "id": 116075,
         "name": "+50 to Gem Modifier Tier Rating",
-        "regex": "\\+5.*ge",
+        "regex": "\\\+5.*ge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4802,7 +4802,7 @@ const coffinArray = [
     {
         "id": 116151,
         "name": "+50 to Gem Modifier Tier Rating",
-        "regex": "\\+5.*ge",
+        "regex": "\\\+5.*ge",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 3,
@@ -4842,7 +4842,7 @@ const coffinArray = [
     {
         "id": 116212,
         "name": "Randomises the numeric values of base Defences on an Armour 6 times, keeping the best outcome",
-        "regex": "ur 6",
+        "regex": "6.*s,",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4852,7 +4852,7 @@ const coffinArray = [
     {
         "id": 116214,
         "name": "+50 to Minion Modifier Tier Rating",
-        "regex": "\\+5.*n",
+        "regex": "\\\+5.*n",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 3,
@@ -4972,7 +4972,7 @@ const coffinArray = [
     {
         "id": 115645,
         "name": "+50 to Physical Modifier Tier Rating",
-        "regex": "\\+5.*ca",
+        "regex": "\\\+5.*ca",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -4982,7 +4982,7 @@ const coffinArray = [
     {
         "id": 115646,
         "name": "+25 to Caster Modifier Tier Rating",
-        "regex": "\\+2.*",
+        "regex": "\\\+2.*",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5002,7 +5002,7 @@ const coffinArray = [
     {
         "id": 115653,
         "name": "+50 to Fire Modifier Tier Rating",
-        "regex": "\\+5.*f",
+        "regex": "\\\+5.*f",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5012,7 +5012,7 @@ const coffinArray = [
     {
         "id": 115655,
         "name": "+50 to Lightning Modifier Tier Rating",
-        "regex": "\\+5.*l",
+        "regex": "\\\+5.*l",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5022,7 +5022,7 @@ const coffinArray = [
     {
         "id": 115656,
         "name": "+50 to Cold Modifier Tier Rating",
-        "regex": "\\+5.*d",
+        "regex": "\\\+5.*d",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5032,7 +5032,7 @@ const coffinArray = [
     {
         "id": 115657,
         "name": "+50 to Defence Modifier Tier Rating",
-        "regex": "\\+5.*ef",
+        "regex": "\\\+5.*ef",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5182,7 +5182,7 @@ const coffinArray = [
     {
         "id": 115786,
         "name": "Haunted by Marius Nevalius",
-        "regex": "ari",
+        "regex": "mari",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5342,7 +5342,7 @@ const coffinArray = [
     {
         "id": 115857,
         "name": "+50 to Life Modifier Tier Rating",
-        "regex": "\\+5.*ife",
+        "regex": "\\\+5.*ife",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5422,7 +5422,7 @@ const coffinArray = [
     {
         "id": 115877,
         "name": "+50 to Chaos Modifier Tier Rating",
-        "regex": "\\+5.*os",
+        "regex": "\\\+5.*os",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5492,7 +5492,7 @@ const coffinArray = [
     {
         "id": 115905,
         "name": "+50 to Attribute Modifier Tier Rating",
-        "regex": "\\+5.*ut",
+        "regex": "\\\+5.*ut",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5532,7 +5532,7 @@ const coffinArray = [
     {
         "id": 115931,
         "name": "+50 to Critical Modifier Tier Rating",
-        "regex": "\\+5.*cr",
+        "regex": "\\\+5.*cr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5572,7 +5572,7 @@ const coffinArray = [
     {
         "id": 115973,
         "name": "+50 to Speed Modifier Tier Rating",
-        "regex": "\\+5.*ed",
+        "regex": "\\\+5.*ed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5692,7 +5692,7 @@ const coffinArray = [
     {
         "id": 116054,
         "name": "Haunted by Fausta Veruso",
-        "regex": "ust",
+        "regex": "usta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5772,7 +5772,7 @@ const coffinArray = [
     {
         "id": 116095,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\+5.*a",
+        "regex": "\\\+5.*a",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5992,7 +5992,7 @@ const coffinArray = [
     {
         "id": 115654,
         "name": "+50 to Fire Modifier Tier Rating",
-        "regex": "\\+5.*f",
+        "regex": "\\\+5.*f",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6032,7 +6032,7 @@ const coffinArray = [
     {
         "id": 115679,
         "name": "+1 Explicit Modifier",
-        "regex": "\\+1 e",
+        "regex": "\\\+1 e",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 1,
@@ -6052,7 +6052,7 @@ const coffinArray = [
     {
         "id": 115682,
         "name": "Haunted by Marius Nevalius",
-        "regex": "ari",
+        "regex": "mari",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6062,7 +6062,7 @@ const coffinArray = [
     {
         "id": 115683,
         "name": "+1 Explicit Modifier",
-        "regex": "\\+1 e",
+        "regex": "\\\+1 e",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6252,7 +6252,7 @@ const coffinArray = [
     {
         "id": 115743,
         "name": "+50 to Cold Modifier Tier Rating",
-        "regex": "\\+5.*d",
+        "regex": "\\\+5.*d",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6262,7 +6262,7 @@ const coffinArray = [
     {
         "id": 115744,
         "name": "+50 to Lightning Modifier Tier Rating",
-        "regex": "\\+5.*l",
+        "regex": "\\\+5.*l",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6272,7 +6272,7 @@ const coffinArray = [
     {
         "id": 115745,
         "name": "+25 to Caster Modifier Tier Rating",
-        "regex": "\\+2.*",
+        "regex": "\\\+2.*",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6302,7 +6302,7 @@ const coffinArray = [
     {
         "id": 115772,
         "name": "Haunted by Fausta Veruso",
-        "regex": "ust",
+        "regex": "usta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6402,7 +6402,7 @@ const coffinArray = [
     {
         "id": 115832,
         "name": "+50 to Defence Modifier Tier Rating",
-        "regex": "\\+5.*ef",
+        "regex": "\\\+5.*ef",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6412,7 +6412,7 @@ const coffinArray = [
     {
         "id": 115834,
         "name": "+50 to Life Modifier Tier Rating",
-        "regex": "\\+5.*ife",
+        "regex": "\\\+5.*ife",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6682,7 +6682,7 @@ const coffinArray = [
     {
         "id": 115932,
         "name": "+50 to Chaos Modifier Tier Rating",
-        "regex": "\\+5.*os",
+        "regex": "\\\+5.*os",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6712,7 +6712,7 @@ const coffinArray = [
     {
         "id": 115935,
         "name": "+50 to Attribute Modifier Tier Rating",
-        "regex": "\\+5.*ut",
+        "regex": "\\\+5.*ut",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6802,7 +6802,7 @@ const coffinArray = [
     {
         "id": 115971,
         "name": "+50 to Physical Modifier Tier Rating",
-        "regex": "\\+5.*ca",
+        "regex": "\\\+5.*ca",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6872,7 +6872,7 @@ const coffinArray = [
     {
         "id": 115984,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\+5.*a",
+        "regex": "\\\+5.*a",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -7052,7 +7052,7 @@ const coffinArray = [
     {
         "id": 116159,
         "name": "+50 to Resistance Modifier Tier Rating",
-        "regex": "\\+5.*ta",
+        "regex": "\\\+5.*ta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
