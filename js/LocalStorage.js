@@ -400,7 +400,7 @@ window.addEventListener('load', () => {
                         </div>
                         <select id="regex_league-list">
                             <option value="league">${leagueCurrent}</option>
-                            <option value="leaguehc">${leagueCurrentHC.replace('+', ' ')}</option>
+                            <option value="leaguehc style="display: none"">${leagueCurrentHC.replace('+', ' ')}</option>
                             <option value="league" style="display: none">${leagueStandard}</option>
                         </select>
 			        </div>
