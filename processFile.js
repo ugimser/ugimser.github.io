@@ -89,12 +89,13 @@ function changeArray () {
     }
     
     const strAllC = `const coffinArray2 = [\n ${string}];\n\n if (typeof module !== 'undefined' && module.exports) { module.exports = { coffinArray2 }; }`;
- 
+ /*
     try {
         fs.writeFileSync('Ninja_json/GeneratedCoffinArray.js', strAllC, 'utf8');
     } catch (err) {
         console.log('fs.writeFileSync ', err);
     }
+    */
 }
 
 function changePrices (tab, l) {
