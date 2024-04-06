@@ -2,7 +2,7 @@ const coffinArray = [
     {
         "id": 116276,
         "name": "+100 to Critical Modifier Tier Rating",
-        "regex": "10.*it",
+        "regex": "\\\+1.* ti",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 272.56,
@@ -52,7 +52,7 @@ const coffinArray = [
     {
         "id": 116270,
         "name": "Creates an Experimented Weapon",
-        "regex": "po",
+        "regex": "apo",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 173.08,
@@ -62,7 +62,7 @@ const coffinArray = [
     {
         "id": 116025,
         "name": "Creates an Experimented Weapon",
-        "regex": "po",
+        "regex": "apo",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 163.54,
@@ -92,7 +92,7 @@ const coffinArray = [
     {
         "id": 116246,
         "name": "Creates a Grasping Mail",
-        "regex": "ai",
+        "regex": "mai",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 136.28,
@@ -112,7 +112,7 @@ const coffinArray = [
     {
         "id": 116284,
         "name": "Creates a Grasping Mail",
-        "regex": "ai",
+        "regex": "mai",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 136.28,
@@ -132,7 +132,7 @@ const coffinArray = [
     {
         "id": 116299,
         "name": "Attribute Modifiers are 100% scarcer",
-        "regex": "b.*1",
+        "regex": "tr.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 136.28,
@@ -142,7 +142,7 @@ const coffinArray = [
     {
         "id": 116183,
         "name": "25% chance to create a Mirrored Copy",
-        "regex": "red",
+        "regex": "irr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 109.41,
@@ -202,7 +202,7 @@ const coffinArray = [
     {
         "id": 116286,
         "name": "Creates a Helmet, Gloves or Boots with Ward",
-        "regex": "rd",
+        "regex": "ward",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 70,
@@ -212,7 +212,7 @@ const coffinArray = [
     {
         "id": 116233,
         "name": "Creates a Helmet, Gloves or Boots with Ward",
-        "regex": "rd",
+        "regex": "ward",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 68,
@@ -222,7 +222,7 @@ const coffinArray = [
     {
         "id": 116197,
         "name": "Resistance Modifiers are 300% scarcer",
-        "regex": "ta.*3",
+        "regex": "ta.*30",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 65.7,
@@ -282,7 +282,7 @@ const coffinArray = [
     {
         "id": 116249,
         "name": "Creates a Helmet, Gloves or Boots with Ward",
-        "regex": "rd",
+        "regex": "ward",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 50,
@@ -362,7 +362,7 @@ const coffinArray = [
     {
         "id": 116279,
         "name": "25% chance to create a Mirrored Copy",
-        "regex": "red",
+        "regex": "irr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 40,
@@ -412,7 +412,7 @@ const coffinArray = [
     {
         "id": 116141,
         "name": "200% increased chance of Speed Modifiers",
-        "regex": "2.*pe",
+        "regex": "2.*ee",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 34.5,
@@ -422,7 +422,7 @@ const coffinArray = [
     {
         "id": 116293,
         "name": "Creates a Bone Ring",
-        "regex": "bone",
+        "regex": "ne r",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 33,
@@ -442,7 +442,7 @@ const coffinArray = [
     {
         "id": 115720,
         "name": "Resistance Modifiers are 300% scarcer",
-        "regex": "ta.*3",
+        "regex": "ta.*30",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 30,
@@ -452,7 +452,7 @@ const coffinArray = [
     {
         "id": 115752,
         "name": "Resistance Modifiers are 100% scarcer",
-        "regex": "is.*1",
+        "regex": "is.*10",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 30,
@@ -482,7 +482,7 @@ const coffinArray = [
     {
         "id": 116250,
         "name": "Haunted by Quintio Perandus",
-        "regex": "nti",
+        "regex": "ntio",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 30,
@@ -492,7 +492,7 @@ const coffinArray = [
     {
         "id": 116336,
         "name": "+100 to Minion Modifier Tier Rating",
-        "regex": "1.*io",
+        "regex": "1.*nio",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 30,
@@ -532,7 +532,7 @@ const coffinArray = [
     {
         "id": 116031,
         "name": "500% increased chance of Critical Modifiers",
-        "regex": "500.*ti",
+        "regex": "500.*iti",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 29,
@@ -542,7 +542,7 @@ const coffinArray = [
     {
         "id": 116067,
         "name": "500% increased chance of Speed Modifiers",
-        "regex": "500.*ee",
+        "regex": "500.*eed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 28.6,
@@ -552,7 +552,7 @@ const coffinArray = [
     {
         "id": 116207,
         "name": "500% increased chance of Gem Modifiers",
-        "regex": "500.*em",
+        "regex": "5.*gem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 28.6,
@@ -562,7 +562,7 @@ const coffinArray = [
     {
         "id": 116277,
         "name": "100% increased chance of Elemental Modifiers",
-        "regex": "10.*nt",
+        "regex": "10.*ent",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 28,
@@ -572,7 +572,7 @@ const coffinArray = [
     {
         "id": 116314,
         "name": "+100 to Defence Modifier Tier Rating",
-        "regex": "1.*de",
+        "regex": "1.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 27.5,
@@ -622,7 +622,7 @@ const coffinArray = [
     {
         "id": 115713,
         "name": "25% chance to create a Mirrored Copy",
-        "regex": "red",
+        "regex": "irr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 25,
@@ -652,7 +652,7 @@ const coffinArray = [
     {
         "id": 116051,
         "name": "+50 to Minion Modifier Tier Rating",
-        "regex": "\\\+5.*n",
+        "regex": "\\\+5.*ini",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 25,
@@ -662,7 +662,7 @@ const coffinArray = [
     {
         "id": 116142,
         "name": "Haunted by Quintio Perandus",
-        "regex": "nti",
+        "regex": "ntio",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 25,
@@ -742,7 +742,7 @@ const coffinArray = [
     {
         "id": 116193,
         "name": "Elemental Modifiers are 150% scarcer",
-        "regex": "me.*1",
+        "regex": "me.*15",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 24.1,
@@ -752,7 +752,7 @@ const coffinArray = [
     {
         "id": 116139,
         "name": "Haunted by Quintio Perandus",
-        "regex": "nti",
+        "regex": "ntio",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 24,
@@ -802,7 +802,7 @@ const coffinArray = [
     {
         "id": 116199,
         "name": "100% increased chance for Prefix Modifiers",
-        "regex": "1.*pr",
+        "regex": "1.*pre",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 21.13,
@@ -842,7 +842,7 @@ const coffinArray = [
     {
         "id": 115667,
         "name": "500% increased chance of Gem Modifiers",
-        "regex": "500.*em",
+        "regex": "5.*gem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 20,
@@ -862,7 +862,7 @@ const coffinArray = [
     {
         "id": 115960,
         "name": "25% chance to Fracture an Explicit Modifier",
-        "regex": "fr",
+        "regex": "fra",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 20,
@@ -892,7 +892,7 @@ const coffinArray = [
     {
         "id": 116060,
         "name": "Resistance Modifiers are 300% scarcer",
-        "regex": "ta.*3",
+        "regex": "ta.*30",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 20,
@@ -912,7 +912,7 @@ const coffinArray = [
     {
         "id": 116068,
         "name": "25% increased Effect of Corpses in this Grave Row",
-        "regex": "row",
+        "regex": "ve ro",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 20,
@@ -942,7 +942,7 @@ const coffinArray = [
     {
         "id": 116096,
         "name": "+50 to Speed Modifier Tier Rating",
-        "regex": "\\\+5.*ed",
+        "regex": "\\\+50.*ed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 20,
@@ -1012,7 +1012,7 @@ const coffinArray = [
     {
         "id": 116256,
         "name": "+25 to Elemental Modifier Tier Rating",
-        "regex": "2.*nt",
+        "regex": "25.*nt",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 19.6,
@@ -1022,7 +1022,7 @@ const coffinArray = [
     {
         "id": 116091,
         "name": "200% increased chance of Attribute Modifiers",
-        "regex": "2.*ut",
+        "regex": "2.*ute",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 19.5,
@@ -1042,7 +1042,7 @@ const coffinArray = [
     {
         "id": 116317,
         "name": "Creates a Steel Ring, Requires at least 1 other Corpse of the same Monster Name",
-        "regex": "eel",
+        "regex": "teel",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 19.4,
@@ -1072,7 +1072,7 @@ const coffinArray = [
     {
         "id": 116267,
         "name": "+100 to Physical Modifier Tier Rating",
-        "regex": "1.*y",
+        "regex": "1.*hy",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 19,
@@ -1122,7 +1122,7 @@ const coffinArray = [
     {
         "id": 116099,
         "name": "Physical Modifiers are 100% scarcer",
-        "regex": "y.*1",
+        "regex": "hy.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 17.5,
@@ -1142,7 +1142,7 @@ const coffinArray = [
     {
         "id": 115708,
         "name": "500% increased chance of Critical Modifiers",
-        "regex": "500.*ti",
+        "regex": "500.*iti",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 17,
@@ -1172,7 +1172,7 @@ const coffinArray = [
     {
         "id": 116098,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\\+5.*ra",
+        "regex": "\\\+50.*man",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 16.4,
@@ -1202,7 +1202,7 @@ const coffinArray = [
     {
         "id": 115602,
         "name": "Elemental Modifiers are 150% scarcer",
-        "regex": "me.*1",
+        "regex": "me.*15",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 15,
@@ -1212,7 +1212,7 @@ const coffinArray = [
     {
         "id": 115705,
         "name": "500% increased chance of Speed Modifiers",
-        "regex": "500.*ee",
+        "regex": "500.*eed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 15,
@@ -1242,7 +1242,7 @@ const coffinArray = [
     {
         "id": 115880,
         "name": "+100 to Critical Modifier Tier Rating",
-        "regex": "10.*it",
+        "regex": "\\\+1.* ti",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 15,
@@ -1272,7 +1272,7 @@ const coffinArray = [
     {
         "id": 115965,
         "name": "Haunted by Claudia Veruso",
-        "regex": "ud",
+        "regex": "aud",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1352,7 +1352,7 @@ const coffinArray = [
     {
         "id": 116059,
         "name": "500% increased chance of Lightning Modifiers",
-        "regex": "500.*ng",
+        "regex": "500.*gh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1362,7 +1362,7 @@ const coffinArray = [
     {
         "id": 116072,
         "name": "Speed Modifiers are 300% scarcer",
-        "regex": "ed.*3",
+        "regex": "eed.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1392,7 +1392,7 @@ const coffinArray = [
     {
         "id": 116115,
         "name": "200% increased chance of Defence Modifiers",
-        "regex": "2.*de",
+        "regex": "2.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1412,7 +1412,7 @@ const coffinArray = [
     {
         "id": 116121,
         "name": "500% increased chance of Minion Modifiers",
-        "regex": "500.*on",
+        "regex": "50.*ini",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1442,7 +1442,7 @@ const coffinArray = [
     {
         "id": 116129,
         "name": "Haunted by Fabricia Phrecia",
-        "regex": "br",
+        "regex": "abr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1482,7 +1482,7 @@ const coffinArray = [
     {
         "id": 116172,
         "name": "Haunted by Iris Phrecia",
-        "regex": "ris",
+        "regex": "iris",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1512,7 +1512,7 @@ const coffinArray = [
     {
         "id": 116186,
         "name": "Critical Modifiers are 300% scarcer",
-        "regex": "ti.*3",
+        "regex": "iti.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1522,7 +1522,7 @@ const coffinArray = [
     {
         "id": 116204,
         "name": "Haunted by Legius Grattus",
-        "regex": "eg",
+        "regex": "egi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1532,7 +1532,7 @@ const coffinArray = [
     {
         "id": 116206,
         "name": "Haunted by Valerius Phrecia",
-        "regex": "ler",
+        "regex": "vale",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1562,7 +1562,7 @@ const coffinArray = [
     {
         "id": 116217,
         "name": "Haunted by Julianis Nevalius",
-        "regex": "ju",
+        "regex": "juli",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1612,7 +1612,7 @@ const coffinArray = [
     {
         "id": 116244,
         "name": "+50 to Cold Modifier Tier Rating",
-        "regex": "\\\+5.*d",
+        "regex": "\\\+5.*ld",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1622,7 +1622,7 @@ const coffinArray = [
     {
         "id": 116252,
         "name": "300% increased chance for Prefix Modifiers",
-        "regex": "3.*ef",
+        "regex": "3.*efi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1672,7 +1672,7 @@ const coffinArray = [
     {
         "id": 116281,
         "name": "Creates an Opal Ring, Requires at least 1 other Corpse of the same Monster Name",
-        "regex": "pa",
+        "regex": "opa",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 15,
@@ -1712,7 +1712,7 @@ const coffinArray = [
     {
         "id": 116307,
         "name": "Randomises the numeric values of base Defences on an Armour 6 times, keeping the best outcome",
-        "regex": "6.*s,",
+        "regex": "def.*6",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 14.8,
@@ -1722,7 +1722,7 @@ const coffinArray = [
     {
         "id": 116084,
         "name": "Resistance Modifiers are 300% scarcer",
-        "regex": "ta.*3",
+        "regex": "ta.*30",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 14.7,
@@ -1742,7 +1742,7 @@ const coffinArray = [
     {
         "id": 116269,
         "name": "200% increased chance of Mana Modifiers",
-        "regex": "2.*ma",
+        "regex": "20.*ma",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 14.6,
@@ -1762,7 +1762,7 @@ const coffinArray = [
     {
         "id": 116240,
         "name": "+100 to Resistance Modifier Tier Rating",
-        "regex": "1.*is",
+        "regex": "\\\+1.*is",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 14.4,
@@ -1772,7 +1772,7 @@ const coffinArray = [
     {
         "id": 116007,
         "name": "5% chance for Demon Corpses to not be consumed when Exorcising, up to 50%",
-        "regex": "r d",
+        "regex": "5%.*dem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 14,
@@ -1782,7 +1782,7 @@ const coffinArray = [
     {
         "id": 116180,
         "name": "+50 to Fire Modifier Tier Rating",
-        "regex": "\\\+5.*f",
+        "regex": "\\\+5.*ir",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 14,
@@ -1802,7 +1802,7 @@ const coffinArray = [
     {
         "id": 115894,
         "name": "+100 to Minion Modifier Tier Rating",
-        "regex": "1.*io",
+        "regex": "1.*nio",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 13.4,
@@ -1842,7 +1842,7 @@ const coffinArray = [
     {
         "id": 116100,
         "name": "+50 to Physical Modifier Tier Rating",
-        "regex": "\\\+5.*ca",
+        "regex": "\\\+5.*ph",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 13,
@@ -1852,7 +1852,7 @@ const coffinArray = [
     {
         "id": 116235,
         "name": "+50 to Lightning Modifier Tier Rating",
-        "regex": "\\\+5.*l",
+        "regex": "\\\+5.*gh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 13,
@@ -1862,7 +1862,7 @@ const coffinArray = [
     {
         "id": 116273,
         "name": "Lightning Modifiers are 100% scarcer",
-        "regex": "g .*1",
+        "regex": "lig.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 13,
@@ -1882,7 +1882,7 @@ const coffinArray = [
     {
         "id": 116102,
         "name": "100% increased chance of Attack Modifiers",
-        "regex": "10.*k",
+        "regex": "10.*tta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 12.3,
@@ -1942,7 +1942,7 @@ const coffinArray = [
     {
         "id": 116185,
         "name": "Reroll Base Type 5 times, keeping the Base Type with the highest Level Requirement",
-        "regex": "yp",
+        "regex": "ype 5",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 11,
@@ -1982,7 +1982,7 @@ const coffinArray = [
     {
         "id": 115919,
         "name": "200% increased chance of Speed Modifiers",
-        "regex": "2.*pe",
+        "regex": "2.*ee",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10.3,
@@ -1992,7 +1992,7 @@ const coffinArray = [
     {
         "id": 115601,
         "name": "Attribute Modifiers are 100% scarcer",
-        "regex": "b.*1",
+        "regex": "tr.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2002,7 +2002,7 @@ const coffinArray = [
     {
         "id": 115606,
         "name": "Physical Modifiers are 100% scarcer",
-        "regex": "y.*1",
+        "regex": "hy.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2052,7 +2052,7 @@ const coffinArray = [
     {
         "id": 115665,
         "name": "25% increased Effect of Corpses in this Grave Row",
-        "regex": "row",
+        "regex": "ve ro",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2062,7 +2062,7 @@ const coffinArray = [
     {
         "id": 115673,
         "name": "25% chance to Fracture an Explicit Modifier",
-        "regex": "fr",
+        "regex": "fra",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2152,7 +2152,7 @@ const coffinArray = [
     {
         "id": 115731,
         "name": "+100 to Defence Modifier Tier Rating",
-        "regex": "1.*de",
+        "regex": "1.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2162,7 +2162,7 @@ const coffinArray = [
     {
         "id": 115732,
         "name": "+100 to Resistance Modifier Tier Rating",
-        "regex": "1.*is",
+        "regex": "\\\+1.*is",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2172,7 +2172,7 @@ const coffinArray = [
     {
         "id": 115753,
         "name": "+100 to Physical Modifier Tier Rating",
-        "regex": "1.*y",
+        "regex": "1.*hy",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2182,7 +2182,7 @@ const coffinArray = [
     {
         "id": 115755,
         "name": "+50 to Speed Modifier Tier Rating",
-        "regex": "\\\+5.*ed",
+        "regex": "\\\+50.*ed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2252,7 +2252,7 @@ const coffinArray = [
     {
         "id": 115895,
         "name": "+50 to Minion Modifier Tier Rating",
-        "regex": "\\\+5.*n",
+        "regex": "\\\+5.*ini",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2282,7 +2282,7 @@ const coffinArray = [
     {
         "id": 115920,
         "name": "+100 to Attribute Modifier Tier Rating",
-        "regex": "\\\+.*g",
+        "regex": "\\\+.*ttr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 10,
@@ -2292,7 +2292,7 @@ const coffinArray = [
     {
         "id": 115923,
         "name": "500% increased chance of Critical Modifiers",
-        "regex": "500.*ti",
+        "regex": "500.*iti",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 10,
@@ -2382,7 +2382,7 @@ const coffinArray = [
     {
         "id": 116013,
         "name": "300% increased chance of Elemental Modifiers",
-        "regex": "3.*l",
+        "regex": "3.*ele",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 10,
@@ -2392,7 +2392,7 @@ const coffinArray = [
     {
         "id": 116046,
         "name": "-1 Explicit Modifiers",
-        "regex": "-",
+        "regex": "-1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 10,
@@ -2402,7 +2402,7 @@ const coffinArray = [
     {
         "id": 116047,
         "name": "Armour Items do not have a Intelligence Requirement",
-        "regex": "d.*ll",
+        "regex": "ur.*ll",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 10,
@@ -2462,7 +2462,7 @@ const coffinArray = [
     {
         "id": 116079,
         "name": "500% increased chance of Gem Modifiers",
-        "regex": "500.*em",
+        "regex": "5.*gem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 10,
@@ -2472,7 +2472,7 @@ const coffinArray = [
     {
         "id": 116104,
         "name": "300% increased chance of Attack Modifiers",
-        "regex": "3.*ac",
+        "regex": "3.*att",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 10,
@@ -2482,7 +2482,7 @@ const coffinArray = [
     {
         "id": 116105,
         "name": "Lightning Modifiers are 300% scarcer",
-        "regex": "g .*3",
+        "regex": "gh .*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 10,
@@ -2492,7 +2492,7 @@ const coffinArray = [
     {
         "id": 116108,
         "name": "+100 to Critical Modifier Tier Rating",
-        "regex": "10.*it",
+        "regex": "\\\+1.* ti",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 10,
@@ -2512,7 +2512,7 @@ const coffinArray = [
     {
         "id": 116126,
         "name": "500% increased chance of Defence Modifiers",
-        "regex": "500.*en",
+        "regex": "500.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 10,
@@ -2532,7 +2532,7 @@ const coffinArray = [
     {
         "id": 116164,
         "name": "500% increased chance of Gem Modifiers",
-        "regex": "500.*em",
+        "regex": "5.*gem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 10,
@@ -2632,7 +2632,7 @@ const coffinArray = [
     {
         "id": 115814,
         "name": "+100 to Minion Modifier Tier Rating",
-        "regex": "1.*io",
+        "regex": "1.*nio",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 9,
@@ -2642,7 +2642,7 @@ const coffinArray = [
     {
         "id": 115958,
         "name": "500% increased chance of Critical Modifiers",
-        "regex": "500.*ti",
+        "regex": "500.*iti",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 9,
@@ -2672,7 +2672,7 @@ const coffinArray = [
     {
         "id": 116093,
         "name": "25% chance to Fracture an Explicit Modifier",
-        "regex": "fr",
+        "regex": "fra",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 9,
@@ -2682,7 +2682,7 @@ const coffinArray = [
     {
         "id": 116094,
         "name": "Resistance Modifiers are 100% scarcer",
-        "regex": "is.*1",
+        "regex": "is.*10",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 9,
@@ -2692,7 +2692,7 @@ const coffinArray = [
     {
         "id": 116255,
         "name": "+100 to Attribute Modifier Tier Rating",
-        "regex": "\\\+.*g",
+        "regex": "\\\+.*ttr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 8.5,
@@ -2732,7 +2732,7 @@ const coffinArray = [
     {
         "id": 115989,
         "name": "500% increased chance of Speed Modifiers",
-        "regex": "500.*ee",
+        "regex": "500.*eed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 8,
@@ -2782,7 +2782,7 @@ const coffinArray = [
     {
         "id": 115805,
         "name": "Creates a Bone Ring",
-        "regex": "bone",
+        "regex": "ne r",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 7,
@@ -2802,7 +2802,7 @@ const coffinArray = [
     {
         "id": 116107,
         "name": "Randomises the numeric values of base Defences on an Armour 6 times, keeping the best outcome",
-        "regex": "6.*s,",
+        "regex": "def.*6",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 7,
@@ -2812,7 +2812,7 @@ const coffinArray = [
     {
         "id": 116043,
         "name": "+25 to Elemental Modifier Tier Rating",
-        "regex": "2.*nt",
+        "regex": "25.*nt",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 6.4,
@@ -2832,7 +2832,7 @@ const coffinArray = [
     {
         "id": 116061,
         "name": "Elemental Modifiers are 150% scarcer",
-        "regex": "me.*1",
+        "regex": "me.*15",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 6,
@@ -2932,7 +2932,7 @@ const coffinArray = [
     {
         "id": 115599,
         "name": "200% increased chance of Attribute Modifiers",
-        "regex": "2.*ut",
+        "regex": "2.*ute",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -2962,7 +2962,7 @@ const coffinArray = [
     {
         "id": 115604,
         "name": "300% increased chance of Elemental Modifiers",
-        "regex": "3.*l",
+        "regex": "3.*ele",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -2992,7 +2992,7 @@ const coffinArray = [
     {
         "id": 115609,
         "name": "Lightning Modifiers are 100% scarcer",
-        "regex": "g .*1",
+        "regex": "lig.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3022,7 +3022,7 @@ const coffinArray = [
     {
         "id": 115612,
         "name": "200% increased chance of Defence Modifiers",
-        "regex": "2.*de",
+        "regex": "2.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3042,7 +3042,7 @@ const coffinArray = [
     {
         "id": 115615,
         "name": "Critical Modifiers are 300% scarcer",
-        "regex": "ti.*3",
+        "regex": "iti.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3052,7 +3052,7 @@ const coffinArray = [
     {
         "id": 115616,
         "name": "200% increased chance of Mana Modifiers",
-        "regex": "2.*ma",
+        "regex": "20.*ma",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3072,7 +3072,7 @@ const coffinArray = [
     {
         "id": 115619,
         "name": "300% increased chance of Attack Modifiers",
-        "regex": "3.*ac",
+        "regex": "3.*att",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3132,7 +3132,7 @@ const coffinArray = [
     {
         "id": 115628,
         "name": "Speed Modifiers are 300% scarcer",
-        "regex": "ed.*3",
+        "regex": "eed.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3232,7 +3232,7 @@ const coffinArray = [
     {
         "id": 115676,
         "name": "500% increased chance of Lightning Modifiers",
-        "regex": "500.*ng",
+        "regex": "500.*gh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3272,7 +3272,7 @@ const coffinArray = [
     {
         "id": 115709,
         "name": "500% increased chance of Defence Modifiers",
-        "regex": "500.*en",
+        "regex": "500.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3292,7 +3292,7 @@ const coffinArray = [
     {
         "id": 115714,
         "name": "Haunted by Fabricia Phrecia",
-        "regex": "br",
+        "regex": "abr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3362,7 +3362,7 @@ const coffinArray = [
     {
         "id": 115726,
         "name": "Haunted by Claudia Veruso",
-        "regex": "ud",
+        "regex": "aud",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3372,7 +3372,7 @@ const coffinArray = [
     {
         "id": 115727,
         "name": "500% increased chance of Minion Modifiers",
-        "regex": "500.*on",
+        "regex": "50.*ini",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3412,7 +3412,7 @@ const coffinArray = [
     {
         "id": 115736,
         "name": "Haunted by Legius Grattus",
-        "regex": "eg",
+        "regex": "egi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3432,7 +3432,7 @@ const coffinArray = [
     {
         "id": 115749,
         "name": "100% increased chance of Attack Modifiers",
-        "regex": "10.*k",
+        "regex": "10.*tta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3442,7 +3442,7 @@ const coffinArray = [
     {
         "id": 115750,
         "name": "100% increased chance of Elemental Modifiers",
-        "regex": "10.*nt",
+        "regex": "10.*ent",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3462,7 +3462,7 @@ const coffinArray = [
     {
         "id": 115759,
         "name": "Haunted by Valerius Phrecia",
-        "regex": "ler",
+        "regex": "vale",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3472,7 +3472,7 @@ const coffinArray = [
     {
         "id": 115760,
         "name": "Haunted by Iris Phrecia",
-        "regex": "ris",
+        "regex": "iris",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3492,7 +3492,7 @@ const coffinArray = [
     {
         "id": 115762,
         "name": "Reroll Base Type 5 times, keeping the Base Type with the highest Level Requirement",
-        "regex": "yp",
+        "regex": "ype 5",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3562,7 +3562,7 @@ const coffinArray = [
     {
         "id": 115788,
         "name": "+50 to Fire Modifier Tier Rating",
-        "regex": "\\\+5.*f",
+        "regex": "\\\+5.*ir",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3602,7 +3602,7 @@ const coffinArray = [
     {
         "id": 115792,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\\+5.*ra",
+        "regex": "\\\+50.*man",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3682,7 +3682,7 @@ const coffinArray = [
     {
         "id": 115820,
         "name": "5% chance for Demon Corpses to not be consumed when Exorcising, up to 50%",
-        "regex": "r d",
+        "regex": "5%.*dem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3752,7 +3752,7 @@ const coffinArray = [
     {
         "id": 115888,
         "name": "100% increased chance for Prefix Modifiers",
-        "regex": "1.*pr",
+        "regex": "1.*pre",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3762,7 +3762,7 @@ const coffinArray = [
     {
         "id": 115892,
         "name": "+50 to Physical Modifier Tier Rating",
-        "regex": "\\\+5.*ca",
+        "regex": "\\\+5.*ph",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3842,7 +3842,7 @@ const coffinArray = [
     {
         "id": 115903,
         "name": "Armour Items do not have a Intelligence Requirement",
-        "regex": "d.*ll",
+        "regex": "ur.*ll",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3852,7 +3852,7 @@ const coffinArray = [
     {
         "id": 115910,
         "name": "25% increased Effect of Corpses in this Grave Row",
-        "regex": "row",
+        "regex": "ve ro",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -3862,7 +3862,7 @@ const coffinArray = [
     {
         "id": 115913,
         "name": "+50 to Cold Modifier Tier Rating",
-        "regex": "\\\+5.*d",
+        "regex": "\\\+5.*ld",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3922,7 +3922,7 @@ const coffinArray = [
     {
         "id": 115941,
         "name": "Resistance Modifiers are 100% scarcer",
-        "regex": "is.*1",
+        "regex": "is.*10",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 5,
@@ -3932,7 +3932,7 @@ const coffinArray = [
     {
         "id": 115946,
         "name": "500% increased chance of Speed Modifiers",
-        "regex": "500.*ee",
+        "regex": "500.*eed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 5,
@@ -3942,7 +3942,7 @@ const coffinArray = [
     {
         "id": 115952,
         "name": "Haunted by Julianis Nevalius",
-        "regex": "ju",
+        "regex": "juli",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -3962,7 +3962,7 @@ const coffinArray = [
     {
         "id": 115957,
         "name": "+100 to Defence Modifier Tier Rating",
-        "regex": "1.*de",
+        "regex": "1.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -3992,7 +3992,7 @@ const coffinArray = [
     {
         "id": 115977,
         "name": "Elemental Modifiers are 150% scarcer",
-        "regex": "me.*1",
+        "regex": "me.*15",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 5,
@@ -4002,7 +4002,7 @@ const coffinArray = [
     {
         "id": 115978,
         "name": "Creates a Steel Ring, Requires at least 1 other Corpse of the same Monster Name",
-        "regex": "eel",
+        "regex": "teel",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -4032,7 +4032,7 @@ const coffinArray = [
     {
         "id": 115997,
         "name": "+50 to Lightning Modifier Tier Rating",
-        "regex": "\\\+5.*l",
+        "regex": "\\\+5.*gh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -4052,7 +4052,7 @@ const coffinArray = [
     {
         "id": 116014,
         "name": "+50 to Minion Modifier Tier Rating",
-        "regex": "\\\+5.*n",
+        "regex": "\\\+5.*ini",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4082,7 +4082,7 @@ const coffinArray = [
     {
         "id": 116023,
         "name": "+100 to Attribute Modifier Tier Rating",
-        "regex": "\\\+.*g",
+        "regex": "\\\+.*ttr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4092,7 +4092,7 @@ const coffinArray = [
     {
         "id": 116024,
         "name": "+100 to Resistance Modifier Tier Rating",
-        "regex": "1.*is",
+        "regex": "\\\+1.*is",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4122,7 +4122,7 @@ const coffinArray = [
     {
         "id": 116038,
         "name": "300% increased chance for Prefix Modifiers",
-        "regex": "3.*ef",
+        "regex": "3.*efi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 5,
@@ -4152,7 +4152,7 @@ const coffinArray = [
     {
         "id": 116116,
         "name": "+100 to Physical Modifier Tier Rating",
-        "regex": "1.*y",
+        "regex": "1.*hy",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 5,
@@ -4162,7 +4162,7 @@ const coffinArray = [
     {
         "id": 116123,
         "name": "+100 to Critical Modifier Tier Rating",
-        "regex": "10.*it",
+        "regex": "\\\+1.* ti",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 5,
@@ -4212,7 +4212,7 @@ const coffinArray = [
     {
         "id": 116170,
         "name": "25% increased Effect of Corpses in this Grave Row",
-        "regex": "row",
+        "regex": "ve ro",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 5,
@@ -4252,7 +4252,7 @@ const coffinArray = [
     {
         "id": 116257,
         "name": "+100 to Minion Modifier Tier Rating",
-        "regex": "1.*io",
+        "regex": "1.*nio",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 5,
@@ -4262,7 +4262,7 @@ const coffinArray = [
     {
         "id": 115617,
         "name": "Lightning Modifiers are 300% scarcer",
-        "regex": "g .*3",
+        "regex": "gh .*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 4.9,
@@ -4302,7 +4302,7 @@ const coffinArray = [
     {
         "id": 115841,
         "name": "200% increased chance of Speed Modifiers",
-        "regex": "2.*pe",
+        "regex": "2.*ee",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 4.17,
@@ -4422,7 +4422,7 @@ const coffinArray = [
     {
         "id": 116018,
         "name": "Creates an Opal Ring, Requires at least 1 other Corpse of the same Monster Name",
-        "regex": "pa",
+        "regex": "opa",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 4,
@@ -4472,7 +4472,7 @@ const coffinArray = [
     {
         "id": 116146,
         "name": "+100 to Attribute Modifier Tier Rating",
-        "regex": "\\\+.*g",
+        "regex": "\\\+.*ttr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 4,
@@ -4482,7 +4482,7 @@ const coffinArray = [
     {
         "id": 116187,
         "name": "+100 to Resistance Modifier Tier Rating",
-        "regex": "1.*is",
+        "regex": "\\\+1.*is",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 3.6,
@@ -4542,7 +4542,7 @@ const coffinArray = [
     {
         "id": 115660,
         "name": "Attribute Modifiers are 100% scarcer",
-        "regex": "b.*1",
+        "regex": "tr.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4552,7 +4552,7 @@ const coffinArray = [
     {
         "id": 115681,
         "name": "500% increased chance of Minion Modifiers",
-        "regex": "500.*on",
+        "regex": "50.*ini",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4612,7 +4612,7 @@ const coffinArray = [
     {
         "id": 115779,
         "name": "100% increased chance for Prefix Modifiers",
-        "regex": "1.*pr",
+        "regex": "1.*pre",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4672,7 +4672,7 @@ const coffinArray = [
     {
         "id": 115907,
         "name": "+50 to Speed Modifier Tier Rating",
-        "regex": "\\\+5.*ed",
+        "regex": "\\\+50.*ed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4682,7 +4682,7 @@ const coffinArray = [
     {
         "id": 115908,
         "name": "+25 to Elemental Modifier Tier Rating",
-        "regex": "2.*nt",
+        "regex": "25.*nt",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4692,7 +4692,7 @@ const coffinArray = [
     {
         "id": 115930,
         "name": "Physical Modifiers are 100% scarcer",
-        "regex": "y.*1",
+        "regex": "hy.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4712,7 +4712,7 @@ const coffinArray = [
     {
         "id": 115954,
         "name": "Critical Modifiers are 300% scarcer",
-        "regex": "ti.*3",
+        "regex": "iti.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4732,7 +4732,7 @@ const coffinArray = [
     {
         "id": 116035,
         "name": "+100 to Physical Modifier Tier Rating",
-        "regex": "1.*y",
+        "regex": "1.*hy",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 3,
@@ -4792,7 +4792,7 @@ const coffinArray = [
     {
         "id": 116150,
         "name": "+100 to Defence Modifier Tier Rating",
-        "regex": "1.*de",
+        "regex": "1.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 3,
@@ -4822,7 +4822,7 @@ const coffinArray = [
     {
         "id": 116155,
         "name": "Creates an Opal Ring, Requires at least 1 other Corpse of the same Monster Name",
-        "regex": "pa",
+        "regex": "opa",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4832,7 +4832,7 @@ const coffinArray = [
     {
         "id": 116167,
         "name": "500% increased chance of Minion Modifiers",
-        "regex": "500.*on",
+        "regex": "50.*ini",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 3,
@@ -4842,7 +4842,7 @@ const coffinArray = [
     {
         "id": 116212,
         "name": "Randomises the numeric values of base Defences on an Armour 6 times, keeping the best outcome",
-        "regex": "6.*s,",
+        "regex": "def.*6",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 3,
@@ -4852,7 +4852,7 @@ const coffinArray = [
     {
         "id": 116214,
         "name": "+50 to Minion Modifier Tier Rating",
-        "regex": "\\\+5.*n",
+        "regex": "\\\+5.*ini",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 3,
@@ -4972,7 +4972,7 @@ const coffinArray = [
     {
         "id": 115645,
         "name": "+50 to Physical Modifier Tier Rating",
-        "regex": "\\\+5.*ca",
+        "regex": "\\\+5.*ph",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -4992,7 +4992,7 @@ const coffinArray = [
     {
         "id": 115652,
         "name": "Reroll Base Type 5 times, keeping the Base Type with the highest Level Requirement",
-        "regex": "yp",
+        "regex": "ype 5",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5002,7 +5002,7 @@ const coffinArray = [
     {
         "id": 115653,
         "name": "+50 to Fire Modifier Tier Rating",
-        "regex": "\\\+5.*f",
+        "regex": "\\\+5.*ir",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5012,7 +5012,7 @@ const coffinArray = [
     {
         "id": 115655,
         "name": "+50 to Lightning Modifier Tier Rating",
-        "regex": "\\\+5.*l",
+        "regex": "\\\+5.*gh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5022,7 +5022,7 @@ const coffinArray = [
     {
         "id": 115656,
         "name": "+50 to Cold Modifier Tier Rating",
-        "regex": "\\\+5.*d",
+        "regex": "\\\+5.*ld",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5102,7 +5102,7 @@ const coffinArray = [
     {
         "id": 115702,
         "name": "Haunted by Claudia Veruso",
-        "regex": "ud",
+        "regex": "aud",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5142,7 +5142,7 @@ const coffinArray = [
     {
         "id": 115764,
         "name": "Haunted by Fabricia Phrecia",
-        "regex": "br",
+        "regex": "abr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5152,7 +5152,7 @@ const coffinArray = [
     {
         "id": 115770,
         "name": "Lightning Modifiers are 300% scarcer",
-        "regex": "g .*3",
+        "regex": "gh .*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5172,7 +5172,7 @@ const coffinArray = [
     {
         "id": 115777,
         "name": "Lightning Modifiers are 100% scarcer",
-        "regex": "g .*1",
+        "regex": "lig.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5312,7 +5312,7 @@ const coffinArray = [
     {
         "id": 115853,
         "name": "Haunted by Julianis Nevalius",
-        "regex": "ju",
+        "regex": "juli",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5332,7 +5332,7 @@ const coffinArray = [
     {
         "id": 115855,
         "name": "200% increased chance of Defence Modifiers",
-        "regex": "2.*de",
+        "regex": "2.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5412,7 +5412,7 @@ const coffinArray = [
     {
         "id": 115876,
         "name": "Haunted by Valerius Phrecia",
-        "regex": "ler",
+        "regex": "vale",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5452,7 +5452,7 @@ const coffinArray = [
     {
         "id": 115886,
         "name": "Armour Items do not have a Intelligence Requirement",
-        "regex": "d.*ll",
+        "regex": "ur.*ll",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5482,7 +5482,7 @@ const coffinArray = [
     {
         "id": 115891,
         "name": "Haunted by Iris Phrecia",
-        "regex": "ris",
+        "regex": "iris",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5502,7 +5502,7 @@ const coffinArray = [
     {
         "id": 115922,
         "name": "Haunted by Legius Grattus",
-        "regex": "eg",
+        "regex": "egi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5522,7 +5522,7 @@ const coffinArray = [
     {
         "id": 115927,
         "name": "300% increased chance for Prefix Modifiers",
-        "regex": "3.*ef",
+        "regex": "3.*efi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5542,7 +5542,7 @@ const coffinArray = [
     {
         "id": 115945,
         "name": "200% increased chance of Speed Modifiers",
-        "regex": "2.*pe",
+        "regex": "2.*ee",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5562,7 +5562,7 @@ const coffinArray = [
     {
         "id": 115956,
         "name": "Haunted by Valerius Phrecia",
-        "regex": "ler",
+        "regex": "vale",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5572,7 +5572,7 @@ const coffinArray = [
     {
         "id": 115973,
         "name": "+50 to Speed Modifier Tier Rating",
-        "regex": "\\\+5.*ed",
+        "regex": "\\\+50.*ed",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5592,7 +5592,7 @@ const coffinArray = [
     {
         "id": 115976,
         "name": "Haunted by Fabricia Phrecia",
-        "regex": "br",
+        "regex": "abr",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5602,7 +5602,7 @@ const coffinArray = [
     {
         "id": 115983,
         "name": "Attribute Modifiers are 100% scarcer",
-        "regex": "b.*1",
+        "regex": "tr.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5642,7 +5642,7 @@ const coffinArray = [
     {
         "id": 116020,
         "name": "Haunted by Claudia Veruso",
-        "regex": "ud",
+        "regex": "aud",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5662,7 +5662,7 @@ const coffinArray = [
     {
         "id": 116027,
         "name": "200% increased chance of Attribute Modifiers",
-        "regex": "2.*ut",
+        "regex": "2.*ute",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5682,7 +5682,7 @@ const coffinArray = [
     {
         "id": 116036,
         "name": "Critical Modifiers are 300% scarcer",
-        "regex": "ti.*3",
+        "regex": "iti.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5722,7 +5722,7 @@ const coffinArray = [
     {
         "id": 116063,
         "name": "Speed Modifiers are 300% scarcer",
-        "regex": "ed.*3",
+        "regex": "eed.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5732,7 +5732,7 @@ const coffinArray = [
     {
         "id": 116065,
         "name": "Creates a Bone Ring",
-        "regex": "bone",
+        "regex": "ne r",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5772,7 +5772,7 @@ const coffinArray = [
     {
         "id": 116095,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\\+5.*ra",
+        "regex": "\\\+50.*man",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5782,7 +5782,7 @@ const coffinArray = [
     {
         "id": 116106,
         "name": "Creates a Steel Ring, Requires at least 1 other Corpse of the same Monster Name",
-        "regex": "eel",
+        "regex": "teel",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 2,
@@ -5802,7 +5802,7 @@ const coffinArray = [
     {
         "id": 116134,
         "name": "100% increased chance for Prefix Modifiers",
-        "regex": "1.*pr",
+        "regex": "1.*pre",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5822,7 +5822,7 @@ const coffinArray = [
     {
         "id": 116189,
         "name": "300% increased chance for Prefix Modifiers",
-        "regex": "3.*ef",
+        "regex": "3.*efi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 2,
@@ -5862,7 +5862,7 @@ const coffinArray = [
     {
         "id": 116001,
         "name": "100% increased chance of Attack Modifiers",
-        "regex": "10.*k",
+        "regex": "10.*tta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 1.16,
@@ -5872,7 +5872,7 @@ const coffinArray = [
     {
         "id": 115592,
         "name": "500% increased chance of Lightning Modifiers",
-        "regex": "500.*ng",
+        "regex": "500.*gh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 1,
@@ -5992,7 +5992,7 @@ const coffinArray = [
     {
         "id": 115654,
         "name": "+50 to Fire Modifier Tier Rating",
-        "regex": "\\\+5.*f",
+        "regex": "\\\+5.*ir",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6022,7 +6022,7 @@ const coffinArray = [
     {
         "id": 115661,
         "name": "200% increased chance of Defence Modifiers",
-        "regex": "2.*de",
+        "regex": "2.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6042,7 +6042,7 @@ const coffinArray = [
     {
         "id": 115680,
         "name": "300% increased chance of Attack Modifiers",
-        "regex": "3.*ac",
+        "regex": "3.*att",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6082,7 +6082,7 @@ const coffinArray = [
     {
         "id": 115687,
         "name": "500% increased chance of Lightning Modifiers",
-        "regex": "500.*ng",
+        "regex": "500.*gh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6112,7 +6112,7 @@ const coffinArray = [
     {
         "id": 115692,
         "name": "500% increased chance of Defence Modifiers",
-        "regex": "500.*en",
+        "regex": "500.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 1,
@@ -6122,7 +6122,7 @@ const coffinArray = [
     {
         "id": 115695,
         "name": "-1 Explicit Modifiers",
-        "regex": "-",
+        "regex": "-1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 1,
@@ -6162,7 +6162,7 @@ const coffinArray = [
     {
         "id": 115704,
         "name": "5% chance for Demon Corpses to not be consumed when Exorcising, up to 50%",
-        "regex": "r d",
+        "regex": "5%.*dem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 1,
@@ -6172,7 +6172,7 @@ const coffinArray = [
     {
         "id": 115716,
         "name": "+25 to Elemental Modifier Tier Rating",
-        "regex": "2.*nt",
+        "regex": "25.*nt",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6252,7 +6252,7 @@ const coffinArray = [
     {
         "id": 115743,
         "name": "+50 to Cold Modifier Tier Rating",
-        "regex": "\\\+5.*d",
+        "regex": "\\\+5.*ld",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6262,7 +6262,7 @@ const coffinArray = [
     {
         "id": 115744,
         "name": "+50 to Lightning Modifier Tier Rating",
-        "regex": "\\\+5.*l",
+        "regex": "\\\+5.*gh",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6282,7 +6282,7 @@ const coffinArray = [
     {
         "id": 115765,
         "name": "Armour Items do not have a Intelligence Requirement",
-        "regex": "d.*ll",
+        "regex": "ur.*ll",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6312,7 +6312,7 @@ const coffinArray = [
     {
         "id": 115799,
         "name": "200% increased chance of Mana Modifiers",
-        "regex": "2.*ma",
+        "regex": "20.*ma",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 1,
@@ -6322,7 +6322,7 @@ const coffinArray = [
     {
         "id": 115801,
         "name": "100% increased chance of Elemental Modifiers",
-        "regex": "10.*nt",
+        "regex": "10.*ent",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 1,
@@ -6392,7 +6392,7 @@ const coffinArray = [
     {
         "id": 115830,
         "name": "Reroll Base Type 5 times, keeping the Base Type with the highest Level Requirement",
-        "regex": "yp",
+        "regex": "ype 5",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6462,7 +6462,7 @@ const coffinArray = [
     {
         "id": 115840,
         "name": "100% increased chance of Elemental Modifiers",
-        "regex": "10.*nt",
+        "regex": "10.*ent",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6472,7 +6472,7 @@ const coffinArray = [
     {
         "id": 115842,
         "name": "200% increased chance of Attribute Modifiers",
-        "regex": "2.*ut",
+        "regex": "2.*ute",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6492,7 +6492,7 @@ const coffinArray = [
     {
         "id": 115844,
         "name": "Lightning Modifiers are 100% scarcer",
-        "regex": "g .*1",
+        "regex": "lig.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6552,7 +6552,7 @@ const coffinArray = [
     {
         "id": 115861,
         "name": "Physical Modifiers are 100% scarcer",
-        "regex": "y.*1",
+        "regex": "hy.*1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6572,7 +6572,7 @@ const coffinArray = [
     {
         "id": 115866,
         "name": "5% chance for Demon Corpses to not be consumed when Exorcising, up to 50%",
-        "regex": "r d",
+        "regex": "5%.*dem",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6592,7 +6592,7 @@ const coffinArray = [
     {
         "id": 115870,
         "name": "100% increased chance of Attack Modifiers",
-        "regex": "10.*k",
+        "regex": "10.*tta",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6612,7 +6612,7 @@ const coffinArray = [
     {
         "id": 115875,
         "name": "Haunted by Iris Phrecia",
-        "regex": "ris",
+        "regex": "iris",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6632,7 +6632,7 @@ const coffinArray = [
     {
         "id": 115890,
         "name": "300% increased chance of Attack Modifiers",
-        "regex": "3.*ac",
+        "regex": "3.*att",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 1,
@@ -6652,7 +6652,7 @@ const coffinArray = [
     {
         "id": 115921,
         "name": "300% increased chance of Elemental Modifiers",
-        "regex": "3.*l",
+        "regex": "3.*ele",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 1,
@@ -6672,7 +6672,7 @@ const coffinArray = [
     {
         "id": 115928,
         "name": "Creates a Bone Ring",
-        "regex": "bone",
+        "regex": "ne r",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6702,7 +6702,7 @@ const coffinArray = [
     {
         "id": 115934,
         "name": "500% increased chance of Defence Modifiers",
-        "regex": "500.*en",
+        "regex": "500.*def",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6802,7 +6802,7 @@ const coffinArray = [
     {
         "id": 115971,
         "name": "+50 to Physical Modifier Tier Rating",
-        "regex": "\\\+5.*ca",
+        "regex": "\\\+5.*ph",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6832,7 +6832,7 @@ const coffinArray = [
     {
         "id": 115979,
         "name": "200% increased chance of Mana Modifiers",
-        "regex": "2.*ma",
+        "regex": "20.*ma",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6842,7 +6842,7 @@ const coffinArray = [
     {
         "id": 115980,
         "name": "300% increased chance of Elemental Modifiers",
-        "regex": "3.*l",
+        "regex": "3.*ele",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6872,7 +6872,7 @@ const coffinArray = [
     {
         "id": 115984,
         "name": "+50 to Mana Modifier Tier Rating",
-        "regex": "\\\+5.*ra",
+        "regex": "\\\+50.*man",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6912,7 +6912,7 @@ const coffinArray = [
     {
         "id": 115996,
         "name": "-1 Explicit Modifiers",
-        "regex": "-",
+        "regex": "-1",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6932,7 +6932,7 @@ const coffinArray = [
     {
         "id": 116016,
         "name": "Haunted by Julianis Nevalius",
-        "regex": "ju",
+        "regex": "juli",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6942,7 +6942,7 @@ const coffinArray = [
     {
         "id": 116028,
         "name": "Lightning Modifiers are 300% scarcer",
-        "regex": "g .*3",
+        "regex": "gh .*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -6962,7 +6962,7 @@ const coffinArray = [
     {
         "id": 116076,
         "name": "Speed Modifiers are 300% scarcer",
-        "regex": "ed.*3",
+        "regex": "eed.*3",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -7002,7 +7002,7 @@ const coffinArray = [
     {
         "id": 116114,
         "name": "Haunted by Legius Grattus",
-        "regex": "eg",
+        "regex": "egi",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 1,
@@ -7179,7 +7179,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
     tab.forEach(line => {
         const setLength = Array.from(setLeague).reduce((acc, str) => acc + str.length, 0);
 
-        if (2 + setLeague.size + setLength + line.regex.length < stashLimit) {
+        if (1 +setLeague.size + setLength + line.regex.length < stashLimit) {
             setLeague.add(line.regex);
             somethingLeft = true;
         } else {
@@ -7188,7 +7188,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
             widowField.value = '"' + regexTextLeague + '"';
 
             widowFieldLength.style.display = 'block';
-            widowFieldLength.innerText = regexTextLeague.length + ' / ' + stashLimit;
+            widowFieldLength.innerText = (regexTextLeague.length + 2) + ' / ' + stashLimit;
 
             cointainer.appendChild(widowField);
             cointainer.appendChild(widowFieldLength);
@@ -7207,11 +7207,12 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
 
             widowFieldLength = lengthElement.cloneNode(true);
             widowFieldLength.style.display = 'block';
-            widowFieldLength.innerText = regexTextLeague.length + ' / ' + stashLimit;
+            widowFieldLength.innerText = (regexTextLeague.length + 2) + ' / ' + stashLimit;
 
             divS = document.createElement('div');
             divS.className = shownState;
             setLeague = new Set();
+            setLeague.add(line.regex);
         }
         const div = document.createElement('div');
         div.style.display = 'flex'
@@ -7226,7 +7227,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
         widowField.value = '"' + regexTextLeague + '"';
 
         widowFieldLength.style.display = 'block';
-        widowFieldLength.innerText = regexTextLeague.length + ' / ' + stashLimit;
+        widowFieldLength.innerText = (regexTextLeague.length + 2) + ' / ' + stashLimit;
 
         cointainer.appendChild(widowField);
         cointainer.appendChild(widowFieldLength);
@@ -7245,7 +7246,7 @@ function fillUpCoffinPanel(tab, cointainer, inputElement, lengthElement, stashLi
 
         widowFieldLength = lengthElement.cloneNode(true);
         widowFieldLength.style.display = 'block';
-        widowFieldLength.innerText = regexTextLeague.length + ' / ' + stashLimit;
+        widowFieldLength.innerText = (regexTextLeague.length + 2) + ' / ' + stashLimit;
     }
 }
 
