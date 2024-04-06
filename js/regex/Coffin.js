@@ -4291,7 +4291,7 @@ const coffinArray = [
     },
     {
         "id": 115827,
-        "name": "Reveals a Random Craft when Buried\nRarer Crafts are more common",
+        "name": "Reveals a Random Craft when Buried|Rarer Crafts are more common",
         "regex": "mm",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
@@ -4491,7 +4491,7 @@ const coffinArray = [
     },
     {
         "id": 116260,
-        "name": "Reveals a Random Craft when Buried\nRarer Crafts are more common",
+        "name": "Reveals a Random Craft when Buried|Rarer Crafts are more common",
         "regex": "mm",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
@@ -4861,7 +4861,7 @@ const coffinArray = [
     },
     {
         "id": 116241,
-        "name": "Reveals a Random Craft when Buried\nRarer Crafts are more common",
+        "name": "Reveals a Random Craft when Buried|Rarer Crafts are more common",
         "regex": "mm",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
@@ -7061,7 +7061,7 @@ const coffinArray = [
     },
     {
         "id": 116162,
-        "name": "Reveals a Random Craft when Buried\nRarer Crafts are more common",
+        "name": "Reveals a Random Craft when Buried|Rarer Crafts are more common",
         "regex": "mm",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
