@@ -180,8 +180,8 @@
     color: white;
     font-size: 30px;
     text-align: center;
-    position: absolute;
-    top: 90%;
+    position: fixed;
+    top: 90vh;
     left: 50%;
     transform: translate(-50%, -50%);
     background: black;
