@@ -124,7 +124,7 @@ function createPanelRegexMapMods(panelID, panelCounter) {
                             </div>                                    
                             <div id="panel-regex-map-all-t17" style="width: 25%">
                                 <div class="map-mod-list-header">
-                                    <div class="map_mod_text">I want these uber mods:</div>
+                                    <div class="map_mod_text">I don\'t want these uber mods:</div>
                                     <div class="map_mod_text">Tier 17</div>
                                 </div>
                                 <div id="panel-regex-map-uber"></div>
