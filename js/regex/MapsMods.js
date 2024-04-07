@@ -1,4 +1,4 @@
-const mapModsShadowShaping = [
+﻿const mapModsShadowShaping = [
 	{
 		nameLong: "Area contains The Sacred Grove",
 		nameShort: "sac",
@@ -1021,3 +1021,306 @@ const mapData = new Map([
 		"popularity": 0
 	}],
 ]);
+
+const mapDataT17 = [
+	{
+		"nameLong": "Monsters' skills Chain 3 additional times|Monsters' Projectiles can Chain when colliding with Terrain",
+		"nameShort": "' p",
+		"popularity": 0
+	},
+	{
+		"nameLong": "All Magic and Normal Monsters in Area are in a Union of Souls",
+		"nameShort": "sou",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters have +1 to Maximum Power Charges|Monsters gain a Power Charge on Hit",
+		"nameShort": "m p",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters have +1 to Maximum Frenzy Charges|Monsters gain a Frenzy Charge on Hit",
+		"nameShort": "m f",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters have +1 to Maximum Endurance Charges|Monsters gain an Endurance Charge when hit",
+		"nameShort": "m end",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players have -20% to all maximum Resistances",
+		"nameShort": "m r",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players and their Minions deal no damage for 4 out of every 10 seconds",
+		"nameShort": "ir m",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters have 100% increased Area of Effect|Monsters fire 4 additional Projectiles",
+		"nameShort": "l p",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters have (650-700)% increased Critical Strike Chance|+(70-75)% to Monster Critical Strike Multiplier",
+		"nameShort": "ke m",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters Poison on Hit|All Damage from Monsters' Hits can Poison|Monsters have 100% increased Poison Duration",
+		"nameShort": "n d",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters gain (70-80)% of Maximum Life as Extra Maximum Energy Shield",
+		"nameShort": "m l",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Unique Bosses are Possessed",
+		"nameShort": "poss",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters have +100% chance to Suppress Spell Damage",
+		"nameShort": "o s",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters have +50% Chance to Block Attack Damage",
+		"nameShort": "k d",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters cannot be Leeched from",
+		"nameShort": "leec",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters reflect 20% of Physical Damage|Monsters reflect 20% of Elemental Damage",
+		"nameShort": "f p",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players are Cursed with Vulnerability|Players are Cursed with Temporal Chains|Players are Cursed with Elemental Weakness",
+		"nameShort": "wea",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players have 50% less Area of Effect",
+		"nameShort": "ss ar",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters take 100% reduced Extra Damage from Critical Strikes",
+		"nameShort": "m c",
+		"popularity": 0
+	},
+	{
+		"nameLong": "(90-100)% more Monster Life",
+		"nameShort": "r l",
+		"popularity": 0
+	},
+	{
+		"nameLong": "(35-45)% increased number of Rare Monsters|Rare Monsters each have 2 additional Modifiers",
+		"nameShort": "f ra",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Unique Monsters have a random Shrine Buff",
+		"nameShort": "shr",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters inflict 2 Grasping Vines on Hit",
+		"nameShort": "vin",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Rare Monsters have Volatile Cores",
+		"nameShort": "cor",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Area contains Petrification Statues",
+		"nameShort": "pet",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Area contains (30-40) additional Clusters of Highly Volatile Barrels",
+		"nameShort": "e b",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters gain (180-200)% of their Physical Damage as Extra Damage of a random Element",
+		"nameShort": "m e",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters gain (80-100)% of their Physical Damage as Extra Chaos Damage",
+		"nameShort": "s da",
+		"popularity": 0
+	},
+	{
+		"nameLong": "(25-30)% increased Monster Movement Speed|(35-45)% increased Monster Attack Speed|(35-45)% increased Monster Cast Speed",
+		"nameShort": "r ca",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players cannot gain Endurance Charges|Players cannot gain Frenzy Charges|Players cannot gain Power Charges",
+		"nameShort": "in p",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players are assaulted by Bloodstained Sawblades",
+		"nameShort": "saw",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters cannot be Stunned|Monsters' Action Speed cannot be modified to below Base Value|Monsters' Movement Speed cannot be modified to below Base Value",
+		"nameShort": "stu",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players are targeted by a Meteor when they use a Flask",
+		"nameShort": "fla",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players have 50% less Defences",
+		"nameShort": "def",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players cannot Recharge Energy Shield|Players cannot Regenerate Life, Mana or Energy Shield",
+		"nameShort": ", m",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players cannot Block|Players cannot Suppress Spell Damage",
+		"nameShort": "blo",
+		"popularity": 0
+	},
+	{
+		"nameLong": "100% reduced Effect of Curses on Monsters",
+		"nameShort": "f c",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Area contains Drowning Orbs",
+		"nameShort": "orb",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players have 90% reduced effect of Non-Curse Auras from Skills",
+		"nameShort": "-cu",
+		"popularity": 0
+	},
+	{
+		"nameLong": "+50% Monster Physical Damage Reduction|+35% Monster Chaos Resistance|+55% Monster Elemental Resistances",
+		"nameShort": "os r",
+		"popularity": 0
+	},
+	{
+		"nameLong": "All Monster Damage can Ignite, Freeze and Shock|Monsters Ignite, Freeze and Shock on Hit",
+		"nameShort": "sho",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players have 80% less Recovery Rate of Life and Energy Shield",
+		"nameShort": "shi",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Buffs on Players expire 100% faster",
+		"nameShort": "n p",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monster Damage Penetrates 15% Elemental Resistances",
+		"nameShort": "pen",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players have 4% reduced Action Speed for each time they've used a Skill Recently",
+		"nameShort": "rec",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players are Marked for Death for 10 seconds after killing a Rare or Unique monster",
+		"nameShort": "r u",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Area contains Unstable Tentacle Fiends",
+		"nameShort": "ten",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Monsters' Attacks Impale on Hit|When a fifth Impale is inflicted on a Player, Impales are removed to Reflect their Physical Damage multiplied by their remaining Hits to that Player and their Allies within 1.8 metres",
+		"nameShort": "t p",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Area has patches of Awakeners' Desolation",
+		"nameShort": "' d",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Rare and Unique monsters spawn a Tormented Spirit on reaching Low Life",
+		"nameShort": "w l",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Rare monsters in area are Shaper-Touched",
+		"nameShort": "tou",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players have -2 to maximum number of Summoned Totems",
+		"nameShort": "f su",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Player Skills which Throw Mines throw 1 fewer Mine|Player Skills which Throw Traps throw 1 fewer Trap",
+		"nameShort": "r t",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players' Minions have 50% less Attack Speed|Players' Minions have 50% less Cast Speed|Players' Minions have 50% less Movement Speed",
+		"nameShort": "nt s",
+		"popularity": 0
+	},
+	{
+		"nameLong": "15% of Damage Players' Totems take from Hits is taken from their Summoner's Life instead",
+		"nameShort": "s l",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Players in Area take 20% increased Damage per nearby Ally",
+		"nameShort": "d d",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Map Boss is accompanied by a Synthesis Boss",
+		"nameShort": "syn",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Debuffs on Monsters expire 100% faster",
+		"nameShort": "deb",
+		"popularity": 0
+	},
+	{
+		"nameLong": "Area contains Runes of the Searing Exarch",
+		"nameShort": "exa",
+		"popularity": 0
+	},
+	{
+		"nameLong": "The Maven interferes with Players",
+		"nameShort": "h p",
+		"popularity": 0
+	}
+];
