@@ -102,7 +102,7 @@ const coffinArray = [
     {
         "id": 116251,
         "name": "Gem Modifiers are 300% scarcer",
-        "regex": "ge.*30",
+        "regex": "gem.*30",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 84,
         "chaosValueLeague": 136.28,
@@ -182,7 +182,7 @@ const coffinArray = [
     {
         "id": 116138,
         "name": "Gem Modifiers are 300% scarcer",
-        "regex": "ge.*30",
+        "regex": "gem.*30",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 80,
         "chaosValueLeague": 80,
@@ -262,7 +262,7 @@ const coffinArray = [
     {
         "id": 116169,
         "name": "Gem Modifiers are 300% scarcer",
-        "regex": "ge.*30",
+        "regex": "gem.*30",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 70,
         "chaosValueLeague": 50,
@@ -272,7 +272,7 @@ const coffinArray = [
     {
         "id": 116203,
         "name": "Gem Modifiers are 300% scarcer",
-        "regex": "ge.*30",
+        "regex": "gem.*30",
         "image": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvTmVjcm9wb2xpcy9OZWNyb3BvbGlzQ29mZmluRmlsbGVkIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b4214a420/NecropolisCoffinFilled.png",
         "ilvl": 1,
         "chaosValueLeague": 50,
