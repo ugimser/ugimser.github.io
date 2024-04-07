@@ -81,7 +81,7 @@ function changeArray () {
     // save Coffin list
     string = '';
     for (const item of coffinArrayTemp) {
-        let reg = item.regex.replace(/\+/g, '\\\\\\+');
+        let reg = item.regex.replace(/\+/g, '\\\\+');
         //if (reg.lenght > 1) {
          //   reg = reg.replace(/\+/g, '\\\\+');
         //}
