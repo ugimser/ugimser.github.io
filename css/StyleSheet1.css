@@ -151,6 +151,7 @@
     width: 25px;
     cursor: pointer;
     background-image: url("../img/menu_icon.png");
+    background-color: #333;
     background-size: cover;
 }
 
@@ -233,6 +234,12 @@
 
 .map_mod_text {
     padding: 5px;
+}
+
+.map-mod-list-header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
 }
 
 #map_mod_bad_list {
