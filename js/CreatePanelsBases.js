@@ -61,7 +61,7 @@ function createPanelRegexMapMods(panelID, panelCounter) {
         <textarea class="panel-name" maxlength="30">Map Modifiers Regex:</textarea>
         <div class="panel-regex-map-mods" id="id${panelID}">
             <div class="panel-content">
-                <input id="map_mod_window" placeholder="Regex here..." readonly/>
+                <input id="map_mod_window" placeholder="Click 'Show Mods'..." readonly/>
                 <input type="checkbox" id="map_mod_window_copy" title="Always copy on click" checked/>
                 <p id="map_mod_window_counter">0 / 50</p>
                 <div>
@@ -94,20 +94,40 @@ function createPanelRegexMapMods(panelID, panelCounter) {
                         <div id="panel-regex-map-all-bad">     
                         <div style="display: flex">
                             <div id="panel-regex-map-all-bad" style="width: 25%">
-                                <div class="map_mod_text">I don\'t want these mods:</div>
+                                <div class="map-mod-list-header">
+                                    <div class="map_mod_text">I don\'t want these mods:</div>
+                                    <div class="map_mod_text">Tier 1-16</div>
+                                </div>
                                 <div id="panel-regex-map-all-bad-list" class="background-gradient-danger"></div>
                             </div>
                             <div id="panel-regex-map-all-good" style="width: 25%">
-                                <div class="map_mod_text">I want these mods:</div>
+                                <div class="map-mod-list-header">
+                                    <div class="map_mod_text">I want these mods:</div>
+                                    <div class="map_mod_text">Tier 1-16</div>
+                                </div>
                                 <div id="panel-regex-map-all-good-list" class="background-gradient-popularity"></div>
                             </div>
                             <div id="panel-regex-map-all-kirac" style="width: 25%">
-                                <div class="map_mod_text">I want these Kirac mods:</div>
-                                <div id="panel-regex-map-all-kirac-list" class="background-gradient-popularity"></div>
-                            </div>
-                            <div id="panel-regex-map-all-vaal" style="width: 25%">
-                                <div class="map_mod_text">I want these vaal implicits:</div>
-                                <div id="panel-regex-map-all-vaal-list" class="background-gradient-popularity"></div>
+                                <div class="map-mod-list-header">
+                                    <div class="map_mod_text">I want these Kirac mods:</div>
+                                    <div class="map_mod_text">Tier 1-16</div>
+                                </div>
+                                <div id="panel-regex-map-all-kirac-list" class="background-gradient-popularity">
+                                </div>
+                                    <div id="panel-regex-map-all-vaal" style="width: 100%; margin-top: 50px">
+                                    <div class="map-mod-list-header">
+                                        <div class="map_mod_text">I want these vaal implicits:</div>
+                                        <div class="map_mod_text">Tier 1-16</div>
+                                    </div>
+                                    <div id="panel-regex-map-all-vaal-list"></div>
+                                </div>
+                            </div>                                    
+                            <div id="panel-regex-map-all-t17" style="width: 25%">
+                                <div class="map-mod-list-header">
+                                    <div class="map_mod_text">I want these uber mods:</div>
+                                    <div class="map_mod_text">Tier 17</div>
+                                </div>
+                                <div id="panel-regex-map-uber"></div>
                             </div>
                         </div>
                     </div>
@@ -182,7 +202,7 @@ function createPanelRegexCoffin(panelID, panelCounter) {
                 </div>
                 <select id="regex_league-list">
                     <option value="league">${leagueCurrent}</option>
-                    <option value="leaguehc" style="display: none">${leagueCurrentHC.replace('+', ' ')}</option>
+                    <option value="leaguehc">${leagueCurrentHC.replace('+', ' ')}</option>
                     <option value="league" style="display: none">${leagueStandard}</option>
                 </select>
 			</div>

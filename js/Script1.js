@@ -70,27 +70,40 @@ function panelRegexMapMods(panel, oldRegex, check) {
     const goodList = panel.querySelector('#panel-regex-map-all-good-list');
     const kiracList = panel.querySelector('#panel-regex-map-all-kirac-list');
     const vaalList = panel.querySelector('#panel-regex-map-all-vaal-list');
+    const uberList = panel.querySelector('#panel-regex-map-uber');
     const mapQuantityInput = panel.querySelector('#map-mod-quantity-input');
     const mapPackSizeInput = panel.querySelector('#map-mod-pack-size-input');
     const searchInput = panel.querySelector('#panel-regex-map-search');
 
     const _panelID = panel.querySelector('.panel-regex-map-mods').id;
-    panelRegexes.push({
-        panelID: _panelID,
-        regexBad: [],
-        regexGood: [],
-        regexKirac: [],
-        regexQuantity: '',
-        regexPackSize: '',
-    });
+    if (panelRegexes) {
+        let isAlready = false;
+        panelRegexes.forEach(p => {
+            if (p.panelID === _panelID) {
+                isAlready = true;
+            }
+        });
+        if (isAlready === false) {
+            panelRegexes.push({
+                panelID: _panelID,
+                regexBad: [],
+                regexGood: [],
+                regexKirac: [],
+                regexT17: [],
+                regexQuantity: '',
+                regexPackSize: '',
+            });
+        }
+    }
 
     const mapDataPopularity = new Map([...mapData.entries()].sort((a, b) => { return b[1].popularity - a[1].popularity; }));
     const t1 = createMapModifierList(mapDataPopularity, 'map_mod_bad_list', badList, mapRegexText, removeMapRegexBad, addMapRegexBad);
     const t2 = createMapModifierList(mapData, 'map_mod_good_list', goodList, mapRegexText, removeMapRegexGood, addMapRegexGood);
     const t3 = createMapModifierList(mapModsShadowShaping, 'map_mod_good_list', kiracList, mapRegexText, removeMapRegexKirac, addMapRegexKirac);
     const t4 = createMapModifierList(mapModsCorrupted, 'map_mod_good_list', vaalList, mapRegexText, removeMapRegexKirac, addMapRegexKirac);
-
-    const allModsAllList = [...t1, ...t2, ...t3, ...t4];
+    const t5 = createMapModifierList(mapDataT17, 'map_mod_good_list', uberList, mapRegexText, removeMapRegexT17, addMapRegexT17);
+    
+    const allModsAllList = [...t1, ...t2, ...t3, ...t4, ...t5];
 
     searchInput.addEventListener('input', () => {
         const input = searchInput.value.toLowerCase();
@@ -161,8 +174,13 @@ function panelRegexMapMods(panel, oldRegex, check) {
     });
 
     if (oldRegex) {
-        mapRegexText.value = oldRegex;
-        changeRegexEvent(_panelID, oldRegex, mapRegexTextCounter, mapQuantityInput, mapPackSizeInput, t1, t2, t3.concat(t4));
+        //mapRegexText.value = oldRegex;
+        const dataOld = JSON.parse(localStorage.getItem('dataPanelsMapMod'));
+        if (dataOld) {
+            console.log(dataOld);
+            panelRegexes = dataOld;
+        }
+        changeRegexEvent(_panelID, mapRegexText, mapRegexTextCounter, mapQuantityInput, mapPackSizeInput, t1, t2, t3.concat(t4), t5);
     }
     if (check) {
         checkboxElement.checked = check;
@@ -379,7 +397,7 @@ addPanelRegexGwennen.addEventListener('click', () => {
 });
 
 addPanelRegexCoffin.addEventListener('click', () => {
-    const elements = document.querySelectorAll('.panel-stashtabsale');
+    const elements = document.querySelectorAll('.panel-regex-coffin-mods');
     if (elements.length > 0) {
         notification('You already have one');
         highlightBorder(elements[0].parentElement);

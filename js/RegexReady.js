@@ -54,20 +54,16 @@ function changeRegex(add = true, shortString) {
 }
 
 
-function changeRegexEvent(pID, inputValue, lengthEle, quantityEle, packsizeEle, badModsTab, goodModsTab, implicitModsTab) {
+function changeRegexEvent(pID, mapRegexWindow, lengthEle, quantityEle, packsizeEle, badModsTab, goodModsTab, implicitModsTab, uberModsTab) {
     const objToChange = panelRegexes.find(obj => obj.panelID === pID);
 
     // length
-    lengthEle.innerHTML = inputValue.length + ' / 50';
+    lengthEle.innerHTML = mapRegexWindow.value.length + ' / 50';
     
     // quantity
-    if (inputValue.includes('"m q.')) {
-        const start = inputValue.indexOf('"m q.');
-        const end = inputValue.indexOf('%"');
-        const qreg = inputValue.slice(start + 6, end);
-        inputValue = inputValue.substring(0, start) + inputValue.substring(end + 2);
+    if (objToChange.regexQuantity) {
+        const qreg = objToChange.regexQuantity.slice(2, objToChange.regexQuantity.length);
         try {
-            objToChange.regexQuantity = '.*' + qreg;
             quantityEle.value = extractNumbers(qreg);
         }
         catch (err) {
@@ -76,13 +72,9 @@ function changeRegexEvent(pID, inputValue, lengthEle, quantityEle, packsizeEle, 
     }
 
     // pack size
-    if (inputValue.includes('"ze.*')) {
-        const start = inputValue.indexOf('"ze.*');
-        const end = inputValue.indexOf('%"');
-        const qreg = inputValue.slice(start + 5, end);
-        inputValue = inputValue.substring(0, start) + inputValue.substring(end + 2);
+    if (objToChange.regexPackSize) {
+        const qreg = objToChange.regexPackSize.slice(2, objToChange.regexPackSize.length);
         try {
-            objToChange.regexPackSize = '.*' + qreg;
             packsizeEle.value = extractNumbers(qreg);
         }
         catch (err) {
@@ -90,92 +82,53 @@ function changeRegexEvent(pID, inputValue, lengthEle, quantityEle, packsizeEle, 
         }
     }
 
-    // implicits
-    if (inputValue.includes('.*lic"')) {
-        const start = inputValue.indexOf('"(');
-        const end = inputValue.indexOf('.*lic"');
-        const qreg = inputValue.slice(start + 2, end - 1);
-        inputValue = inputValue.substring(0, start) + inputValue.substring(end + 6);
-        //console.log(inputValue);
-        //console.log(qreg);
-        try {
-            findWantedMods(objToChange, qreg, implicitModsTab, true);
-        }
-        catch (err) {
-            console.log('extractNumbers(qreg)' + err);
-        }
-    }
-
     // mods
-    if (inputValue.length > 2 && (inputValue[0] === '!' || inputValue[1] === '!')) {
-        const splited = [
-            inputValue.slice(1, inputValue.indexOf('" ') + 1).trim(),
-            inputValue.slice(inputValue.indexOf('" ') + 1).trim()
-        ];
-        //console.log(splited[0]);
-        //console.log(splited[1]);
-        //return;
-        if (splited.length > 1) {
-            findDontWantedMods(objToChange, splited[0].length < 1 ? splited[1] : splited[0], badModsTab);
-            if (splited[1].length > 1 && splited[0].length > 1 && (splited[1].length !== splited[0].length + 2)) {
-                findWantedMods(objToChange, splited[1], goodModsTab);
-                //console.log('here');
-            }
-        } else {
-            findDontWantedMods(objToChange, inputValue, badModsTab);
-        }
-    } else if (inputValue.length > 1) {
-        findWantedMods(objToChange, inputValue, goodModsTab);
+    if (objToChange.regexBad.length > 0) {
+        //findDontWantedMods(objToChange, objToChange.regexBad.join('|'), badModsTab);
+        badModsTab.forEach(obj => {
+            objToChange.regexBad.forEach(reg => {
+                if (obj.title === reg) {
+                    obj.classList.add('map-mod-selected');
+                }
+            });
+        });
     }
+    if (objToChange.regexGood.length > 0) {
+        //findWantedMods(objToChange, objToChange.regexGood.join(' '), goodModsTab);
+        goodModsTab.forEach(obj => {
+            objToChange.regexGood.forEach(reg => {
+                const title = obj.title.includes(' ') ? '"' + obj.title + '"' : obj.title;
+                if (title === reg) {
+                    obj.classList.add('map-mod-selected');
+                }
+            });
+        });
+    }
+    if (objToChange.regexKirac.length > 0) {
+        //findWantedMods(objToChange, objToChange.regexGood.join(' '), goodModsTab);
+        implicitModsTab.forEach(obj => {
+            objToChange.regexKirac.forEach(reg => {
+                if (obj.title === reg) {
+                    obj.classList.add('map-mod-selected');
+                }
+            });
+        });
+    }
+    if (objToChange.regexT17.length > 0) {
+        //findWantedMods(objToChange, objToChange.regexGood.join(' '), goodModsTab);
+        uberModsTab.forEach(obj => {
+            objToChange.regexT17.forEach(reg => {
+                if (obj.title === reg) {
+                    obj.classList.add('map-mod-selected');
+                }
+            });
+        });
+        console.log('t17');
+    }
+
+    showMapRegex(mapRegexWindow, objToChange.panelID)
 }
-/*
-inputElement.addEventListener('input', function (event) {
-    let inputValue = event.target.value.toLowerCase();
 
-    // quantity
-    if (inputValue.includes('"m q.')) {
-        const start = inputValue.indexOf('"m q.');
-        const end = inputValue.indexOf('%"');
-        const qreg = inputValue.slice(start + 6, end);
-        inputValue = inputValue.substring(0, start) + inputValue.substring(end + 2);
-        //console.log(qreg);
-        //console.log(extractNumbers (qreg));
-    }
-
-    // pack size
-    if (inputValue.includes('"iz.*')) {
-        const start = inputValue.indexOf('"iz.*');
-        const end = inputValue.indexOf('%"');
-        const qreg = inputValue.slice(start + 5, end);
-        inputValue = inputValue.substring(0, start) + inputValue.substring(end + 2);
-        //console.log(qreg);
-        //console.log(extractNumbers(qreg));
-    }
-
-    //findDontWantedMods(inputValue);
-    //findWantedMods(inputValue);
-    //return;
-    if (inputValue.length > 2 && inputValue[1] === '!') {
-        const splited = [
-            inputValue.slice(1, inputValue.indexOf('" ')),
-            inputValue.slice(inputValue.indexOf('" ') + 1),
-        ];
-        console.log(splited[0]);
-        console.log(splited[1]);
-        //return;
-        if (splited.length > 1) {
-            findDontWantedMods(splited[0]);
-            //console.log(splited[1]);
-            findWantedMods(splited[1].trim());
-        } else {
-            findDontWantedMods(inputValue);
-        }
-    } else {
-        findWantedMods(inputValue);
-    }
-});
-
-*/
 function findDontWantedMods(objToChange, inputValue, tab) {
     const sanitized = inputValue
         //.match(/"(.*?)"/g)
@@ -204,20 +157,25 @@ function findWantedMods(objToChange, inputValue, tab, implicits = false) {
 
     const betweenQuote = inputValue.match(/"(.*?)"/g);
     if (betweenQuote) {
+        inputValue = inputValue.replace(betweenQuote + '', "").trim();
         for (const quote of betweenQuote) {
-            inputValue = inputValue.replace(quote + '', "").trim();
-            //console.log(betweenQuote);
+            inputValue = inputValue.replace(quote + ' ', "").trim();
             //console.log(inputValue);
+            //console.log(betweenQuote);
         }
+        let spacebetween = '';
+        betweenQuote.forEach(s => {
+            spacebetween += '|' + s.substring(1, s.length - 1);
+        });
+
         sanitized = inputValue
             .split(" ")
-            .concat(betweenQuote)
             .join("|")
             .replace(/\\"(?:m q|ze).*%/, "")
             .replaceAll("\"", "")
             .replaceAll("!", "")
-            .trim();
-        //console.log('if');
+            .trim() + spacebetween;
+        //console.log('if ' + sanitized);
     } else {
         sanitized = inputValue
             .split(" ")
@@ -229,7 +187,8 @@ function findWantedMods(objToChange, inputValue, tab, implicits = false) {
     }
 
     tab.forEach(obj => {
-        if (obj.textContent.toLowerCase().match(sanitized)) {
+        if (obj.textContent.toLowerCase().match(sanitized) && sanitized.length > 1) {
+            //console.log(sanitized);
             obj.classList.add('map-mod-selected');
             if (implicits) {
                 objToChange.regexKirac.push(obj.title);
@@ -309,11 +268,12 @@ function createMapModifierList(table, className, cointainer, regexWindow, remove
     return modTab;
 }
 
-const panelRegexes = [{
+let panelRegexes = [{
     panelID: '',
     regexBad: [],
     regexGood: [],
     regexKirac: [],
+    regexT17: [],
     regexQuantity: '',
     regexPackSize: '',
 }];
@@ -324,6 +284,7 @@ function clearMapRegex(pID) {
             obj.regexBad = [];
             obj.regexGood = [];
             obj.regexKirac = [];
+            obj.regexT17 = [];
             obj.regexQuantity = '';
             obj.regexPackSize = '';
             return;
@@ -418,6 +379,33 @@ function removeMapRegexKirac(shortName, mapModWindow) {
     showMapRegex(mapModWindow, pID);
 }
 
+function addMapRegexT17(shortName, mapModWindow) {
+    const pID = mapModWindow.parentElement.parentElement.id;
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            obj.regexT17.push(shortName);
+            return;
+        }
+    });
+
+    showMapRegex(mapModWindow, pID);
+}
+
+function removeMapRegexT17(shortName, mapModWindow) {
+    const pID = mapModWindow.parentElement.parentElement.id;
+    panelRegexes.forEach(obj => {
+        if (obj.panelID === pID) {
+            var index = obj.regexT17.indexOf(shortName);
+            if (index !== -1) {
+                obj.regexT17.splice(index, 1);
+            }
+            return;
+        }
+    });
+
+    showMapRegex(mapModWindow, pID);
+}
+
 function changeMapRegexQuantity(newValue, mapModWindow) {
     const pID = mapModWindow.parentElement.parentElement.id;
     panelRegexes.forEach(obj => {
@@ -478,14 +466,22 @@ function changeMapRegexPackSize(newValue, mapModWindow) {
 
 function showMapRegex(mapModWindow, pID) {
     const objToChange = panelRegexes.find(obj => obj.panelID === pID);
+
+
+
     let regAll = '';
 
-    if (objToChange.regexBad.length > 0) {
-        regAll = '"!' + objToChange.regexBad.join('|') + '"';
+    if (objToChange.regexBad.length > 0 || objToChange.regexT17.length > 0) {
+        if (objToChange.regexT17.length > 0) {
+            regAll = '"!' + objToChange.regexBad.join('|') + '|' + objToChange.regexT17.join('|') + '"';
+        } else {
+            regAll = '"!' + objToChange.regexBad.join('|') + '"';
+        }
     }
 
+
     if (objToChange.regexGood.length > 0) {
-        if (objToChange.regexBad.length > 0) {
+        if (objToChange.regexBad.length > 0 || objToChange.regexT17.length > 0) {
             regAll += ' ' + objToChange.regexGood.join(' ');
         } else {
             regAll = objToChange.regexGood.join(' ');
@@ -493,7 +489,7 @@ function showMapRegex(mapModWindow, pID) {
     } 
 
     if (objToChange.regexKirac.length > 0) {
-        if (objToChange.regexBad.length > 0 || objToChange.regexGood.length > 0) {
+        if (objToChange.regexBad.length > 0 || objToChange.regexGood.length > 0 || objToChange.regexT17.length > 0) {
             regAll += ' "(' + objToChange.regexKirac.join('|') + ').*lic"';
         } else {
             regAll += '"(' + objToChange.regexKirac.join('|') + ').*lic"';
@@ -501,7 +497,7 @@ function showMapRegex(mapModWindow, pID) {
     }
 
     if (objToChange.regexQuantity.length > 0) {
-        if (objToChange.regexBad.length > 0 || objToChange.regexGood.length > 0 || objToChange.regexKirac.length > 0) {
+        if (objToChange.regexBad.length > 0 || objToChange.regexGood.length > 0 || objToChange.regexKirac.length > 0 || objToChange.regexT17.length > 0) {
             regAll += ' "m q' + objToChange.regexQuantity + '%"';
         } else {
             regAll += '"m q' + objToChange.regexQuantity + '%"';
@@ -509,7 +505,7 @@ function showMapRegex(mapModWindow, pID) {
     }
 
     if (objToChange.regexPackSize.length > 0) {
-        if (objToChange.regexBad.length > 0 || objToChange.regexGood.length > 0 || objToChange.regexKirac.length > 0 || objToChange.regexQuantity.length > 0) {
+        if (objToChange.regexBad.length > 0 || objToChange.regexGood.length > 0 || objToChange.regexKirac.length > 0 || objToChange.regexQuantity.length > 0 || objToChange.regexT17.length > 0) {
             regAll += ' "ze' + objToChange.regexPackSize + '%"';
         } else {
             regAll += '"ze' + objToChange.regexPackSize + '%"';
@@ -522,4 +518,6 @@ function showMapRegex(mapModWindow, pID) {
     if (lengthElement) {
         lengthElement.innerText = regAll.length + ' / 50';
     }
+    console.log('here');
+    localStorage.setItem('dataPanelsMapMod', JSON.stringify(panelRegexes));
 }
