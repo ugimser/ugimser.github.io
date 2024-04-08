@@ -204,7 +204,7 @@ function extractNumbers(regex) {
     //const numbers = [];
     let firstNumber = 0;
 
-    // Utworzenie obiektu RegExp z wyra¿enia regularnego
+    // Utworzenie obiektu RegExp z wyraÂ¿enia regularnego
     const re = new RegExp(regex);
 
     // Iteracja po wszystkich liczbach w zakresie 20-99
@@ -212,7 +212,7 @@ function extractNumbers(regex) {
         // Konwersja liczby na string
         const numberString = i.toString();
 
-        // Sprawdzenie, czy liczba pasuje do wyra¿enia regularnego
+        // Sprawdzenie, czy liczba pasuje do wyraÂ¿enia regularnego
         if (re.test(numberString)) {
             // Dodanie liczby do tablicy
             // numbers.push(numberString);
@@ -220,12 +220,12 @@ function extractNumbers(regex) {
         }
     }
 
-    // Iteracja po wszystkich liczbach trzycyfrowych zaczynaj¹cych siê od 1
+    // Iteracja po wszystkich liczbach trzycyfrowych zaczynajÂ¹cych siÃª od 1
     for (let i = 100; i <= 199; i++) {
         // Konwersja liczby na string
         const numberString = i.toString();
 
-        // Sprawdzenie, czy liczba pasuje do wyra¿enia regularnego
+        // Sprawdzenie, czy liczba pasuje do wyraÂ¿enia regularnego
         if (re.test(numberString)) {
             // Dodanie liczby do tablicy
             //numbers.push(numberString);
@@ -233,7 +233,7 @@ function extractNumbers(regex) {
         }
     }
 
-    // Zwrócenie tablicy liczb
+    // ZwrÃ³cenie tablicy liczb
     return firstNumber;
 }
 
@@ -518,6 +518,6 @@ function showMapRegex(mapModWindow, pID) {
     if (lengthElement) {
         lengthElement.innerText = regAll.length + ' / 50';
     }
-    console.log('here');
+    
     localStorage.setItem('dataPanelsMapMod', JSON.stringify(panelRegexes));
 }
