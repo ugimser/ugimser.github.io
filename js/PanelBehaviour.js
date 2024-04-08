@@ -77,7 +77,15 @@ function panelBehaviour(panel, id) {
         // Copy All
         try {
             panel.querySelector('.panel-copy-all').addEventListener('click', () => {
-                copyToClipboard(getQuillText('id' + id));
+                copyQuillText('id' + id);
+                //copyToClipboard(getQuillText('id' + id));
+                //const quilBody = getQuillBody('id' + id);
+                //c(quilBody);
+                //copyToClipboardTextAndImages();
+                //const p = panel.querySelector('.ql-editor');
+                // p.select(); // Zaznaczenie zawartoœci elementu
+                //getQuillBody('id' + id);
+                //document.execCommand('copy');
             });
         } catch (err) {
             //console.log('panelBehaviour ' + err);
