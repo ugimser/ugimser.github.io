@@ -177,7 +177,7 @@ function panelRegexMapMods(panel, oldRegex, check) {
         //mapRegexText.value = oldRegex;
         const dataOld = JSON.parse(localStorage.getItem('dataPanelsMapMod'));
         if (dataOld) {
-            console.log(dataOld);
+            //console.log(dataOld);
             panelRegexes = dataOld;
         }
         changeRegexEvent(_panelID, mapRegexText, mapRegexTextCounter, mapQuantityInput, mapPackSizeInput, t1, t2, t3.concat(t4), t5);

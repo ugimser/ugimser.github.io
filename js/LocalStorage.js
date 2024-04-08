@@ -99,7 +99,7 @@ window.addEventListener('load', () => {
                 <div class="panel-textarea" id="id${lastID}">
                     <textarea class="panel-content" style="width: ${panelData.width - 8}px; height: ${panelData.height - 4}px">${panelData.content}</textarea>
                 </div >
-                <button class="panel-copy-all" title="Copy all text">copy</button>
+                <button class="panel-copy-all" title="Copy all text">Copy all text</button>
                 <div class="panel-controls" style="display: flex">
 			        <button class="panel-edit"></button>
 			        <div class="panel-move"></div>

@@ -51,10 +51,19 @@ function getQuillContent(quill_id) {
 	return 'quill instance not found: ' + quill_id;
 }
 
-function getQuillText (quill_id) {
+async function copyQuillText (quill_id) {
 	const textarea = document.getElementById(quill_id);
 	if (textarea) {
 		const qi = Quill.find(textarea);
+		//console.log(qi.getContents());
+		//qi.focus(); // Ustawienie fokusu na edytorze
+		//var editorLength = qi.getLength(); // Pobranie d³ugoœci zawartoœci edytora
+		//qi.setSelection(0, editorLength);
+		//await navigator.clipboard.write(qi.getSelection());
+		//document.execCommand('copy');
+		//return qi.getContents();
+		//console.log(qi.getText());
+		copyToClipboardTextAndImages(qi.getText());
 		return qi.getText();
 	}
 	return 'quill instance not found: ' + quill_id;
@@ -119,7 +128,7 @@ function addQuill(id, savedContent = 'e', openHtml = false) {
 	observer.observe(quill.root, { childList: true, subtree: true });
 }
 
-function attachCopyEventListeners(quill) {
+function attachCopyEventListeners2(quill) {
 	var links = quill.root.querySelectorAll('em');
 	//console.log('em listener');
 	links.forEach(function (link) {
@@ -132,4 +141,74 @@ function attachCopyEventListeners(quill) {
 }
 
 
+
+
+
+function attachCopyEventListeners(quill) {
+	var elements = quill.root.querySelectorAll('em, img');
+	elements.forEach(function (element) {
+		element.addEventListener('click', function (event) {
+			event.preventDefault();
+			var text = '';
+
+			// Obs³uga tekstu
+			if (element.tagName.toLowerCase() === 'em') {
+				text = element.textContent || element.innerText;
+			}
+
+			// Obs³uga obrazów
+			if (element.tagName.toLowerCase() === 'img') {
+				var canvas = document.createElement('canvas');
+				var context = canvas.getContext('2d');
+				canvas.width = element.width;
+				canvas.height = element.height;
+				context.drawImage(element, 0, 0, element.width, element.height);
+				text = canvas.toDataURL(); // Konwersja obrazu do danych base64
+			}
+			//console.log(text);
+			copyToClipboardTextAndImages(text);
+		});
+	});
+}
+
+
+async function copyToClipboardTextAndImages(text) {
+	if (navigator.clipboard) {
+		try {
+			if (text.startsWith('data:image')) {
+				// Obs³uga obrazu base64
+				const blob = base64ToBlob(text);
+				await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]); 
+				notification('Image copied');
+			} else {
+				// Obs³uga tekstu
+				await navigator.clipboard.writeText(text);
+				notification('Copied: ' + text);
+			}
+		} catch (err) {
+			console.log('B³¹d podczas kopiowania do schowka:', err);
+		}
+	} else {
+		copyToClipboardFallBack(text);
+	}
+}
+
+function base64ToBlob(dataURI) {
+	if (!dataURI) {
+		throw new Error('Invalid dataURI');
+	}
+	// Sprawdzenie, czy dataURI jest w formacie base64
+	const base64Regex = /^data:image\/\w+;base64,/;
+	if (!base64Regex.test(dataURI)) {
+		throw new Error('Invalid base64 dataURI');
+	}
+	// Odseparowanie typu MIME i danych base64
+	const byteString = atob(dataURI.split(',')[1]);
+	const arrayBuffer = new ArrayBuffer(byteString.length);
+	const intArray = new Uint8Array(arrayBuffer);
+	for (let i = 0; i < byteString.length; i++) {
+		intArray[i] = byteString.charCodeAt(i);
+	}
+	return new Blob([arrayBuffer], { type: 'image/png' }); // Typ MIME jest ustawiony na image/png jako domyœlny
+}
 

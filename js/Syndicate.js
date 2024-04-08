@@ -430,7 +430,7 @@ function syndicateSetMinEmptySize() {
 	const interventionBad = document.querySelector('#syndicate-intervention-mediocre');
 
 	const minSize = localStorage.getItem('mySyndicateSmallSize') ? localStorage.getItem('mySyndicateSmallSize') : '100px';
-	console.log(minSize);
+	
 	transportationGood.style.minHeight = minSize;
 	transportationBad.style.minHeight = minSize;
 	fortificationGood.style.minHeight = minSize;

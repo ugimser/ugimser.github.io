@@ -23,7 +23,7 @@ function createPanelTextArea(panelID, panelCounter) {
             <p><em>%go in with me, don't move, do NOT leave if you die</em></p><p>Feared:</p><p><br></p><p><br></p><p>---------</p><p><em>%please wait in ho, join when I write adasdad, don't move inside, don't leave if you die</em></p><p>UE:</p><p><br></p><p><br></p><p>Sirus:</p><p><br></p><p><br></p><p>Maven:</p><p>@playername</p><p>@playername</p><p>@playername</p><p><br></p><p><br></p><p><br></p>
             </textarea>
         </div>
-        <button class="panel-copy-all" title="Copy all text">copy</button>
+        <button class="panel-copy-all" title="Copy all text">Copy all text</button>
         <div class="panel-controls" style="display: flex">
 			<button class="panel-edit"></button>
 			<div class="panel-move"></div>
