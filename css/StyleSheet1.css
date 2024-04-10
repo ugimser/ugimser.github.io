@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: #111;
-    color: #eee;
+    background-color: #313338;
+    color: #eef;
 }
 
 .main-menu-logo {
     padding: 0px 45px 0px 54px;
     display: inline-block;
     position: fixed;
-    background: #222;
+    background: #1e1f22;
     background-image: url(../img/menu_icon.png);
     background-size: contain;
     background-position: left;
@@ -27,7 +27,7 @@
     background-color: transparent;
     z-index: 1;
     cursor: pointer;
-    background: #222;
+    background: #1e1f22;
     background-image: url(../img/menu_icon.png);
     background-size: contain;
     background-position: left;
@@ -35,7 +35,7 @@
 }
 
 #main-menu {
-    background: #222;
+    background: #1e1f22;
     width: 200px;
     position: fixed;
     margin-top: 68px;
@@ -57,6 +57,8 @@
     margin-left: 10px;
     padding: 10px;
     min-width: 180px;
+    text-align: left;
+    border-color: #42444c;
 }
 
 .apps {
@@ -77,11 +79,11 @@
     flex-direction: column;
     margin: 10px;
     padding: 10px;
-    border: 2px solid #111;
+    border: 2px solid #1e1f22;
     min-width: 230px;
     min-height: 20px;
     position: absolute;
-    background-color: #555;
+    background-color: #313338;
 }
 
 .panel-stashtabsale
@@ -97,10 +99,10 @@
     margin: -10px -10px 0px -10px;
     text-align: left;
     font-size: large;
-    background-color: #333;
+    background-color: #1e1f22;
     resize: none;
     border-width: 0px 0px 0px 25px;
-    border-color: #333;
+    border-color: #1e1f22;
     outline: none;
     color: #eeeeff;
 }
@@ -151,7 +153,7 @@
     width: 25px;
     cursor: pointer;
     background-image: url("../img/menu_icon.png");
-    background-color: #333;
+    background-color: #3330;
     background-size: cover;
 }
 
@@ -201,7 +203,7 @@
 .regex-input-window,
 #regex_window,
 #map_mod_window {
-    background-color: #333;
+    background-color: #42444c;
     margin-left: -10px;
     margin-top: 10px;
     margin-right: -10px;
@@ -221,7 +223,7 @@
 .regex-gwennen-same-base {
     display: flex;
     border-style: dashed;
-    border-color: #444;
+    border-color: #42444c;
 }
 
 #blight-extractor-counter,
@@ -252,15 +254,19 @@
 .map_mod_bad_list {
     margin: 3px;
     text-align: left;
-    background-color: #404040;
+    background-color: #1e1f22;
     width: calc(100% - 6px);
+    font-size: 15px;
+    padding: 8px 5px 8px 5px;
 }
 
 .map_mod_good_list {
     margin: 3px;
     text-align: left;
-    background-color: #404040;
+    background-color: #1e1f22;
     width: calc(100% - 6px);
+    font-size: 15px;
+    padding: 8px 5px 8px 5px;
 }
 
 #map_mod_good_list {
@@ -281,7 +287,7 @@
 }
 
 #panel-regex-map-clear-all {
-    border-color: #933;
+    border-color: #9933338f;
     text-align: left;
     margin-right: 10px;
     margin-top: 5px;
@@ -291,7 +297,7 @@
 
 .chaos-value {
     text-align: right;
-    background-color: #333;
+    background-color: #42444c;
     padding: 2px;
     min-width: 50px;
     background-image: url("https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d119a0d734/CurrencyRerollRare.png");
@@ -356,7 +362,7 @@ td, th {
 .line-vertical {
     width: 2px;
     margin: 5px;
-    background-color: #333;
+    background-color: #1e1f22;
 }
 
 #syndicate-transportation,
@@ -444,8 +450,8 @@ input[type="color"] {
 }
 
 button {
-    border: 2px solid #333;
-    background-color: #555;
+    border: 2px solid #1e1f22;
+    background-color: #2b2d31;
     color: white;
     padding: 5px;
     cursor: pointer;
@@ -455,7 +461,7 @@ button {
         border-style: dotted;
         transform: scale(1.1);
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        background-color: #666;
+        background-color: #35373c;
     }
 
 .incursion-tier {
@@ -464,7 +470,7 @@ button {
 }
 
 .incursion-tier {
-    background-color: #333;
+    background-color: #232428;
     margin: 5px 0px 5px 0px;
     padding: 5px 10px 5px 0px;
 }
@@ -532,21 +538,21 @@ button {
 }
 
 .background-gradient-popularity {
-    background: linear-gradient(to bottom, #0000, #555, #555, #555), 
-                linear-gradient(to right, #0000, #0f07, #0000);
+    /*background: linear-gradient(to bottom, #0000, #555, #555, #555), 
+                linear-gradient(to right, #0000, #0f07, #0000);*/
     background-position: center, center;
     background-repeat: no-repeat;
 }
 
 .map-mod-selected {
     border-width: 2px 2px 2px 10px;
-    border-color: #7df;
+    border-color: #f1c793;
     padding-left: 10px;
 }
 
 .input-small {
-    background-color: #333;
-    color: #fff;
+    background-color: #42444c;
+    color: #eef;
     width: 50px;
     border: none;
     height: 26px;
@@ -554,8 +560,8 @@ button {
 }
 
 .input-search {
-    background-color: #333;
-    color: #fff;
+    background-color: #42444c;
+    color: #eef;
     border: none;
     width: calc(100% - 20px);
     padding: 10px;
@@ -571,12 +577,27 @@ button {
     display: block;
     margin-bottom: 10px;
     margin-top: -8px;
-    background-color: #444;
+    border-width: 0px 3px 3px 3px;
+    border-style: solid;
+    border-color: #42444c;
 }
 
 .regex-coffin-cointainer-hidden {
     display: none;
     margin-bottom: 10px;
     margin-top: -8px;
-    background-color: #444;
+}
+
+select {
+    background-color: #2b2d31;
+    color: #eef;
+    border: 1px solid #1e1f22;
+}
+
+.border-left-right-bottom {
+    border-width: 0px 3px 3px 3px;
+    border-style: solid;
+    border-color: #42444c;
+    margin-left: -3px;
+    margin-right: -3px;
 }

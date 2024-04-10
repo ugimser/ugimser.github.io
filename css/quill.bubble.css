@@ -1179,11 +1179,12 @@
     }
 
 .ql-bubble .ql-editor em {
-    color: #fff;
-    border: 3px solid #444;
-    background-color: #444;
+    color: #eef;
+    border: 1px solid #eeeeff59;
+    /*background-color: #444;*/
     text-decoration-line: none;
     font-style: normal;
+    padding: 2px;
 }
 
 ::-scrollbar {
@@ -1192,7 +1193,7 @@
 }
 
 ::-scrollbar-thumb {
-    background: #333; /* Kolor suwaka scrollbara */
+    background: #1a1b1e; /* Kolor suwaka scrollbara */
 }
 
 ::-scrollbar-track {
@@ -1205,9 +1206,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #333; /* Kolor suwaka scrollbara */
+    background: #1a1b1e; /* Kolor suwaka scrollbara */
 }
 
 ::-webkit-scrollbar-track {
      background: #f1f1f100; /* Kolor t³a scrollbara */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #101113;
 }
