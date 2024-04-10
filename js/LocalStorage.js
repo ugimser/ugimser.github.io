@@ -176,7 +176,7 @@ window.addEventListener('load', () => {
                                         </div>
                                         <div id="panel-regex-map-all-kirac-list" class="background-gradient-popularity">
                                         </div>
-                                            <div id="panel-regex-map-all-vaal" style="width: 100%; margin-top: 50px">
+                                            <div id="panel-regex-map-all-vaal" style="width: 100%; margin-top: 70px">
                                             <div class="map-mod-list-header">
                                                 <div class="map_mod_text">I want these vaal implicits:</div>
                                                 <div class="map_mod_text">Tier 1-16</div>
@@ -420,7 +420,7 @@ window.addEventListener('load', () => {
                         </div>
                         <select id="regex_league-list">
                             <option value="league">${leagueCurrent}</option>
-                            <option value="leaguehc">${leagueCurrentHC.replace('+', ' ')}</option>
+                            <option value="leaguehc" style="display: none">${leagueCurrentHC.replace('+', ' ')}</option>
                             <option value="league" style="display: none">${leagueStandard}</option>
                         </select>
 			        </div>

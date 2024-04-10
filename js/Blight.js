@@ -12,8 +12,9 @@ function panelBlightRegex(panel) {
 
     loadMore.addEventListener('click', event => {
         for (const d of blightOilsPanelsTab) {
-            if (d.className === 'hidden') {
-                d.className = 'shown';
+            if (d.classList.contains('hidden')) {
+                d.classList.add('shown');
+                d.classList.remove('hidden');
                 return;
             }
         }
@@ -35,8 +36,8 @@ function panelBlightRegex(panel) {
             if (goldenRegex.length + obj.nameShort.length + 9 > 50) {
                 goldenRegex = goldenRegex.substring(0, goldenRegex.length - 1);
                 const div = document.createElement('div');
-                div.style.backgroundColor = '#444';
-                div.className = blightOilsPanelsTab.length > 0 ? 'hidden' : 'shown';
+                div.className = 'border-left-right-bottom';
+                div.classList.add(blightOilsPanelsTab.length > 0 ? 'hidden' : 'shown');
 
                 const d = document.createElement('div');
                 d.className = 'hidden';
@@ -57,10 +58,12 @@ function panelBlightRegex(panel) {
                 btn.innerText = 'Show Oils and Skils';
                 btn.addEventListener('click', () => {
                     if (d.className === 'hidden') {
-                        d.className = 'shown';
+                        d.classList.add('shown');
+                        d.classList.remove('hidden');
                         btn.innerText = 'Hide Oils and Skils';
                     } else {
-                        d.className = 'hidden';
+                        d.classList.add('hidden');
+                        d.classList.remove('shown');
                         btn.innerText = 'Show Oils and Skils';
                     }
                 });

@@ -3,6 +3,7 @@ const panels = document.getElementById('panels');
 //const panelControlsEdit = document.getElementById('panel-controls');
 const addPanelButton = document.getElementById('add-panel');
 const addPanelStashTabSale = document.getElementById('add-panel-stashTab');
+const stashTabTimer = document.getElementById('main-menu-stash-tab-timer');
 const addPanelRegexMapMods = document.getElementById('add-panel-regex-map-mods');
 const addPanelRegexGwennen = document.getElementById('add-panel-regex-gewnnen');
 const addPanelRegexCoffin = document.getElementById('add-panel-regex-coffin');
@@ -28,6 +29,38 @@ mainMenuLogo.addEventListener('click', () => {
     //mainMenuLogo.className = 'main-menu-logo';
 });
 
+// stash tab timer
+stashSaleDate();
+
+function stashSaleDate(startDate = new Date("2024-04-26T00:00:00"), endDate = new Date("2024-04-30T12:00:00")) {
+    var currentDate = new Date();
+
+    if (currentDate < startDate) {
+        var timeLeft = startDate - currentDate;
+        var daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24 + 24));
+        let messageDateStart = startDate.getDate() + " " + startDate.toLocaleDateString('default', { month: 'long' });
+        let messageDateEnd = endDate.getDate() + " " + endDate.toLocaleDateString('default', { month: 'long' });
+        stashTabTimer.innerHTML = "Next Stash Tab Sale: <br>" + messageDateStart + " - " + messageDateEnd + "<br> (" + daysLeft + " days left)";
+    } else if (currentDate >= startDate && currentDate <= endDate) {
+        var timeLeft = endDate - currentDate;
+        var daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24 + 24));
+        stashTabTimer.innerHTML = "Stash Tab Sale is now! " + daysLeft + " days to the end.";
+    } else {
+        var newStartDate = new Date(startDate);
+        var newEndDate = new Date(endDate);
+        newStartDate.setDate(newStartDate.getDate() + 21);
+        newEndDate.setDate(newEndDate.getDate() + 21);
+
+        // Poprawka dla przesuniêcia do nowego miesi¹ca
+        if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
+        }
+        if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
+        }
+        stashSaleDate(newStartDate, newEndDate);
+    }
+}
 
 function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = new Date("2024-03-11T12:00:00")) {
     var currentDate = new Date();
@@ -508,6 +541,6 @@ function highlightBorder(element) {
     //const oldBorder = element.style.border;
     element.style.border = '5px dashed red';
     setTimeout(() => {
-        element.style.border = '2px solid #222';
+        element.style.border = '2px solid #1e1f22';
     }, 1000);
 }
