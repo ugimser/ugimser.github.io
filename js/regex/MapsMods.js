@@ -1267,12 +1267,12 @@ const mapDataT17 = [
 		"nameLong": "Area has patches of Awakeners' Desolation",
 		"nameShort": "' d",
 		"popularity": 0
-	},
+	},/*
 	{
 		"nameLong": "Rare and Unique monsters spawn a Tormented Spirit on reaching Low Life",
 		"nameShort": "w l",
 		"popularity": 0
-	},
+	},*/
 	{
 		"nameLong": "Rare monsters in area are Shaper-Touched",
 		"nameShort": "tou",
