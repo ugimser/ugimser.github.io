@@ -158,14 +158,14 @@ window.addEventListener('load', () => {
                                     <div id="panel-regex-map-all-bad" style="width: 25%">
                                         <div class="map-mod-list-header">
                                             <div class="map_mod_text">I don\'t want these mods:</div>
-                                            <div class="map_mod_text">Tier 1-16</div>
+                                            <div class="map_mod_text">Tier 1-17</div>
                                         </div>
                                         <div id="panel-regex-map-all-bad-list" class="background-gradient-danger"></div>
                                     </div>
                                     <div id="panel-regex-map-all-good" style="width: 25%">
                                         <div class="map-mod-list-header">
                                             <div class="map_mod_text">I want these mods:</div>
-                                            <div class="map_mod_text">Tier 1-16</div>
+                                            <div class="map_mod_text">Tier 1-17</div>
                                         </div>
                                         <div id="panel-regex-map-all-good-list" class="background-gradient-popularity"></div>
                                     </div>
