@@ -531,7 +531,7 @@ button {
 }
 
 .background-gradient-danger {
-    background: linear-gradient(to bottom, #0000, #555, #555, #555), 
+    background: linear-gradient(to bottom, #0000, #5550, #5550, #5550), 
                 linear-gradient(to right, #0000, #f00b, #0000); 
     background-position: center, center;
     background-repeat: no-repeat;
