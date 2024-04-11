@@ -329,7 +329,7 @@ const mapData = new Map([
 	}],
 	["Monsters' skills Chain 2 additional times", {
 		"nameLong": "Monsters' skills Chain 2 additional times",
-		"nameShort": "s' s",
+		"nameShort": "ain 2",
 		"nameMod": "Chaining",
 		"packSize": 6,
 		"quantity": 16,
@@ -1025,7 +1025,7 @@ const mapData = new Map([
 const mapDataT17 = [
 	{
 		"nameLong": "Monsters' skills Chain 3 additional times|Monsters' Projectiles can Chain when colliding with Terrain",
-		"nameShort": "' p",
+		"nameShort": "ain 3",
 		"popularity": 0
 	},
 	{
