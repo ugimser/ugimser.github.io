@@ -7,7 +7,7 @@ let dropZones = [];
  * @param {any} panel
  */
 function panelMoveToTheTop(panel) {
-    panel.addEventListener('click', () => {
+    panel.addEventListener('mousedown', () => {
         // console.log(panel.querySelector('.panel-content'));
         panels.appendChild(panel);
     }, true);
