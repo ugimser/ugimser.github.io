@@ -2,12 +2,12 @@ let dropZones = [];
 
 
 /**
- * Za ka¿dym razem psuje quill
- * edytuj tylko jak masz du¿o czasu
+ * Za kaÂ¿dym razem psuje quill
+ * edytuj tylko jak masz duÂ¿o czasu
  * @param {any} panel
  */
 function panelMoveToTheTop(panel) {
-    panel.addEventListener('mouseover', () => {
+    panel.addEventListener('click', () => {
         // console.log(panel.querySelector('.panel-content'));
         panels.appendChild(panel);
     }, true);
@@ -62,7 +62,7 @@ function panelBehaviour(panel, id) {
                 //c(quilBody);
                 //copyToClipboardTextAndImages();
                 //const p = panel.querySelector('.ql-editor');
-                // p.select(); // Zaznaczenie zawartoœci elementu
+                // p.select(); // Zaznaczenie zawartoÅ“ci elementu
                 //getQuillBody('id' + id);
                 //document.execCommand('copy');
             });
@@ -97,7 +97,7 @@ function panelBehaviour(panel, id) {
     });
 
 
-    // Zakoñczenie przesuwania po zwolnieniu przycisku
+    // ZakoÃ±czenie przesuwania po zwolnieniu przycisku
     document.addEventListener('mouseup', (moveEvent) => {
         if (isDragging) {
             // grind
@@ -116,15 +116,15 @@ function panelBehaviour(panel, id) {
 function updateDropZones(panel, x, y) {
     removeDropZones();
 
-    // Tworzenie nowych obszarów docelowych
+    // Tworzenie nowych obszarÃ³w docelowych
     let panelRect = panel.getBoundingClientRect();
     const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     dropZones = [
-        createDropZone(0, y, document.body.clientWidth + scrollLeft, 3), // Górna krawêdŸ
-        createDropZone(x, 0, 3, window.innerHeight + scrollTop), // Lewa krawêdŸ
-        createDropZone(x + panelRect.width, 0, 3, window.innerHeight + scrollTop), // Prawa krawêdŸ
-        createDropZone(0, y + panelRect.height, document.body.clientWidth + scrollLeft, 3) // Dolna krawêdŸ
+        createDropZone(0, y, document.body.clientWidth + scrollLeft, 3), // GÃ³rna krawÃªdÅ¸
+        createDropZone(x, 0, 3, window.innerHeight + scrollTop), // Lewa krawÃªdÅ¸
+        createDropZone(x + panelRect.width, 0, 3, window.innerHeight + scrollTop), // Prawa krawÃªdÅ¸
+        createDropZone(0, y + panelRect.height, document.body.clientWidth + scrollLeft, 3) // Dolna krawÃªdÅ¸
     ];
 }
 
