@@ -19,7 +19,7 @@ function panelBehaviour(panel, id) {
     let isDragging = false;
     let deletePanelCounter = 0;
 
-    panelMoveToTheTop(panel);
+    //panelMoveToTheTop(panel);
 
     try {
         panel.querySelector('.panel-edit').addEventListener('click', (event) => {
