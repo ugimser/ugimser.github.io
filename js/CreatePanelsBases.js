@@ -188,10 +188,12 @@ function createPanelRegexCoffin(panelID, panelCounter) {
 				<button id="regex-coffin-show-list" style="margin-top: 10px">Hide Coffins List</button>
 				<button id="regex-coffin-limit-stash" style="margin-top: 10px">Stash limit (50 chars)</button>
 				<button id="regex-coffin-limit-morgue" style="margin-top: 10px">Necropolis Morgue limit (100 chars)</button>
-				<span>Min price:</span>
+				<span>Minimum price</span>
 				<input class="input-small" id="regex-coffin-price-min" type="number" value="25" />
-				<span>Min ilvl:</span>
+				<span>ilvl:</span>
 				<input class="input-small" id="regex-coffin-ilvl" type="number" value="1" />
+				<span>-</span>
+				<input class="input-small" id="regex-coffin-ilvl-max" type="number" value="100" />
 				<input id="regex_window" readonly="true" style="display: none"/>
 				<p id="regex_window_length" style="display: none">0 / 50</p>
 				<input type="checkbox" checked="true" id="regex_window_copy" title="Always copy on click"  style="display: none"/>

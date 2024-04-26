@@ -56,12 +56,12 @@ function stashSaleDate(startDate = new Date("2024-04-26T00:00:00"), endDate = ne
         newStartDate.setDate(newStartDate.getDate() + 21);
         newEndDate.setDate(newEndDate.getDate() + 21);
 
-        // Poprawka dla przesuniÃªcia do nowego miesiÂ¹ca
+        // Poprawka dla przesuniêcia do nowego miesi¹ca
         if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
-            newStartDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
-            newEndDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         stashSaleDate(newStartDate, newEndDate);
     }
@@ -86,12 +86,12 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
         newStartDate.setDate(newStartDate.getDate() + 28);
         newEndDate.setDate(newEndDate.getDate() + 28);
 
-        // Poprawka dla przesuniÃªcia do nowego miesiÂ¹ca
+        // Poprawka dla przesuniêcia do nowego miesi¹ca
         if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
-            newStartDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
-            newEndDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         stashSaleTimer(newStartDate, newEndDate);
     }
@@ -291,9 +291,11 @@ function panelRegexCoffin(panel) {
     const buttonLimit100 = panel.querySelector('#regex-coffin-limit-morgue');
     const inputPriceMin = panel.querySelector('#regex-coffin-price-min');
     const inputIlvl = panel.querySelector('#regex-coffin-ilvl');
+    const inputIlvlMax = panel.querySelector('#regex-coffin-ilvl-max');
 
     let stashLimit = 100;
     let minIlvl = 1;
+    let maxIlvl = 100;
     let minPrice = inputPriceMin.value;
     let shownState = 'regex-coffin-cointainer-shown';
 
@@ -301,28 +303,32 @@ function panelRegexCoffin(panel) {
     if (dataOld) {
         stashLimit = dataOld.stashLimit;
         minIlvl = dataOld.minIlvl;
+        maxIlvl = dataOld.maxIlvl;
         minPrice = dataOld.minPrice;
         shownState = dataOld.shownState;
 
         inputIlvl.value = minIlvl;
+        inputIlvlMax.value = maxIlvl;
         inputPriceMin.value = minPrice;
     }
 
-    let regexLeague = showCoffinLeagueItems('league', inputPriceMin.value, minIlvl);
-    let regexLeaguehc = showCoffinLeagueItems('leaguehc', inputPriceMin.value, minIlvl);
+    let regexLeague = showCoffinLeagueItems('league', inputPriceMin.value, minIlvl, maxIlvl);
+    let regexLeaguehc = showCoffinLeagueItems('leaguehc', inputPriceMin.value, minIlvl, maxIlvl);
     //let regexLeaguestd = showCoffinLeagueItems('standard', divItemsLeaguestd, inputPriceMin.value, minIlvl);
     let currentChoose = regexLeague;
+
+    fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
 
     buttonLimit50.addEventListener('click', () => {
         stashLimit = 50;
         fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
-        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, shownState, minPrice }));
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, maxIlvl, shownState, minPrice }));
     });
 
     buttonLimit100.addEventListener('click', () => {
         stashLimit = 100;
         fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
-        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, shownState, minPrice }));
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, maxIlvl, shownState, minPrice }));
     });
 
     buttonShowList.addEventListener('click', () => {
@@ -339,7 +345,7 @@ function panelRegexCoffin(panel) {
                 shownState = 'regex-coffin-cointainer-shown';
             }
         }
-        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, shownState, minPrice }));
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, maxIlvl, shownState, minPrice }));
     });
 
     inputPriceMin.addEventListener('change', () => {
@@ -354,25 +360,44 @@ function panelRegexCoffin(panel) {
             currentChoose = regexLeague;
         }
         fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
-        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, shownState, minPrice }));
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, maxIlvl, shownState, minPrice }));
     });
 
     inputIlvl.addEventListener('change', () => {
+        if (inputIlvl.value >= inputIlvlMax.value) {
+            return;
+        }
         minIlvl = inputIlvl.value;
         if (leagueElement.options[leagueElement.selectedIndex].value === 'leaguehc') {
-            regexLeaguehc = showCoffinLeagueItems('leaguehc', inputPriceMin.value, minIlvl);
+            regexLeaguehc = showCoffinLeagueItems('leaguehc', inputPriceMin.value, minIlvl, maxIlvl);
             currentChoose = regexLeaguehc;
         } else if (leagueElement.options[leagueElement.selectedIndex].value === 'standard') {
             currentChoose = regexLeaguestd;
         } else {
-            regexLeague = showCoffinLeagueItems('league', inputPriceMin.value, minIlvl);
+            regexLeague = showCoffinLeagueItems('league', inputPriceMin.value, minIlvl, maxIlvl);
             currentChoose = regexLeague;
         }
         fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
-        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, shownState, minPrice }));
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, maxIlvl, shownState, minPrice }));
     });
 
-    fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
+    inputIlvlMax.addEventListener('change', () => {
+        if (inputIlvlMax.value <= inputIlvl.vaalList) {
+            return;
+        }
+        maxIlvl = inputIlvlMax.value;
+        if (leagueElement.options[leagueElement.selectedIndex].value === 'leaguehc') {
+            regexLeaguehc = showCoffinLeagueItems('leaguehc', inputPriceMin.value, minIlvl, maxIlvl);
+            currentChoose = regexLeaguehc;
+        } else if (leagueElement.options[leagueElement.selectedIndex].value === 'standard') {
+            currentChoose = regexLeaguestd;
+        } else {
+            regexLeague = showCoffinLeagueItems('league', inputPriceMin.value, minIlvl, maxIlvl);
+            currentChoose = regexLeague;
+        }
+        fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
+        localStorage.setItem('dataPanelCoffin', JSON.stringify({ stashLimit, minIlvl, maxIlvl, shownState, minPrice }));
+    });
 
     leagueElement.addEventListener('change', function () {
         if (leagueElement.options[leagueElement.selectedIndex].value === 'leaguehc') {
@@ -515,7 +540,7 @@ async function copyToClipboard(text) {
             await navigator.clipboard.writeText(text);
             notification('Copied: ' + text);
         } catch (err) {
-            console.log('BÂ³Â¹d podczas kopiowania do schowka:', err);
+            console.log('B³¹d podczas kopiowania do schowka:', err);
         }
     } else {
         copyToClipboardFallBack(text);
@@ -524,13 +549,13 @@ async function copyToClipboard(text) {
 
 function copyToClipboardFallBack(text) {
     var input = document.createElement('input'); // Utworzenie elementu input
-    input.style.position = 'fixed'; // Ustawienie pozycji na staÂ³e
+    input.style.position = 'fixed'; // Ustawienie pozycji na sta³e
     input.style.opacity = 0; // Ukrycie elementu
-    input.value = text; // Ustawienie wartoÂœci na tekst do skopiowania
-    document.body.appendChild(input); // Dodanie elementu do ciaÂ³a dokumentu
-    input.select(); // Zaznaczenie zawartoÂœci elementu
+    input.value = text; // Ustawienie wartoœci na tekst do skopiowania
+    document.body.appendChild(input); // Dodanie elementu do cia³a dokumentu
+    input.select(); // Zaznaczenie zawartoœci elementu
     document.execCommand('copy'); // Skopiowanie zaznaczonego tekstu do schowka
-    document.body.removeChild(input); // UsuniÃªcie tymczasowego elementu input
+    document.body.removeChild(input); // Usuniêcie tymczasowego elementu input
     notification('Copied: ' + text);
 }
 function notification(message) {
