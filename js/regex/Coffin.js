@@ -7091,7 +7091,7 @@ const coffinArray = [
     }
 ];
 
-function showCoffinLeagueItems(leagueName, minPrice, _minIlvl) {
+function showCoffinLeagueItems(leagueName, minPrice, _minIlvl, _maxIlvl) {
     const items = typeof (coffinArray2) === 'undefined' ? coffinArray : coffinArray2;
     if (leagueName === 'leaguehc') {
         items.sort((a, b) => (b.chaosValueHCLeague - a.chaosValueHCLeague));
@@ -7122,6 +7122,8 @@ function showCoffinLeagueItems(leagueName, minPrice, _minIlvl) {
             //i.regex = i.name;
             continue;
         } else if (i.ilvl < _minIlvl) {
+            continue;
+        } else if (i.ilvl > _maxIlvl) {
             continue;
         }
 
