@@ -56,12 +56,12 @@ function stashSaleDate(startDate = new Date("2024-04-26T00:00:00"), endDate = ne
         newStartDate.setDate(newStartDate.getDate() + 21);
         newEndDate.setDate(newEndDate.getDate() + 21);
 
-        // Poprawka dla przesuniÃªcia do nowego miesiÂ¹ca
+        // Poprawka dla przesuniêcia do nowego miesi¹ca
         if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
-            newStartDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
-            newEndDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         stashSaleDate(newStartDate, newEndDate);
     }
@@ -86,12 +86,12 @@ function stashSaleTimer(startDate = new Date("2024-03-08T00:00:00"), endDate = n
         newStartDate.setDate(newStartDate.getDate() + 28);
         newEndDate.setDate(newEndDate.getDate() + 28);
 
-        // Poprawka dla przesuniÃªcia do nowego miesiÂ¹ca
+        // Poprawka dla przesuniêcia do nowego miesi¹ca
         if (newStartDate.getMonth() !== ((startDate.getMonth() + 1) % 12) && newStartDate.getDate() === 1) {
-            newStartDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newStartDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         if (newEndDate.getMonth() !== ((endDate.getMonth() + 1) % 12) && newEndDate.getDate() === 1) {
-            newEndDate.setDate(0); // Ustawiamy na ostatni dzieÃ± poprzedniego miesiÂ¹ca
+            newEndDate.setDate(0); // Ustawiamy na ostatni dzieñ poprzedniego miesi¹ca
         }
         stashSaleTimer(newStartDate, newEndDate);
     }
@@ -351,12 +351,12 @@ function panelRegexCoffin(panel) {
     inputPriceMin.addEventListener('change', () => {
         minPrice = inputPriceMin.value;
         if (leagueElement.options[leagueElement.selectedIndex].value === 'leaguehc') {
-            regexLeaguehc = showCoffinLeagueItems('leaguehc', minPrice, minIlvl);
+            regexLeaguehc = showCoffinLeagueItems('leaguehc', minPrice, minIlvl, maxIlvl);
             currentChoose = regexLeaguehc;
         } else if (leagueElement.options[leagueElement.selectedIndex].value === 'standard') {
             currentChoose = regexLeaguestd;
         } else {
-            regexLeague = showCoffinLeagueItems('league', minPrice, minIlvl);
+            regexLeague = showCoffinLeagueItems('league', minPrice, minIlvl, maxIlvl);
             currentChoose = regexLeague;
         }
         fillUpCoffinPanel(currentChoose, divItemsLeague, inputElement, lengthElement, stashLimit, shownState);
@@ -364,7 +364,8 @@ function panelRegexCoffin(panel) {
     });
 
     inputIlvl.addEventListener('change', () => {
-        if (inputIlvl.value >= inputIlvlMax.value) {
+        if (inputIlvl.value > inputIlvlMax.value) {
+            inputIlvl.value = maxIlvl;
             return;
         }
         minIlvl = inputIlvl.value;
@@ -382,7 +383,8 @@ function panelRegexCoffin(panel) {
     });
 
     inputIlvlMax.addEventListener('change', () => {
-        if (inputIlvlMax.value <= inputIlvl.vaalList) {
+        if (inputIlvlMax.value < inputIlvl.value) {
+            inputIlvlMax.value = minIlvl;
             return;
         }
         maxIlvl = inputIlvlMax.value;
@@ -540,7 +542,7 @@ async function copyToClipboard(text) {
             await navigator.clipboard.writeText(text);
             notification('Copied: ' + text);
         } catch (err) {
-            console.log('BÂ³Â¹d podczas kopiowania do schowka:', err);
+            console.log('B³¹d podczas kopiowania do schowka:', err);
         }
     } else {
         copyToClipboardFallBack(text);
@@ -549,13 +551,13 @@ async function copyToClipboard(text) {
 
 function copyToClipboardFallBack(text) {
     var input = document.createElement('input'); // Utworzenie elementu input
-    input.style.position = 'fixed'; // Ustawienie pozycji na staÂ³e
+    input.style.position = 'fixed'; // Ustawienie pozycji na sta³e
     input.style.opacity = 0; // Ukrycie elementu
-    input.value = text; // Ustawienie wartoÂœci na tekst do skopiowania
-    document.body.appendChild(input); // Dodanie elementu do ciaÂ³a dokumentu
-    input.select(); // Zaznaczenie zawartoÂœci elementu
+    input.value = text; // Ustawienie wartoœci na tekst do skopiowania
+    document.body.appendChild(input); // Dodanie elementu do cia³a dokumentu
+    input.select(); // Zaznaczenie zawartoœci elementu
     document.execCommand('copy'); // Skopiowanie zaznaczonego tekstu do schowka
-    document.body.removeChild(input); // UsuniÃªcie tymczasowego elementu input
+    document.body.removeChild(input); // Usuniêcie tymczasowego elementu input
     notification('Copied: ' + text);
 }
 function notification(message) {
