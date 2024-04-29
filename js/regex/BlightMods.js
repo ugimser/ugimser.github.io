@@ -336,7 +336,7 @@ const oilsAnointmentsRings = [
         "oil3": "",
         "name": "Your Shock Nova Towers have 30% increased area of effect per repeat. Your Shock Nova Towers repeats 2 additional Times",
         "nameDetailed": "",
-        "nameShort": "t."
+        "nameShort": "mes"
     },
     {
         "oil1": "Teal Oil",
