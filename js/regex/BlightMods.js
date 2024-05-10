@@ -136,7 +136,7 @@ const oilsAnointmentsRings = [
         "oil3": "",
         "name": "Your Arc Towers repeats 1 additional Times",
         "nameDetailed": "",
-        "nameShort": "1 a"
+        "nameShort": "s 1 a"
     },
     {
         "oil1": "Sepia Oil",
@@ -336,7 +336,7 @@ const oilsAnointmentsRings = [
         "oil3": "",
         "name": "Your Shock Nova Towers have 30% increased area of effect per repeat. Your Shock Nova Towers repeats 2 additional Times",
         "nameDetailed": "",
-        "nameShort": "mes"
+        "nameShort": "ts 2"
     },
     {
         "oil1": "Teal Oil",
@@ -560,7 +560,7 @@ const oilsAnointmentsRings = [
         "oil3": "",
         "name": "Your Stone Gaze Towers have 20% reduced Petrification Delay",
         "nameDetailed": "",
-        "nameShort": "d p"
+        "nameShort": "d pet"
     },
     {
         "oil1": "Teal Oil",
@@ -2419,7 +2419,7 @@ const oilsPassiveSkills = [
         "oil3": "Golden Oil",
         "name": "Ethereal Feast",
         "nameDetailed": "1% of Spell Damage Leeched as Energy Shield|40% increased Maximum total Energy Shield Recovery per second from Leech",
-        "nameShort": "east"
+        "nameShort": "feas"
     },
     {
         "oil1": "Clear Oil",
