@@ -37,7 +37,7 @@ issueAndIdeas.addEventListener('click', () => {
 // stash tab timer
 stashSaleDate();
 
-function stashSaleDate(startDate = new Date("2024-04-19T00:00:00"), endDate = new Date("2024-04-23T12:00:00")) {
+function stashSaleDate(startDate = new Date("2025-02-14T00:00:00"), endDate = new Date("2025-02-17T12:00:00")) {
     var currentDate = new Date();
 
     if (currentDate < startDate) {
