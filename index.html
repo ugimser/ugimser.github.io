@@ -13,50 +13,56 @@
 
 	<script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script defer data-domain="ugimser.github.io" src="https://plausible.io/js/script.js"></script>
+
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RVL1746S5M"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-RVL1746S5M');
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-RVL1746S5M');
 	</script>
+
 </head>
 <body>
 	<div class="notification"></div>
 	<div id="main-menu-logo" class="main-menu-logo" title="Open / Close menu"><h2 style="margin-left: 20px">myPoE</h2></div>
 	<div id="main-menu" class="shown">
 		<button class="main-menu-button" id="add-panel">Empty Text Box</button>
-		<button class="main-menu-button" id="add-panel-regex-map-mods">Map Regex</button>
-		<button class="main-menu-button" id="add-panel-regex-gewnnen">Gwennen Regex</button>
-		<button class="main-menu-button" id="add-panel-regex-coffin">Coffin Regex</button>
-		<button class="main-menu-button" id="add-panel-regex-blight">Blight Extractor</button>
 		<button class="main-menu-button" id="add-panel-ring-anointments-blight">Blight Anointments</button>
-		<!--<div class="main-menu-button" id="add-panel-regex-beast">Beasts Regex</div>-->
 		<button class="main-menu-button" id="add-panel-syndicate">Syndicate</button>
 		<button class="main-menu-button" id="add-panel-incursion">Incursion</button>
+		<button class="main-menu-button" id="link-mapwatch">MapWatch</button>
+		<!--<<button class="main-menu-button" id="link-idol-page">Idols</button>-->
 		<button class="main-menu-button" id="issues-and-ideas">Issues and ideas</button>
-		<button class="main-menu-button" id="add-panel-stashTab" style="display: none">Stash Tab Sale Timer</button>
-		<form action="https://mypoe.site/mapwatch/">
-    			<input class="main-menu-button" style="background-color: #333;color: white;" type="submit" value="Mapwatch (white layout)">
-		</form>
 		<!--<div class="main-menu-button" id="panel-controls">Edit</div>-->
 		<!--<button class="main-menu-button" id="import-export-json">Import/Export</button>-->
 		<div class="main-menu-button" id="main-menu-stash-tab-timer" style="font-size: 13px">123</div>
+		<!-- hidden -->
+		<button class="main-menu-button" id="add-panel-stashTab" style="display: none">Stash Tab Sale Timer</button>
+		<button class="main-menu-button" id="add-panel-regex-coffin" style="display: none">Coffin Regex</button>
+		<button class="main-menu-button" id="add-panel-regex-blight" style="display: none">Blight Extractor</button>
+		<!-- Temporarily hidden -->
+		<div class="main-menu-button" id="add-panel-regex-beast" style="display: none">Beasts Regex</div>
+		<button class="main-menu-button" id="add-panel-regex-map-mods" style="display: none">Map Regex</button>
+		<button class="main-menu-button" id="add-panel-regex-gewnnen" style="display: none">Gwennen Regex</button>
 	</div>
 	<div class="apps">
 
 		<div id="panels">
 
 		</div>
-		<button onclick="showHightValue(0)" style="display: none; margin-top: 100px">asd</button>
+		<button onclick="selectFile()" style="display: none; margin-top: 100px">open</button>
+		<button onclick="reloadFile()" style="display: none; margin-top: 100px">reload</button>
 		<div id="test"></div>
 
 	</div>
 
 
 	<!-- Piaskownica -->
+
 
 
 	<!-- Koniec piaskownicy -->
@@ -82,10 +88,9 @@
 	<script src="js/regex/ExpeditionItems.js"></script>
 	<script src="js/regex/Coffin.js"></script>
 
-	<script src="Ninja_json/GeneratedUniqueArray.js"></script>
-	<script src="Ninja_json/GeneratedCoffinArray.js"></script>
-
 	<!-- <script src="js/regex/GenRegex.js"></script> -->
+	<!-- <script src="Ninja_json/GeneratedUniqueArray.js"></script>-->
+	<!-- <script src="Ninja_json/GeneratedCoffinArray.js"></script>-->
 
 </body>
 </html>
